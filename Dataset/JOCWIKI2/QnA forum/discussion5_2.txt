@@ -1,0 +1,1262 @@
+Week 5 Assignment 2
+One comment • 6 months ago
+Radha Krishna (talkcontribs)
+I was googling and going through the logic applied by instructor. It is similar to what you have applied in the below link https://cs.stackexchange.com/questions/29579/what-is-the-min-of-moves-to-sort-an-array-from-1-to-n
+
+The Logic Says that
+
+You can do a "move", which means choosing one element and moving it to any place you want (insert to any place, not swap). Its inserting at any place and not at the end always.
+
+I was unable to find proof for that.can anyone please help me with the proof for the logic
+
+Reply 6 months ago
+
+how to upload notes??
+12 comments • 6 months ago
+Divya98 (talkcontribs)
+Can you tell me what is the procedure of uploading notes? and is we need to upload all the questions ?? and whats the criteria for selecting star performer of the week.
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+It is very simple,
+
+Just keep helping others by answering their questions here.
+Bookmark this page http://sccilabs.org/jocwiki/index.php/Main_Page and update or add notes in "Super Notes: Write your notes" link. Make sure your notes is related to the topics of the week, I mean weekly classes.
+Update/add FAQs when you see a common doubt.
+Reply Edited 7 months ago
+Kamalakar (talkcontribs)
+I have a different view point. Instead of creating Notes, I would prefer small videos of say max 10~15 minute duration to be uploaded into youtube on each topic. May be some one should create the list of topics like Variables, Lists,sets,tupple etc Dictionaries Loop etc. and under each section if we create small videos it would help the batches down the lane.
+
+We may go through the videos already in the youtube and recreate the video and upload the link.
+
+Reply 7 months ago
+Kamalakar (talkcontribs)
+Arun, Kindly Create a video and post the youtube video link here on how to update the notes
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+@Kamalakar, Video is not need friend. I will post a tutorial on "how to" in one or two days in FAQs. and I will let you know. :)
+
+or just check the Actions button on SuperNotes and FAQ JOCwiki pages. We can use Edit option for the Actions menu and You can add the Notes through the online editor.
+
+Just make sure you go to the end of the page and paste your notes. And don't edit or delete others notes. If in any case you accidentally deleted others notes, don't save changes. Use "cancel" button or close the page.
+
+But everyone is welcome to check how others are using formatting tags in the notes. If you have any doubts, you can ask me or any person who is updating the notes/faqs.
+
+All changes, you or anyone, made are recorded too. So, just be careful, they can track the student responsible for deletion.
+
+Reply Edited 7 months ago
+Divya98 (talkcontribs)
+I just click on the weite your super notes here and then edit and then save changes.Is this is the write way to upload??
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Yes, but make sure you add your notes at the bottom of the page or topic. you can check others content too. only to understand how they are formatting their text.
+
+Reply Edited 6 months ago
+Divya98 (talkcontribs)
+so how to add notes at the bottom . And plzz tell me how to become a star performer
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Now about Notes... to add notes,
+
+http://sccilabs.org/jocwiki/index.php/General_Guidelines
+
+en.wikipedia.org/wiki/Help:Wikitext
+
+mediawiki.org/wiki/Help:Editing
+
+wikihow.com/Edit-a-Page-in-Wikipedia
+
+
+
+Scroll, to the bottom in the editor and then add your notes.
+You should not delete the notes, in the editor.
+Please don't touch others Notes, Unless you speak to them or if your know that their notes is completely wrong.
+
+On the top right corner of the page you will see Actions button on SuperNotes and FAQ JOCwiki pages. We can use Edit option from the Actions menu and You can add the Notes through the online editor. But make sure you are not touching/deleting others notes unknowingly or knowingly. Just scroll down and add your notes.
+
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+To answer it simply, to be a start performer, you keep answering Questions posted by other students here.
+First thing is, I never know that there is something called star performer here, till the end of 2nd week. If you can see my feedbacks, I used to question, "how can we know the answers for assignments, when videos didn't address these".
+As a reaction to the situation, I started helping others, so that they don't face the same problem as me. I started helping others by sharing my python research on the topics.
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+Kindly Read these Wonderful statements 2 and 3. You dont become star performer because some one states it if you do these and these you will be recognized as star performer. But the willingness to go to any extent to help others without hurting yourself makes you a star performer.
+
+There are many people who are watching these. IF someone asks whom did they need to approach to get their problems solved, the first name it comes is Arunkumar in JOCWIKI. If they have a demanding job requirement, Aruns doors will be opened.
+
+Keep helping other not because some one said it so, because It is wondefully stated here....."so that they don't face the same problem as me"
+
+Sorry i could not resist. I liked these statements 2 and 3. Hats off to you
+
+If some one follows Robin Sharma on You--tube you can see him talking about these.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Friend @Kamalakar, I will not react on what you said. because doing so will make it look like Self promoting. 
+_/|\_
+
+
+There is a selfish angle too. As a self learner, my understanding based on my experience is... through problem solving we learn more than mugging-up docs and theory part. Problem solving forces us to learn and understand the problem and how program works. That is my belief to learn anything.
+
+Reply Edited 6 months ago
+
+Internet Speed at IIT please Speech Recognition
+12 comments • 6 months ago
+Kamalakar (talkcontribs)
+Hi all, I am using speech recognition program. But it gives only one word after i run the program This could be due to my internet speed being only 1 MBPS What is the internet speed at IIT Ropar.
+
+Reply 7 months ago
+Kamalakar (talkcontribs)
+Great. It really worked well. I converted
+
+https://www.youtube.com/watch?v=-hY2aPerPng
+
+into .wav file and it has converted the audio into text.
+
+Looks like in my earlier audio file, the person is speaking very fast.
+
+Reply 7 months ago
+Kamalakar (talkcontribs)
+Looks good for one min files. because for long files if exception error occurs it is coming out.
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+we are using google's free service. so dont expect it to covert long files. Use 30sec to 60sec long .wav files. :)
+
+Reply 7 months ago
+C++veteran (talkcontribs)
+I played Rapgod on recognition and my laptop froze. Is it normal?
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+we are using google's free service. so don't expect it to covert long files. Use 30sec to 60sec long .wav files. :) while practising.
+
+Reply Edited 7 months ago
+Kamalakar (talkcontribs)
+Arun, Using the program i posted below i am able to convert wav files greater than one minute. Gooogle keeps a limitation for tree conversion of 60 minutes per minute i think.
+
+I converted 2 4 minute videos using the code i have give below. kindly try the code.
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+That is a good finding @Kamalakar. :) We all can use this for any future projects.
+
+But considering the internet speed limitations. I suggested 30 or 60sec audio. As the file size grows larger when length of the audio increases.
+
+Reply 7 months ago
+Kamalakar (talkcontribs)
+I am a beginner in trying this. Looks like Google has a limitation of 60 seconds per file .
+
+I tried the following code it worked for me.
+
+import speech_recognition as sr import time
+
+sleep_time=2 # in seconds total_duration=210 # total duration of the file in seconds offset=0 # start from the beginning of the file duration=30 # cannot be greater than 60 seconds if total_duration%duration != 0:
+
+ N = int(total_duration/duration) + 2  # No of trails N=int(total duration of the file in seconds /50) + 2
+ print("\n\n",N)
+else:
+
+   N = int(total_duration/duration) + 1
+for i in range(1,N):
+
+ Audio_file= "i.wav" # Name of the audio file in Wav format
+ r=sr.Recognizer()
+ with sr.AudioFile(Audio_file) as source:
+   audio=r.record(source,offset=offset,duration = duration)
+   time.sleep(sleep_time)
+   
+ try:
+   print(end="" + r.recognize_google(audio))
+   
+ except sr.UnknownValueError:
+    print("\n \n \n Audio file failed after ",(i-1)*duration, "seconds to convert to text, Try again \n \n\n" )
+    i=i-1
+    continue
+ finally:
+      offset=offset+duration 
+       
+print("\n\n Completed the conversion \n\n")
+
+Reply Edited 7 months ago
+Aratinku (talkcontribs)
+i am getting no such file error where I have to save the audio file in my computer so that my programm got access or it will search the whole memory
+
+File "C:\Users\arvind\Anaconda3\lib\wave.py", line 160, in __init__
+   f = builtins.open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '94221.wav'
+
+Reply 6 months ago
+This comment was deleted by Arunkumar (history)
+Kamalakar (talkcontribs)
+audio file format is .wav not .py press control + o in anaconda. it will open a menu. kindly copy your file in that folder
+
+Reply 6 months ago
+
+Installation of Sudo PIP
+6 comments • 6 months ago
+Vaibhav.bondge (talkcontribs)
+Hi All, Please help me with installation of Sudp pip sppech recognition I am getting Syntax error
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php/Lecture_Notes:Week_5#How_to_install_Speech_Recognition_module_using_Anaconda_Prompt
+
+Follow these steps, if you still have problem, come back here.
+
+Reply 7 months ago
+C++veteran (talkcontribs)
+if you are on Win10 then no need to write 'sudo'. just type ' pip install speechrecognition '. make sure your system is hooked up with internet.
+
+Reply Edited 7 months ago
+Kamalakar (talkcontribs)
+kindly copy the sytax error you are getting
+
+Reply 7 months ago
+Aratinku (talkcontribs)
+IPython 7.2.0 -- An enhanced Interactive Python.
+
+runfile('C:/Users/arvind/.spyder-py3/untitled0.py', wdir='C:/Users/arvind/.spyder-py3') Traceback (most recent call last):
+
+ File "<ipython-input-1-c24b4474a757>", line 1, in <module>
+   runfile('C:/Users/arvind/.spyder-py3/untitled0.py', wdir='C:/Users/arvind/.spyder-py3')
+ File "C:\Users\arvind\Anaconda3\lib\site-packages\spyder_kernels\customize\spydercustomize.py", line 704, in runfile
+   execfile(filename, namespace)
+ File "C:\Users\arvind\Anaconda3\lib\site-packages\spyder_kernels\customize\spydercustomize.py", line 108, in execfile
+   exec(compile(f.read(), filename, 'exec'), namespace)
+ File "C:/Users/arvind/.spyder-py3/untitled0.py", line 12, in <module>
+   with sr.AudioFile(Audio_file) as source:
+ File "C:\Users\arvind\Anaconda3\lib\site-packages\speech_recognition\__init__.py", line 203, in __enter__
+   self.audio_reader = wave.open(self.filename_or_fileobject, "rb")
+ File "C:\Users\arvind\Anaconda3\lib\wave.py", line 510, in open
+   return Wave_read(f)
+ File "C:\Users\arvind\Anaconda3\lib\wave.py", line 160, in __init__
+   f = builtins.open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '94221.wav'
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@Aratinku, As per your error your python file is in this path "C:/Users/arvind/.spyder-py3/untitled0.py". Try to copy the wave "94221.wav" file into the same directory, (C:/Users/arvind/.spyder-py3/). Both program(.py) and .wav file should be in same directory. or you should specify the correct path in your program. Having both in a same location makes it very easy.
+
+Reply 6 months ago
+
+Week5 Assign 3 Semi Primes
+7 comments • 6 months ago
+Snehal (talkcontribs)
+In the solution Li=[12, 16, 20, 21, 24, 25, 27, 28, 29, 30, 31, 32, 35, 36, 37, 39, 40, 41, 42, 43, 44, 45, 47, 48, 49, 50, 52, 53, 54, 55, 56, 57, 59, 60, 61, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200] is given directly. How to find it
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+N=int(input())
+primes=[]
+sprimes=[]
+ans='No'
+# Prime Numbers Generator
+for m in range(1, N + 1):
+   if m > 1:
+       for n in range(2,m):
+           if (m % n == 0):
+               break
+       else:
+           primes.append(m)
+
+# Semi-Prime Number Generator
+for m in range(len(primes)):
+    for n in range(m+1, len(primes)):
+        if primes[m] * primes[n] <= N:
+            sprimes.append(primes[n] * primes[m])
+        elif primes[m] * primes[n] > N:
+            break
+
+# This part will add the semi primes to check .
+sprimes.sort()
+for m in range(len(sprimes)):
+    for n in range(m, len(sprimes)):
+        if sprimes[m] + sprimes[n] == N:
+            ans='Yes'
+            #print(sprimes[m],"+",sprimes[n],"=",sprimes[m]+sprimes[n])
+            break
+        elif sprimes[m] + sprimes[n] > N:
+            break
+    if(ans == 'Yes'):
+        break
+#print("Primes",len(primes),primes)
+#print("SemiPrimes",len(sprimes),sprimes)
+print(ans, end="")
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+if (N in li):
+This condition is checking if N is in the list Li or not. It will simply return True or False. If "True", it will print Yes, Else No.
+
+in console you can try this...
+
+as a example just try
+
+Li=['Hello','Hi']
+if ('Hello' in Li):
+	print('Hello')
+else:
+	print('Goodbye')
+
+or if your question is on how to find Semi-primes. Please check my code here
+
+http://sccilabs.org/jocwiki/index.php?title=Topic:Uveox44l247l0msk&topic_showPostId=uvephscv7kprtco4#flow-post-uvephscv7kprtco4
+
+and @Kamalakar's post here. He is trying to use a python inbuilt module.
+
+http://sccilabs.org/jocwiki/index.php/Topic:Uvix98ycyxgujyp0
+
+Reply Edited 6 months ago
+Subhamohan (talkcontribs)
+Please check the following code for assignment 3 semiprime problem of week 5 Very straight forward and simple to understand method def prime(n):
+
+   a=int((n**0.5)+1)
+   for i in range (2,a):
+       if (n%i == 0):
+           return False
+   return True
+def semiprime(n):
+
+   a=int((n**0.5))+1
+   for i in range (2,a):
+       if (n%i == 0) and (prime(i)):
+           j=n/i
+           if (i!=j) and (prime(j)):
+               return True
+   return False
+               
+num = int(input()) flag=0 for i in range(1,num//2):
+
+   if (semiprime(i) and (semiprime(num-i))):
+       flag=1
+       break
+if (flag):
+
+   print("Yes",end="")
+else:
+
+   print("No",end="")
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@Subhamohan, That's good! Is it working for any SUM of 2 Semi-primes?
+
+Reply Edited 6 months ago
+Subhamohan (talkcontribs)
+Yes, ofcourse
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@Subhamohan, Your code is good and simple. it failed for 12. But when I passed all Numbers in a for loop, Your code passed all. Sometimes python works little strangely. :)
+
+Reply 6 months ago
+
+In Week-5, Assignment-2
+34 comments • 6 months ago
+Praveen897 (talkcontribs)
+in Week-5, Assignment-2, for the last test case, i am getting 5 moves. did any one got the correct answer.
+
+is there any mistake in the expected
+
+Reply 7 months ago
+This comment was deleted by Kamalakar (history)
+Kamalakar (talkcontribs)
+may you also kindly refer to the FAQ page where i had the discussion with the team http://sccilabs.org/jocwiki/index.php/Common_Doubts:_FAQs_for_Week_5
+
+Reply 7 months ago
+Kamalakar (talkcontribs)
+Better version of the above answer given list is 5 1 3 2 7 the sorted list is 1 2 3 5 7 2 is right of one. So movement of 2 is not required 3 is higher than 2. but is to the left of 2. So move 3 to the right end of the list Now the list becomes 5 1 2 7 3 iteration 1 The next number higher to three is 5 Position of 5 is on left side of 2. So move 5 to the right end of the list list becomes 1 2 7 3 5 iteration 2 After 5 is moved the next higher number is 7. it is on the left of 5. so move it to the end. hence the list becomes 1 2 3 5 7 make use of list.index function to get the position of the array element. iteration 3. I believe this works.
+
+Reply 7 months ago
+Praveen897 (talkcontribs)
+Thank you, i will try with the hint given by you
+
+Reply 7 months ago
+Kamalakar (talkcontribs)
+for some reason it shows i have passed all the tests when i complied and run my code with the above procedure. but when i submitted the code it shows i have passed only 2/3 tests. Not sure which case i am missing. Kindly get back with your status after you have coded your things
+
+Reply 7 months ago
+Kamal1010 (talkcontribs)
+exactly the same is happening to me too. I am able to score 66.6667. Is it possible that their private case might be expecting some wrong output?
+
+Reply 7 months ago
+Praveen897 (talkcontribs)
+same case with me to
+
+Reply 7 months ago
+Kamalakar (talkcontribs)
+i am sorry i dont know what is happening here. then
+
+Reply 7 months ago
+Phegdepatil (talkcontribs)
+Same here. Week-5 Programming Assignment-2 passes the given test cases but after submitting it gives 2/3 test cases successfully passed.
+
+Reply 7 months ago
+Praveen897 (talkcontribs)
+this was the code what i had written for Assignment-2. all the public tests are passed. after submitting, only one test case is passed.
+
+So, i request you guys, do correct the code and let me know correction
+
+A=B=[] A=input().split()
+
+print(A)
+C=[] C=sorted(A)
+
+print(C)
+n=len(A) count=0 while (1):
+
+   for j in range(n):
+       for i in range(0,n-j-1):
+           if(int(A[j]) > int(A[i+j])):
+               num=int(A[j])
+               B.append(num)
+               break
+   if len(B) == 0:
+       break
+   B.sort()
+   k=int(B[0])
+   D=A.index(str(k))
+   c=A.pop(D)
+   A.append(c)
+   count+=1
+   B.clear()
+   if(A==C):
+       break
+print(count,end="")
+
+Reply 7 months ago
+Praveen897 (talkcontribs)
+Finally all the private test cases are passed for Assignment-2 Question
+
+Small correction in above post. remove -1 in second for loop
+
+Reply 7 months ago
+Kamalakar (talkcontribs)
+will the score change after the submission date is over.
+
+Reply 7 months ago
+Descentis (talkcontribs)
+It is amazing to see the code you have written for this problem @Praveen897.
+
+Reply 7 months ago
+C++veteran (talkcontribs)
+Is it fair to use Sort()?
+
+Reply Edited 6 months ago
+Dharmesh.enc (talkcontribs)
+Much simpler code:
+
+a=[int(i) for i in input().split(" ")] b=a[:] b.sort()
+
+count=0 while str(a)!=str(b):
+
+   for i in range(len(a)-1):        
+       indexa_cur=a.index(b[i])
+       indexa_nxt=a.index(b[i+1])
+       if indexa_cur > indexa_nxt:
+           tmp=a[indexa_nxt]
+           a.remove(tmp)
+           a.append(tmp)
+           count=count+1
+           break
+print(count,end="")
+
+Reply 7 months ago
+Dharmesh.enc (talkcontribs)
+All external & internal tests are passed!
+
+Reply 7 months ago
+Kamalakar (talkcontribs)
+how do you know it passed all the external tests. When you click the submit button, we are getting message 3/3 tests passed. Is it after the dead line also the same score remains.
+
+Reply 7 months ago
+Dharmesh.enc (talkcontribs)
+When you compile, you can see 'Sample Test Cases'(or external I referred as) passed. later when you submit, some internal tests are done which are also passes 3/3.
+
+Reply 7 months ago
+Kamalakar (talkcontribs)
+Hi Dharmesh, Except for the names of the variables, my program and your program logic is same. except for this one extra condition. while str(a)!=str(b): What made you to write this extra statement. With out this statement, my code passed only two private cases and when i included this line of code it passed all the test cases. Did you visualise any particular test case where you felt it is necessary to include this line of code.
+
+Without that line since my code failed, i have come up with some three variables and checked the third variable is greater than first variable and second variable position or not , interstingly my code passed. I felt second code of mine with three variables should fail in one of the test cases but it passed in all the test cases. While the code i have written that ie similar to yours but with out the extra while loop failed in one of the test cases.
+
+Can you guess in which test case my code would have failed.
+
+This is becoming interesting now.
+
+Reply 7 months ago
+Kamalakar (talkcontribs)
+Kindly guess a test case which is required for us to fail if we make the while loop comment in your code.
+
+Reply 7 months ago
+Lwardell (talkcontribs)
+I have a more general question. How does one even know to use the sorting by index method in the first place? I try to solve these using what we are shown in the videos, but am having a hard time. Are others finding the code that is presented in the videos helpful?
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+I also had such difficulty in the beginning, when I just followed only videos. Then I started going through Official Python 3 Online Docs (Tutorials) from the official website, And superNotes too. Just try to be actively online here. And keep discussing and asking your questions. Slowly you will pick up the pace. Spend more time on learning and understanding Python topics.
+
+On this fast track course, We are expected to use all that we have learned in previous weeks too. Are you going through SuperNotes too? There, few other students are contributing their research on Video topics. Going through that notes, videos and little more personal research on Google, We will be able to understand and find solutions for the assignments.
+
+
+docs.python.org/3/tutorial/datastructures.html
+
+Reply Edited 6 months ago
+AA (talkcontribs)
+@Arunkumar, thanks for the link. I have the same observation as @Lwardell. The free book (Think Python) by Allen Downey is a great help to newbies like me.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@AA, That is a 2012 Book. I Hope it is on Python 3.5+ or at least Python 3.0+, Were you able to get any latest edition of that book or what?
+
+Reply Edited 6 months ago
+AA (talkcontribs)
+Yes, the second edition (2016) is updated for python 3. Also available freely, code and all.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Thats Good. Answers and Hidden cases are now accessible. Go check the Assignment page.
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+You can code in in many ways. The purpose of the videos is to show us different features of python.
+
+Reply 6 months ago
+Lwardell (talkcontribs)
+I do use online docs as well. I need more help with the logic part of programming. I think learning how to draw flowcharts would be helpful for me since I can't visualize all the loops in my head
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@Lwardell, Good idea friend. But don't take too much stress. if you are a beginner, Seeing at all others here, You no need to run. In the beginning you should go slow and understand the process. Later, after you got strong basics, You can run. Happy learning friend. I was at your place in the past. Now I can see myself at intermediate level, Just one level up from a beginner level or somewhere between both.
+
+http://sccilabs.org/jocwiki/index.php/Topic:Uvfa4jz4n0ucbrl0
+
+Check this link for explanation on Index (End sort). I have Explained it there.
+
+Reply Edited 6 months ago
+Lwardell (talkcontribs)
+Thanks Arunkumar!
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+You are welcome friend! :)
+
+Reply 6 months ago
+Abiramitce77 (talkcontribs)
+Hi Just I am checking the code. All hidden test cases are passed for this code. But I got 66.66% (2/3 hidden test cases). Will they change the marks? Where do I need to complain? Or does my code have any unwanted statements?
+
+a = [int(x) for x in input().split()] b = a.copy() a = sorted(b) c=0 n = len(a) if not (a == b):
+
+   for i in range(len(a)-1):
+       p = b.index(a[i])
+       q = b.index(a[i+1])
+       if p > q:
+           x = b[q]
+           for j in range(q,len(b)-1):
+               b[j] = b[j+1]
+           b[j+1] = x
+           c+=1
+print(c,end="")
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@Abiramitce77, This is already resolved and marks will be added. Because, one of the hidden cases is not distinct. So End sort Assignment Will give you full marks even if you scored 2/3.
+
+Reply Edited 6 months ago
+
+Programming Assn 1 Cab and walk
+11 comments • 6 months ago
+Sidpalande (talkcontribs)
+I am getting all three tests passed after compile and Run. But after submitting the assignment it shows 1 of 3 tests passed. what is the possible reason for this.
+
+Reply 6 months ago
+This comment was deleted by Arunkumar (history)
+Arunkumar (talkcontribs)
+N,V1,V2 = map(int,input().split())
+dc_arun = 1.41421296*N
+dc_cab = N*2
+if(dc_cab/V2>dc_arun/V1):
+    print("Walk", end="")
+else:
+    print("Cab", end="")
+Reply Edited 6 months ago
+Hardev k (talkcontribs)
+Probably the hidden/ private test cases may not have been passed. That's why it shows 1 of 3 tests passed.
+
+Reply 6 months ago
+Sidpalande (talkcontribs)
+yes, I missed the condition of sqrt(2). Thank you.
+
+Reply 6 months ago
+AA (talkcontribs)
+If dc_arun and dc_cab were to reflect time ((1.4142*N)/V1 and (N*2)/V2), wouldn't it be a simple comparison in the if statement.
+
+Trying to figure out how to make all three greater than 0 and less than 100 and 200.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@AA, Above program had passed all the tests. So, i am not thinking of modifying anything. ;) And yes program will become few lines less, by following your modification. :)
+
+Reply Edited 6 months ago
+AA (talkcontribs)
+Thanks, appreciate your reply. Just added the constraints.
+
+if (V1 >= 1 and V2 <= 100 and N >= 1 and N <= 200 and cab_time > walk_time):
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@AA, Now you can post your code. Why don't you post? Every one can benefit by checking each others code. :)
+
+Reply 6 months ago
+AA (talkcontribs)
+Sorry @Arunkumar, didn't see this earlier. Here is code. Could've added another print statement in case any of the values were outside the constraints. --- N,V1,V2 = map(int,input().split())
+
+time = distance / speed
+walk_time = (1.4142*N)/V1 cab_time = (N*2)/V2 if(V1 >= 1 and V2 <= 100 and N >= 1 and N <= 200 and cab_time > walk_time):
+
+   print("Walk", end="")
+else:
+
+   print("Cab", end="")
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@AA,That's Good.
+
+Reply 6 months ago
+
+Nice progress!!
+5 comments • 6 months ago
+Descentis (talkcontribs)
+@all, It's great to see how you people have discussed and tried to solve problems. Please discuss as much possible but DO NOT post your code before the submission, you can discuss the logic here.
+
+Can someone post the logic for the problem "endsort"?
+
+Reply 7 months ago
+Som (talkcontribs)
+@Descentis Sir
+
+We create an input list suppose 'a'.
+We make a copy of the that list, say b, and we sort the list b.
+Now using the index functionality, take the ith element of list b (i.e. sorted) and then check at which index this element is present in a. (a.index(b[1]).
+Now take the (i+1)th element of list b and again find its position in a.
+Now if the index calculated earlier is smaller to what we get now, then increase the count variable by one.
+Repeat this for all i, but break as soon as it becomes false for any i.
+Finally no. of moves is length of the list - count.
+for i in range(len(a)-1):
+    if a.index(b[i])<a.index(b[i+1]):
+        count += 1
+    else:
+        break
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+@Som, Thanks for your continued presence, help here.
+
+Reply Edited 7 months ago
+Descentis (talkcontribs)
+Thanks a lot @Som: Descentis (talk) 04:44, 2 March 2019 (UTC)
+
+Reply 7 months ago
+Radha Krishna (talkcontribs)
+I was googling and going through the logic applied by you. It is similar to what you have applied in the below link https://cs.stackexchange.com/questions/29579/what-is-the-min-of-moves-to-sort-an-array-from-1-to-n
+
+The Logic Says that
+
+You can do a "move", which means choosing one element and moving it to any place you want (insert to any place, not swap). 
+Its inserting at any place and not at the end always.
+
+I was unable to find proof for that.Please help me with the proof for the logic
+
+Reply 6 months ago
+
+Looking for small code for semi primes with logic. Assignment 3 week 5
+6 comments • 6 months ago
+This comment was deleted by Kamalakar (history)
+This comment was deleted by Kamalakar (history)
+This comment was deleted by Kamalakar (history)
+This comment was deleted by Kamalakar (history)
+Kamalakar (talkcontribs)
+Python has a module called sympy.
+
+we can get prime numbers below a certain range using sympy.primerange(a,b)
+
+following is a simpler code. Generated prime numbers below 200 from the above selected two distinct prime numbers in turn and calculated their product and saved them in a 2nd list from 2nd list selected two numbers in turn and calculated their sum and stored it in third list checked weather the number is in the given list.
+
+
+
+
+
+import sympy prime=list(sympy.primerange(0,200)) product=[]
+
+forming numbers as a product of two numbers using the above primes
+for i in range(len(prime)):
+
+   for j in range(len(prime)):
+       if i!=j :
+         p1=prime[i]*prime[j]
+         product.append(p1)
+Selecting two numbers from above and calculating their sum
+semiprime=[] for i in range(len(product)):
+
+   for j in range(len(product)):        
+       sum=product[i]+product[j]
+       semiprime.append(sum)
+removing the duplicates
+semiprime.sort() mylist = list(dict.fromkeys(semiprime))
+
+input in a list the numnbers you want to check
+n=[45,62,27,58,158] for i in range(len(n)):
+
+   if n[i] in mylist :
+       print(n[i],"yes\n")
+   else:
+       print(n[i],"no\n")
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+Import sympy is working in anaconda with 3.7.2 version of python But it not working in online nptel browser.
+
+so we need to develop a function to generate prime numbers below the given number
+
+Reply 6 months ago
+
+question 10 in assignment-5
+3 comments • 6 months ago
+Simran (talkcontribs)
+Question asked by tsaichandharreddy@gmail.com
+
+Reply 6 months ago
+Simran (talkcontribs)
+The probability is 1/N. So it changes as N changes
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+What happens if the user is given a choice to change his option after opening every door.
+
+Reply 6 months ago
+
+Programming Assignment : END_SORT
+17 comments • 6 months ago
+Sanjana mkhrj (talkcontribs)
+Is anyone able to pass all the private test cases for the end sort program ? I have tried alot but I am still missing out on one private test case. @Descentis Sir can you please disclose the private test case, maybe some kind of error is there in the input itself because I have tried every possible input in spyder, it works fine there but I cant understand which test case I am missing out on.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Same problem with everyone spoke to me till now. Did you use sort in your program?
+Reply 6 months ago
+Arunkumar (talkcontribs)
+After putting a basic code in a while loop, with a condition to run till both sorted and unsorted becomes equal, passed all hidden cases.
+Reply 6 months ago
+Sanjana mkhrj (talkcontribs)
+What basic code are you talking about, yes I am using using sort. How are you doing ? @Arunkumar
+Reply 6 months ago
+C++veteran (talkcontribs)
+You don't have to use sort() if you use this function:- def is_Sort(A): f=0 for i in range(n-1): if A[i]>A[i+1]: f=1 break return f
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+But for assignment we need a sorted list. Because of that Hidden case.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Basic code, I mean... "a if condition, append(), remove() or pop() or del(), and increment" in a while loop, running till both lists, sorted list and unsorted list, are sorted.
+Reply Edited 6 months ago
+C++veteran (talkcontribs)
+i am still getting one failed test case. my code is not able to sort continuously repeating element. i think that maybe the case.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+I have given the entire process in the basic code reply. If you can create your code based on that, you can pass all Hidden cases.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+'''@C++veteran''', Yes, Possibly there is repetition of the biggest number in the Hidden case. On 8th we will get to know, I am waiting for it. That hidden case challenged almost everyone. :)) But the solution was that simple. Before knowing that I spent whole day on this possible test cases. See below FAQs, how many test cases I was trying. Deleted few more test cases, as code was becoming long. http://sccilabs.org/jocwiki/index.php/Common_Doubts:_FAQs_for_Week_5#CODE_Using_only_min.28.29.2C_max.28.29_and_no_sort.28.29:
+Reply Edited 6 months ago
+AquaBoy25 (talkcontribs)
+Hi, I have cleared all 3 test cases when I click Compile and run but when I click submit it says 0 out of 3 tests passed. You scored 0.0/100 Why is this? I am able to submit all assignments properly except this one! Please help as today is last day to submit the assignment. Thanks
+Reply 6 months ago
+Arunkumar (talkcontribs)
+There are 3 Hidden cases too.
+Reply 6 months ago
+AquaBoy25 (talkcontribs)
+oh ok. I thought it was just based on the 3 cases shown.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+No, In every Assignment there are 3 Hidden cases too. :)
+Reply 6 months ago
+Arunkumar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php/Common_Doubts:_FAQs_for_Week_5#CODE_Using_only_min.28.29.2C_max.28.29_and_no_sort.28.29 This code can help you pass 2 Hidden cases. But to pass all 3 Hidden cases, you should follow this logic. After putting a basic code in a while loop, with a condition to run till both sorted and unsorted becomes equal, passed the hidden case '''for END-SORT Assignment.''' : Basic code, I mean... "a if condition, append(), remove() or pop() or del(), and increment" in a while loop, running till both lists, sorted list and unsorted list, are sorted.
+Reply 6 months ago
+Sanjana mkhrj (talkcontribs)
+Please assist me with the condition inside the 'if statement' @Arunkumar. Because it is still not working for the third hidden case in my program.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Were you able to submit in time? I was not online when you asked this question.
+Reply 6 months ago
+
+Friends Lets guess the Hidden case for fun. Week5 Assignment 2 End Sort. and Assignment 3 Sum of semi-primes
+21 comments • 6 months ago
+Arunkumar (talkcontribs)
+After putting a basic code in a while loop, with a condition to run till both sorted and unsorted becomes equal, passed the hidden case '''for END-SORT Assignment.''' : Basic code, I mean... "a if condition, append(), remove() or pop() or del(), and increment" in a while loop, running till both lists, sorted list and unsorted list, are sorted. My guess is... '''Possibly Biggest number is not distinct. or possibly there are duplicates.''' '''Post your guess in the reply, below. On 8th we all can see who guessed it correctly.''' === '''As Expected, Numbers where not Distinct. :))''' === <pre>Test Case 4 19 3 1 2 6 7 8 2 19 5 7 Test Case 5 4 1 3 5 6 2 7 9 8 7 Test Case 6 1 2 3 4 5 6 7 8 9 15 14 13 12 11 10 5</pre> ==='''CODE:'''=== <pre>A=list(map(int,input().split())) B=sorted(A) moves=0 if (len(A) > 1): while A!=B: for i in range(len(B)-1): if(A.index(B[i]) > A.index(B[i+1])): A.append(B[i+1]) A.remove(B[i+1]) moves=moves+1 print(moves, end="")</pre>
+Reply Edited 6 months ago
+Radha Krishna (talkcontribs)
+Given a list A of N distinct integer numbers, you can sort the list by moving an element to the end of the list. Find the minimum number of moves required to sort the list using this method in ascending order. Input Format: The first line of the input contains N distinct integers of list A separated by a space. Output Format Print the minimum number of moves required to sort the elements. Example: Input: 1 3 2 4 5 Output: 3 Explanation: In the first move, we move 3 to the end of the list. In the second move, we move 4 to the end of the list, and finally, in the third movement, we move 5 to the end. I was going through the question.Does the question seem to be half expalined.when we are moving 3 to the last of te list . How is it made? Do we need to swap or is there thing we need to do. This is not expalined for which my feelong is that it is half expalined
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Go thorough process here for the idea on how to move elements. Scroll down to the bottom on that FAQ page for the sample code. http://sccilabs.org/jocwiki/index.php/Common_Doubts:_FAQs_for_Week_5#Unable_to_understand_Week5_Assignment2_Sorting_Question
+Reply Edited 6 months ago
+This comment was deleted by Arunkumar (history)
+KuladeepM (talkcontribs)
+yes may be duplicates,sir i got 2/3 ,i got failed in hidden test ,they consider marks for that?
+Reply 6 months ago
+Arunkumar (talkcontribs)
+As you passed 2 test cases, still you scored 66.66666666666667 marks, I believe.
+Reply 6 months ago
+This comment was deleted by KuladeepM (history)
+KuladeepM (talkcontribs)
+yes sir i got 66.6666666666666667 but iam not able to understand about last hidden case
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Sorry I am unable to share the code from now on, As sharing is not allowed till submission day is over. As I said above... After putting a basic code in a while loop, with a condition to run till both sorted and unsorted becomes equal, passed all of the hidden case for END-SORT Assignment. : Basic code, I mean... "a if condition, append(), remove() or pop() or del(), and increment" in a while loop, running till both lists, sorted list and unsorted list, are sorted. I am not sir, I am also learning Python like you. yet you can call be brother. :)
+Reply Edited 6 months ago
+KuladeepM (talkcontribs)
+ok brother,brother in the test case there is a duplicate in test case4
+Reply 6 months ago
+Vs (talkcontribs)
+Hey I got 3/3 in semi-prime and end sort programming assignment but still got a 33.33 percentile score can I know the reason
+Reply 6 months ago
+Arunkumar (talkcontribs)
+'''@Vs''', Because, other than 3 Public Test cases, there are 3 More Hidden cases. And this is not the first time. It has been like this from the beginning. There are always at least 3 Hidden cases for all Assignments. Those are revealed only after the Submission date, with the Answer from the professor. :)
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+'''Assignment 3 SUM of semi-primes''' I am not at all good at math. So, for Assignment 3, I created a long code With 3 loops. * 1st loop generates a list of prime numbers, less than '''N'''. * 2nd loop generates semi-primes list, by multiplying primes. But the limit for loop is again same... less than '''N''' and excluding Square roots too. * Finally 3rd loop adds the semi-primes and checks if it matches '''N'''. This loop will also stop, when SUM goes higher than '''N'''. Did anyone created a short code? '''NOTE: As it is announced to not share the code till final submission. I am not able share yet. I will post on 8th here itself.''' <br /> === '''Code:''' === <pre>N=int(input()) primes=[] sprimes=[] ans='No' for n in range(0, N + 1): if n > 1: for i in range(2,n): if (n%i == 0): break else: primes.append(n) for m in range(len(primes)): for n in range(m+1, len(primes)): if primes[m] * primes[n] <= N: sprimes.append(primes[n] * primes[m]) elif primes[m] * primes[n] > N: break sprimes.sort() for m in range(len(sprimes)): for n in range(m, len(sprimes)): if sprimes[m] + sprimes[n] == N: ans='Yes' break elif sprimes[m] + sprimes[n] > N: break if(ans == 'Yes'): break print(ans, end="")</pre>
+Reply Edited 6 months ago
+Rishi (talkcontribs)
+kind of similar approach i took
+Reply 6 months ago
+Arunkumar (talkcontribs)
+That's good, '''@Rishi'''
+Reply Edited 6 months ago
+AquaBoy25 (talkcontribs)
+Yes, I took another approach which seems to work! Basically find factors of N and add it to a list. Get last element of list and factor it again. Add to new list. If the new list is a subset of the first list, then Print Yes else print No (also check if list is empty) :)
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Were you able to pass Hidden cases too for Semi-prime. Post your code tomorrow. I hope your code is shorter than my code. :)
+Reply Edited 6 months ago
+AquaBoy25 (talkcontribs)
+Yeah, I just found out that there are hidden tests! It passed only 1 of the hidden test. I'll try to modify the code, resubmit and check!
+Reply 6 months ago
+Arunkumar (talkcontribs)
+'''@ AquaBoy25''', Wish you the best! :)
+Reply 6 months ago
+AquaBoy25 (talkcontribs)
+Thank you! Just completed it. Basically I broke N into two numbers which totalled N, and then checked if each of them is a prime number, in loops. A few condition checks and it worked!
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+That's Good! :)
+Reply 6 months ago
+
+In Week-5, Assignment-2
+2 comments • 6 months ago
+Shlokks (talkcontribs)
+The question says that we are given A list of N distinct integers. But the 4th test case i.e. first private test case has repeated values.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Exactly. :)
+Reply 6 months ago
+
+Week5 Assignment 2 End Sort: The output of last given test case, 5 1 3 2 7
+4 comments • 6 months ago
+Sk (talkcontribs)
+My python script for Week 5 assignment 2 End sort passed both the public tests, but failed the last one which had input 5 1 3 2 7. My python script output was 5. I think the output should be 5 and not 3!
+Reply 6 months ago
+Arunkumar (talkcontribs)
+If you are talking about failing one case after pressing submission. Then you failed one of the 3 Hidden Test cases. It is not [5 1 3 2 7].
+Reply 6 months ago
+Vs (talkcontribs)
+It will be 3 only as in 1 step 5 gets to the second last position the 3 to the 3rd last and then 2 at 2nd position please note that iIused the bubblesort logic and not logic given in the question
+Reply 6 months ago
+Sk (talkcontribs)
+Oh! let me check
+Reply 6 months ago
+
+week 5 ass 2 . solve this problem . and tell me how to remove error
+One comment • 6 months ago
+Khubaib tahir (talkcontribs)
+a=[int(i) or i in input().split(" ")] b=a[] b.sort() count=0 while str(a)!=str(b): for i in range(len(a)-1): indexa_cur=a.index(b[i]) indexa_nxt=a.index(b[i+1]) if indexa_cur > indexa_nxt: tmp=a[indexa_nxt] a.remove(tmp) a.append(tmp) count=count+1 break print(count,end="")
+Reply 6 months ago
+
+Incorrect Expected Output in Programming Assignment-3: Semi Primes
+20 comments • 6 months ago
+Arghyadip91 (talkcontribs)
+62=58+4 58 = 2*29 i.e. Semi Prime 4 =2*2 i.e. Semi Prime Hence if we give 62 as input to the program, the output should be "Yes".
+Reply 7 months ago
+Pat nody (talkcontribs)
+I have same doubt
+Reply 7 months ago
+Pranav (talkcontribs)
+Same doubt. By the definition of semi-prime.62 can be written as a combination of 2*31(both 2,31 being primes) which is a semi-prime number. Has anyone figured it out? Are we wrong or is the test case output wrong?
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+62 has to be experessed as sum of two numbers first. and each of the two numbers should be semi prime . as per the problem defintion semi prime means it will two distinct prime factors. hence 4,9,16,25 doesnot come under this category
+Reply 6 months ago
+KuntalPaul (talkcontribs)
+4 is not a semi prime number, it needs two distinct prime numbers
+Reply 6 months ago
+Anand81 (talkcontribs)
+Yes. I too got the error. though my output is rightly classifying as "Yes" the expected output is "No".
+Reply 7 months ago
+Anand81 (talkcontribs)
+hope someone will check and correct the response
+Reply 7 months ago
+Ani (talkcontribs)
+As mentioned in the question..."A semiprime number is an integer which can be expressed as a product of two 'DISTINCT' primes. For example 15 = 3*5 is a semiprime number but 9 = 3*3 is not." As in case of 4, (4=2*2).... depicts that 4 is the result of the product of two 'SAME' prime numbers i.e (2*2); so, 4 is NOT a semi-prime number.
+Reply 7 months ago
+Kamalakar (talkcontribs)
+As per the problem statement given by the professor, 9=3*3 is not semi prime.
+Reply 7 months ago
+AI (talkcontribs)
+62=6+56 2*3=6 and 7*8=56. so the answer should be "Yes" Somebody please respond
+Reply 7 months ago
+Kamalakar (talkcontribs)
+AL. 8 is not a prime number.
+Reply 7 months ago
+AI (talkcontribs)
+thanks for the clarification. I will have to modify my program!
+Reply 7 months ago
+This comment was deleted by Lakshmi (history)
+Shazia (talkcontribs)
+I have the same doubt. 62= 58+4. But this test case is not cleared. Can someone help me
+Reply 6 months ago
+Kamalakar (talkcontribs)
+4=2*2 is not a semi prime as per the statement of the problem. 9=3*3 is not accepted as semi prime in the problem statement
+Reply 6 months ago
+Shazia (talkcontribs)
+Thanks. I got the error.
+Reply 6 months ago
+Shazia (talkcontribs)
+My program is clearing all 3 public cases but one hidden case is not clearing. Can I know what is that hidden case?
+Reply 6 months ago
+Kamalakar (talkcontribs)
+No one has reported they had issues with private test cases on this assignment so far. kindly create your own test cases and check what is going wrong in your assignment. None of us know what are the hidden cases until the dead line is over. Tomorrow they will be revealed
+Reply 6 months ago
+Sudha Verma (talkcontribs)
+that means 20 =10+10 is a semiprime as 10 is semiprime as 10=5*2
+Reply 6 months ago
+Kamalakar (talkcontribs)
+yes
+Reply 6 months ago
+
+File not found error
+4 comments • 6 months ago
+Raghav (talkcontribs)
+While running the speech recognition program, where the audio file is to be saved? For any location it shows file is not found error. Kindly help.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Try to save in the same folder. I mean in the folder where you saved the .py file. so that when you run the program it will check there itself.
+Reply 6 months ago
+Manit (talkcontribs)
+save your file any where in your pc and give excet location of your audio file in quotes for exe :- "c:/somewhere/audio.wav"
+Reply 6 months ago
+Kamalakar (talkcontribs)
+press control + o (o for orrissa) It will show the default folder
+Reply 6 months ago
+
+programming assignment-2 week 5
+12 comments • 6 months ago
+Abhishek singh rathore (talkcontribs)
+I have a doubt in programming assignment 2. I am not able to understand why always 3 is taken to the end of the list, why not any other element? I need to know the way elements need to be chosen so as to append it at the end of the list.
+Reply 7 months ago
+Kamalakar (talkcontribs)
+People at IIT think a lot. Programming also requires thinking. So they want you to think why always 3 only has to be moved to the end of the list. In private test cases they may have 2 which needs to be moved to the end first. In all public cases they have 2 to the right of 1. if in any case 2 is on the left side of 1, we should move 2 first.
+Reply Edited 7 months ago
+Kamal1010 (talkcontribs)
+I am getting all public test cases passed but only 2 private cases are passed with the code, i.e. my score is 66.6667. Don't know the reason, I am following the exact logic as given in the description
+Reply 7 months ago
+GUNASEELAN.Nallamuthu (talkcontribs)
+Hi, I find in assignment 2 last problem required minimum 5 moves for end-sort but output is provided as 3
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Gunaseelan, Are you talking about the test case 5 1 3 2 7 Kindly read the problem statement. I understood it as in the first move 3 goes to the end so the list becomes 5 1 2 7 3 2nd move 5 goes to the end so the list becomes 1 2 7 3 5 in the third move 7 goes to the end and the list sorted as 1 2 3 5 7 and i get 3 moves. you may check with the description if my understanding is correct.
+Reply Edited 6 months ago
+GUNASEELAN.Nallamuthu (talkcontribs)
+Thank you got the requirement After update the program during compile and run its showing as 3 out 3 passed. but in submit it showing as 2/3 passed. can some check on this.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+I am not sure what is happening. What i understood is they might have some duplicate values in the private test cases. kindly program assuming duplicate cases in the program. As per the problem statement they should not give those. but unless we know the final test cases, we cannot commment on these. That is why i asked them to increase public cases and let the private cases be only jumbled versions of public cases. in your code try including another outer loop say for i=1 to range(1,10): your for loops... and see what is happening....
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+exactly i too dont know what is happening
+Reply 6 months ago
+GUNASEELAN.Nallamuthu (talkcontribs)
+i got now 3 out of 3 the values not distinct include logic for same now thanks for clarification
+Reply 6 months ago
+Arunkumar (talkcontribs)
+can you post the test case please '''Update:''' Never mind. While loop is helping to sort it. Possibly There is something which wont get sorted when tested with just for loop. We need to create a basic code and set it in a while loop, which should run till both(sorted and unsorted) are same . Possibly Biggest number is not distinct.
+Reply Edited 6 months ago
+Danie (talkcontribs)
+plz provide hint for quiz assignment
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Already Provided above for Gunaseelan Muthu qustion. Kindly Scroll above in the same page.
+Reply 6 months ago
+
+Deleting squares from a list in problem 3
+2 comments • 6 months ago
+Lwardell (talkcontribs)
+I think the reason my code is not passing all the tests is because my lists contain numbers that are squares (9, 25, etc). How can I remove these specific values from a list?
+Reply 6 months ago
+C++veteran (talkcontribs)
+if n**0.5==int(n**0.5): print("n is perfect square") else: print("not a perfect square")
+Reply 6 months ago
+
+Week-5-End Sort: Passing only 2 of 3 hidden test cases.
+4 comments • 6 months ago
+Allam123 (talkcontribs)
+def isSort(l): flag=0 for i in range(n-1): if l[i]>l[i+1]: flag=1 break return flag def nextLarge(l,p): q=max(l) for i in range(n): if l[i]>p and l[i]<q: q=l[i] return q count=0 l=list(map(int,input().split())) n=len(l) if isSort(l)==0: print(0,end=" ") else: p=min(l) while(isSort(l)): q=nextLarge(l,p) if(l.index(q)<l.index(p)): l.remove(q) l.append(q) count+=1 p=q print(count,end=" ")
+Reply 6 months ago
+Arunkumar (talkcontribs)
+After putting a simple code... i mean... "a if condition, append(), remove(), and increment" in a while loop, running till both lists, sorted list and unsorted list, are completely sorted. It passed the hidden case. Possibly there is some tricky situation is created by the hidden test case.
+Reply Edited 6 months ago
+Danie (talkcontribs)
+plz provide hint for quiz assignment
+Reply 6 months ago
+Arunkumar (talkcontribs)
+'''@Danie''', Which Quiz Assignment? please be specific. Mention '''week''' and '''question number'''.
+Reply Edited 6 months ago
+
+Semi prime assignment
+One comment • 6 months ago
+Bhavansh (talkcontribs)
+In the below code ,I made lists of semi prime sums as per given conditions It was possible as n<200.but what if there's a number n such as 20,000 or more. What I mean to ask ,is there a generalized code for this problem. p = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101] x = [] for i in p: for j in p: if i!=j: x.append(i*j) a = [] for i in x: for j in x: if i+j<=200: a.append(i+j) n = int(input()) if n in a: print("Yes",end="") else: print("No",end="")
+Reply 6 months ago
+
+WEEK 5, ASSIGNMENT 2
+7 comments • 6 months ago
+Som (talkcontribs)
+<pre>Is it okay to store the input list into some other variable, and then call sort functionality onto this new list? If Yes, I have a working program of only 12 lines (a very simple one) Anyone from JOC team please help!</pre>
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+It should be fine. because it is not specifically stated anywhere in the question to not use sort. we need to find a way to sort in less steps. As humans, when we are sorting in our minds, we already see a sorted list. So we can apply your logic of comparing with a sorted list. This could be one of the possibilities.
+Reply Edited 7 months ago
+Som (talkcontribs)
+Ya I too feel that we can use sorting, but I am also trying to look for another plausible solution. @Arunkumar
+Reply 7 months ago
+Arunkumar (talkcontribs)
+After putting a basic code in a while loop, with a condition to run till both sorted and unsorted becomes equal, passed the hidden case.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+i have tried using sort only. but still i am failing one of the 3 hidden test cases. for the 1st time, i am unable to guess the hidden test case. :) code became long too ;p
+Reply 7 months ago
+Descentis (talkcontribs)
+Which question are you referring to?
+Reply 7 months ago
+Kamalakar (talkcontribs)
+Sir, there are 55000 people registered for the program. I dont think it is humanly possible to check manually each and every code especially with the work load the professors and the team has at IITS. We are fortunate atleast some one is answering our questions. I think it only checks the output of your program with the expected output in the private test cases and awards you the score. When we do it manually, we sort the numbers right.so what is wrong in sorting the numbers. out put of the program is not sorting of the numbers but the no of iterations. so unless the code is correct how can we get the correct iterations to cases unknown to us.
+Reply 7 months ago
+
+Python learning videos
+One comment • 6 months ago
+Kamalakar (talkcontribs)
+In youtube search for Durgasoft solutions python set the filter to playlist. you will see videos for beginners and advanced videos for python. Apart from pyton this channel in youtube has variety of videos courses. Happy learning.
+Reply Edited 6 months ago
+
+attribute error: module 'speech_recognition' has no attribute 'Recognizer'
+14 comments • 7 months ago
+Aasiya Zabeen (talkcontribs)
+I tried a lot but I'm not able to remove this error. please help me out
+Reply 7 months ago
+Descentis (talkcontribs)
+Please post step by step what exactly you have done. We will help you. : [[User:Descentis|Descentis]] ([[User talk:Descentis|talk]]) 04:56, 2 March 2019 (UTC)
+Reply Edited 7 months ago
+Aasiya Zabeen (talkcontribs)
+import speech_recognition as sr aud=("first_rec.wav") r=sr.Recognizer() with sr.AudioFile(aud) as source: audio=r.record(source) try: print("you said: "+r.recognize_google(audio)) except sr.UnknownValueError: print("sorry could not geting the voice") except sr.RequestError: print("not geting the result") in this code error: runfile('C:/Users/Aasiya/.spyder-py3/speech_recognition.py', wdir='C:/Users/Aasiya/.spyder-py3') Traceback (most recent call last): File "<ipython-input-26-d508458c33bb>", line 1, in <module> runfile('C:/Users/Aasiya/.spyder-py3/speech_recognition.py', wdir='C:/Users/Aasiya/.spyder-py3') File "C:\Users\Aasiya\Anaconda3\lib\site-packages\spyder_kernels\customize\spydercustomize.py", line 704, in runfile execfile(filename, namespace) File "C:\Users\Aasiya\Anaconda3\lib\site-packages\spyder_kernels\customize\spydercustomize.py", line 108, in execfile exec(compile(f.read(), filename, 'exec'), namespace) File "C:/Users/Aasiya/.spyder-py3/speech_recognition.py", line 1, in <module> import speech_recognition as sr File "C:\Users\Aasiya\.spyder-py3\speech_recognition.py", line 3, in <module> r=sr.Recognizer() AttributeError: module 'speech_recognition' has no attribute 'Recognizer' now please tell me exactly what is the problem...
+Reply 7 months ago
+Arunkumar (talkcontribs)
+<pre>anaconda.org/conda-forge/speechrecognition</pre><br /> '''Your code is working perfectly fine in my computer.''' If you are using Anaconda, then use above link to Install the package, and then try running the code again. <br />
+Reply Edited 7 months ago
+Aasiya Zabeen (talkcontribs)
+I'm getting same error after installing the package.
+Reply 7 months ago
+Arunkumar (talkcontribs)
+are you using anaconda? and are you practising through spyder? please cross check your process with this notes http://sccilabs.org/jocwiki/index.php/Lecture_Notes:Week_5#How_to_install_Speech_Recognition_module_using_Anaconda_Prompt
+Reply Edited 7 months ago
+Kamalakar (talkcontribs)
+What is your windows version.
+Reply 7 months ago
+Aasiya Zabeen (talkcontribs)
+Windows 10
+Reply 7 months ago
+Kamalakar (talkcontribs)
+in anaconda while typing sr.Recogniser type sr. it is giving a drop down menu where we can pick the Recogniser. tyr this if it works. the word recogniser is case sensitive. kindly see how it is spelled in your system. The following line worked fine for me. r=sr.Recognizer()
+Reply 7 months ago
+Aasiya Zabeen (talkcontribs)
+when I type sr. it dose not give any drop down menu.
+Reply 7 months ago
+Aasiya Zabeen (talkcontribs)
+that's reason attribute error is shown
+Reply 7 months ago
+Kamalakar (talkcontribs)
+I think you have the import speech_recognition as sr in your spyder file. next check Check speech_recognition folder is present in ..........\Anaconda3\Lib\site-packages folder if it is not present there kindly copy it from ......\Python\Python37\Lib\site-packages it should be present in python folder because you have installed it using pip command.
+Reply Edited 7 months ago
+Kamalakar (talkcontribs)
+Aasiya , did you get your problem solved.
+Reply 7 months ago
+Kamalakar (talkcontribs)
+Aasiya, Yesterday My speech Recognition code worked well. But today when i am trying to run the code It is not recognizing the Sr.Recognizer() function in speech recognition module. Is it getting recognized in your file. I found by just adding a language attribute it converts speech to text in other languages also. Kindly see the code here https://realpython.com/python-speech-recognition/#appendix-recognizing-speech-in-languages-other-than-english and language codes here https://cloud.google.com/speech-to-text/docs/languages
+Reply Edited 7 months ago
+
+in week5 assignment 1 how to remove \n from output
+7 comments • 7 months ago
+Meda harsha (talkcontribs)
+import math N,V1,V2=map(int,input().split()) walk_dist = math.sqrt(2) * N car_dist =2*N TW = walk_dist/V1 TC = car_dist/V2 if(TW<TC): print("walk") else: print("cab") this is my code i am getting output for all values inserted but compiler is showing error bcas it has '\n' in the output.please help me remove that
+Reply Edited 7 months ago
+This comment was deleted by Kamalakar (history)
+Kamalakar (talkcontribs)
+https://onlinecourses.nptel.ac.in/noc19_cs09/progassignment?name=264
+Reply 7 months ago
+Shwethaa (talkcontribs)
+Replace print("walk") by print("walk",end='')
+Reply 7 months ago
+Shwethaa (talkcontribs)
+print("walk",end="") also works just fine
+Reply 7 months ago
+Meda harsha (talkcontribs)
+thank you guys it helped and cleared all test
+Reply 7 months ago
+Kkg (talkcontribs)
+Check with the following code:- import math N,V1,V2=map(int,input().split()) walk_dist = math.sqrt(2) * N car_dist =2*N TW = walk_dist/V1 TC = car_dist/V2 if(TW<TC): print("Walk",end="") else: print("Cab",end="")
+Reply 7 months ago
+
+Your user page.
+One comment • 7 months ago
+Descentis (talkcontribs)
+Dear all, Thanks for your contribution to JOCwiki. If we all discuss together like this, we all will learn decent amount of programming and algorithms. Please create your user page so that other people can contact you and see your profile. It will create a nice ecosystem on JOCwiki. Me and Simran will also create our respective user pages. You can put some basic information like. 1) Name 2) College (course and year) 3) GitHub profile link (if any) 4) Your interest You can put anything about yourself (be creative) Can anyone put this information on the main page of JOCwiki? Happy Learning: [[User:Descentis|Descentis]] ([[User talk:Descentis|talk]]) 06:02, 4 March 2019 (UTC)
+Reply Edited 7 months ago
+
+pip installation
+4 comments • 7 months ago
+Dakshayani (talkcontribs)
+Please give us step by step instructions to install pip speechrecognition
+Reply 7 months ago
+Arunkumar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php/Lecture_Notes:Week_5#How_to_install_Speech_Recognition_module_using_Anaconda_Prompt Steps are provided here in supernotes too. Please follow those steps and reply if they fail.
+Reply Edited 7 months ago
+This comment was deleted by Kamalakar (history)
+Kamalakar (talkcontribs)
+Step 1:- Open your command prompt and install speechrecognition by typing pip install SpeechRecognition Step 2:- after it is completed go to the following folder in windows and C:\Users\Kamalakar\AppData\Local\Programs\Python\Python37\Lib\site-packages Above is the path to site-packages of python in my system Here copy speech_recognition Step 3:- and paste it in the folder C:\Users\Kamalakar\Anaconda3\Lib\site-packages you need to paste it in your anaconda3Lib\site-packages folder on your computer it started working on my system. But since my internet connection is slow, it types only one or two words in a one minute file. you require a faster internet connection.
+Reply Edited 7 months ago
+
+For week 6, Can We create sub categories for each assignment
+One comment • 7 months ago
+Kamalakar (talkcontribs)
+Hello Team, For week 6, can you create sub categories of doubts like Programming assignment 1 of week 6 Programming assignment 2 of Week 6 Programming assignment 3 of Week 6 So that users will post their queries under them only. We are seeing here same question being repeatedly asked by different users.
+Reply 7 months ago
+
+All programs in assignment 5
+7 comments • 7 months ago
+Venkata Swathi R (talkcontribs)
+Can anybody please explain end sort and semi prime programs in detail? How can I know which element to send to the end? how can I fix 30 = 15 + 15, where it can also be 10 + 20?
+7 months ago
+This comment was deleted by Kamalakar (history)
+Kamalakar (talkcontribs)
+I answered how i got it. may you refer to my answer to praveen897 may you also kindly refer to the FAQ page where i had the discussion with the team http://sccilabs.org/jocwiki/index.php/Common_Doubts:_FAQs_for_Week_5
+7 months ago
+Kamalakar (talkcontribs)
+Better version of the above answer given list is 5 1 3 2 7 the sorted list is 1 2 3 5 7 2 is right of one. So movement of 2 is not required 3 is higher than 2. but is to the left of 2. So move 3 to the right end of the list Now the list becomes 5 1 2 7 3 iteration 1 The next number higher to three is 5 Position of 5 is on left side of 2. So move 5 to the right end of the list list becomes 1 2 7 3 5 iteration 2 After 5 is moved the next higher number is 7. it is on the left of 5. so move it to the end. hence the list becomes 1 2 3 5 7 make use of list.index function to get the position of the array element. iteration 3. I believe this works.
+7 months ago
+Kamalakar (talkcontribs)
+I have taken three minimums min1,min2 and min3 and their positions minp1,minp2,minp3. i compared minp3 with minp2 and minp1 and if min3 is on left on either of the above i shifted min3 to end of the list. min1>min2>min3. It passed all the tests both in compile and run and in submission also. dont know what is happening behind.
+7 months ago
+Praveen897 (talkcontribs)
+first list contains all the elements read as input. i tried find all the elements which are greater than its next elements and stored them in another list. then the obtained list was sorted and the first element of sorted list was moved to last in the original list. it was repeated until the original list was sorted. It is working.
+7 months ago
+Venkata Swathi R (talkcontribs)
+Thank you all
+7 months ago
+Programming Assignment-3: Semi Primes -- Doubt
+6 comments • 7 months ago
+Rishi (talkcontribs)
+Isnt 62 also sum of two semi primes, in test cases why it is marked as no? 29*2=58 2*2=4
+7 months ago
+Kamalakar (talkcontribs)
+one is not a prime number and for semi prime the factors should be different 4 is not a semi prime because the two factors of 4 are same. This is what i understand. More clarity will come if they increase the public test cases.
+7 months ago
+Rishi (talkcontribs)
+i checked, 4 is a semi prime.
+7 months ago
+Kamalakar (talkcontribs)
+Sir, I am not sure where you chekced. Kindly read the description of the problem statement given A semiprime number is an integer which can be expressed as a product of two distinct primes. For example 15 = 3*5 is a semiprime number but 9 = 3*3 is not . They are stating 9 is not a semi prime as it has factors 3*3. google may state 9 is a semi prime. But as per the problem statement by the professor 9 is not a semi prime, I may not be right unless more test cases are provided as public test cases
+7 months ago
+Phegdepatil (talkcontribs)
+Special thanks to Kamalakar due to his explanation the assignment was understood. All square semi primes have to be avoided example: 4, 9, 25 etc
+7 months ago
+Rishi (talkcontribs)
+Got it, thanks a lot
+7 months ago
+speech recognition
+6 comments • 7 months ago
+Ashok (talkcontribs)
+In speech recognition where did you save your recorded file for python to access so that it could convert into text. Also what is the maximum length of recording that we can convert into text
+Reply Edited 7 months ago
+Malolan (talkcontribs)
+There is no certain limit to record and convert it. See to that the audio is clear enough to recognize it
+Reply Edited 7 months ago
+Ashok (talkcontribs)
+Are you sure even for 30 min long records?
+Reply 7 months ago
+Sudha Verma (talkcontribs)
+import speech_recognition as sr AUDIO_FILE=("record.wav") #use of audiofile as source r=sr.Recognizer()#initialize the recogniser with sr.AudioFile(AUDIO_FILE) as source: audio=r.record(source) #read the audio file try: print("audio contains" +r.recognize_google(audio)) except sr.UnknownValueError : print("google speech recognition could not understand audio") except sr.RequestError : print("could not get result from google speech recognition") #i am getting error file not found can someone help
+Reply 7 months ago
+Kamalakar (talkcontribs)
+Looks like there is one minute restriction for the file. so i tried this code import speech_recognition as sr import time sleep_time=2 # in seconds >0 total_duration=210 # total duration of the file in seconds offset=0 # start from the beginning of the file duration=30 # cannot be greater than 60 seconds if total_duration%duration != 0: N = int(total_duration/duration) + 2 # No of trails N=int(total duration of the file in seconds /50) + 2 print("\n\n",N) else: N = int(total_duration/duration) + 1 for i in range(1,N): Audio_file= "i.wav" # Name of the audio file in Wav format r=sr.Recognizer() with sr.AudioFile(Audio_file) as source: audio=r.record(source,offset=offset,duration = duration) time.sleep(sleep_time) try: print(end="" + r.recognize_google(audio)) except sr.UnknownValueError: print("\n \n \n Audio file failed after ",(i-1)*duration, "seconds to convert to text, Try again \n \n\n" ) i=i-1 continue finally: offset=offset+duration print("\n\nCompleted the converstion \n\n")
+Reply 7 months ago
+Kamalakar (talkcontribs)
+click on file --> open or press the buttons ctrl + o ( o for orrissa) what ever directory it is showing will be your default directory to place your file you need to save your files in .spyder-py3 installation directory. or we need to change the folder location by python commands
+Reply 7 months ago
+
+test case problem
+3 comments • 7 months ago
+MASK (talkcontribs)
+62=58+4 both are semiprime.
+Reply 7 months ago
+Rishi (talkcontribs)
+as per the question 3*3 or 2*2 are not semi primes
+Reply 7 months ago
+Kamalakar (talkcontribs)
+4=2*2 is not semi prime as per the description given in the problem statement. They talked about 9. same is the case with 4.
+Reply 7 months ago
+
+week 5: assignment 3
+2 comments • 7 months ago
+Venkata Swathi R (talkcontribs)
+can anybody help me with the logic of getting sum of semi-primes for a given number, like 30 = 15+15 and 45=15+30?
+Reply 7 months ago
+Kamalakar (talkcontribs)
+Step 1:- generate the prime numbers below 45. and store them in a list. you need to write a program to generate prime numbers below 45. prime numbers below 45 are 2,3,5,7,11,13,17,19,23, 29, 31, 37, 41, 43 Remember one is not a prime number Step 2:- outer loop I will start with 2 and go till 45-1=44 ie i will check for 2, 45 - 2 = 43 3, 45 - 3 = 42 4, 45 - 4 = 41 5, 45 - 5 = 40 and so on ..... Step 3 inside the above loop I will check for 2 and then 43. if both of them are semi prime or not, if not i will check the next pair ie 3 and 42 and i will keep doing this until all pairs are check or if atleast i find one pair where both are semi primes. in loops select two different prime numbers from the above list of prime numbers generated in step1. suppose for 2 and 43 for 43 i will check 2*3 !=43 2*5 !=43 2*7 !=43 ... ... 3*5!=43 similarly if you do for 2, you will not get the product of any two primes as 2. and 43 when my outer loop starts checking for 10 and 35 45 = 10 +35 where 10 =5*2 and 35=7*5 it finds both 10 and 35 are both semi primes for both the semi primes do not have same factors. Remember you should check for 4=2*2, 9=3*3 16=4*4 as per the definition of the problem. Do google search if you cannot write a program for generating prime numbers below the given number. The best thing in programming is to use print statement at every step and see how your program is calculating as it goes step by step This week IIT team showed their Caliber to corner each and every one of us...
+Reply Edited 7 months ago
+
+Assignment 3
+2 comments • 7 months ago
+Mohit badiyani (talkcontribs)
+Can Someone help me with the logic of assignment 3 I have written a code which is good for the visible test cases but only 2/3 of the hidden test cases are getting right answer
+Reply 7 months ago
+Kamalakar (talkcontribs)
+It is difficult to understand why our code failed private cases. If you post your logic or algorithm, not the program, some one may correct your logic. by giving different numbers as input and checking your calculation also may help
+Reply 7 months ago
+
+Nature of on line examination. Kindly share Previous semester question paper
+2 comments • 7 months ago
+Kamalakar (talkcontribs)
+Dear JOC team, What would be the nature of Final Examination Online examination. Will you be giving test cases similar to what ever you are giving right now or will it have statements like, Write a program for bubble sort. Extend the program FiZZ and buzz or Rock Scissors stone to nth level. Remembering what is done in Fizz and buzz program or any other program at the time of exam will be difficult. It would be kind of the team if they give the entire description of the program. My Experience with to attend any exam with out seeing previous sample question papers is pathetic. So if possible kindly provide atleast one sample question paper of the previous exams on python or atleast comment on how they look like. Do i have to remember all the details of the various games discussed ?
+Reply 7 months ago
+Descentis (talkcontribs)
+@kamalakar, we will post the description of final examination soon. Stay tuned :-). : [[User:Descentis|Descentis]] ([[User talk:Descentis|talk]]) 04:55, 2 March 2019 (UTC)
+Reply Edited 7 months ago
+
+Sorting by 'Swapping Random Indexes'
+3 comments • 7 months ago
+Som (talkcontribs)
+<pre> For Week-4, Assignment-3, Sorting by Swapping Random Indexes. I Have uploaded a detailed explanation of the program and how the program actually works and the no. of iterations it takes actually to sort the given list. Do have a look: (SUPER-NOTES WEEK 5) </pre> http://sccilabs.org/jocwiki/index.php/Lecture_Notes:Week_5#SORTING_BY_SWAPING_RANDOM_INDEXES
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+Thats very nice of you. Thanks friend.
+Reply 7 months ago
+Descentis (talkcontribs)
+Please mark as resolved if you have received the desired answer. : [[User:Descentis|Descentis]] ([[User talk:Descentis|talk]]) 04:52, 2 March 2019 (UTC)
+Reply 7 months ago

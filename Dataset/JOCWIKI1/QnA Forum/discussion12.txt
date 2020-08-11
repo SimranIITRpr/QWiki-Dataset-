@@ -1,0 +1,443 @@
+Q8. State True or False: 3m+1 problem is also called Collatz conjecture.
+8 comments • ‪2 months ago‬
+
+
+
+‪Afzalsayyed99 (talkcontribs)‬
+‪In this question its written 3m+1 so practically its false. but Q9. "is What is the sequence obtained according 3m+1 algorithm for n=12? " in this also they have used 3m+1 what should we do?‬
+
+‪3 months ago‬
+
+
+‪Sanchit3008 (talkcontribs)‬
+‪What do you mean by "practically its false"?‬
+
+‪2 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪if we consider then too, 12 will never be printed. i guess it starts from 6,3,...‬
+
+‪3 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪We will start printing from 12 only. Please keep this fact in mind.‬
+
+‪2 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪thank u, mam‬
+
+‪2 months ago‬
+
+
+
+‪Seenusrini (talkcontribs)‬
+‪Do you know anything about question paper pattern and what we have to study?‬
+
+‪2 months ago‬
+
+
+
+‪Vishalaker (talkcontribs)‬
+‪3m+1 is not collatz conjecture, it is an algebraic equation 3n+1 is collatz conjecture. Even I thought may be, question missprint(m or n) or variable(m or n) somthing like that. Plese clarify it.‬
+
+‪Edited 2 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪ya, it should be.‬
+
+‪2 months ago‬
+
+
+
+
+
+Final Score
+One comment • ‪2 months ago‬
+
+
+
+‪Sanchit3008 (talkcontribs)‬
+‪is there any estimate by when we'll get out final marks out of 100? also how many assignments will be considered?‬
+
+‪2 months ago‬
+
+
+
+
+
+Exam pattern . Anyone attended JOC exam today ? If yes, please let us know the pattern.
+3 comments • ‪2 months ago‬
+
+
+
+‪Balakrishna (talkcontribs)‬
+‪Only multiple choice or programming assignments are also there?‬
+‪Thanks in advance.‬
+
+‪2 months ago‬
+
+
+
+‪Balakrishna (talkcontribs)‬
+‪Hi Janakiram,‬
+‪Thanks for your reply.‬
+‪However, I wonder why I didn't receive any email from JOC or NPTEL team regarding the exam patter.‬
+‪I am not sure whether anyone else here received.‬
+‪@ All, did anyone received such email?‬
+
+‪2 months ago‬
+
+
+
+‪ShailendraRai (talkcontribs)‬
+‪Attended evening session of exam . A well structured format and question across all lectures. nothing was there which was not discussed in lectures. overall very happy after exam.‬
+
+‪2 months ago‬
+
+
+
+
+
+assignment-1 input() doubt
+14 comments • ‪2 months ago‬
+
+
+
+‪Palak (talkcontribs)‬
+‪How can we take input of both int and string, i have write the following code but it did not work s,m = list(map(int,input().strip().split()))‬
+‪what can we write in split() for taking string of new line‬
+
+‪3 months ago‬
+
+
+‪Rmanish (talkcontribs)‬
+‪after taking the int input create a for loop then take the string input‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪take the input in separate lines. In first line take the int and in the next line the string‬
+
+‪3 months ago‬
+
+
+
+‪Palak (talkcontribs)‬
+‪okay it work thanks‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪Welcome‬
+
+‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+
+‪1\n HI MY NAME IS AMIT\n how to remove 1\n‬
+
+‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪lines = [] while True:‬
+‪ try:‬
+   s = input()
+ except EOFError:
+   break
+ if s:
+   lines.append(s.upper())
+ else:
+   break;
+for sentence in lines:
+‪ print(sentence)‬
+
+‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪solution please‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪Just write the print statement like it print(sentence,end="")‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪If you want space between words then put space between inverted comas‬
+
+‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪not yet solved sir‬
+
+‪3 months ago‬
+
+
+
+‪V9run (talkcontribs)‬
+‪Assuming you have multiple sentences which are ending with "\n", for that you are write a loop which takes each output of your method and extract only [0:-1] of it and then use join. This should solve your issue.‬
+
+‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪lines = [] while True:‬
+‪ try:‬
+   s = input()
+ except EOFError:
+   break
+ if s:
+   lines.append(s.upper())
+ else:
+   break
+for sentence in lines:
+‪ print(sentence)    ‬
+i am getting o/p as 1\n HI MY NAME IS AMIT\n how to remove \n and number
+
+‪2 months ago‬
+
+
+
+‪V9run (talkcontribs)‬
+‪for sentence in lines:‬
+‪   print(.join(j for j in sentence[0:-1]))‬
+
+‪Try this.‬
+
+‪2 months ago‬
+
+
+
+
+
+assignment question no 9
+4 comments • ‪2 months ago‬
+
+
+
+‪Seenusrini (talkcontribs)‬
+‪Can anyone explain me the question? is 3m+1 and 3n+1 same?‬
+
+‪2 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪yes, they r same‬
+
+‪2 months ago‬
+
+
+
+‪Seenusrini (talkcontribs)‬
+‪So question no 2 and question 9 are somewhat similar. In q 2, the steps are the answer and for question no 9,the sequence is the ans?‬
+
+‪2 months ago‬
+
+
+
+‪Seenusrini (talkcontribs)‬
+‪How you are going to prepare for the exam? Tell us any method or suggestions to get good mark in the exam.‬
+
+‪2 months ago‬
+
+
+
+
+
+EXAM PATTERN AND ASSIGNMENT SCORE CALCULATION
+2 comments • ‪2 months ago‬
+
+
+
+‪Rashi (talkcontribs)‬
+‪Someone please guide regarding the exam pattern and the evaluation of assignment score. There is a whole lot of ambiguity regarding this. please explain‬
+
+‪2 months ago‬
+
+
+
+‪Sanchit3008 (talkcontribs)‬
+‪According to NPTEL wesbite, best 8 out of 12 assignments will be considered.‬
+
+‪2 months ago‬
+
+
+
+
+
+Exam Question Paper pattern
+One comment • ‪2 months ago‬
+
+
+
+‪Pushpa (talkcontribs)‬
+‪Please share us the question paper pattern. Will it contain questions on writing the programs also.‬
+
+‪2 months ago‬
+
+
+
+
+
+Exam pattern?
+One comment • ‪2 months ago‬
+
+
+
+‪Janakiraam (talkcontribs)‬
+‪Is any one of you got a mail saying the pattern of the exam will be multiple choice questions?‬
+
+‪2 months ago‬
+
+
+
+
+
+Week-12 Quiz
+6 comments • ‪2 months ago‬
+
+
+
+‪Shashi (talkcontribs)‬
+‪Quiz of Week-12 is not visible‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪in mail also, it was not there. so probably they haven't put the quiz.‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪now it is available, please check‬
+
+‪3 months ago‬
+
+
+
+‪Sandhya vasdev (talkcontribs)‬
+‪Not its not there Please help with this‬
+
+‪3 months ago‬
+
+
+‪Amichoksi (talkcontribs)‬
+‪please check it is available‬
+
+‪2 months ago‬
+
+
+
+‪Python (talkcontribs)‬
+‪its visible‬
+
+‪3 months ago‬
+
+
+
+
+
+EXAM
+2 comments • ‪2 months ago‬
+
+
+
+‪Seenusrini (talkcontribs)‬
+‪Anyone knows what is the question paper pattern and what we have to study for the exam?‬
+
+‪3 months ago‬
+
+
+
+‪Praveena (talkcontribs)‬
+‪What is the question paper pattern ? Will it be like MCQs or programs or both ? Will it be like our weekly assignment? Do we need to know any link for online exam before entering the centre or the staffs at center will guide us?‬
+
+‪2 months ago‬
+
+
+
+
+
+TOC course
+2 comments • ‪3 months ago‬
+
+
+
+‪Saurav (talkcontribs)‬
+‪Sir I don't found the course:The joy of computing using python on nptel official site.‬
+
+‪3 months ago‬
+
+
+
+‪Palak (talkcontribs)‬
+‪https://nptel.ac.in/courses/106106182/‬
+
+‪3 months ago‬
+
+
+
+
+
+Assignment grades weightage
+2 comments • ‪3 months ago‬
+
+
+
+‪Sanchit3008 (talkcontribs)‬
+‪I have 2 questions -<br> 1. Will 8 best out of 12 assignments be considered for final marks tally? <br> 2. Suppose I get 90% in MCQ and 100% in all 3 programming questions for a week, then is the score for that week 97.5%?‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Sanchit3008 (talkcontribs)‬
+‪Anyone?‬
+
+‪3 months ago‬
+
+
+
+
+
+more details required in using python in imageprocessing
+One comment • ‪3 months ago‬
+
+
+
+‪Sailaja.ece (talkcontribs)‬
+‪hi TA's, can you please help me out in knowing or applying python in image processing in detail?‬
+
+‪Edited 3 months ago‬T

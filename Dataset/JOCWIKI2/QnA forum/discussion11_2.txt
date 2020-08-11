@@ -1,0 +1,612 @@
+All Assignments answers week 11. Friends share you programs too please.
+One comment • 5 months ago
+Arunkumar (talkcontribs)
+Note: Hello friends please share your programs too, if you have a better code or different approach than these programs. Everyone, who struggled to finish assignments, please ask you questions here. So that we all can learn and help each-other.
+
+A1-Marks Distribution - CODE:
+I didnt had time to solve this so I used @Kamalakar's logic. It Works too. It is simple and fast. Similar to instructor's solution.
+
+-----------
+# METHOD :1
+-----------
+n,s=map(int,input().split())
+A=sorted(list(map(int,input().split())))
+M=[(max(A[i:i+s]))-(min(A[i:i+s])) for i in range(len(A)-(s-1))]
+print(min(M), end="")
+
+For those who didn't understand the M "comprehension" part
+
+#Comprehension Part.
+M=[]
+for i in range(len(A)-(s-1)):
+    t=A[i:i+s]
+    M.append((max(t))-(min(t)))
+
+-----------
+# METHOD :2
+-----------
+n,s=map(int,input().split())
+A=sorted(list(map(int,input().split())))
+M=0
+if ((s or n)!=0 and s<n):
+    for i in range(len(A)-(s-1)):
+        t = A[i:i+s]
+        if (max(t))-(min(t)) < M:
+            M=(max(t))-(min(t))
+
+print(M, end="")
+
+A2-String Sort - CODE:
+-----------
+# METHOD :1.0
+-----------
+print(*sorted(list(input().split(","))), sep=",", end="")
+
+-----------
+# METHOD :1.1
+-----------
+string_w=list(input().split(","))
+string_w.sort()
+print(*string_w, sep=",", end="")
+
+A3-Push The Zero - CODE:
+a=list(map(int,input().split()))
+c=a.count(0)
+while 0 in a:
+  a.remove(0)
+for z in range(c):
+  a.append(0)
+print(*a, sep=" ", end="")
+
+NOTE: Please also check Sample solutions, Provided by instructor they are interestingly different approach/methods.
+
+Reply Edited 5 months ago
+
+Code for Marks distribution
+One comment • 5 months ago
+Kamalakar (talkcontribs)
+My solution for the code
+
+
+a,b=input().split()
+a=int(a)
+b=int(b)
+m=input().split()
+n=list(map(int,m))
+n.sort()
+p=[]
+for i in range(0,len(m)-b):
+  s=n[i+b-1]-n[i]
+  p.append(s)
+print(min(p),end="")
+
+
+
+after reviewing TAs assignment solution I would have not have passed the solutions if they had given n=m=0 and n<m cases. Thank god for not giving such cases.
+
+TAs should also have mentioned about the abnormal number of cases in test cases like in jumps case in previous week assignment, Friends kindly post your solution
+
+Reply Edited 5 months ago
+
+Admit Card
+4 comments • 5 months ago
+Bose (talkcontribs)
+Sir, when will we get the admit card for NOC certification exam of joy of computing using python??
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+Admit cards released yesterday,
+
+Reply 5 months ago
+Micky (talkcontribs)
+sir, Received a mail from support@My registration for exam on NOC certification exam of joy of computing using python was successful and also paid the fee successfully. But, while trying to download the admit card, I am getting the message "You are eligible to appear for exam". I don't know the reason and help me in getting my admit card.
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+They have sent you this link also in the email. have you tried this.
+
+http://nptelonlinecourses.iitm.ac.in
+
+Reply 5 months ago
+
+Week 11 quiz assignment regarding 5the question
+4 comments • 5 months ago
+Nandini25998 (talkcontribs)
+As u didn't mentioned about singapore in the question then how option a will be the answer.we have many countries other than singapore. As u asked only the syntax to change timezone then option should be t=pytz.timezone(input()) but there is no option like this.we have confused with the question.as u didn't mentioned singapore in question we have gone with option d sir.Please check once sir.
+
+Reply 5 months ago
+Srirekha (talkcontribs)
+y=input(" ") y=y.split(",") y=sorted(y) print (",".join(y))
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+@srirekaha what is this. kindly post it in a new thread. delete these two here and post in a new thread. with explanation on what you require.
+
+Reply 5 months ago
+Tinu Iype Jacob (talkcontribs)
+I too have the same querry. the option 4 of the same question also should be given marks, since there was no mentioning of the timezone to which it was to be converted.
+
+Reply 5 months ago
+
+Week 11 Assignment
+23 comments • 5 months ago
+Shwethaa (talkcontribs)
+Hi All, I executed this program for the marks distribution assignment.It executes perfectly for all the public cases but doesn't pass even 1 private case.Can someone help me out here?
+
+import itertools n,m=num=list(map(int, input().split())) num=list(map(int, input().split())) diff=[max(x)-min(x) for x in itertools.permutations(num,m)] print(min(diff),end=)
+
+For reference,permutations returns all possible permutations of elements of num(iterable data structure) taken m at a time.
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+kindly give this line as input num=[x for x in range(300)] instead of input.split line for num. and compile your program you will see all your test cases failed with a message saying "time limit exceeded" when you compile and run your program we dont know how many values are given in private case.
+
+Reply 5 months ago
+Arunkumar (talkcontribs)
+You have built a good logic here. I think possibly it is taking more time to go through all permutations, and the automation is stopping it in the middle. OR
+
+...on the second thought, It is observed that trickiest test cases are mostly kept hidden. So, we should think in other possible ways like removing duplicates in the generated list (comprehension part in your program) etc... or wait till answers are revealed.
+
+Sorry, I haven't solved this Assignment yet. So, I cant say the possible solution.
+
+Reply Edited 5 months ago
+Shwethaa (talkcontribs)
+Do you think maybe I should try itertools.combinations instead of permutations? Do let me know when you try it out if you are able to pass all test cases.
+
+Reply 5 months ago
+Arunkumar (talkcontribs)
+Sorry, i am busy these days and didn't solve this yet. itertools.combinations Will remove duplicates in marks distribution. But i believe there is something missing in the program. Is your program handling negative marks/numbers too? this is the only thing i can think of for now. I am really sorry.
+
+Reply Edited 5 months ago
+Shwethaa (talkcontribs)
+Also,what could be the possible private test cases that my program overlooks?
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php?title=Topic:Uxqkhe8uqoku4ig4&topic_showPostId=uxqohin6sn26bsro#flow-post-uxqohin6sn26bsro
+
+Reply 5 months ago
+Arunkumar (talkcontribs)
+@Shwethaa, @Kamalakar, It is weird! or They should have mentioned in the question that, "we should assign marks (from a sorted list) in incrementing order, without jumping any numbers". That is what I understood! Based on the logic explaination by @Kamalakar in the above link. It works friend @Kamalakar, and yes it passes all Hidden test cases. But still...
+
+I think, @Shwethaa's logic is correct too. As it checks every combination and accurately points to the shortest difference between min and max marks allotted to students (if all marks are only positive). Still I can't be sure... till I see all Hidden test cases.
+
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+it is upto you how you write the code. as per me this is the simplest logic i could have arrived at solving the problem.
+
+In the jumps problem they mentioned the program should be efficient. i have seen some of programs though correct when run on spyder failed in the browser. i attributed it to the efficiency of the program.
+
+So i thought this could be the issue.
+
+When i searched the page code it is showing 20 seconds as timeout for the page.
+
+Reply 5 months ago
+Arunkumar (talkcontribs)
+Friend @Kamalakar, I am not saying that you are wrong or she is. I am just puzzled, why going through all combinations is not passing Hidden test cases. This is a interesting assignment after a few weeks (Even Week 12 is having some interesting Assignments). I am waiting for professor's Solution for week 11.
+
+I understood that we can get away by solving, roughly, 1/4th of these sort of problems. Because of combinations, we get repeated numbers anyway.
+
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+the first thing that came into my mind is that i need to sort the numbers first. this is becuase the difference between any two numbers is minimum when they are close to each other. when i have to pick three or four numbers and then i have to find the numbers , i think this would be the much better than selecting the values randomly sorting and taking the numbers in order will involve less number of calculations than randomly picking any two numbers and finding the min.
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+I checked the week3 assignment. it was the same there also. so the guy who has programmed the webpages might have set it to 20 seconds.
+
+Reply 5 months ago
+Arunkumar (talkcontribs)
+@Shwethaa, This is what I thought your program was overlooking. But still... it failed all Hidden test cases. Lets wait and see why it is failing Hidden test cases. Try @Kamalakar's logic for now. It worked!
+
+import itertools
+n,s=map(int,input().split())
+A=list(map(int,input().split()))
+#n,s=7, 0
+#A=[7, 3, 2, 4, 8, 12, 56]
+M=set()
+for d in itertools.combinations(A,s):
+    
+    if len(d) != (0 or 1):
+        if (min(d) and max(d)) >= 0:
+            m=max(d)-min(d)
+        elif min(d) < 0 <= max(d):
+            m=min(d)+max(d)
+        else:
+            m=(max(d))-(min(d))
+    else:
+        m=0
+
+    M.add(m)
+
+print(min(M), end="")
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+@shwetha i never mentioned that your program is in correct. Looks like they have set a time limit for the browser to return the answer. and they might have given more numbers and the browser is not returning the answer within the stipulated time and hence your programming though correct, since it could not give the answer within the stipulated time is failing in execution.
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+I looked at the page html code and found this interesting piece. Dont know weather it is applicable for this portion or not.
+
+
+
+
+var regConfirmationMsg = "Thank you for registering for the course. Click the Announcements tab for important information.";
+      if(window.location.hash == '#registration_confirmation') {
+        cbShowMsg(regConfirmationMsg);
+        setTimeout(function() {cbHideMsg();}, 20000);
+      }
+
+
+The time out function is set to 20 seconds. This could mean if your browser could get the answer in 20 seconds your answer will be evaluated other wise no.
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+The program is straight and simple. develop a program with the logic given considering how many students are there. i explained two test cases. step by step how the result is obtained. by solving in this process i am able to pass all the three private test cases.
+
+after taking input n,m where n is the no of marks and m is the no of students. dont read the marks from the browser instead assign randomly 100 marks and compile the program and see how much time it takes to solve and see if the browser can wait and give the result.
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+if there are many iterations the browser may not wait until your program completes the execution. we dont know how many marks they have kept in private cases. So keep the program simple.
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+import itertools n,m=num=list(map(int, input().split())) num= [x for x in range(100)] diff=[max(x)-min(x) for x in itertools.permutations(num,m)] print(min(diff),end=)
+
+run the above program and see what happens in the browser. i have assigned 100 marks for num instead of taking the input from the browser. The browser is not waiting until the loop is completed. so keep the problem simple.
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+dont try to eliminate the duplicates. your are not supposed to eliminate them. Program is straight forward. just sort the marks and go over the loop as indicated in the page below.
+
+
+
+http://sccilabs.org/jocwiki/index.php?title=Topic:Uxqkhe8uqoku4ig4&topic_showPostId=uxqohin6sn26bsro#flow-post-uxqohin6sn26bsro
+
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+your program is absolutely perfect and have no issues. since the browser is not waiting for more than 30 seconds or one minute you are seeing the issues.
+since the difference has to be minimized, the numbers are to be close enough so by sorting and selecting the numbers by going in a sequence from beginning to end will reduce the no of iterations .
+
+Reply 5 months ago
+Vijaygwala97 (talkcontribs)
+n,m = input().split(" ") n=int(n) m=int(m) a=[int(k) for k in input().split(" ")] a.sort() l=len(a) l2=[] for i in range(l-1):
+
+   l1 = []
+   for j in range(i,i+m):
+       l1.append(a[j])
+   l2.append(max(l1)-min(l1))
+
+
+   l=l-1
+   if(l==m-1):
+       break
+print(min(l2),end=)
+
+all the public test cases are passed but 1 private test case is failed whats going on there... plzz help me
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+I dont understand what are you trying to show here. Use print statements after every line and see if your program is behaving the way you desired.
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+What i understand is they might have given a wait time for the browser to calculate the answer. if the browser calculate the answer within the time it will check the answer with the expected output and gives the result. other wise it will fail the test case.
+
+Since you are using two for loops, it could be taking time and the browser killed your problem After we have sorted the marks, and when you are selecting values each time , dont you think the first one is your min and the last one is your maximum. value With just one for loop we can achieve this. with in the loop each time just find the difference between the last one and first one and append the values to a list and print the min of the list.
+
+Reply 5 months ago
+
+week 11 quiz 7 th question
+2 comments • 5 months ago
+Jaiprince17 (talkcontribs)
+18th June, 2017 (Thursday)?
+
+actually its Sunday in calendar
+
+what is the problem
+
+Reply 5 months ago
+Jaiprince17 (talkcontribs)
+anyone with solution ??
+
+Reply 5 months ago
+
+Lets Play Crowd Computing
+5 comments • 5 months ago
+Kamalakar (talkcontribs)
+Hi Friends Let us Play Crowd Computing Game to predict the question paper for the final exam. Let us review each week videos, notes etc and start predicting what could be the probable questions that could be asked in the exam and post them here.
+
+I have posted some of the questions here in this link. Any one interested can add further at this link.
+
+
+http://sccilabs.org/jocwiki/index.php/Expected_questions#Tips_for_better_score_in_the_final_exam
+
+Reply Edited 5 months ago
+This comment was hidden by Kamalakar (history)
+This comment was hidden by Kamalakar (history)
+Kamalakar (talkcontribs)
+Please Review these videos quizzes for final exam.
+
+
+http://sccilabs.org/jocwiki/index.php/Final_Exam_Notes#Final_Exam_Notes
+
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php/Expected#Expected_Questions_in_Final_exam
+
+Reply 5 months ago
+
+Problem regarding assignment 11 (Programming Assignment-1: Marks distribution)
+2 comments • 5 months ago
+Aadillawaye (talkcontribs)
+after submitting the assignment it is showing 2 of 3 tests passed... anyone having same problem...
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+if you post your logic or code some one will help you out.
+
+Reply 5 months ago
+
+Where are these taught in the course?
+One comment • 5 months ago
+Kamalakar (talkcontribs)
+The course layout shows the following topics being covered. I could not find out these . can some one clarify these?
+
+Abstraction Everywhere : Apps in your phone Lie detector : No lies, only TRUTH
+
+I am not sure how i missed these..
+
+Reply 5 months ago
+
+DETAILED SOLUTION
+5 comments • 5 months ago
+Bhats% (talkcontribs)
+Sir,from where can i get the detailed solution of quiz assignments?
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+discuss with your friends or in the forum.
+
+Reply 5 months ago
+Joycz (talkcontribs)
+hi kamalakar can you mail me important topics and questions for final exam at joy.2k17@rediffmail.com
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+I am also just like you another student preparing for the exam. kindly go through the link and make your final notes.
+
+
+
+http://sccilabs.org/jocwiki/index.php/Final_Exam_Notes
+
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php/Expected
+
+Reply 5 months ago
+
+Error regarding webdriver for firefox
+9 comments • 5 months ago
+Ravisankar.vangala (talkcontribs)
+Here i am posting my code along with error message for installing webdriver for firefox from selenium import webdriver browser=webdriver.firefox("C:\Users\VDC01\Downloads\geckodriver-v0.24.0-win64\geckodriver.exe") File "<ipython-input-12-cfd2764aca02>", line 1 browser=webdriver.firefox("C:\Users\VDC01\Downloads\geckodriver-v0.24.0-win64\geckodriver.exe") ^ SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+Reply 5 months ago
+Kamalakar (talkcontribs)
+you need to use C:\\Users\\VDC01\\Downloads\\geckodriver-v0.24.0-win64\\geckodriver.exe
+Reply 5 months ago
+Kamalakar (talkcontribs)
+<pre> How to install selenium http://sccilabs.org/jocwiki/index.php/File:Install_selenium.mp4 Copy Selenium to Anaconda http://sccilabs.org/jocwiki/index.php/File:Copy_Selenium.mp4 Find Chrome driver location on your system http://sccilabs.org/jocwiki/index.php/File:Chrome_Driver_file_location.mp4 <\pre>
+Reply 5 months ago
+Ravisankar.vangala (talkcontribs)
+Can i automate the browser which i am currently working? or can i automate the other browser where i am not working?
+Reply 5 months ago
+Kamalakar (talkcontribs)
+for me google chrome worked. it should work for you also even if it is firefox.
+Reply 5 months ago
+Ravisankar.vangala (talkcontribs)
+for me also google chrome worked. But when i am trying it for other browsers it is not working. I was tried for firefox and opera browser also. Here i am giving the code for firefox browser: from selenium import webdriver from selenium.webdriver.support.ui import WebDriverWait from selenium.webdriver.support import expected_conditions as EC from selenium.webdriver.common.keys import Keys from selenium.webdriver.common.by import By import time driver=webdriver.Firefox("C:\\Users\\write\\Downloads\\geckodriver.exe") driver.get("https://web.whatsapp.com/") wait=WebDriverWait(driver,600) target='"Lovely Chitti"' string="I Like You Ammadu :-) :-)" x_arg='//span[contains(@title, '+target+')]' target=wait.until(EC.presence_of_element_located((By.XPATH,x_arg))) target.click() input_box=driver.find_element_by_class_name('_2S1VP') for i in range(50): input_box.send_keys(string+Keys.ENTER) here is the error message i am getting which i am unable to understand what it is? runfile('D:/Sankar/whatsappautomation.py', wdir='D:/Sankar') Reloaded modules: spyder, spyder.pil_patch Traceback (most recent call last): File "<ipython-input-16-89c372cca419>", line 1, in <module> runfile('D:/Sankar/whatsappautomation.py', wdir='D:/Sankar') File "C:\Users\write\Anaconda3\lib\site-packages\spyder_kernels\customize\spydercustomize.py", line 786, in runfile execfile(filename, namespace) File "C:\Users\write\Anaconda3\lib\site-packages\spyder_kernels\customize\spydercustomize.py", line 110, in execfile exec(compile(f.read(), filename, 'exec'), namespace) File "D:/Sankar/whatsappautomation.py", line 14, in <module> driver=webdriver.Firefox("C:\\Users\\write\\Downloads\\geckodriver.exe") File "C:\Users\write\Anaconda3\lib\site-packages\selenium\webdriver\firefox\webdriver.py", line 151, in __init__ firefox_profile = FirefoxProfile(firefox_profile) File "C:\Users\write\Anaconda3\lib\site-packages\selenium\webdriver\firefox\firefox_profile.py", line 80, in __init__ ignore=shutil.ignore_patterns("parent.lock", "lock", ".parentlock")) File "C:\Users\write\Anaconda3\lib\shutil.py", line 309, in copytree names = os.listdir(src) NotADirectoryError: [WinError 267] The directory name is invalid: 'C:\\Users\\write\\Downloads\\geckodriver.exe'
+Reply 5 months ago
+Kamalakar (talkcontribs)
+Excel based VBA is a powerful tool for webscrapping you could see many examples in youtube. I worked on few projects for almost one year automating the stuff. we had excellent out put. since i had the experience i understood it is not as easy as they are showing in the video. Issue comes with internet speed. code will be running very fast from the program before the browser refreshes. I was not much interested to learn and dig into what is going on here. but out of curiosity what i tried is this and it worked Since manual intervention is required to scan the code, after it shows the list of our contacts i manually clicked on one of my friend and then allowed the program to send 50 messages to my friend. it has done the job quite well. to stop the code until i clicked on my friends name, i asked python to ask for user input string. the program waited for input from me. than i clicked on my friends name and then gave the an input string and the program gave 50 messages to my friend in whats app. You need to use wait for some seconds depending on your internet speed to send 50 messages, here is my code. from selenium import webdriver from selenium.webdriver.support.ui import WebDriverWait from selenium.webdriver.support import expected_conditions as EC from selenium.webdriver.common.keys import Keys from selenium.webdriver.common.by import By import time driver=webdriver.Firefox("C:\\Users\\write\\Downloads\\geckodriver.exe") driver.get("https://web.whatsapp.com/") s=input("enter any string after you have clicked on your friend's name") for i in range(50): wait=WebDriverWait(driver,600) input_box.send_keys(string+Keys.ENTER) since i didnot have much experience with selenium i didnot try further. if you are interested you may dig furthe using google.. </pre?
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+I strongly support using Excel-VBA for this purpose. i dont know its limitations and advantages of python over Excel VBA. Excel VBA works only with internet Explorer. python has drivers for all types of browsers.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+search for durgasoft solutions selenium set the filter to playlist in yoututbe you will see lot of playlists and videos there they are number one software training center.
+Reply 5 months ago
+
+Week 11 Assignment 1
+7 comments • 5 months ago
+This comment was hidden by Kamalakar (history)
+This comment was hidden by Kamalakar (history)
+Roslindayana (talkcontribs)
+Hi, my code for marks distribution passes only two test cases. below is my code, please help me to find out the mistake s=input() a=input() n,m=s.split() A=a.split() for i in range(len(A)): A[i]=int(A[i]) n=int(n) m=int(m) st=[] A.sort() ma=max(A)-min(A) for i in range(len(A)): for j in range(m): st.append(A[j]) maximum=max(st)-min(st) if(maximum<ma): ma=maximum A=A[i+0:]+A[:i+0] st.clear() print(ma)
+Reply 5 months ago
+This comment was hidden by Kamalakar (history)
+This comment was hidden by Kamalakar (history)
+Kamalakar (talkcontribs)
+<pre> i tried with For test case 3, i have introduced print statement after A=A[i+0:]+A[:i+0] print(i,A) and see the output 0 [1, 2, 5, 6, 7, 9] 1 [2, 5, 6, 7, 9, 1] 2 [6, 7, 9, 1, 2, 5] 3 [1, 2, 5, 6, 7, 9] 4 [7, 9, 1, 2, 5, 6] 5 [6, 7, 9, 1, 2, 5] i dont think this is your expected output. I made this modification to your line A=A[1+0:]+A[:1+0] # i replaced i with 1 in this line print(i,A) and you may try it yourself from here if it works. </pre>
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+kindly post your comments in proper posts.you posted in an in appropriate one. hence i changed the tittle
+Reply Edited 5 months ago
+
+Web Automation works from Command Prompt not in Spyder
+2 comments • 5 months ago
+Unable to install selenium package in spyder
+3 comments • 5 months ago
+Please elaborate on "Programming Assignment-1: Marks distribution"
+2 comments • 5 months ago
+Dipan Chandra (talkcontribs)
+Hi All, I am not able to understand the requirement as per : "Programming Assignment-1: Marks distribution". Please elaborate it with some detailed explanations on the "Sample Test Cases". Thanks.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+<pre> Test case 3. 6 3 5 2 9 6 1 7 sorted result is 1 2 5 6 7 9 if i allot 1 2 5 the difference is 5-1=4 if i allot 2 5 6 the difference is 6-2=4 if i allot 5 6 7 the difference is 7-5=2 if i allot 6 7 9 the difference is 9-6=3 so the minimum difference among the above is 2 which is the answer. Explanation of Test case 2. 10 4 5 1 8 3 9 2 13 23 4 9 there are four students and each student has to be awarded one mark such that the difference between the min and max marks is minimised Sort the above marks the sorted marks are 1 2 3 4 5 8 9 9 13 23 Now if i allot 1 2 3 4 the difference between the max and min is 4-1=3 if i allot 2 3 4 5 the difference between max and min is 5-2=3 if i allot 3 4 5 8 the difference between max and min is 8-3=5 like this try all the pairs and see which is the minumum. </pre>
+Reply 5 months ago
+
+Error in webdriver
+50 comments • 5 months ago
+Lakshmi (talkcontribs)
+browser=webdriver.Chrome("C:\Users\USER-PC\Downloads\chromedriver_win32") SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape can any one help me to slove the error.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+you need to type C:\Users\USER-PC\Downloads\chromedriver_win32 as C:\\Users\\USER-PC\\Downloads\\chromedriver_win32
+Reply 5 months ago
+Kamalakar (talkcontribs)
+may be as chromedrive_win32.exe instead of chromedrive_win32
+Reply 5 months ago
+Lakshmi (talkcontribs)
+Tq.After modifing I am getting that the chrome driver should be path
+Reply 5 months ago
+Kamalakar (talkcontribs)
+what is the name of the chromedriver.exe you have downloaded. does it have _win32 in the name. for the file i have downloaded it is only chromedriver.exe it is not chromedriver_win32.exe kindly check that. i have placed it on my desktop and hence i have used the browser=webdriver.Chrome("C:\\Users\\Kamalakar\\Desktop\\chromedriver.exe") from python installation folder(~Python\Python37\Lib\site-packages) i copied two folders named selenium and selenium-3.141.0.dist-info into (~Anaconda3\Lib\site-packages) folder. it is working now
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+Remember they are showing it on mac system. it would be different for windows.
+Reply 5 months ago
+Lakshmi (talkcontribs)
+It is not working
+Reply 5 months ago
+Kamalakar (talkcontribs)
+I hope you have given your folder location of chrome drive and copied the two senium folders into anaconda folder . Go to command prompt and get into python and see if it works there.
+Reply Edited 5 months ago
+Lakshmi (talkcontribs)
+Can't understand.Kindly explain in detail.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+<pre> How to install selenium http://sccilabs.org/jocwiki/index.php/File:Install_selenium.mp4 Copy Selenium to Anaconda http://sccilabs.org/jocwiki/index.php/File:Copy_Selenium.mp4 Find Chrome driver location on your system http://sccilabs.org/jocwiki/index.php/File:Chrome_Driver_file_location.mp4 </pre>
+Reply Edited 5 months ago
+This comment was deleted by Lakshmi (history)
+This comment was deleted by Lakshmi (history)
+Lakshmi (talkcontribs)
+can you help me to download the webdrive which you have downloaded for your system,because i have done the procedure you have explained above. I think the error is in chrome driver downloading. kindly help me in the same way
+Reply 5 months ago
+Kamalakar (talkcontribs)
+Since my chrome version is 73 i have downloaded the chrome driver from the following location https://chromedriver.storage.googleapis.com/index.html?path=73.0.3683.68/
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php/File:Chrome_driver_download.mp4
+Reply 5 months ago
+Lakshmi (talkcontribs)
+I had done the same procedure but still iam not getting...
+Reply 5 months ago
+Lakshmi (talkcontribs)
+when i download the webdriver it is downloaded in the form of zipfolder.In that folder i have the webdriver.exe folder.But in the video, you have the webdiver.exe as an icon on your desktop.How did you get that?..help me
+Reply 5 months ago
+Kamalakar (talkcontribs)
+You have to extract the file from zip file to your computer and place it in any of your folder and give the path of the driver.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+I consider Excel VBA based web-scrapping much helpful than python chrome based web-scrapping. Automation is very helpful when you have to do tasks repeatedly. With Excel you can have your data in coloums and get the data back into coloums.
+Reply 5 months ago
+Lakshmi (talkcontribs)
+I have done the same thing but its not working. I have extracted the zip file to my desktop as you did.BUT thank you so much for your patience and clear explanation.you have such a kind heart sir .
+Reply 5 months ago
+Kamalakar (talkcontribs)
+In my carrier i have understood a person will learn a lot when he try to help others in solving their problems
+Reply Edited 5 months ago
+Lakshmi (talkcontribs)
+Great belief sir
+Reply 5 months ago
+Kamalakar (talkcontribs)
+kindly post your code. did chrome driver opened your chrome browser.
+Reply 5 months ago
+Lakshmi (talkcontribs)
+No sir it didn't open. from selenium import webdriver from selenium.webdriver.support.ui import WebDriverWait from selenium.webdriver.support import expected_conditions as EC from selenium.webdriver.common.keys import Keys from selenium.webdriver.common.by import By import time driver=webdriver.Chrome("C:/Users/USER-PC/Downloads/chromedriver_win32") driver.get("https://web.whatsapp.com/") wait=WebDriverWait(driver,600) target='"******"' string="Message sent using python!!" X_arg='//span[contains{@title, '+target+'}]' target=wait.until(EC.presence_of_element_located((By.XPATH,X_arg))) target.click() i=driver.find_element_by_class_name('1plpp') for i in range(2): i.send_keys(string+Keys.ENTER)
+Reply 5 months ago
+Kamalakar (talkcontribs)
+remove all the other code and just get the browser opened and in it get the whatsapp.com page opened. The entire code is not working. once you get the first two lines set right i will give you other code which you can play with <pre> driver=webdriver.Chrome("C:/Users/USER-PC/Downloads/chromedriver_win32.exe") driver.get("https://web.whatsapp.com/") is the name of your chrome driver after extracting it from zip file chromedriver_win32 than add .exe as shown above for me \\ worked. i am not sure if / works. <\pre>
+Reply Edited 5 months ago
+Lakshmi (talkcontribs)
+After modifing the code also it is not executing.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+kindly give me your two lines of code. what error it is giving.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+take a printscreen of your chromedriver in your folder with your extension and upload into jocwiki under tools and send me the link.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+in video 4, they talked about whatsapp, in video 3 they talked about opening selenium.org page. were you able to open selenium webpage.
+Reply 5 months ago
+This comment was deleted by Lakshmi (history)
+This comment was deleted by Lakshmi (history)
+Lakshmi (talkcontribs)
+http://sccilabs.org/jocwiki/images/c/c8/Wb.PNG
+Reply 5 months ago
+Lakshmi (talkcontribs)
+http://sccilabs.org/jocwiki/images/2/2b/Cdu.PNG
+Reply 5 months ago
+Kamalakar (talkcontribs)
+you have not extracted the chormedriver from the zip file. you need to extract the file into the folder first. double click on the zip file and either extract or copy the exe file onto any of your folders.
+Reply 5 months ago
+This comment was deleted by Lakshmi (history)
+This comment was deleted by Kamalakar (history)
+Lakshmi (talkcontribs)
+http://sccilabs.org/jocwiki/images/8/84/Anf.PNG
+Reply 5 months ago
+Lakshmi (talkcontribs)
+Its showing wrong address.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+I have sent an email to varshithakrishnan gmail address kindly check if you got any email
+Reply 5 months ago
+Lakshmi (talkcontribs)
+ok sir
+Reply 5 months ago
+Lakshmi (talkcontribs)
+No I had didn't receive any mail.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php/File:Email.jpg click on my name and click on email to user.
+Reply Edited 5 months ago
+Lakshmi (talkcontribs)
+http://sccilabs.org/jocwiki/images/3/35/Yyy.PNG
+Reply 5 months ago
+Lakshmi (talkcontribs)
+I didn't have any option that mail.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+email id i have given is correct only. try after some time or from any other email
+Reply 5 months ago
+Lakshmi (talkcontribs)
+ok sir.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+can you check your spam email i have emailed to varshithakrishnan@gmail.com
+Reply 5 months ago
+Lakshmi (talkcontribs)
+I had emailed to you from another account.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php/File:Pic1.jpg
+Reply 5 months ago
+Kamalakar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php/File:Pic2.jpg
+Reply 5 months ago
+
+2018 Quiz Asignments
+2 comments • 5 months ago
+Kamalakar (talkcontribs)
+If some one is interested to go through 2018 quizzes, click on my name and find the option email this user in the page and click on it to email me. i will send them to your email. I dont know how to upload pdf files into jocwiki. If some one can give me instructions on how to upload them, i will upload them into the site.
+Reply Edited 5 months ago
+Lakshmi (talkcontribs)
+Can't find opton email this user.
+Reply 5 months ago
+
+How to insert a pdf or jpg files in the current notes.
+One comment • 5 months ago
+Kamalakar (talkcontribs)
+I have some pdf files i want to add to super notes. how do i upload them to super notes. Kindly give me the command. Suppose i upload the file "e:/kamalakar/file.pdf" how to upload it.
+Reply 5 months ago
+
+week 7 question 2 quiz
+2 comments • 5 months ago
+Joycz (talkcontribs)
+matplotlib is used to plot latitude longitude position on maps. this should be true why is it marked incorrect?
+Reply 5 months ago
+Kamalakar (talkcontribs)
+To my understanding matplotlib plots only graphs. but not on google maps. gmplot only does that. some one may give a better answer
+Reply 5 months ago

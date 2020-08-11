@@ -1,0 +1,1072 @@
+tProgram not working facebook sentiment analysis
+One comment • ‪5 months ago‬
+
+
+
+
+‪Shubhamdhanetwal (talkcontribs)‬
+‪Hi,‬
+‪I have a question about what is happening in this video at 00:12:51 -‬
+‪http://www.youtube.com/watch?v=n10aiP7WvOo#t=771s.‬
+‪It is not working on my laptop. First of all, what is this 'Timeline' that you have written here and secondly there is no such thing like 'UTC +05:30'. I don't know where you get it all of a sudden. Also, you told in the video to copy and paste it in excel, I have done the same but still not working and you are using something else not the excel as I can figure out. Lastly, it is not showing the result as it is there in the video that is for each and every comment it is showing neg, neu and pos but in my case, there is only one neg, pos and neu. Kindly, help me with this.‬
+‪Reply‬
+‪5 months ago‬
+
+
+
+
+
+All Assignments answers week 8. Friends share you programs too please.
+3 comments • ‪5 months ago‬
+
+
+
+
+‪Arunkumar (talkcontribs)‬
+‪Sorry friends, I was out of city for few days and I don't have any information about recent updates/questions here. Please update me if I missed any important updates.‬
+‪Note: Hello friends please share your programs too, if you have a better code or different approach than these programs. Everyone, who struggled to finish assignments, please ask you questions here. So that we all can learn and help each-other.‬
+‪A1-Duplicate Elements - code:‬
+‪a=list(map(int,input().split()))‬
+b=[]
+for i in a:
+    if i not in b:
+        b.append(i)
+print(*b, end="")
+
+‪A2-Panagrams - code:‬
+‪import string‬
+S = input()
+def panagram(a):
+    b=string.ascii_lowercase
+    a= "".join(sorted(set(a.replace(" ", "").lower())))
+    if a == b:
+        return True
+    else:
+        return False
+
+if panagram(S):
+    print("YES", end="")
+else:
+    print("NO", end="")
+
+‪A3-Vowels - code:‬
+‪S = input()‬
+def v_logic(a):
+    b = ''
+    vcount = 0
+    for l in range(len(a)):
+        if a[l].lower() in ['a','e','i','o','u']:
+            vcount += 1
+            if vcount == 1:
+                b = b+a[l]
+        else:
+            b = b+a[l]
+            vcount = 0
+    return b
+
+print(v_logic(S), end="")
+
+‪NOTE: Please also check Sample solutions, Provided by instructor they are interestingly different approach/methods.‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪Funniest part of the panagarams problem is you just need to take the input string convert it into a set of lower cases letters and check the length of the string. if the length of the string is greater than 26 answer is yes otherwise no.‬
+‪Reply‬
+‪5 months ago‬
+
+
+
+‪Arunkumar (talkcontribs)‬
+‪Yes friend. That is another possibility. But we should remove all duplicates first. :)‬
+‪Reply‬
+‪5 months ago‬
+
+
+
+
+
+Wrong answer is given by nptel on course joy of computing using python
+4 comments • ‪6 months ago‬
+
+
+
+
+‪Dhananjay giri (talkcontribs)‬
+‪Your answer of question number 1 and 6 is wrong of week 8.Please check carefully. Q1.‬
+‪Fullform of NLTK is Natural language toolkit. By this way answer of this question shoud be all of the above. ‬
+Q6. 
+We also know that after transposing identity matrix and zero matrix it would remain same.
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Sanjana mkhrj (talkcontribs)‬
+‪Question:1 the full form of NLTK is given Natural Language 'Tooling kit' and not 'Toolkit', so thats why option 1 is incorrect. And for question 6 refer SUPER NOTES WEEK 9, topic matrix equality that would help clarify your doubt.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪@Sanjana Thanks a lot for the hint Refer to Super Notes. Had i not seen this, i would have lost two questions in Quiz 9,‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Sanjana mkhrj (talkcontribs)‬
+‪I am glad that I could help.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+
+
+Hints for assignments
+14 comments • ‪6 months ago‬
+
+
+
+
+‪Arunkumar (talkcontribs)‬
+‪This post is only for those, who are not getting ideas to finish Assignments. I request everyone to add your logic and processes too, below.‬
+‪Assignment-1: Duplicate Elements‬
+‪We have already dealt with these sort of questions, so we no need hints for this, I think. If someone needs, please ask.‬
+
+‪Assignment-2: Panagrams‬
+‪Panagrams is a sentence which uses all 26 letters in the English alphabet. This is a well known example of such... The quick brown fox jumps over the lazy dog‬
+‪Way 1: We can take each and every letter from a to z, and then check if it is in the sentence provided. You need a loop for this.‬
+‪To generate alphabets we can use string.ascii_lowercase or string.ascii_uppercase‬
+‪Way 2: We no need to use loops to check if all alphabets are there or not. We can remove duplicates and then see if they are equal to string.ascii_lowercase or string.ascii_uppercase‬
+‪For this, we can use set or dictionary to remove duplicates and then use some string operations to get it done.‬
+
+‪Assignment-3: Vowels‬
+‪Given a string S of lowercase letters, remove consecutive vowels from S. After removing, the order of the list should be maintained.‬
+‪Input: your article is in queue‬
+‪Output: yor article is in qu‬
+‪Way 1: This is similar to the Assignment 1. But here... We should not delete the 1st occurrence of vowel. We need to construct our loop in such a way that 1st occurrence is left untouched when program finds continuous vowels like in you and queue. This is little tricky.‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪for assignment -2, if we use set, if you can think, the program will be just less than 10 lines. Understand there are characters other than alphabets in the given string. For Assignment -3, Reverse the string and use loops to do the execution. after execution again reverse the string. and print it.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪AI (talkcontribs)‬
+‪I did not reverse my string but the problem I am getting is if the vowels are at the end. Pop does not work then.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪you can do with out reversing also. What i felt is it would be easy to program if we reverse the string. When you pop some thing out of a list in such situations the length of the list will change. What i did is instead of popping i assigned a value 999999 in that position where there are two consecutive vowels. then while printing i checked if the value is 999999 dont do any thing else print the value at that location in the list.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪I am expecting one of the private test cases to be simply aeiou. or uoiea‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪pop is for list not for a string.‬
+‪if you use pop you will end with the index out of range problem if i am correct‬
+‪study the following for loop‬
+‪for i in range(10):‬
+
+‪   print(i)‬
+
+‪   i=i+1‬
+  
+though i changed the value of i inside the loop it is not getting reflected. it still prints 0 to 9/
+‪so if you pop out things, it will still the for loop indexes will not change. i think you have to use while loop in such case.‬
+‪I didnot popout any thing. if there are consecutive vowels. i just replaced the vowel which needs to be striked out with a 999999‬
+‪while printing i asked to print the list character only when it is not equal to 999999‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪AI (talkcontribs)‬
+‪That is exactly what's happening!! but how do we replace a character in a string?‬
+‪if (s[i] in l) and (s[i+1] in l):‬
+       s.replace(s[i+1],"0")
+  this does not work?
+Reply
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪list1=list(s)‬
+
+‪if (s[i] in l) and (s[i+1] in l):‬
+
+‪      list1[i+1]="0"‬
+Reply
+‪Edited 6 months ago‬
+
+
+
+‪AI (talkcontribs)‬
+‪OK am trying with this. Let's see if I can mange this assignment.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪AI (talkcontribs)‬
+‪@Kamalakar. This is working. Hope I shall be able to complete the assignment. Thanks for the help.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪AI (talkcontribs)‬
+‪@Kamalakar. I have just submitted assignment3 and it shows 100.0/100.0. Wouldn't be able to complete without your hints. Appreciate and thanks for the help.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Jaiprince17 (talkcontribs)‬
+‪tricky part can u explain buddy?‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪This is the only trick. if you master this trick you will decode any code‬
+
+‪print(var1,var2," values of variables after line1")‬
+
+‪print(var1,var2," values of variables after line2")‬
+
+‪print(var1,var2," values of variables after line3")‬
+
+‪print(var1,var2," values of variables after line4")‬
+
+‪print(var1,var2," values of variables after line5")‬
+
+‪print(var1,var2," values of variables after line6")‬
+
+‪print(var1,var2," values of variables after line7")‬
+
+‪print(var1,var2," values of variables after line8")‬
+
+‪print(var1,var2," values of variables after line9")‬
+
+‪print(var1,var2," values of variables after line10")‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Arunkumar (talkcontribs)‬
+‪Sorry friends, I was out of city for few days and I don't have any information about recent updates/questions here. Please update me if I missed any important updates.‬
+‪Looks like you all found something new. Please post your code too. I have posted mine here in week8‬
+‪http://sccilabs.org/jocwiki/index.php/Topic:Uwujwjrqd0juyk4k‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+
+
+question no 6
+5 comments • ‪6 months ago‬
+
+
+
+
+‪Jhuma (talkcontribs)‬
+‪Which of the following matrices has transpose same as the matrix itself? Identity Matrix Zero Matrix Either A or B Both A and B why last option is incorrect‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪Zero matrix is not only a square matrix but a rectangular matrix where no of rows is not equal to coloum. Search Google images to see the examples of zero matrix. for a rectangular matrix A is not equal to A transpose.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Sudha Verma (talkcontribs)‬
+‪ya both a and b should be ans as zero matrix of any order are equal pls correct the answer‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Sanjana mkhrj (talkcontribs)‬
+‪No zero matrix of m x n has transpose n x m which makes the matrices unequal. They are equal only when m=n and not otherwise in general.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Jhuma (talkcontribs)‬
+‪if its true for m=n then isn't we should get benefit of dought.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+
+
+Quiz question 5
+3 comments • ‪6 months ago‬
+
+
+
+
+‪Snehal (talkcontribs)‬
+‪State True or False. If the sum of ASCII values of two strings is same, then these two strings are anagrams. True False No, the answer is incorrect. Score: 0 Accepted Answers: False‬
+‪my answer is True . and in solution answer is False How please illustrate‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪Kindly do google search over this. Some one in this forum has given an answer for this earlier. Keep wathcing every day the procedings of JOCWIKI. some of your questions will be answered.‬
+‪I have changed some of my options because i was regularly watching the proceedings in JOCWIKI‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪Refer to this link. your question was answered 3 days ago‬
+
+‪http://sccilabs.org/jocwiki/index.php?title=Topic:Uwmzuv2yk9wqu63o&topic_showPostId=uwmzuv338n7ouq90#flow-post-uwmzuv338n7ouq90‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+
+
+
+Final Exam Question Pattern
+2 comments • ‪6 months ago‬
+
+
+
+
+‪Mohit badiyani (talkcontribs)‬
+‪What will be the question pattern for the 100 marks final exam ??‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪They replied me in email that they will publish it shortly.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+
+
+Quiz question 6
+9 comments • ‪6 months ago‬
+
+
+
+
+‪Lakshmi Devi V (talkcontribs)‬
+‪Which of the following matrices has transpose same as the matrix itself? a. identity matrix b. zero matrix c.either a or b d. Both a and b‬
+‪the answer is been confused both can be the answer but zero matrix will not be always the square matrix. can you please answer the question if anyone knows‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪For a matrix to be equal to its transpose, it has to be a square matrix. Zero matrix means all the elements are to be zeros. zero matrix can be a square matrix and also a matrix where no of rows is not equal to no of coloumns. Square matrix means no of rows is equal to no of coloumns Identity matrix is a square matrix.. Go to Google images and see the examples of zero matrix and identity matrix. with the above hints you make out the answer.‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪so i selected only identity matrix. after your question i am now confused what does it mean Either A or B means. i am not so good in engilish‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪examples of either or‬
+
+‪He cooks dinner. Or she cooks dinner.‬
+
+‪Either he or she cooks dinner.‬
+
+‪She can have tea. Or she can have coffee.‬
+
+‪She can have either tea or coffee.‬
+
+‪He washes the clothes himself. Or he asks her to wash them.‬
+
+‪He either washes the clothes himself or asks her to wash them.‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+
+‪Lakshmi Devi V (talkcontribs)‬
+‪Thank You‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Divya98 (talkcontribs)‬
+‪Answer should be identity matrix. Because if a zero matrix is not square matrix than in that transpose will not be same. So, I think it should be only a‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Msd7at (talkcontribs)‬
+‪Yes, the answer should be identity matrix.‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+
+‪Sanjay (talkcontribs)‬
+‪yes, the answer should be identity matrix alone since zero matrix need not be always square matrix, but the answer given is both, how?‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪thank you Professor and TAS for considering our request to relook into this question and reevaluating the question.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+
+
+100% Pass in compile but fail in submision
+4 comments • ‪6 months ago‬
+
+
+
+
+‪Meera Doshi (talkcontribs)‬
+‪VOWELS = 'aeiouAEIOU'‬
+‪strng=input() R = [] for i in range(len(strng)-1):‬
+‪   #print(i)‬
+   if strng[i] in VOWELS and strng[i+1] in VOWELS:
+           R.append(i+1)
+r = list(set(R)) r.reverse() for i in r:
+‪   print(i)‬
+   strng = strng[:i] + strng[i+1:]  
+print(strng)
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪use the given input as aeiou and check what happens‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪Meera Doshi, I checked all your test cases. The code worked fine i didnot find any issues in your code. I than took your code and submitted it in the browser. To my surprise none of the test cases passed.‬
+‪I started digging into it. i anticipated the problem is in the way you are printing your answer.‬
+‪because as you start removing the letters, the length of the string decreases.‬
+‪Check your code with the following line.‬
+‪your article is in que ue‬
+‪dont use that string concatenation procedure to print the answer and try printing character wise provided the positon is not in list r. when i did that all the test cases passed.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Meera Doshi (talkcontribs)‬
+‪THANK YOU SO MUCH‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+
+
+ass 3
+2 comments • ‪6 months ago‬
+
+
+
+
+‪DEVIL (talkcontribs)‬
+‪x= input()‬
+‪y=['a','e','i','o','u']‬
+‪for i in range(len(x)-2):‬
+‪ if x[i] in y and x[i+1] in y :‬
+     
+     
+     x=list(x)
+     x.pop(i+1)
+     
+print("".join(x))
+‪what's wrong with this code , public test cases are 100% but submission 0% ,don't know what to change in code please help me with this‬
+‪w‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪@Devil, This is GOD helping you out.‬
+
+‪The private test cases can have capital letters. Did your code pass the following test cases‬
+
+‪1) your article is in queue‬
+
+‪2) your article is in que ue‬
+
+‪3.AEIOU‬
+
+‪dont use pop. it is killing your program. because it removes the letters. and reduces the length of the string.‬
+
+‪you are comparing the character i and i+1 and while doing so you are moving from left to right in the for loop. you need to move from right to left in the for loop as per the program statement.‬
+‪if you have tried the example case "your article is in queue" your program has not passed this example case.‬
+‪instead of popping out use other strategies like‬
+
+‪1. getting the index value of the character which you need to pop out and put it in another list. while printing compare this list entities and if not found in this list print the character‬
+
+‪2. if you need to remove the character replace it with a high number and then while printing ignore this character. convert the string into a list and do the processing‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+
+
+
+week 8 assignment - 1
+8 comments • ‪6 months ago‬
+
+
+
+
+‪Naveena418 (talkcontribs)‬
+‪test_list=input() res = [] [res.append(x) for x in test_list if x not in res] print(str(res)) want changes I need to make to meet the given requirements‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Arunkumar (talkcontribs)‬
+‪what is the error you are getting when you run this program?‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Arunkumar (talkcontribs)‬
+‪'''@Naveena418''', Everyone is a student, so please don't feel bad, Please participate in this discussion. I promise you will learn something, by the end of this discussion. <pre> test_list=input() #Debug print(type(test_list)) #res = [] [print("x is : ",x) for x in test_list if x not in res] #print(str(res)) </pre> '''@Naveena418''', You are doing a same mistake. Do you remember what is the default input type in python is? Another question is... What is the input we are getting? Which data type is correct to handle this sort of input? # Integer? # String? # List? # Dictionary? # Tuple? * Run the above code and see. * When you understand, change it the way you want. or Feel free to ask your question here. But please, promise me that you will try to understand it this time.‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+
+‪Naveena418 (talkcontribs)‬
+‪how to convert ['1','2','3'] into 1 2 3 ?‬
+‪Reply‬
+‪6 months ago‬
+
+
+‪Arunkumar (talkcontribs)‬
+‪'''@Naveena418''', I hope you tried and spent enough time on understanding the above program. Here is the single line answer. Python, by default, treats all inputs as strings. * '''Take input as list'''. You are taking input as '''string''' and feeding that string to for loop. That is the reason, all characters are taken individually. * Please check previous Assignment answers to understand, how we used to take input into a '''list variable''' (test_list). : <code>map(int,input().split())</code> * use <code>print(*test_list, end="")</code> to print list.‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+
+‪Arunkumar (talkcontribs)‬
+‪updated.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪ans1: A programmer should learn google search and identify his best sites to find answers in future. ans2: list1= ['1','2','3'] a,b,c=[int(x) for x in list1] ans3: list1= ['1','2','3'] a,b,c=[x for x in list(map(int,list1))]‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Naveena418 (talkcontribs)‬
+‪Thank You. I have understood. It's working.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+
+
+Final Exam Marks Distribution and Expectations from the Student Reg
+12 comments • ‪6 months ago‬
+
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪Dear Sir, We are almost reaching the end. it is time now to disclose what will be given in Question Paper. What is the marks distribution. Where do we need to focus in the examination. What type of questions will be given in the examination in this semester exam. Kindly give some guidelines about the question paper.‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+
+‪AI (talkcontribs)‬
+‪Sir, Even I think that this is a very important question which actually needs an urgent answer. We are really apprehensive regarding the question paper pattern and especially the programming questions that may be asked. For the assignments we sometimes take 2-3 days to work out the correct logic. So, during exam duration we really are worried if we will be able to figure out the logic. It is a request not to overlook this question and do give us some guidelines. Thank you and looking forward to an answer.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪Descentis earlier replied that we will not be asked to program in the exam. So i am curious about where we need to focus for the exam,‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪AI (talkcontribs)‬
+‪Thank you Mr. Kamalakar. Can't there be a discussion on the forum where in participants can give their viewpoint regarding the points we need to focus on for the exam. Truthfully I have absolutely no ideas coming as to what the paper will be like, what to expect and how to prepare with focus on?????? Please everybody put forth your ideas so that we can try to prepare for the exam. Also the TAs do help us out of this dilemma by providing some guidelines or at the least let us know by when you will answer this question. Thank you‬
+‪Reply‬
+‪6 months ago‬
+
+
+‪Kamalakar (talkcontribs)‬
+‪@ AL i have put some Tips for the online exam. at the bottom of the page. http://sccilabs.org/jocwiki/index.php/Expected_questions#Tips_for_better_score_in_the_final_exam Any one can add so that we dont miss on the final day.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Pallavikhatri (talkcontribs)‬
+‪What would be the format of Exam. and what is the exact duration? will it be online or offline>‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪AI (talkcontribs)‬
+‪@Kamalakar WOW!! Really appreciate your input. Thanks a lot. Do add other such links(ideas). This has given me some idea about what to expect and how to prepare. Thanks again.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪@AI I Updated the list with some of my new findings. http://sccilabs.org/jocwiki/index.php/Expected_questions#Tips_for_better_score_in_the_final_exam‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪AI (talkcontribs)‬
+‪@Kamalakar Hopefully will try to go through the material in the links. Can you tell which sites on google you find most helpful? thanks for the response.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪I found quiz questions at sunfoundary website are help ful. Again if you have time, see the videos of Durga soft solutions youtube channel playlist python tutorials. videos from 6 to 30 or so are in the portion covered in the course.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪I think we require practice on predicting the output of the code. so sunfoundary examples are good for us to start there are 1000 questions which is a big number. There are some apps also available for python exam in smart phones. while you are travelling and away from the computer you may try them. but sun foundary examples are good. i cannot gurantee the answers at these websites. you need to check and verify in your spyder program‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪AI (talkcontribs)‬
+‪Yes. we can check the answers and thus be better prepared hopefully.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+
+
+Panagram
+2 comments • ‪6 months ago‬
+
+
+
+
+‪Snehal (talkcontribs)‬
+‪alphabet=[] for i in range(97,123): alphabet.append(char(i)) ip=input() LOW=(ip.lower()) short=[] for i in LOW: if i==' ': continue if i not in short: short.append(i) final=sorted(short) if final==alphabet: print("YES",end='') else: print("NO",end='') In above program 1 st test case is not passing.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪Snehal, It is the minimum responsibility of the users to give a code that passes with out syntax errors if you are requesting any help. Any how your code passed the following test case which has all alphabets. ThE quick brown fox jumps over the lazy dog The same line when i added the following additional characters like full stop and comma it is failing ThE quick brown fox jumps over the lazy dog@#$%^&*. Alteast we expect full stop and commas to come in a sentence. you have taken care of only " ", what if other characters come in to your input. When i introduced the additional characters in the above line, though it has all the alphabets it has failed‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+
+
+Quiz question 1
+3 comments • ‪6 months ago‬
+
+
+
+
+‪Joycz (talkcontribs)‬
+‪Which of the following statements is correct about NLTK? NLTK stands for Natural Language Tooling Kit. i think this will be the answer‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪it is not tooling. But tool.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪Google Shows NLTK is used for natural language processing. But in the video they said NLTK is used for human language processing only.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+
+
+Interesting difference in execution of function
+4 comments • ‪6 months ago‬
+
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪Kindly run these two programs and study the difference # Program 1 def f(values): values = [44,2,5] v = [1, 2, 3] print(v,"before") f(v) print(v,"after") #Program 2 def f(values): values[0] = 44 v = [1, 2, 3] print(v,"before") f(v) print(v,"after")‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪if we change a value of the list in a function, the list is getting updated outside the function. where as if we change the entire list in the function, the list is not getting updated outside the function‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Venkata Swathi R (talkcontribs)‬
+‪program1 [1, 2, 3] before [[44, 2, 5], 2, 3] after program2 [1, 2, 3] before [44, 2, 3] after nothing is different about it. only the first element of the list is being modified. it was [44,2,5] before, which is a sub list of v. it was 44 in program2, which is just a number‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪sorry it was a typo. In the first program in the function values=[44,2,3]. by mistake i have put it as values[0]=[44,2,3] Now check kindly check the difference. Thanks a lot for bringing it up. I corrected my first program above.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+
+
+Anagrams - sum of ASCII
+One comment • ‪6 months ago‬
+
+
+
+
+‪GUNASEELAN.Nallamuthu (talkcontribs)‬
+‪Only based on the sum of ascii values, it willnot be able find two words are anagrams or not. e.g 'gel' 312 'ear' 312 'act' 312 'leg' 312‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+
+
+Six Degrees of Freedom file Missing
+One comment • ‪6 months ago‬
+
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪Six Degrees of Freedom file missing from snap.stanford.edu/data/ego-facebook.html is missing‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+
+
+
+Facebook Sentient Analysis data_file.xlsx not found in the download
+One comment • ‪6 months ago‬
+
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪After we have downloaded the data from facebook, how to get the data_file.xlsx s not shown in the file. Kindly help how to get this data file‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+
+
+Kindly Explain why this code is printing the given output
+8 comments • ‪6 months ago‬
+
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪a = [0, 1, 2, 3] for a[-1] in a: print(a[-1]) Output it is printing is 0 1 2 2 Can some one explain why is this so.‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+
+‪Arunkumar (talkcontribs)‬
+‪'''Interesting question''' :) when we use <code>for i in range(3)</code> entire thing converts to this <code>for i in [0, 1, 2]</code> : Then, till all items '''in''' the list are finished, this loop will keep assigning items to <code>'''i'''</code>. :: 1st '''0''' is assigned, then '''1''', and lastly '''2'''. ; Now in your example... : we are using, a specific position of a '''list'''. : Index <code> -1 </code> means last position of the list. : Because of which, when we use <code>for a'''[-1]''' in a</code> following things happen. <pre> for a[-1] in a: print(a[-1]) Will change to for a[-1] in [0, 1, 2 ,3]: print(a[-1]) then to (2nd time) for a[-1] in [0, 1, 2 ,0]: print(a[-1]) then to (3rd time) for a[-1] in [0, 1, 2 ,1]: print(a[-1]) then to (4th time) for a[-1] in [0, 1, 2 ,2]: print(a[-1]) </pre> ; ...and assigning part in the list looks like this... : 1st a[-1] will be assigned/overwritten with '''0'''. :: <code>[0, 1, 2, '''0''']</code> : 2nd time, a[-1] will be assigned/overwritten with '''1'''. :: <code>[0, 1, 2, '''1''']</code> : 3rd time, a[-1] will be assigned/overwritten with '''2'''. :: <code>[0, 1, 2, '''2''']</code> : 4th time, a[-1] will be assigned/overwritten with '''2'''. :: <code>[0, 1, 2, '''2''']</code> '''NOTE:''' '''''I believe, when we use <code>range()</code>, numbers are generated, once, in the beginning of for loop. But, i think, this behaviour changes, when we read a variable. As the content of variable might change while for loop is running. So, Variable should be read and re-read every-time.'''''‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+‪Arunkumar (talkcontribs)‬
+‪We can prove that it is reading Variable every-time. We can also prove that, in the middle of the for loop, if length of list increases, loop will keep continuing. <pre> a=[0,1,2,3] for a[-1] in a: print(a[-1], a) for i in range(len(a)): a[i]=a[i]+10 print(a) </pre> '''DONT RUN BELOW CODE:''' (infinite loop) Use <code>ctrl + c</code> to exit infinite loop. <pre> a=[0,1,2,3] for a[-1] in a: print(a[-1], a) for i in range(len(a)): a[i]=a[i]+10 a.append(i) print(a) </pre> Now the question is... What happens when we start deleting one or more items? <pre> a=[0,1,2,3] for a[-1] in a: print(a[-1], a) for i in range(len(a)): a[i]=a[i]+10 a.pop(2) print(a) </pre> Remove without error <pre> a=[0,1,2,3] for a[-1] in a: print(a[-1], a) if a[-1] == 1: a.remove(1) print(a) </pre>‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪very difficult for me to understand what is happening here. Looks like it is replacing the value of a[-1] in the range of values.‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+‪Arunkumar (talkcontribs)‬
+‪Assignment/overwriting happens at <code>a[-1]</code> position, till the for loop stops.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Arunkumar (talkcontribs)‬
+‪I updated. check now.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪@Arun you are a real hero in python to understand this question.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Arunkumar (talkcontribs)‬
+‪Not at all. :)) some how, my brain is understanding programming good enough. I like to understand problems and solve, that's it. Yet it depends on my mood. ;p‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+
+
+week 8 assignment 2
+13 comments • ‪6 months ago‬
+
+
+
+
+‪Aratinku (talkcontribs)‬
+‪why after passing all test cases this program is awarded with 33.33 marks only i am not getting the reason import string n = input("") b = str() for i in range(len(n)): b = b.lower() if b.count(n[i])<1: b+=n[i] b = b.replace(" ","") b = ''.join(sorted(b)) d = string.ascii_lowercase if b == d: print ("YES",end="") else: print("NO",end="")‬
+‪Reply‬
+‪6 months ago‬
+
+
+‪Arunkumar (talkcontribs)‬
+‪The way you are using <code>b = b.lower()</code> inside the for loop is causing the problem. Till we get to see the Hidden cases, we cant say why. For now, try to remove that line from the for loop. And why don't you apply lower on '''n''' itself, before using it in the for loop? We no need to preserve '''n''' anyway. Then everything worked. You can use <code>set()</code> or '''dictionary''' to remove duplicates, and avoid using for loops.‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+‪Aratinku (talkcontribs)‬
+‪thank you‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Arunkumar (talkcontribs)‬
+‪You are welcome. :)‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Arunkumar (talkcontribs)‬
+‪We debug any code like this... by using print statements, and changing/moving/removing parts of code. <pre> import string n = input("") b = str() n = n.lower() for i in range(len(n)): # b = b.lower() print("for - ",b) if b.count(n[i])<1: b+=n[i] print("if - ", b) b = b.replace(" ","") print("after replace - ",b) b = "".join(sorted(b)) print("after Join, sorted - ",b) d = string.ascii_lowercase if b == d: print ("YES", end="") else: print("NO", end="") </pre>‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪This is super. Excellent. People have to learn this way of debugging.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Arunkumar (talkcontribs)‬
+‪Friend '''@Kamalakar''', I take your advice to let people use debugging. So, lets repeat post few of these.‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪Can you kindly explain the logic behind this program. For me logic looks complicated.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪there are 26 letters. so if there are more than 25 letters your program should pass. i have not see 25 or 26 in your program‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪what if they have used other characters like #,etc.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪yes in their private test case they have included !@#$%^&*() etc Now make modifications to your code such that it just checks only abcde...xyz‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪ord(a)=97 ord(z)=122 check weather all the characters are between 96 and 123. it will pass all the public tests‬
+‪Reply‬
+‪Edited 6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪dont post your final code if it passes all the public cases. keep it for your self. let people do their home work and learn‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+
+
+1000-python-questions-answers
+One comment • ‪6 months ago‬
+
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪Do google search for sanfoundry and 1000-python-questions-answers. you have multiple choice questions in that website. Wish you all the best for the final exam.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+
+
+Use of Dictionaries in Snakes and Ladders Game.
+3 comments • ‪6 months ago‬
+
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪I am seeing an advanced version of Snakes and Ladders Game in which dictionary concept is used for snakes and ladders position. Can we further simplify it by using dictionaries for remaining variables like player_name,player_count,turn etc.‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪Here is code further simplified <pre> from PIL import Image import random end=100 def show_board(): img=Image.open('slb.jpg') img.show() def check_ladder(k): ladder={8:26,21:82,43:77,50:91,54:93,62:96,66:87,80:100} if k in ladder : print("i am on ladder") return ladder[k] else: return k def check_snake(k): snake={44:22,46:5,48:9,52:11,55:7,59:17,64:36,69:33,73:1,83:19,92:51,95:24,98:28} if k in snake : print("i am bitten by snake") return snake[k] else: return k def reached_end(p): if p==end: return True else: return False def play(): player_name={1:0,2:0} player_score={1:0,2:0} player_name[1]=input('Player-1, Please Enter Your Name: ') player_name[2]=input('Player-2, Please Enter Your Name: ') flag=0 turn=1 while(flag==0): k=turn%2 if k==0: k=2 print(player_name[k], k,'Your turn') c=input('Press 1 to Continue, 0 to Quit: ') c=int(c) if c==0: print(player_name[1], 'Scored ', player_score[1]) print(player_name[2], 'Scored ', player_score[2]) print('Quitting the Game.... Thanks for playing') break dice=random.randint(1,6) print('Dice Showed: ',dice) player_score[k] = player_score[k] +dice player_score[k]=check_ladder(player_score[k]) player_score[k]=check_snake(player_score[k]) if player_score[k]>end: player_score[k]=end print(player_name[k], 'Your Score: ', player_score[k]) if reached_end(player_score[k]): print(player_name[k], ' WON') flag=1 break turn=turn+1 print("No of Turns",turn) #show_board() play() <\pre>‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+‪Puneet Patel (talkcontribs)‬
+‪Nice Logic of using dictionary...‬
+‪Reply‬
+‪6 months ago‬
+
+
+
+
+
+Friends, for week 9, be prepared to download 3.5 GB of data
+One comment • ‪6 months ago‬
+
+
+
+
+‪Arunkumar (talkcontribs)‬
+‪In Week 9, we will work on NLP (Natural Language Processing). for this we will use '''nltk''' library/module (which is a 3.5 GB download). Below steps will be used to download nltk through the python console. <pre> import nltk nltk.download() </pre> After Executing above commands, a window will pop up. There we need to press the download button. With in the same window, we will be able to see where it is saving nltk (nltk_data), possibly it will be '''C:''' drive. '''''We should make sure that we have enough free space in the''''' '''C: drive'''.‬
+‪Reply‬
+‪Edited 6 months ago‬ˇ

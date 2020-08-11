@@ -1,0 +1,781 @@
+
+Assignment
+50 comments • 13 days ago
+Santhosh (talkcontribs)
+Where I can found my 1st week assignment?
+
+Reply 3 months ago
+Pythoncourse123 (talkcontribs)
+Under the week 1 tab, last section will be - Quiz : Assignment 1
+
+Reply 3 months ago
+Ravi103 (talkcontribs)
+I didn't get programming assignments 2,3 answers in Week 2. Please help me or give me hints Please fasly reply to ravikumarreddy0508@gmail.com
+
+Reply Edited 2 months ago
+Simmi (talkcontribs)
+Thank you Pythoncourse123 for the answer :)
+
+Reply 3 months ago
+Santhosh (talkcontribs)
+Due to my college internal tests, I can't complete my 1st week assignments.If I face any problem in forthcoming weeks?
+
+Reply 2 months ago
+Simmi (talkcontribs)
+Dear Santosh, This may effect your marks. As far as it is concerned with learning, you can complete the assignment even after the deadline.
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+In programming assignment 2 you asked that take Indian rupees as input and output will be the currency in Euros.But in test cases your inputs(Ex.20) are in euros, the outputs are in rupees(Ex.1600). My kind request is please change it, as soon as possible. Thank you :-)
+
+Reply 2 months ago
+Pythoncourse123 (talkcontribs)
+I faced the exact same problem, until I realised they wanted output in rupees and input in euros, opposite to what was asked in the question.
+
+Thanks for brining it up. I hope the mentors or course in charge correct it.
+
+Happy Independence Day!
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+Happy Independence Day!😃
+
+Reply 2 months ago
+Simmi (talkcontribs)
+This particular programming assignment won't be considered for evaluation since there is a problem in the question.
+
+Happy Independence Day!
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+In my progress tab I didn't get my programming assignment marks? Is there any problem?
+
+Reply 2 months ago
+Simmi (talkcontribs)
+You will get it as soon as it gets evaluated. You will get an announcement
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+Thank you!!!
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+I found that there are so many inbuilt functions in python. And so many libraries also, so How can I study those all functions. Is there any need for book? If it so please suggest me standard book for learning python 😄
+
+Reply 2 months ago
+Simmi (talkcontribs)
+Internet is the best source. You will be learning about various libraries in forthcoming weeks.
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+Thank You :-)
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+After completing my programming assignment I didn't get the full mark. I know that there is some mistakes in private test cases. Please reveal the mistake after the assignment gets evaluated. It helps us to correct our mistakes.
+
+Reply 2 months ago
+Simmi (talkcontribs)
+Its not possible to point out mistakes in code for 35K people. I think you should figure out yourself. The more you troubleshoot, the more you learn. If you don't, we are there to help you.
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+Thank you!!!
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+I have passed all the four test cases but I didn't get full mark. I can't find what's the problem. No one strikes out in my mind. Please help me!
+
+
+list_1=[] for i in range(1,51):
+
+ list_1.append(i)
+a, b=input().split() a=int(a) b=int(b) list_1[a:b] for i in range(a,b):
+
+ print(list_1[i])
+Reply 2 months ago
+Simmi (talkcontribs)
+What is list_1[a:b] in the code? Is it a separate statement?
+
+Reply 2 months ago
+Simmi (talkcontribs)
+Your code isn't working for negative indices. That's why you have scored less marks.
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+Yes. list_1[a:b] is a separate statement.
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+Thanks for your correction simmi. I'll do my best.
+
+Reply 2 months ago
+Simmi (talkcontribs)
+Okay. Please refer super notes if you don't know about negative indices.
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+Please upload week 4 videos in download page as soon as possible 😄
+
+Reply 2 months ago
+Simmi (talkcontribs)
+Sure. I will contact NPTEL team.
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+Thank you so much for your immediate response
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+In the above list slicing assignment program if I give -50 and 0 as inputs,while using the statement print(list_1) on the console the output is empty list, It shows the output as [], but while printing using for loop it prints all the elements from 1 to 50. I can't understand what is the concept behind this. Please help me.
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+Please upload week 5 videos on portal
+
+Reply 2 months ago
+Simmi (talkcontribs)
+They are there on the portal and present on JOCWiki too. Please check
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+where I can found the week 5 videos on JOCwiki portal?
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+Hip hip hooray I got the output for list slicing.. Thanks for your guidance..
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+Mam, there are no week 5 videos on portal yet. Please contact NPTEL team..
+
+Reply 2 months ago
+Simmi (talkcontribs)
+They are present on the portal. Please check. Send me a screenshot if you are not getting the links
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+How do I send screen shot?
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+Is there any email ID
+
+Reply 2 months ago
+Simmi (talkcontribs)
+send me @2017csz0001@iitrpr.ac.in or you can also upload file on this wiki. There is a link called upload file on the left pane.
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+Where I should type the command-"pip install SpeechRecognition" command? In command prompt or anything else?
+
+Reply 2 months ago
+Simmi (talkcontribs)
+command prompt
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+When I type that command, it shows an error message that pop is not recognized as an internal or external command, operable program or batch file.
+
+Reply 2 months ago
+Sachinkr (talkcontribs)
+You have to type command in anaconda command prompt not in compiler or window command prompt.
+
+Reply 2 months ago
+Simmi (talkcontribs)
+its pip.
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+Sorry that's auto correction I have typed as pip only
+
+Reply 2 months ago
+Simmi (talkcontribs)
+Did you type in anaconda command prompt?
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+Sorry I typed in Windows command prompt
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+Please upload the week 9 videos on the download portal today itself. It will be very useful to us.
+
+Reply a month ago
+Simmi (talkcontribs)
+I will contact NPTEL team regarding this
+
+Reply a month ago
+Santhosh (talkcontribs)
+Please upload the week 10 videos. Quickly upload it as soon as possible.
+
+Reply 24 days ago
+Santhosh (talkcontribs)
+There is no quiz assignment for week 11 in portal
+
+Reply 13 days ago
+
+Problem in programming
+4 comments • a month ago
+GeekAnuj (talkcontribs)
+Hello sir, I already know the basic syntax of python but I need to practice it can suggest me something.
+
+Reply 3 months ago
+Simmi (talkcontribs)
+Dear Anuj, We would suggest you to try the problems in forthcoming week yourself first before looking at the solution.
+
+Reply 3 months ago
+Udayanbk (talkcontribs)
+Hello, I'm Udayan Kamble. Today I reinstall Anaconda due to some issue had in my PC. But Now, Spyder is not opening.. Just getting a Full BLACK SCREEN... No Icon.. Nothing.. I reinstalled Anaconda and Python several times, But issue didnot solved. Please help me to work with SPYDER Correctly as before..??? What to do???
+
+Reply a month ago
+Simmi (talkcontribs)
+Refer week 2 super notes
+
+Reply a month ago
+
+What is "Passed after ignoring Presentation Error"
+4 comments • a month ago
+Jaswandisawant (talkcontribs)
+Once we compile and run an assignment I could see the msg as "Passed after ignoring Presentation Error" and that too "after ignoring Presentation Error" printed in Red.. what does this mean?
+
+Reply 2 months ago
+Simmi (talkcontribs)
+Refer Week 2 FAQs
+
+Reply 2 months ago
+Bhavesh (talkcontribs)
+Don't worry regarding that, but if you want to remove it just take care of putting end="", at last printed line of output.
+
+Reply 2 months ago
+Msatul1305 (talkcontribs)
+do this print(var,end="")
+
+Reply a month ago
+
+Assignment 1 solution doubt
+9 comments • 2 months ago
+Pythoncourse123 (talkcontribs)
+Assigment 1 Question 9, says
+
+Which of the following constructs carries out a set of instructions as long as any key in the keyboard is pressed?
+
+Apparently answer is given as repeat until key any pressed?
+
+However, this would make the loop run until any key is pressed. As soon as we press any key it stops running the loop.
+
+In the question it was asked to select the option which would make the code run as long as the key is pressed. So I don't know how the solution is correct and how I was wrong in selecting none of the above.
+
+Can anyone explain ?
+
+Reply 2 months ago
+Vvkcdm (talkcontribs)
+As you said repeat until construct will make the loop run until any key is pressed. So execute a set of instructions repeatedly until a key in the keyboard is pressed we will make use of repeat until construct. Hence the answer.
+
+Reply 2 months ago
+Pythoncourse123 (talkcontribs)
+But the question specifically states 'as long as any key is pressed' which means, we need a loop construct that would activate when a key is pressed and continue till it is pressed, not repeat when the key is not pressed and stop when the key is pressed.
+
+Reply 2 months ago
+Hot9cups (talkcontribs)
+I second Pythoncourse123
+
+I had asked the exact doubt and am waiting for the answer as well.
+
+'As long as' indeed means that the loop should be repeated even if I press the key for, say 10 seconds.. But repeat until will end the loop within a second of pressing the key.. It's gonna end the loop as long as the key is pressed..
+
+So I really think the correct answer should be 'None of the above'.
+
+Reply 2 months ago
+Pranav24b (talkcontribs)
+Here 'as long as' applies to the 'set of instructions' and not the key.
+
+Refer This
+
+
+What you are thinking would be phrased as 'Which of the following constructs carries out a set of instructions as long as any key in the keyboard is kept pressed?'
+
+Reply Edited 2 months ago
+Hot9cups (talkcontribs)
+If it did refer to the set of instructions, the question should have been 'as long as any key is not pressed'. The question meant to say 'until a key is pressed' but was ambiguously worded.
+
+There is a big difference between until and as long as.
+
+So I really don't think it's right to penalise 'None of the above' option.
+
+Reply 2 months ago
+Hot9cups (talkcontribs)
+Even in the link you sent me, the 'as long as' section, the example is: You can play in the living room as long as you don’t make a mess.
+
+And not 'as long as you make a mess'...
+
+Does that make it clear?
+
+Reply 2 months ago
+Pranav24b (talkcontribs)
+As long as and so long as
+
+ As long as or so long as also means ‘provided that’, ‘providing that’ or ‘on condition that’:
+
+You are allowed to go as long as you let us know when you arrive.
+
+So long as is a little more informal:
+
+You can borrow the car so long as you don’t drive too fast.
+Reply Edited 2 months ago
+Hot9cups (talkcontribs)
+Did you even read my last post? No. You just decided to post whatever you felt like, ignoring to see if it added anything of value to the topic, or the question asked.
+
+It is not a herculean task, to prove that 'repeat until' is the right answer to the question if seen from a point of view.
+
+The thing asked, was that the wording is ambiguous and hence can be looked at from more than one point of view, neither of which is grammatically wrong.
+
+This isn't an argument where you just post whatever you feel like just to prove your point. Please read what you write before posting such things.
+
+Reply 2 months ago
+
+Regarding negative marks
+3 comments • 2 months ago
+Nikhil.akaveeti (talkcontribs)
+Dear Sir/Madam, Is there any negative marks for attempting wrong answer in Assignments? Thank you.
+
+Reply Edited 2 months ago
+Simmi (talkcontribs)
+No Nikhil, there is no negative marking
+
+Reply 2 months ago
+Nikhil.akaveeti (talkcontribs)
+Thank you.
+
+Reply 2 months ago
+
+what is the use of data in scratch?
+2 comments • 2 months ago
+Simmi (talkcontribs)
+Question asked by sainath75969@gmail.com
+
+Reply 2 months ago
+Simmi (talkcontribs)
+Data is used to create variables in Scratch.
+
+Reply 2 months ago
+
+how can we move 2 sprites simultaneously?
+2 comments • 2 months ago
+Simmi (talkcontribs)
+Question asked by rakshi.m2198@gmail.com
+
+Reply 2 months ago
+Simmi (talkcontribs)
+Use broadcast block. Whatever events you put in broadcast block will make all the sprites animate.
+
+Reply 2 months ago
+
+What is the assignment content that is to be submitted by 15 ?
+5 comments • 2 months ago
+Shubham1234 (talkcontribs)
+What is the assignment content that is to be submitted by 15 ?
+
+Reply 3 months ago
+Simmi (talkcontribs)
+You have to submit Week 1, Week 2 Assignment by August 15,2018.
+
+Reply 3 months ago
+This comment was deleted by Saarun (history)
+Janani S (talkcontribs)
+Hi All,
+
+I couldn't find the assignment.. Kindly do help please
+
+Reply 2 months ago
+Janani S (talkcontribs)
+Finally got it .....thanks in advance...
+
+Reply Edited 2 months ago
+
+do I need to put the colon sign after if command?
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by Sumit Saha
+
+Reply 3 months ago
+Simmi (talkcontribs)
+Yes, you need to. Refer Supernotes for the syntax
+
+Reply 3 months ago
+
+Sir, how the line is changing in every output?
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by 445banty@gmail.com
+
+Reply 3 months ago
+Simmi (talkcontribs)
+In python, print command by default brings the cursor to newline. However, if you want to print in same line, that is also possible in Python.
+
+Reply 3 months ago
+
+Can i use scratch software in Window7 pc?
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by mansurisana333@gmail.com
+Reply 3 months ago
+Simmi (talkcontribs)
+Yes, you can use Scratch on Windows. Go to scratch.mit.edu for using online application. You can also download it and use it offline.
+Reply 3 months ago
+
+wen we said 15 degrees it moved ....but 100 steps do we need to keep clicking or it moves automatically wen we double click ??
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by krithika021200@gmail.com
+Reply 3 months ago
+Simmi (talkcontribs)
+When you double click on the command "Move 100 steps", it automatically moves 100 steps.
+Reply 3 months ago
+
+Can scratch be used in android phones?
+4 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by niknambiar5@gmail.com
+Reply 3 months ago
+Simmi (talkcontribs)
+Scratch 2.0 is based on Flash. Android phones and iOS devices don't support flash. However, it is possible to install older versions of flash on Android and run Scratch.
+Reply 3 months ago
+Pranav24b (talkcontribs)
+Chrome in android does not support Adobe flash, however Puffin browser supports flash by running it remotely and can be downloaded from play store.
+Reply 3 months ago
+Simmi (talkcontribs)
+Thank you Pranav for the answer
+Reply 3 months ago
+
+Everyone wants to start from the scratch, but when it comes to interviews and vivas Basics come into play. How do we start from the basics while we are competing with each other at the basics.
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by sdivyabhi@gmail.com
+Reply 3 months ago
+Simmi (talkcontribs)
+Scratch is a very basic programming language that helps you understand basic programming constructs. As far as it is concerned to interviews, you must practice programming as much as you can. Try writing more and more programs.
+Reply 3 months ago
+
+How to start
+2 comments • 3 months ago
+Ajay Kumar (talkcontribs)
+How to do exercise same as given in video? do I need to install anything?
+Reply 3 months ago
+Simmi (talkcontribs)
+Dear Ajay, Can you please elaborate? Which exercise are you talking about?
+Reply 3 months ago
+
+week 2
+2 comments • 3 months ago
+Gaya3 (talkcontribs)
+how to start to learn week 2 videos
+Reply 3 months ago
+Simmi (talkcontribs)
+Didn't you find week 2 videos ?
+Reply 3 months ago
+
+Animation 1 on Scratch
+3 comments • 3 months ago
+Khushbu (talkcontribs)
+Hey guys! I tried the glide command to make my airplane take off and landing even smoother, please do try it!! It looks amazing.
+Reply 3 months ago
+Saarun (talkcontribs)
+Hi Khushbu! i tried glide command, very cool stuff. thank you :-)
+Reply Edited 3 months ago
+Simmi (talkcontribs)
+Good to see that you're enjoying Scratch :)
+Reply 3 months ago
+
+Background music is awesome
+2 comments • 3 months ago
+Akshaysaxena (talkcontribs)
+Thanks for background music in lectures. I listen to music while reading or writing, this is first time I am listening while taking lecture :)
+Reply 3 months ago
+Simmi (talkcontribs)
+Thank you so much Akshay. Its a team effort. :)
+Reply 3 months ago
+
+Assignment 0: Will it's marks be considered
+3 comments • 3 months ago
+Akshaysaxena (talkcontribs)
+My question is, will you consider the marks of assessment 0, in the final score of certification exam? I've not submitted it, as I felt it's a demo!
+Reply 3 months ago
+Pythoncourse123 (talkcontribs)
+Assignment 0 is not graded for Final assessment
+Reply 3 months ago
+Akshaysaxena (talkcontribs)
+Ok, thanks
+Reply 3 months ago
+
+I know around 40% of programming concepts and I want to become an efficient programmer no matter in which specific field but I want to become a great programmer can you give some suggestions?.
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by harshkathiriya.15.ce@iite.indusu. Everybody please discuss and help harshkathiriya
+Reply 3 months ago
+Akshaysaxena (talkcontribs)
+There is nothing called 40% :) It can be "yes" or "no". "Yes" can become more comfortable by more practice. This program is fine but I feel it is better to join regular institute like niit, aptech etc. where you will be subjected to 1-2 months of rigorous training along with relevant job opportunity, if needed.
+Reply 3 months ago
+
+Please find the Options clean-up and add comment popping up on right click but duplicate & delete option not available.
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by Rohan B
+Reply 3 months ago
+Simmi (talkcontribs)
+Please right click on the commands to get duplicate/delete option, not on the blank screen.
+Reply 3 months ago
+
+Is a personal laptop required to complete this course or else college lab computer enough?
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by yvleelapr17@gmail.com
+Reply 3 months ago
+Simmi (talkcontribs)
+You should practice programming as much as you can. I think you can manage with lab computer.
+Reply 3 months ago
+
+How to proceed in the course?
+2 comments • 3 months ago
+Simmi (talkcontribs)
+i had enrolled to Python class and if I login to portal i have few videos. Are there any live sessions happening for an hour or so ? Should i go through the videos which are uploaded and then submit my assignments. Could you please help me in understanding the learning procedure? Question asked by Sandeep.C.Shekar
+Reply 3 months ago
+Simmi (talkcontribs)
+Yes Sandeep, you should first watch the videos before moving to assignment.
+Reply 3 months ago
+
+Sir I m engg 1st year student and had never learnt programming before, and our classes regarding them haven't started yet. How can I learn it? Should i learn basic programming 1st or is it no where related to it?
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by meghanapathrikar2000@gmail.com
+Reply 3 months ago
+Simmi (talkcontribs)
+Hello Meghana, You should just go with our course. Our course is 0th level course about basics of programming. At the end of this course, we assure you, you will be well versed with basics of programming.
+Reply 3 months ago
+
+What are printing a message, currency conversion, profit or loss in course progress details?
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by guptamanan53@gmail.com
+Reply 3 months ago
+Simmi (talkcontribs)
+You will get to know eventually about all these topics.
+Reply 3 months ago
+
+Start Late
+2 comments • 3 months ago
+Sudip das (talkcontribs)
+Sir due to some reason i am not able to start on time, for that i really regret. I also not able to submit first assignment.Do i have face any problem for that???-*
+Reply 3 months ago
+Simmi (talkcontribs)
+Dear Sudip, Don't worry!! Assignment 0 is not graded. You can still pick up.
+Reply 3 months ago
+
+Prerequisites??
+2 comments • 3 months ago
+Simmi (talkcontribs)
+What is the meaning of word 'prerequisites'? - Question asked by bhumipandya720@gmail.com
+3 months ago
+Simmi (talkcontribs)
+Prerequisite basically means prior condition for something el to happen. For example : In order to learn addition, you must know the numbers. So learning numbers is a prerequisite for addition.
+3 months ago
+Solution to Looping problem
+2 comments • 3 months ago
+Simmi (talkcontribs)
+In the solution to looping problem you asked us to use change steps within in the repeat statement. By changing the value to 20 how it gets incremented as 40,60,80...and so on.. Question asked by balaji1971svg@gmail.com
+3 months ago
+Simmi (talkcontribs)
+Hello Balaji, We are changing steps by 20 every time loop runs not to 20.
+3 months ago
+Difference between C and Python
+3 comments • 3 months ago
+Vvkcdm (talkcontribs)
+Question by goluharsha@gmail.com Why does c have so much of coding than Python?
+Edited 3 months ago
+Vvkcdm (talkcontribs)
+With time programming is getting easier. You feel C is complicated because you actually give almost every atomic instructions. In Python code appears shorter because of abstractions. By this I mean a lot of frequently required features are grouped into what is called libraries. Using that libraries you can make your code appear shorter.
+3 months ago
+Vvkcdm (talkcontribs)
+Python is fairly a younger programming language than C hence you feel the difference.
+3 months ago
+Scratch for games
+2 comments • 3 months ago
+Vvkcdm (talkcontribs)
+Question by Nagendra This ide is used to create games?
+3 months ago
+Vvkcdm (talkcontribs)
+You can create a lot of nice games using Scratch
+3 months ago
+how can i draw a curved line in scratch???
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by shuvayan pal
+3 months ago
+Simmi (talkcontribs)
+Go to costumes->select pencil->draw a curved line. You can find costumes tab on top of the right window
+3 months ago
+Programming Logic
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Dear sir, I am an average student. I can't get logic's very quickly while doing programming. Can you tell how to get the logic's quickly while doing programming. Thank you. Regards Nikhil..
+3 months ago
+Simmi (talkcontribs)
+Practice is the key. Keep on practicing different programs. Our course will provide you plenty of interesting examples to practice.
+3 months ago
+What is the difference between C and C++? Are both procedural languages?
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by bks0550@gmail.com
+3 months ago
+Simmi (talkcontribs)
+C++ is an object oriented programming language while C doesn't support objects. Yes, both are procedural. The main difference is C++ supports both procedural and object oriented programming.
+3 months ago
+Any reason for not listing the Lecture Notes pages in the Main Page?
+7 comments • 3 months ago
+Jkmadathil (talkcontribs)
+Hi, <br> The idea of using a wiki for collating the notes and the discussions is a really great one. I prefer this learning rather than "from the video" or "assignment" model used in NOC. Any specific reason why the "Lecture Notes" pages are not linked from the main page? -- Since this may be the first time that many users will see discussion routed through Wiki in an NPTEL course, some explanation of the concept of this Wiki and philosophy behind this initiative will be really helpful. -- For a first time wiki user like me, the interface is slightly daunting. Even familiarity with Wikipedia doesn't teach an average person to look into "Discussion" or explore the wiki pages. -- It may be a good idea to add the videos used in this FAQ page in the course itself. Maybe create a section like JOCWiki (like Week 1,2 etc) Also a suggestion on FAQ: Pretty sure that FAQs are going to increase as the course move along. Would be nice to categorize FAQs using sections and subsections in the Wiki. For instance - General, JOCWiki, Week 1-concepts, Week1-Scratch, Week2, so on and so forth. Minor Technical Question on Wiki: The MarkUp page is throwing an error. I had selected the preview mode in my preferences. Will it not work in Discussion page? Jkmadathil 12:55, 1 August 2018 (UTC)Jkmadathil
+Edited 3 months ago
+Sudarshan iyengar (talkcontribs)
+Wonderful inputs. @simran kindly look into all of them. Also, call and talk to JK for more inputs. Kindly fix the Markup error that JK is pointing out.
+3 months ago
+Simmi (talkcontribs)
+Hello, Thank you for writing to us. Lecture notes are linked to the main page. Please check there is a tab named Super Notes. Thank you forthe suggestions. We will try to include the videos as supplementary material. We will also categorise the FAQs according to your suggestion.
+3 months ago
+Jkmadathil (talkcontribs)
+Thank You Simran and Sudarshan!! <br> All of you at JOC are doing fantastic work. Was really thrilled to see course team taking extra efforts to make the course more engaging for the learner. "Joy of Learning with Joy of Computation" is what came to my mind as soon as I saw this wiki. <br/> @Simran: The main page looks compact and good. One possible recommendation: Since SuperNotes is the primary activity you want to encourage participants to be engaged in, give it a more prominent position by either putting it up or giving a TOC.<br/> To check if this has made an effect, see the change in the rate of learners who are accessing the supernotes after you make this change. I saw close to 30 new user registrations yesterday. @Sudarshan: Some additional thoughts, see if it is making sense. <br/> - For popularizing the JOCwiki and actually see learner contributions, it will be worthwhile to put a dedicated activity in Week 2/3 where learners are encouraged to come and see the wiki, post a note, engage in discussion etc. You can incentivize this by putting 1-2 assignment questions on the JOCwiki. From my experience with Indian online learners, directives with incentives work better than recommendations. <br/> - If you can put one takeaway image/slide in the Weekly note, i.e. something that the learner should always keep in mind even if they forget/don't access the videos & assignments, it will become a tangible artifact for the learner.<br/>
+Edited 3 months ago
+Simmi (talkcontribs)
+Thank you Jkmadathil for the inputs. I will try to improve the interface as per your inputs. Since you liked our course very much and you're very much familiar with this interface, we would like you edit the existing articles or create your own articles on JOC wiki. We can encourage other students to edit by giving your example. Thank you again for writing to us.
+3 months ago
+Jkmadathil (talkcontribs)
+Thank You. I will try to do justice to the confidence that you have shown. <br/> P.S: Most of my understanding of wikimarkup/wiki editing is based on a brief exposure to wikipedia editing that I attempted almost 6-7 years back. Since you are TA'ing the course, it would be worthwhile for you to look into this course - https://iitbombayx.in/courses/designing-learner-centric-mooc The course helps you understand how to bring learner-centricity (which you are trying to do in this course) in a massive open online setting. 11:12, 2 August 2018 (UTC)
+Edited 3 months ago
+Simmi (talkcontribs)
+Sure Jkmadathil. We will have a look :)
+3 months ago
+why are u giving coordinates to an image?
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by Vamshi
+Reply 3 months ago
+Simmi (talkcontribs)
+Since there is no function in Scratch which makes the object change its y position, we will have to use x,y co-ordinates.
+Reply 3 months ago
+
+Will the topics related to Libraries-Numpy, Scipy Pandas will be covered in the course?
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by Ankita
+Reply 3 months ago
+Simmi (talkcontribs)
+Dear Ankita, JOC is a 0th level course. We will be using some functions from these libraries but extensive coverage of all these libraries will not be done.
+Reply 3 months ago
+
+can we take sprite from our drive?
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by pojitha123@gmail.com
+3 months ago
+Simmi (talkcontribs)
+Yes you can upload a sprite from your local PC. For that, you need to download file from your drive.
+3 months ago
+Can I learn Python?
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Without knowing c,c++ perfectly .. is there any chance to learn python? - Question posted by charan.cc695@gmail.com
+3 months ago
+Simmi (talkcontribs)
+As mentioned in the videos, we don't assume any prerequisites. You can learn Python without any knowledge of programming.
+3 months ago
+Difference between IDEs and framework.
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by priyankasuresh6111997@gmail.com
+3 months ago
+Simmi (talkcontribs)
+IDE is a software that help you to write program and see the output. Framework provides set of guidelines to the user on how to develop the program.
+3 months ago
+Java or Python
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by priya.dahiya2905@gmail.com
+3 months ago
+Simmi (talkcontribs)
+Hi Priya, It is very easy to learn any language. The gold mine here is to understand the logic behind every problem. Once you understand the logic, writing the program in a particular language is very easy.
+3 months ago
+Two actions simultaneously??
+2 comments • 3 months ago
+Simmi (talkcontribs)
+I am trying to make a sprite do two actions simultaneously. I want to do the exercise plus I want it to recite a 15's table. I can do it one after the other. How to do it simultaneously? Question asked by herahassan2007@gmail.com
+Edited 3 months ago
+Simmi (talkcontribs)
+It can be done easily. Add one more instruction in the program along with 15 table recitation in the loop without any delay. In this way, cat will recite the table and then move without any delay. This will go in a loop till the number of times you have specified.
+3 months ago
+about oops concept
+2 comments • 3 months ago
+Imran (talkcontribs)
+in this course oops concept will be explained or not
+3 months ago
+Simmi (talkcontribs)
+Dear Imran, This is a 0th level course. We will be explaining only basics of Python.
+3 months ago
+Why Scratch?
+2 comments • 3 months ago
+Vvkcdm (talkcontribs)
+Question by Rohith why do we are supposed to learn about scratch and how is that related to python learning?.
+Edited 3 months ago
+Vvkcdm (talkcontribs)
+As we had said in our videos, we don't assume any prerequisites. Scratch is a simple programming language that a 8 year old can learn. What is important is learning programming logic. With this simpler one if you understand what we call as programming logic and can think on what logic to apply to solve a problem, you can easily learn any programming language not just Python.
+3 months ago
+Why python is better for AI, Why not R?
+4 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by VINIT KUMAR.
+3 months ago
+Simmi (talkcontribs)
+R is mostly used for statistical analysis. As far as it is concerned to AI, both languages are used for AI in the current scenario.
+3 months ago
+Vinit (talkcontribs)
+Which language is best..
+3 months ago
+Simmi (talkcontribs)
+It's application specific. Based on the application, you can compare them. AI is a broader term. We need to narrow down to a specific application.
+3 months ago
+So are we going to use just scratch or will you be doing programming in python?
+2 comments • 3 months ago
+Simmi (talkcontribs)
+Question asked by shailja@mru.edu.in
+3 months ago
+Simmi (talkcontribs)
+Since this is a 0th level course, we started off with programming language like Scratch. Eventually we will be shifting to Python in the forthcoming weeks.
+3 months ago
+Default value of a variable.
+2 comments • 3 months ago
+Simmi (talkcontribs)
+what about fact that the value of a variable may be a garbage value, if it is not initialized to zero or any number. i have learned some languages like c and c++ and i experienced that the value of an uninitialised variable being zero.Do this concept change in python, could you pls clarify me. Question asked by Surendhar Muthukumar
+3 months ago
+Simmi (talkcontribs)
+Yes Surendhar, you are right. This does happen in C,C++. Well this is too early to ask. We will be explaining all these things in the forthcoming sessions. But even in Python, you must initialise a variable.
+3 months ago
+Can we download the output videos of the scratch programmes made online?
+2 comments • 3 months ago
+Mathematician123 (talkcontribs)
+How can we do it?
+3 months ago
+Jkmadathil (talkcontribs)
+Answered in a spearate thread, hence marking this as resolved.
+3 months ago
+Can we download the output videos of scratch programmes made online?
+4 comments • 3 months ago
+Mathematician123 (talkcontribs)
+How can it be done?
+3 months ago
+Simmi (talkcontribs)
+Are you talking about the scratch files?
+3 months ago
+Vishwasmpv (talkcontribs)
+Yes, We can download. Go to File in top left corner and click Download to your computer
+3 months ago
+Simmi (talkcontribs)
+Thank you Vishwasmpv :)
+3 months ago

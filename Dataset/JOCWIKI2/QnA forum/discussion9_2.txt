@@ -1,0 +1,527 @@
+Use of Pass keyword
+5 comments • 5 months ago
+Puneet Patel (talkcontribs)
+Can any one tell me about use of 'pass' keyword in loops. I was trying the assignments of Panagram and Vowels using 'continue'. How pass and continue differ. Please clarify
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+pass is used to just pass. it is to skip a mandatory statement.
+
+for example:
+
+if True:
+   print("You are correct!")
+else:
+   pass
+in this example, one can argue why to use "else", when we can skip the else part itself. Yes, this is a bad example. But I hope you can understand that "pass" is just to pass (do nothing), like when we are playing a game.
+
+One thing to understand and note is... Can we skip without giving anything in the else part as below...?
+
+if True:
+   print("You are correct!")
+else:
+
+It will definitely fail. Because it is mandatory to add something in else. In such cases you can use pass.
+
+Best situation based on my experience is... When I start writing a program, I create code blocks first. then I write the logic as below...
+
+S = 'your article is in queue'
+
+def v_logic(a):
+    
+    for l in range(len(a)):
+        if a[l].lower() in ['a','e','i','o','u']:
+            pass
+        else:
+            pass
+    return b
+
+def logic2():
+    pass
+
+print(v_logic(S), end="")
+
+Final code:
+
+S = 'your article is in queue'
+#S ='Great part of life'    #gret part of life
+#S = 'eel is electricity'   #el is electricity
+#S = 'love hate and war'    #love hate and war
+
+def v_logic(a):
+    b = ''
+    vcount = 0
+    for l in range(len(a)):
+        if a[l].lower() in ['a','e','i','o','u']:
+            vcount += 1
+            if vcount == 1:
+                b = b+a[l]
+        else:
+            b = b+a[l]
+            vcount = 0
+    return b
+
+print(v_logic(S), end="")
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+Kindly type in youtube search bar break pass continue python. you will see many beautiful videos there of 5 to ten minutes duration.
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+In General code does not get developed in one day. it takes few months to get the complete code and details. So for the code developers will initally get all the conditions in place. ie all the if conditions and else conditions. so to get complete details in if and else statements may require some time. so in such cases to check the code they may take the advantage of pass statement so that if it is already present they could just replace the pass statement with the necessary code.
+
+Reply 5 months ago
+Puneet Patel (talkcontribs)
+Thank you so much.
+
+Reply 5 months ago
+
+Quiz Doubt in Accepted Answers
+5 comments • 5 months ago
+Raghav (talkcontribs)
+Q.3 What does the function G.nodes() in networkx return?
+
+It returns the number of nodes present in the graph G.
+It returns the list of nodes present in the graph G.
+It returns the tuple of nodes present in the graph G.
+It returns the number of edges present in the graph G.
+Answer should be tuple of nodes because in console we can see after writing G.nodes() we get output Out[4]: NodeView((1, 2, 3, 4, 7, 9)) which is a tuple. Documentation also says it returns tuple.
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+I just checked in the video and in spyder. it is showing it as list only. ie what they also have selected. i dont know where you getting this as tuple.
+
+Reply 6 months ago
+Raghav (talkcontribs)
+Please write G.nodes() in console and verify what it is returning, not after using print statement and check the documentation as well
+
+Reply 6 months ago
+Atulgnit (talkcontribs)
+It return a list of node
+
+Reply 6 months ago
+Kempu (talkcontribs)
+See the output: Out[4]: NodeView((1, 2, 3, 4, 7, 9)) It is tuple only as it is in "ROUND BRACKETS" Not a list which is returned in "[]"
+
+Reply 5 months ago
+
+All Assignments answers week 9. Friends share you programs too please.
+One comment • 5 months ago
+Arunkumar (talkcontribs)
+Sorry friends, I am still busy with personal issues. Because of which I am unable to be online or help. But I can see there are a lot of you helping each other. It is superb. Keep going.
+
+Note: Hello friends please share your programs too, if you have a better code or different approach than these programs. Everyone, who struggled to finish assignments, please ask you questions here. So that we all can learn and help each-other.
+
+A1-Counter Spiral - code:
+I need to accept this ans sorry, I didn't had time to solve this assignment by myself. So I used the same code from the video, with few changes.
+
+row=int(input())
+SM=[[col for col in list(map(int,input().split()))] for r in range(row)]
+col=row; r=0; c=0; ccs=[]
+while(r<row and c<col):
+    for i in range(r, row):
+        ccs.append(SM[i][c])
+    c+=1
+    for i in range(c, col):
+        ccs.append(SM[row-1][i])
+    row-=1
+    if c<=col:
+        for i in range(row-1, r-1, -1):
+            ccs.append(SM[i][col-1])
+    col-=1
+    if r<row:
+        for i in range(col-1, c-1, -1):
+            ccs.append(SM[r][i])
+    r+=1
+print(*ccs, sep=" ", end="")
+
+A2-Maximum Numeric - code:
+I used Vowel code from previous Assignment to solve this Assignment.
+
+import string
+S = input()
+b=''
+acount = 0
+for a in range(len(S)):
+    if S[a] in ' '+string.ascii_lowercase:
+        acount += 1
+        if acount == 1:
+            b = b+' '
+    else:
+        b = b+S[a]
+        acount = 0
+
+print(max(list(map(int,b.strip().split()))), end="")
+
+A3-Email ID - code:
+email=input()
+print(email[email.index('@')+1:email.index('.')], end="")
+
+NOTE: Please also check Sample solutions, Provided by instructor they are interestingly different approach/methods.
+
+Reply 5 months ago
+
+Quizz 9 question 5
+3 comments • 5 months ago
+Tinu Iype Jacob (talkcontribs)
+Hi, Stylometry is the quantitative study of literary style through computational distant reading methods. I have answered the correct opition. Why is it incorrect?
+
+Reply 5 months ago
+Singhn 2 (talkcontribs)
+Exactly;I also got it wrong.
+
+Reply 5 months ago
+Jhuma (talkcontribs)
+https://www.cram.com/essay/stylometry-quantitative-investigation-into-the-characteristics-of/FKK8KK35J
+
+Even this blog says so. I have also done it correctly but its sowing incorrect. please help.
+
+Reply 5 months ago
+
+please review question no. 5 (What is Stylometry?)
+One comment • 5 months ago
+Aadillawaye (talkcontribs)
+please review question no. 5 (What is Stylometry?)
+
+Reply 5 months ago
+
+Assignment 9 ques 4
+7 comments • 5 months ago
+EXAM PATTERN
+12 comments • 6 months ago
+Keshav bansal (talkcontribs)
+any pattern of exam with details to get good marks?
+
+Reply 6 months ago
+Harinder (talkcontribs)
+The exam is totally mcq based. You should focus on the problems or the cool ideas first taught in videos then programming.
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+@Harinder Who are you.Are you the TA for this course.
+
+Reply 6 months ago
+Harinder (talkcontribs)
+No I am not TA. I gave the exam last time. I said so based on my analysis of the exam.
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Harinder, In Multiple Choice questions do we have more than one answer questions?
+
+Reply 6 months ago
+Harinder (talkcontribs)
+No, I believe there were only single answer questions.
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Are there questions on commands from python what command is used in speech_Recognition, image processing, stylometry etc.
+
+Reply 6 months ago
+Harinder (talkcontribs)
+You mean the libraries used or methods, etc?
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+yes it is very hard to remember what is specific command used in such specific process. we can remember commands of lists tupples sets, dictionaries, while loop, for loop etc. but not what are the commonds used in methods for image processing , game theory etc.
+
+Reply 6 months ago
+Mnikitha24 (talkcontribs)
+How many MCQs do we get in the exam? What is the exact pattern of the exam?
+
+Reply 6 months ago
+C++veteran (talkcontribs)
+I've read on quora that exam will be based on the questions in videos lectures and notes. There's could be 3 sections and 1 marks and 2 marks questions. The questions may be of type True/False, Select one option, Select one or more options etc. I am not sure though.
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+When the output of a process is qualitative, the answers will be adjective like high low or medium. When it is quantitative the output will be in the form of numbers. Stylometry we are drawing graphs. it means it is quantitative only.
+
+Reply 6 months ago
+
+Regarding Q5 in week-9 Quiz
+14 comments • 6 months ago
+Praveen897 (talkcontribs)
+Q5) what is Stylometry?
+
+Is the answer given by them is correct!
+This is what i observed, when i searched on internet. This is the same as what they had explained in the video.
+
+"Stylometry is the quantitative study of literary style through computational distant reading methods. It is based on the observation that authors tend to write in relatively consistent, recognizable and unique ways."
+
+Reply 6 months ago
+Atulgnit (talkcontribs)
+Yes same issue answer should be quantitative study
+
+Reply 6 months ago
+Subhamohan (talkcontribs)
+As stylometry is quantitative study of literary style, this question need to be re-evaluated.
+
+Reply 6 months ago
+Puneet Patel (talkcontribs)
+"stylometry is quantitative study of literary style." It is also stated in the super notes of week 9. Please clarify the correct answer.
+Reply 6 months ago
+Meera Doshi (talkcontribs)
+Yes, As stylometry is quantitative study of literary style, this question need to be re-evaluated.
+
+Reply 6 months ago
+Shailaja (talkcontribs)
+Yes. the answer need to be re-evaluted
+
+Reply 6 months ago
+Venkata Swathi R (talkcontribs)
+quantitative study is correct for stylometry right?
+
+Reply 6 months ago
+Rambahadur (talkcontribs)
+Quantitative study should be correct. It should be re-evaluated.
+
+Reply 6 months ago
+Madhavi1 (talkcontribs)
+Please conform 5th answer in week-9 quiz
+
+Reply 6 months ago
+Madhavi1 (talkcontribs)
+Stylometry is the quantitative study of literary style through computational distant reading methods. It is based on the observation that authors tend to write in relatively consistent, recognizable and unique ways. For example:(from super notes)
+
+Reply 6 months ago
+Dhananjay giri (talkcontribs)
+Yes bro, you are right. Wrong answer is given by npyel on this question no. 5 of week 9.
+
+Reply 6 months ago
+Yash shende (talkcontribs)
+please re-evaluate the answer of question 5 week 9 quiz
+
+Reply 6 months ago
+Yash shende (talkcontribs)
+please re-evaluate the answer of question 5 week 9 quiz
+
+Reply 6 months ago
+Snehashish (talkcontribs)
+The given answer for Q.5. seems to be incorrect. Please re-evaluate it.
+
+Reply 6 months ago
+
+assignment 2 of week 9
+9 comments • 6 months ago
+AI (talkcontribs)
+Hello all! Can anybody give a hint for assignment 2 in week 9. I have converted the string into numbers only, then used the reverse sort. But problem is how do I do for numbers with different widths. I am able to get the correct o/p for test case 1 & 2 but while submitting it is 0/100.
+
+Reply 6 months ago
+Neelima (talkcontribs)
+I did it in a non optimized way but it worked for me (100/100). Here, 1) I replaced all aplhabets with "*" 2) Split the string using "*" (which will give list with empty items) 3) created list and add the non empty items to new list 5) Print the max item from the list using max(list) method
+
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+check if the character is a number or alphabet. if number there will be two are three numbers start a loop. Before the start of the loop assign sum=0 in the loop write sum=sum*10+number at the end append the sum to the list.
+
+Reply 6 months ago
+C++veteran (talkcontribs)
+i'v managed to do it in O(n) complexity. i just added space between every consecutive alpha and numbers (eg: 'rt43qw' becomes 'rt 43 qw') and extracted the numbers then stored it in stack and returned the max number.
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Generally they say 12/2=6. Mathematics have only one solution. But in day to day life, for a problem if we try we will find out different solutions. This is a demonstration of the same. Kindly post your approaches on how you are solving this problem.
+
+Reply 6 months ago
+C++veteran (talkcontribs)
+That's deep (°_°)
+
+Reply 6 months ago
+AI (talkcontribs)
+Hello @Neelima. I had also replaced characters with * but was not successful in the next part. Finally your hint helped me in getting the solution and after submission now I have got 100/100. Thanks a lot.
+
+Reply 6 months ago
+Yash shende (talkcontribs)
+i used Regular expression to solve this problem
+
+import re
+
+S=input()
+
+a=re.findall('\d+',S)
+
+""" 1) Function findall() finds *all* the matches and returns them as a list
+
+   2) inside findall() '\d+' is regular expression which finds digit  where ,
+       \d = matches only (0123456789) ie.[0-9]
+        + = it matches One or more char in our case digits[0-9]
+   
+"""
+
+
+print(max(a))
+
+Reply Edited 6 months ago
+AI (talkcontribs)
+@Yash shende I did not about this library. Will try this method. Thanks for the help.
+
+Reply 6 months ago
+
+Assignment 9 Question 6
+2 comments • 6 months ago
+Saumendu (talkcontribs)
+Which of the following statements is correct about tokenisation in Python?
+
+According to above question, answer should be "Tokenisation involves splitting words from the text".
+
+Reply 6 months ago
+Som (talkcontribs)
+No, Tokenisation can be done by splitting into words as well as sentences 
+Google it.
+
+Reply Edited 6 months ago
+
+Week 09 : downloading stylometry data
+3 comments • 6 months ago
+Sumitkrsharma01 (talkcontribs)
+Dear sir, I am not able to download the data for stylometry programming. please share the link. Thanks
+Reply 6 months ago
+Raghav (talkcontribs)
+https://github.com/programminghistorian/ph-submissions/blob/gh-pages/assets/introduction-to-stylometry-with-python/stylometry-federalist.zip
+Reply 6 months ago
+Keshav bansal (talkcontribs)
+FOR SIX DEGREE OF SEPARATION WHERE IS THE DATA LINK?
+Reply 6 months ago
+
+Assignment 9
+2 comments • 6 months ago
+Shitalp (talkcontribs)
+Q.4)What does the function scipy.misc.read() return? I think above question is wrong. Since scipy.misc don't have any read() method. It should be imread().
+Reply 6 months ago
+Marysubaja (talkcontribs)
+Yes it should be imread()
+Reply 6 months ago
+
+HINTS FOR WEEK 9 PROGRAMMING ASIGNMENTS.
+2 comments • 6 months ago
+Som (talkcontribs)
+<b>Assignment 3: Finding Company Name out of a given email:</b> <ul> <li>First store the input email address in a varible. <li>Iterate through the variable(i.e an iterable) and wait for '@' character. <li>After '@' is encountered, insert all the characters that follow it into another varibale. <li>Keep adding characters untill '.' character is encountered. <li>Once '.' is encountered, STOP and return this variable. ''Reply if you have any doubts in this logic''
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+u can try this with split command
+Reply 6 months ago
+
+networkx: installing gephi
+3 comments • 6 months ago
+Sayantoni Chaudhuri (talkcontribs)
+I have java 1.8(updated) but still some error is being displayed by Gephi that I need java 1.8 to run gephi. Any help please?
+Reply 6 months ago
+Nizar.ua (talkcontribs)
+Please check gephi.conf file in C:\Program Files\Gephi-0.9.2\etc You may edit this file to point jdkhome path to JRE folder. Remove # in front of jdkhome. '#default location of JDK/JRE, can be overridden by using --jdkhome <dir> switch jdkhome="C:\Program Files (x86)\Java\jre1.8.0_201\"
+Reply Edited 6 months ago
+Sayantoni Chaudhuri (talkcontribs)
+Hey! Thanks! Turns out, I had JDK 1.8 for 32bit. I removed it and installed JDK 1.8 for 64bit and it is working fine now!
+Reply 6 months ago
+
+I haven't registered for the exam. Registration was over. How can I register now?
+2 comments • 6 months ago
+Neelima (talkcontribs)
+I have to write this exam as it is one of the subject for cse 3rd year student. I haven't registered and registration date was over. what should I do now? Please any one help me this. Your support is appreciated. Thank you!!
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Write an email to Noc Nptel <noc@nptel.iitm.ac.in and check if they can help you.
+Reply 6 months ago
+
+use of f' in this command print(f'ASCII Value for {i} is {ord(i)}')
+2 comments • 6 months ago
+Sumitkrsharma01 (talkcontribs)
+why we have used f' here ? (f'ASCII Value for {i} is {ord(i)}') We can print this directly as well
+Reply 6 months ago
+AI (talkcontribs)
+It is the formatting method of getting the work done
+Reply 6 months ago
+
+any easier way to solve programming assignment 1 ... week 9
+4 comments • 6 months ago
+Jaiprince17 (talkcontribs)
+:D :D :D
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Play with the code shown in week 7 for drawing a spiral 7. it is just using for one high level for loop and four 2nd level for loops by changing the indices. It is shown in week 7 lectures. you just need to change the order and the values that go into the for loop Range.
+Reply Edited 6 months ago
+Jaiprince17 (talkcontribs)
+wow thank you bro :)
+Reply 6 months ago
+Som (talkcontribs)
+Use four loops and one big loop which contains all these four loops. <br> One loop goes down, another right, another up and finally last one goes up.
+Reply Edited 6 months ago
+
+How to post a picture in JOCWIKI and ask a doubt.
+One comment • 6 months ago
+Kamalakar (talkcontribs)
+If i have to post a picture and ask doubt how to post a picture here.
+Reply 6 months ago
+
+Please explain syntax used, specially of first occurrence of 'f' in open(f'..)
+One comment • 6 months ago
+Dharmesh.enc (talkcontribs)
+Please explain syntax used, specially of first occurrence of 'f' in open(f'..) -------------- def read_files(filenames): strings=[] for file in filenames: with open(f'federalist_{file}.txt') as f: strings.append(f.read()) return ('\n'.join(strings)) --------------
+Reply Edited 6 months ago
+
+Project Gutenberg
+4 comments • 6 months ago
+AI (talkcontribs)
+can anybody tell me where is the link to download the 85 zipped files from project gutenberg?
+Reply 6 months ago
+AI (talkcontribs)
+Got the link. it is in the next lecture.
+Reply 6 months ago
+Sumitkrsharma01 (talkcontribs)
+hi can you please share the link. I am not getting that
+Reply 6 months ago
+Dharmesh.enc (talkcontribs)
+https://raw.githubusercontent.com/programminghistorian/ph-submissions/gh-pages/assets/introduction-to-stylometry-with-python/stylometry-federalist.zip
+Reply 6 months ago
+
+Simple Program for finding panagrams in Week 8.
+2 comments • 6 months ago
+Kamalakar (talkcontribs)
+s=input() s=s.lower() s=set(s) alpha=[chr(x) for x in range(97,123)] common=s & set(alpha) if len(common) >25 : print("YES",end="") else: print("NO",end="")
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Interestingly the following 6 lines passed all the private cases but failed in just one public case s=input() s-set(s) if len(s) >25 : print("YES",end="") else: print("NO",end="")
+Reply Edited 6 months ago
+
+What is the equivalent code for the following For loop
+3 comments • 6 months ago
+Kamalakar (talkcontribs)
+Hi all what is the equivalent code in simplest for for the following code a=[token for token in tokens if any(c.isalpha() for c in token)] is it for token in tokens: if any(c.isalpha(): for c in token: a= token
+Reply 6 months ago
+Kamalakar (talkcontribs)
+how do we understand when such codes are written
+Reply 6 months ago
+Kenny (talkcontribs)
+for token in tokens: if any(c.isalpha()): for c in token: a.append(token)
+Reply 6 months ago
+
+Question 6: Quiz Week 8
+7 comments • 6 months ago
+nltk download
+One comment • 6 months ago
+Sumitkrsharma01 (talkcontribs)
+Sir, I am not able to download nltk libraries by the command in ipython console. please help
+Reply 6 months ago
+
+Area Calculation Lecture 3
+3 comments • 6 months ago
+Kamalakar (talkcontribs)
+array1[:,:100]=[255,128,0] array1[:,100:]=[255,128,0] what does the :,:100 and :,100:100 indicate.
+Reply 6 months ago
+AI (talkcontribs)
+array1[:,:100]=[255,128,0] The first argument is for height.[:] indicates the entire height from beginning to end.Second argument for height[:100] beginning to 100. that means pixels from (h=0,w=0) to (h=100,w=100) will be assigned the color [255,128,0]. in the next line they are defining the pixels from (h=0,w=100) to (h=100,w=200) will be assigned the color [0,0,128] in this way 2 colors are assigned. Hope this helps.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Thanks a lot for explaining.
+Reply 6 months ago
+
+Calculation of area of punjab in video 5
+One comment • 6 months ago
+Kamalakar (talkcontribs)
+It is shown in the video area of punjab as Area of punjab=(count_pun/count_in)*32867263 The formula to be used is = (count_pun/(count_pun+count_in))*32867263 because when you getting the count_in you are counting the dots excluding the punjab region. while you are using the total area in the calculation.
+Reply 6 months ago
+
+Area Calculation - Don't Measure
+One comment • 6 months ago
+Shitalp (talkcontribs)
+Can anyone please tell me where to find "map-01.png" file required in area calculation program
+Reply 6 months ago

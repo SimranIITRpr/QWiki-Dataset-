@@ -1,0 +1,1124 @@
+WHY DATA INSUFFICIENT?
+3 comments • ‪2 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Consider the secure Rock Paper Scissors game.‬
+
+Assume for both the players:
+0->Rock 
+1->Paper
+2 ->Scissors
+
+Player 1's input : 1000010210 
+Player 2's input : 1012010211
+
+Who won?
+ Player 1
+ Player 2
+ Draw
+ Data insufficient and hence winner cannot be determined.
+
+Accepted Answers:
+Data insufficient and hence winner cannot be determined.
+
+‪Edited 2 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Parameter of secret game is not provided...Means which bit need to be considered‬
+
+‪2 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪thanks, i missed it.‬
+
+‪2 months ago‬
+
+
+
+
+
+Unable to submit Programming Assignments of Week 5 and Week 6
+6 comments • ‪3 months ago‬
+
+
+
+‪Pythoncourse123 (talkcontribs)‬
+‪The due date for Programming Assignments of Week 5 and 6 was 13th September. However, when I attempted the assignment, I wasn't able to submit my program. I could compile and run it and see the tests I passed.‬
+‪But when I would click on the submit button, it would give me an error like --> couldn't connect to NPTEL.ac.in (something like this don't remember the exact error) I received this error when I attempted to submit around 12th of September, when unable to submit the assignments I contacted our course instructor who guided me to ask the question here.‬
+‪Addition details --> I was able to edit my programs even after due date - 13th September, until 19th of September, when it locked me out and said "Due date exceeded". All my 6 programs never got submitted and I was unable to get the scores for them either !‬
+‪Please help fix this !‬
+
+‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Please convey your issue at lakshmi@nptel.iitm.ac.in‬
+
+‪4 months ago‬
+
+
+
+‪Pythoncourse123 (talkcontribs)‬
+‪Already tried that, no reply till now !‬
+
+‪4 months ago‬
+
+
+
+‪Pythoncourse123 (talkcontribs)‬
+‪Ma'am I sent an E-mail on 18th September, and yet to hear back from the above said email you told me to contact.‬
+‪What do I do ?‬
+
+‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Please email again. This issue is handled by NPTEL team‬
+
+‪4 months ago‬
+
+
+
+‪Pythoncourse123 (talkcontribs)‬
+‪I have emailed him again. Hope to see a reply soon !‬
+
+‪3 months ago‬
+
+
+
+
+
+How many Assignments will be considered for final evaluation?
+4 comments • ‪4 months ago‬
+
+
+
+‪Surya (talkcontribs)‬
+‪I would like to know how many Assignments and programming assignments will be considered for final evaluation?? and also what is the weightage of assignments, programming assignments and final exam in the final score.‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪As far i know...Programming assignment and quiz are 10marks each. Their marks will be added to your final marks.‬
+
+‪4 months ago‬
+
+
+
+‪Surya (talkcontribs)‬
+‪You did not understand my question boy!!‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪I read somewhere that 8 best assignment will be considerable... You can see details here >>> http://sccilabs.org/jocwiki/index.php/Common_Doubts:_FAQs_for_Week_7‬
+
+‪Edited 4 months ago‬
+
+
+
+
+
+Quiz Week 5
+4 comments • ‪4 months ago‬
+
+
+
+‪HimanshuRattan (talkcontribs)‬
+‪Why is the answer to question 1 option a? If an element is not present in an array, it will come to an end without printing anything unless otherwise specified. If nothing is mentioned, it should come to end without printing anything and should come to an end abruptly. Question: What happens when you search for 35 in the list [10,20,30,40,50]? Given answer: The program would handle the case by printing a suitable message that the element is not found Why isn't the answer: The program will abruptly come to an end without intimating anything to the user.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Himanshubhai, 35 is not available in list, you agree. so 30 or 40 cannot be returned. you must agree.‬
+‪other option is, The program will abruptly come to an end without intimating anything to the user. I agree, program will abruptly come to the end, but it intimates user that 35 is not found in the list.‬
+‪that's why only 1 option is left, and obviously we have to handle a particular case in programming.‬
+‪Hope, it is fine now, for you.‬
+
+‪Edited 4 months ago‬
+
+
+
+‪HimanshuRattan (talkcontribs)‬
+‪You are at the wrong page. Tell me what this will do when you try to find 35.‬
+‪list=[10,20,30,40,50] x=int(input()) for i in range(len(list)):‬
+‪   if(x==list[i]):‬
+       print("Found")
+Hope this helps. :)
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪I am at right page of Assignment 5, question-1. It is not specified, that you have to write for loop. So it is assumed to use the standard functions of Python.‬
+‪list=[10,20,30,40,50]‬
+x=int(input())
+print(list.index(x))
+
+
+'''Output:
+Traceback (most recent call last):
+  File "testy.py", line 3, in <module>
+    print(list.index(x))
+ValueError: 35 is not in list
+'''
+
+‪Edited 4 months ago‬
+
+
+
+
+
+assignment 5
+5 comments • ‪4 months ago‬
+
+
+
+‪Kingsly (talkcontribs)‬
+‪I've submitted assignment 5 before the due date.But yet it is not corrected and the marks has been not been credited.Still it is open for submission.‬
+
+‪4 months ago‬
+
+
+
+‪AmeySawant (talkcontribs)‬
+‪Assignment 5 Due date for this assignment: 2019-09-12, 23:59 IST‬
+
+‪they have entered year 2019 instead of 2018‬
+
+‪Edited 4 months ago‬
+
+
+
+‪Kingsly (talkcontribs)‬
+‪will it be taken into account?‬
+
+‪4 months ago‬
+
+
+
+‪Rohit09 (talkcontribs)‬
+‪Now last date is 14-9-18‬
+
+‪4 months ago‬
+
+
+
+‪Kingsly (talkcontribs)‬
+‪thanks bro‬
+
+‪4 months ago‬
+
+
+
+
+
+Assignment 2:Robot and the Charger
+20 comments • ‪4 months ago‬
+
+
+
+‪Sruthin (talkcontribs)‬
+‪I am trying to submit my programming assignment 2, I have passed all public test cases and 3/4 private test cases. As the test case I have failed is a private test case. I am unable to know the reason behind the failure. Can I know how to overcome this problem?‬
+
+‪4 months ago‬
+
+
+‪Karthik.c (talkcontribs)‬
+‪Yeah the same issue which i have also encountered.‬
+
+‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪This is something you have to figure out yourself :)‬
+
+‪4 months ago‬
+
+
+
+‪Aprnatripathi (talkcontribs)‬
+‪if you can share your code, I can try to figure out the problem‬
+
+‪4 months ago‬
+
+
+
+‪Sruthin (talkcontribs)‬
+‪https://1drv.ms/t/s!AnfIpLt1ZTmHhp0fZ5PyXckIxKjv2A If you could find the fault, let me know. So, I can solve the issue‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪probably, they want that this assignment should be solved with dictionary instead of list. ----- Ignore this‬
+
+‪Edited 4 months ago‬
+
+
+‪Karthik.c (talkcontribs)‬
+‪I have done this through the dictionary still it only gives 75% even though all the test case passed while compiling .but when submitting the result it shows 3 out 10 test cases passed..i don't know what is matter??‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Your code seems ok, just remove unwanted stuff...Like commented lines and that list stuff. For square of X use ---- x**2‬
+
+‪Edited 4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪  Summary From Your code which pass all test:‬
+
+‪   import math‬
+   n = int(input())
+   x,y = 0,0
+   for  i  in range(n):
+     a,b = input().split(" ")
+     if a == 'UP':
+       y= y+int(b)
+     elif a == "DOWN":
+       y= y-int(b)
+     elif a == "LEFT":
+       x= x-int(b)
+     elif a == "RIGHT":
+       x= x+int(b)
+   
+   pos=(x**2)+(y**2)
+   dist1 = math.sqrt(pos)
+   print(round(dist1))
+
+‪Note: It took almost 2 days to write a proper 1BMW and N Goats code. But i didnt give up, try to figure out mistakes and google if required. But didnt ask for such help. If you wanna learn programming, such issues should be handled out yourself. Because you learn more then anything while find-out issues in your own program. You can ask for Idea(Even though it should strike u first) but programming part should all yours.‬
+
+‪Edited 4 months ago‬
+
+
+‪Rithika sasitharan (talkcontribs)‬
+‪what is pos here?‬
+
+‪4 months ago‬
+
+
+
+‪Moonlight Dreamer (talkcontribs)‬
+‪it still gives only 75%‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪may be you missed something..I am got 100/100 when tested it.‬
+
+‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪+1. nice motivation in the end :)‬
+
+‪4 months ago‬
+
+
+
+‪Shubham Sood (talkcontribs)‬
+‪I passed all the public test. But it is showing 3 out of 4 test passed and score 75/100 NPTEL what is this? :\‬
+
+‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪There are some private test cases too egich your code must pass.‬
+
+‪4 months ago‬
+
+
+
+‪Shubham Sood (talkcontribs)‬
+‪What happens in private test? Δ‬
+
+‪Edited 4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Private test check your code with some more inputs(probably more complex)‬
+
+‪4 months ago‬
+
+
+
+‪Rithika sasitharan (talkcontribs)‬
+‪in output screen it shows me a blank screen what should i give there?‬
+
+‪4 months ago‬
+
+
+
+‪Rithika sasitharan (talkcontribs)‬
+‪should i import math or math.sqrt?‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪import math‬
+math.sqrt() is function which will be used to calculate square root of number.
+
+‪4 months ago‬
+
+
+
+
+
+what is the time complexity of inbuilt python sorting function?
+3 comments • ‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Question asked by Sandipan Bhowmick‬
+
+‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Its O(nlogn)‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪O(nlogn)‬
+
+‪4 months ago‬
+
+
+
+
+
+Week 5 Programming Assignment -2
+6 comments • ‪4 months ago‬
+
+
+
+‪Surapavankumar (talkcontribs)‬
+‪I am not able to read "Directions" and "Values" in the assignment please anybody help me out?‬
+
+‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Did you understand the question properly?‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪UP 5 - means +5 DOWN 3 - means -3 LEFT 3 - means -3 RIGHT 2 - means +2‬
+
+‪4 months ago‬
+
+
+
+‪Shubham714 (talkcontribs)‬
+‪Hey amichoksi did you solved this assignment?‬
+
+‪4 months ago‬
+
+
+
+‪Surapavankumar (talkcontribs)‬
+‪I could do‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+	1	‪input‬
+‪n=int(input())‬
+	1	‪for loop to take input of‬
+‪direction,steps  = input().split()‬
+	1	‪directions are easy, man. don't worry.‬
+	1	‪Up i.e.y-cooridates +ve, i.e.addition‬
+	2	‪Down i.e.y-coordinates -ve,i.e. subtraction‬
+	3	‪Left i.e. x-coordinates -ve, i.e.subtraction‬
+	4	‪Right i.e.x-coordinates +ve, i.e.addition‬
+‪please try coding. from math import sqrt use sqrt‬
+‪for you, the assignment submission date is extended. now you can try easily.‬
+
+‪4 months ago‬
+
+
+
+
+
+Week 5 Programming Assignment 2
+3 comments • ‪4 months ago‬
+
+
+
+‪Sam R (talkcontribs)‬
+‪I am Not Able to Understand Question and Solve this program, Can anybody who has solved this? help me.‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Consider yourself as robot. Your home at coordinate (0,0). Your friend called you as give instruction to reach to him. Then you have to find direct/shortest distance from your home to your friend location.‬
+Dont what is coordinate? Dont know how to calculate shortest distance between 2 points?
+Use google read basic about coordinate geometry. 
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Up means +ve, Down means -ve, left means +ve, right means -ve‬
+
+‪4 months ago‬
+
+
+
+
+
+Regarding dictionary to start with index 1 rather than 0
+5 comments • ‪4 months ago‬
+
+
+
+‪Srijan18 (talkcontribs)‬
+‪In this code if we want output as {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}‬
+‪then what should be done?‬
+‪Temp_Dictionary = {}‬
+      for i in range (10):
+  Temp_Dictionary[i] = i**2
+      print(Temp_Dictionary)
+  Output: {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪change the range. i.e.range(1,10)‬
+‪Temp_Dictionary = {}‬
+for i in range (1,10):
+        Temp_Dictionary[i] = i**2
+print(Temp_Dictionary)
+Output:{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+
+‪Edited 4 months ago‬
+
+
+
+‪Srijan18 (talkcontribs)‬
+‪Thank u.‬
+
+‪4 months ago‬
+
+
+
+‪Rithika sasitharan (talkcontribs)‬
+‪how to define the name of dictionary d? when i runned my program it showed that u didn't define d(dictionary name)?‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪d={}‬
+
+‪4 months ago‬
+
+
+
+
+
+Speech Recognition
+2 comments • ‪4 months ago‬
+
+
+
+‪Vasik (talkcontribs)‬
+‪My program is import speech_recognition as sr AUDIO_FILE={"test.wav"} #Use audio file as source r=sr.Recognizer() #Initialize recognizer with sr.AudioFile(AUDIO_FILE) as source: audio=r.record(source) #reads audio file try: print("Audio file contains" + r.recognize_google(audio)) except sr.UnknownValueError: print("Google Speech Recognizer cound not understand audio") except sr.RequestError: print("Couldn't get results from Google Speech Recognizer") The error displayed after execution is: with sr.AudioFile(AUDIO_FILE) as source: File "C:\Users\admin\Miniconda3\lib\site-packages\speech_recognition\__init__.py", line 188, in __init__ assert isinstance(filename_or_fileobject, (type(""), type(u""))) or hasattr(filename_or_fileobject, "read"), "Given audio file must be a filename string or a file-like object" AssertionError: Given audio file must be a filename string or a file-like object Can u help me out?‬
+
+‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪There should be no curly braces in the line AUDIO_FILE={"test.wav"}‬
+
+‪4 months ago‬
+
+
+
+
+
+Need more clarification in Week 5 Assignment question
+2 comments • ‪4 months ago‬
+
+
+
+‪Surya (talkcontribs)‬
+‪In the assignment of Week 5 in 10th question in Monty hall problem, some clarification is needed. let say there are 'n' doors. after a person selects a door, will the judge open 'n-2' doors or only '1' door. because there are two variations of Monty hall problem for n doors so which one to consider‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪I think you didnt follow the programming part properly. In both 2 variation only one door will be opens not n-2.‬
+
+‪4 months ago‬
+
+
+
+
+
+sorting and searching?
+4 comments • ‪4 months ago‬
+
+
+
+‪Rithika sasitharan (talkcontribs)‬
+‪in bubble sorting you gave conditions for j in range to swap right in i range also it must swap right then why is it not necessary to give swap conditions there?‬
+
+‪Edited 4 months ago‬
+
+
+
+‪Rithika sasitharan (talkcontribs)‬
+‪in bubble sort for j in range(0,n-i-1): n-i is required to remove the last greatest swaped number then why is n-i-1 required?‬
+
+‪Edited 4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Please post the full code.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪SAMPLE for bubble sort<pre> a=[5,3,7,10,1,5] for i in range(len(a)): for j in range(i+1, len (a) ): if a[i]<a[j]:#if want ascending, use '>' a[i] , a[j]=a[j] , a[i] print(a) </pre>‬
+
+‪Edited 4 months ago‬
+
+
+
+
+
+Rock,paper,scissor program
+8 comments • ‪4 months ago‬
+
+
+
+‪Seenusrini (talkcontribs)‬
+‪I cant understand this program. I dont know why we are using p1=int(num1[bit1])%3. what does that mean? Can anybody explain the program clearly?‬
+
+‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪p1 stores the secret bit position of player 1. According to the value of p1, entity (rock, paper or scissor) will be chosen.‬
+
+‪4 months ago‬
+
+
+
+‪Seenusrini (talkcontribs)‬
+‪if num1=4 and bit1=0 what is the value of p1?‬
+
+‪4 months ago‬
+
+
+
+‪Karthik.c (talkcontribs)‬
+‪Ans is 1 coz 4[0] = 4 then we have to perform % by 3 then the required answer is 1‬
+
+‪4 months ago‬
+
+
+
+‪Rithika sasitharan (talkcontribs)‬
+‪what does that while(1) loop mean they said it is when true but what does it mean? bit1 and bit2 are secrete bit positions okay fine then what is this num1 AND num2?i didnt understand this yaar ?‬
+
+‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪while(1) means loop will run infinite times until and unless we write break. Value of num1 and num2 decide whether the players have chosen rock, paper or scissor.‬
+
+‪4 months ago‬
+
+
+
+‪Rithika sasitharan (talkcontribs)‬
+‪i wrote the same code and tried running it. in the output it asked for choice and secrete bit position and finally it shows int script as not subscriptable in the line p1=int(num1[bit1])%3 y?‬
+
+‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Please post your code here so that i can check‬
+
+‪4 months ago‬
+
+
+
+
+
+How to install google speech recognition in python
+2 comments • ‪4 months ago‬
+
+
+
+‪A saravgi (talkcontribs)‬
+‪Please guide us the steps to install Google speech recognition in python‬
+
+‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪refer this page http://sccilabs.org/jocwiki/index.php/Lecture_Notes:_Week_5#Speech_to_Text_using_Google_Recogniser‬
+
+‪4 months ago‬
+
+
+
+
+
+what is the difference between dict and dict_items?
+4 comments • ‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Question asked by Rakesh Sharma‬
+
+‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪dict.items() returns key, value pairs as tuples and dict only prints the dictionary.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪dict is type in python, i.e. dictionary. dict_items specifies dictionary items, same as we are having dict_keys, specifies dictionary keys. Following example will clarify your doubt, dictionary = {1:2,2:3,3:4} print(dict) print(dictionary.items()) print(dictionary.keys()) ''' Output: <class 'dict'> dict_items([(1, 2), (2, 3), (3, 4)]) dict_keys([1, 2, 3]) '''‬
+
+‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪Use dir() method to know what is what. Like <pre> dir( dict) and dir(dict.items())</pre>‬
+
+‪4 months ago‬
+
+
+
+
+
+Getting an error - Google Speech Recognition : Recognizer' object has no attribute 'AudioFile'
+2 comments • ‪4 months ago‬
+
+
+
+‪Balakrishna (talkcontribs)‬
+‪Here is the program I have written: import speech_recognition as sr input_audio = ("Recording.wav") recognizer = sr.Recognizer() with recognizer.AudioFile(input_audio) as source: audio_in_textform=recognizer.record(source) try: print("Audio file contails :"+recognizer.recognize_google(audio_in_textform)) except sr.UnknownValueError : print("Google Couldnt Understand the audio !") except sr.RequestError: print("Google couldnt get the audio") Error: File "C:/Users/I329986/Documents/SAP/Learning/Python/Programs/google_speech_recongizer.py", line 12, in <module> with recognizer.AudioFile(input_audio) as source: AttributeError: 'Recognizer' object has no attribute 'AudioFile'‬
+
+‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪This is the working program i got from wiki notes, edited by students of this course. Try this and figure out why your program is getting error. <pre> import speech_recognition as sr audio_file = ('C:/test_file.wav') r = sr.Recognizer() with sr.AudioFile(audio_file) as source: audio = r.record(source) try: print("audio file contain" + r.recognize_google(audio)) except sr.UnknownValueError: print("Google speech recognizer cant understand your audio") except sr.RequestError: print("Couldn't get the result from Google Speech Recognition") </pre> As far as i think, replace recognizer.AudioFile with sr.AufioFile as recognizer is not a module, sr is as you imported speech_recog as sr. Let me known if still error persists.‬
+
+‪4 months ago‬
+
+
+
+
+
+speech recognition install?
+3 comments • ‪4 months ago‬
+
+
+
+‪Rithika sasitharan (talkcontribs)‬
+‪can you please show it how did you install i typed sudo pip install speech recognition in anaconda prompt black screen it displayed the word sudo not recognized somebody help me out?‬
+
+‪Edited 4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪run the command with without sudo and read Week6 super-note. I clearly explained there with step by step‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪sudo is used in ubuntu operating system for superuser. if you're using windows, you should not use sudo.‬
+
+‪4 months ago‬
+
+
+
+
+
+Quiz Question 1 , Clarification needed ?
+10 comments • ‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪The 1st question of week5 quiz says that "<b>What happens when you search for 35 in the list [10,20,30,40,50]?</b>",<br>Please tell me does it mean to use 'in' operator or using index() method of list to find an element's index.<br> Because answer will be different in both cases. What does it meant exactly to "search" an element, i think we need to explicitly specify the way we want to search.‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪You have to answer quiz questions yourself. Otherwise there is no point of quiz. Its like you are asking answer in exam hall. We call it 'cheating' Just answer them with your knowledge.‬
+
+‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪Cheating means if i have had asked tell me the correct answer.<br>Read it again and properly, i am asking about which method has been referenced by the question, as there are more than one ways to search an element. If it has been explicitly mentioned, i would have not bothered you or anyone.<br><br> There is no explicit way to say, ok search this, we have to use methods or some ways, and if there are more than one , it should be mentioned or discussed, thats not cheating! and in exam hall too, we can clarify the question if any issue occur.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Bhavesh, please read the options, you can understand what to choose as the answer. if 35 is asked 30 or 40 cannot be returned. if you use "in" or "index", without intimating anything to user program cannot be terminated.‬
+
+‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪Thanks for replying mam, but list.index() gives value error if value is not present in list and it is .find() in strings that give -1 if element is not present.<br>But .index() in both lists and strings give ValueError. Please confirm, if i am wrong somewhere.<br>I really appreciate the way you discarded those two options, haha.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪ValueError intimates user about 35 not present.‬
+
+‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪But it will abruptly terminate the program, if exception not handled, that's why i am concerned about it.‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪I dont think .find() is used here.‬
+
+‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪yes, .find is for strings, i was telling it as it doesn't raises error but .index() does.‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪There are multiple questions which dont have proper info to ans. But we have to choose.. As far i can think ans is that it will terminate the program.‬
+
+‪4 months ago‬
+
+
+
+
+
+Meaning of sudo pip
+3 comments • ‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Question asked by Harsh Chhabra‬
+
+‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪sudo means root access. pip is a package manager for Python packages.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪it is in ubuntu. if you are using windows, sudo is not required.‬
+
+‪4 months ago‬
+
+
+
+
+
+Creating file
+5 comments • ‪4 months ago‬
+
+
+
+‪Seenusrini (talkcontribs)‬
+‪I have a created a file "see.txt" and then I used "with open("see.txt","w") as f: to open the file, but in the console it shows error as there is no such file or directory. How to solve it?‬
+
+‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪possibly you have not created file in the same directory/folder in which python is installed. <br>Solution:<br> Give full path of file while opening it, not just name. Like C:\users\yourusername\Desktop\see.text, if it is on desktop.‬
+
+‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪To know a file's complete path, right click on it, click properties and copy Location, works on windows.‬
+
+‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪Let me know if still any error occurs.‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Check the week 6 super note. I have posted complete guide there regarding File Handling.‬
+
+‪Edited 4 months ago‬
+
+
+
+
+
+Speech Recognition On windows
+3 comments • ‪4 months ago‬
+
+
+
+‪Ashuditya (talkcontribs)‬
+‪How to install speech recognition on windows device, windows pc do not have terminal as shown in mac, but we do have cmd, and I guess those two have totally different command lines of each other...‬
+
+‪4 months ago‬
+
+
+‪Sachinkr (talkcontribs)‬
+‪You have to run command in anaconda terminal not window terminal.‬
+
+‪4 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪pip install SpeechRecognition use this at command prompt‬
+
+‪4 months ago‬
+
+
+
+
+
+ROCK PAPER SCISSOR LIVE ONLINE GAME
+7 comments • ‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪Hey! classmates, i think learning without practice and without visualisation of the concept is just completing the course. So for all of us i made an online demonstration of this game.Whenever you guys are free, check this [link](http://bhaveshgupta.me/rock-paper-scissor/) to play the game of Rock,Paper&Scissor.Use mobile for better experience. I made this using some knowledge that i already had about web concepts. Logics are same, just presentation and platforms are different.I am always open to suggestions and constructive criticism, click on my name to leave comments or email me.<br>‬
+
+‪4 months ago‬
+
+
+‪Simmi (talkcontribs)‬
+‪Its not working on my browser Bhavesh. Please check.‬
+
+‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪which browser are you using?‬
+
+‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Safari. Should i use chrome?‬
+
+‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪Yes, chrome will be the best option.and mobile is recommended for better experience.‬
+
+‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Ok. Let me try.‬
+
+‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Awesome Bhavesh :)‬
+
+‪4 months ago‬
+
+
+
+
+
+speech recognition
+4 comments • ‪4 months ago‬
+
+
+
+‪Seenusrini (talkcontribs)‬
+‪how to install it? please tell me step by step‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪1. First Open "Anaconda Prompt" you will find it on desktop or search in your PC 2.Then run command "sudo pip install SpeechRecognition" if its not work. Use "pip install SpeechRecognition" >>> It will download some files from internet and install (Internet connection required) 3. If pip installtion module is old >> It will ask to update and show you the command to run >> Run that command 4. Then you are done XD‬
+
+‪Edited 4 months ago‬
+
+
+‪Simmi (talkcontribs)‬
+‪Thanks Sachin :)‬
+
+‪4 months ago‬
+
+
+
+‪Seenusrini (talkcontribs)‬
+‪Thank you very much!‬
+
+‪4 months ago‬
+
+
+
+
+
+why sorting and searching exercise name is 20 questions game?
+2 comments • ‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Question asked by Arpana.‬
+
+‪4 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Its because you can figure out the number by just asking 20 questions.‬
+
+‪4 months ago‬
+
+
+
+
+
+Unable to install sudo SpeechRecognition
+4 comments • ‪4 months ago‬
+
+
+
+‪Manu06 (talkcontribs)‬
+‪Can someone help me out. I am trying to install SpeechRecognition, but it shows error. I tried from cmd also, but it tells invalid syntax. I used below command: sudo pip install SpeechRecognition‬
+
+‪4 months ago‬
+
+
+
+‪Sruthin (talkcontribs)‬
+‪which platform are you using‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Open anconda promot and run command " pip install SpeechRecognition" without sudo‬
+
+‪4 months ago‬
+
+
+
+‪Manu06 (talkcontribs)‬
+‪Thanks Guys. The issue was with the pip itself. pip was not being identified by CMD. I had to add python as system environmental variable and get the python identified. Finally, I was able to install it. :)‬
+
+‪4 months ago‬

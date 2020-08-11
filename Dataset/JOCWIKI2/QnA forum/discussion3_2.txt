@@ -1,0 +1,1093 @@
+How can we eliminate the space at the end of output?
+3 comments • 7 months ago
+Descentis (talkcontribs)
+This is a champion question by @Descentis (Asked by goudgundlakeerthi@gmail.com).
+
+Please answer this question (efficient answer is appreciated)
+
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php/Common_Doubts:_FAQs_for_Week_2#Q._Why_am_I_getting_less_marks_even_after_passing_all_the_test_cases.3F
+
+Check this faq please.
+Reply 7 months ago
+Descentis (talkcontribs)
+Thanks, nice pointer @Arunkumar
+
+Reply 7 months ago
+
+Isn't it acceptable ?
+3 comments • 7 months ago
+Kundan (talkcontribs)
+for i in range(1,51):
+
+   if(i%15==0):
+       print(str(i)+" = FizzBuzz")
+   else:
+       if(i%5==0):
+           print(str(i)+" = Buzz")
+       else:
+           if(i%3==0):
+               print(str(i)+" = Fizz")
+           else:
+               print(str(i))
+Reply 7 months ago
+Arunkumar (talkcontribs)
+If you are getting output as expected. Then it is acceptable. :)
+
+Reply 7 months ago
+Kundan (talkcontribs)
+ok
+
+Reply 7 months ago
+
+Wrong Output! Week-3 Assignment Max-Min
+4 comments • 7 months ago
+Suparna96 (talkcontribs)
+a=[] n=int(input()) a=input().split() for i in range(n):
+
+ x=int(a[i])
+ print(x)
+maxval=max(a) minval=min(a) print(maxval, minval)
+
+Why am I not getting the correct output for this program? Although I have tried it out elsewhere and I'm getting the correct output.
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+what is the error you got?
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Assignment 1: Max and Min
+CODE:
+a = list(map(int,input().split()))
+print(max(a), min(a), end="")
+
+Reply 7 months ago
+Suparna96 (talkcontribs)
+Yeah, I did this. Thank you!
+
+Reply 7 months ago
+
+break function is failed
+4 comments • 7 months ago
+Narendra (talkcontribs)
+as i saw the video of permutations-jumbled words video and i just followed the code present in the video but the break statement is not working and the code turned into an infinite loop please help me to find the solution
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php/Lecture_Notes:Week_3#Jumbled_Words_Game
+Follow this link for the program.
+And That break is not functioning because, input is not converted to int.
+c=int(input("Do you want to continue? \n press 1 to continue or 0 to quit: "))
+
+Reply 7 months ago
+Narendra (talkcontribs)
+yep...!! working perfectly... thanks for the reply...
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Enjoy programming friend! :)
+
+Reply Edited 7 months ago
+
+If the word in your mind is SIT, in how many ways can you pose the jumbled question?
+2 comments • 7 months ago
+Siddhanth (talkcontribs)
+Why is the ans of this question: 5 and not 6. we can write SIT in 3! different ways
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Friend, yes it is 3!, Hence 6. But still, while playing the game, will you ask the other person to solve unjumbled word "SIT"?
+
+Reply Edited 7 months ago
+
+I saw in the video lecture for rainbow word, there are 5040 jumbled words which is 7! that is why I selected 6 as the answer for question 2 in week 3 quiz assignment where 3!=6.
+6 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by krd.snh@rmd.ac.in
+
+Reply 7 months ago
+Simran (talkcontribs)
+One choice out of 6 has already been given in the question. That is why 5 is the answer
+
+Reply 7 months ago
+Pritish shubham (talkcontribs)
+I understand.
+
+ But as per my understanding to the question, it was asked that "how many ways can you pose the jumbled question - i.e. SIT?".
+The answer -5, might be considerable, when the question was asked about "how many OTHER ways can you pose the jumbled question?"
+
+Regards
+
+Reply 7 months ago
+Pritish shubham (talkcontribs)
+Just to add, if we write a python code, to get the jumble word for SIT. Then on of the option does comes out to be "SIT" itself, apart from the other 5 ways. So, I think 6 might be an appropriate answer to the asked question.
+
+Reply 7 months ago
+Simran (talkcontribs)
+Yes and SIT has been given in the question. So 5 is the appropriate answer. You need to jumble SIT. Jumble means some rearrangement must happen. SIT is not rearranged version of SIT.
+
+Reply 7 months ago
+Pritish shubham (talkcontribs)
+Okay, I understand my mistake. Thanks
+
+Reply 7 months ago
+
+Jumbled Word Program- Improvised, is now available in Week 3 super notes.
+One comment • 7 months ago
+Arunkumar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php/Lecture_Notes:Week_3#Jumbled_Words_Game
+
+This code is a customized and improvised code. I have added few extra functions like clear screen, sleep, and 3 chances. I used functions everywhere possible, to reduce the length of the program. And also, I have added a condition to random, so that we will never get a unjumbled output.
+This link will take you to the Week-3 SuperNotes. Just now finished testing and posting. Very rarely it makes us loose a chance, I still dont know why it is doing like that. But no problem, as we have 2 more chances.
+Feel free to ask any questions related to that Jumbled word program from the Super Notes.
+Ask Questions here only. Please don't post questions in the super notes.
+Reply Edited 7 months ago
+
+Problem in sorting of list
+4 comments • 7 months ago
+Lalit (talkcontribs)
+code: b=list(input().split(" ")) b.sort() print(b) print(max(b)," ",min(b)) input: 10 11 4 1 6 7 2 9 output: ['1', '10', '11', '2', '4', '6', '7', '9'] 9 1
+
+Reply 7 months ago
+Rupesh shukla (talkcontribs)
+convert from string to integer as values stored in b will be string by default ... may be that is the problem... sort may not work on string
+
+Reply 7 months ago
+This comment was deleted by Arunkumar (history)
+Rupesh shukla (talkcontribs)
+use :
+
+  for i in range(len(b)):
+      b[i]=int(b[i])
+  print(max(b),min(b),end="")
+Reply 7 months ago
+
+problem while sorting
+One comment • 7 months ago
+Chowdary (talkcontribs)
+input_string = input( ) lists = input_string.split( ) lists.sort() print(lists[len(lists)-1],lists[0])
+
+               the above code is failing in some cases as when i give number with different numbers value place like list:[10,20,100,300]
+Reply 7 months ago
+
+Solutions of Week 3, Assignment 1, 2, 3, and Quiz Question "SIT" too (flipping if interested). Please understand the code before copying.
+23 comments • 7 months ago
+Arunkumar (talkcontribs)
+NOTE: Copying the code without understanding will never help you learn. Please ask questions, if you don't understand. Everyone here wants you to learn.
+
+Assignment-3: Digits
+Question: You are given a number A which contains only digits 0's and 1's. Your task is to make all digits same by just flipping one digit (i.e. 0 to 1 or 1 to 0 ) only. If it is possible to make all the digits same by just flipping one digit then print YES else print NO.
+
+NOTE: Expected output is checking only for YES or NO, and not for flipping. Still if anyone is curious to know, please check the 2nd code below. I used only str() and str operations. This could be one of the possibilities.
+
+CODE:
+A = str(input())
+if A.count('0')==1 or A.count('1')==1:
+  print("YES", end="")
+else:
+  print("NO", end="")
+
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+Flipping 0 and 1
+In the Below code, I have tried to use only string operations and a function to flip the numbers. Possibly there could be more simple solutions available. still this is what my brain can think of for now.
+
+NOTE: Don't use below code for Assignment. This flip code is not necessary for assignment. Expected output is only Yes or NO.
+
+CODE:
+a = str(input())
+def flip(i):
+        f_a = a[:a.index(i)]
+        if i=='0':
+            f_a = f_a+'1'
+        else:
+            f_a = f_a+'0'
+        f_a = f_a+a[a.index(i)+1:]
+        return f_a
+
+if a.count('0') == 1:
+    flipped_a = flip('0')
+    print(flipped_a,"YES")
+    
+elif a.count('1') == 1:
+    flipped_a = flip('1')
+    print(flipped_a,"YES")
+    
+else:
+    print("NO")
+
+Explanation is in faqs Click here
+
+Reply Edited 7 months ago
+Joycz (talkcontribs)
+can you please say that in quiz question no 3 If the word in your mind is SIT, in how many ways can you pose the jumbled question? would this be 6
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+I did this mistake too. It is not 6, it should be 5.
+The question is 
+If the word in your mind is SIT, in how many ways can you pose the jumbled question?
+
+Yes, it is a permutations question. so answer is 6, But read on....
+Calculation goes this way SIT is 3 letters. So we call it as three factorial. (3!)
+It should be solved as 3 x 2 x 1 = 6 which gives 6 as Answer.
+But, As per the question, "In how may ways we can ask the jumbled question."
+
+So we should exclude the right answer. Which means 6-1 = 5
+
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+I was wrong too. ;)
+
+Reply 7 months ago
+S (talkcontribs)
+6
+
+Reply 7 months ago
+This comment was deleted by Arunkumar (history)
+Arunkumar (talkcontribs)
+Assignment 1: Max and Min
+CODE:
+a = list(map(int,input().split()))
+print(max(a), min(a), end="")
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Contents
+1 Assignment 2: Multiple of 3
+1.1 1. My CODE: Using append().
+1.2 2. Lucknesh's CODE: using remove().
+1.3 3. CODE: using del
+Assignment 2: Multiple of 3
+There are more ways to solve any problem. Here are three ways to solve this. 1. Using append() and 2. using remove()
+3. using del
+
+NOTE: Below code will be faster, because it doesn't need to copy, and then remove.
+
+1. My CODE: Using append().
+A = list(map(int,input().split()))
+B = []
+for i in A:
+  if i%3 != 0:
+    B.append(i)
+
+print(*B, sep=" ", end="")
+Ask any questions related to these assignments.
+2. Lucknesh's CODE: using remove().
+a=list(map(int,input().split()))
+b=a.copy()
+for i in a:
+   if (i%3==0):
+       b.remove(i)
+
+print(*b, sep=' ', end="")
+
+3. CODE: using del
+Thanks AA, for making me and others think in other ways and possibilities. We can try this way too. But here we are using del and deleting from the end, using index numbers. That is why we are using range.
+
+A = [int(i) for i in input().split(" ")]
+
+for i in range(len(A)-1, -1, -1):
+    if A[i]%3==0:
+       del A[i]
+
+print (*A, sep=" ", end="")
+
+Reply Edited 7 months ago
+Subitha (talkcontribs)
+Programming Assignment 1: we know that max() and min() help us to give the minimum and maximum elements. When I take the first list (Test case 1)and displayed the min and max values, it says that, the first answer is correct. But the others are wrong. When all the four lists are taken and all for min and max values are displayed, it says it is wrong. Just I want to know to present the output of different test cases
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Please share your code.
+
+Reply 7 months ago
+Subitha (talkcontribs)
+Hi Arunkumar, Thank you for your response. I have seen your code. I need to know how the first line a = list(map(int,input().split())) of your code gets executed in the Max and Min program. Also I am interested to know about the working principle of the last line print(*B, sep=" ", end="") in the multiples of 3 and 5 program. Also I need help of first line of the third program Flipping a = str(input()). The question in short is how different test cases are taken as input in your program and how to give the output of different test cases? Explain me when you find time.
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php/Common_Doubts:_FAQs_for_Week_3#Flipping_Numbers_and_defining_a_function_too
+
+Oops! I myself forgot about this! I have already explained the Flipping code in the FAQs. Please follow this link too. If you don't understand, even after going through my explanation there. Please let me know. I will help you out. possibly other may also have similar doubts like yours. Your Questions might help others too.
+
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php?title=Topic:Uu3k27awhz3wu2jo&topic_showPostId=uu3u9t3buibkgcpw#flow-post-uu3u9t3buibkgcpw
+
+
+I will be Happy to help. Can you please go through this discussion here from week-2. I have explained 2 of your doubts there already. Please follow the above link and go through my replies there.
+
+About "flipping", you are the only person asked about it. I will explain it to you soon. Till then Happy Learning :)
+
+Reply Edited 7 months ago
+Dayana (talkcontribs)
+Don't enter your sample test-case values in your coding.
+
+Reply 7 months ago
+Lucknesh (talkcontribs)
+a=list(map(int,input().split())) b=[] for i in a:
+
+   if (i%3==0):
+       a.remove(i)
+   else:
+       b.append(i)
+print(*b, sep=' ')
+
+ehy this code passing only 1 case
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Sorry for late reply Lucknesh. My free time is in the night. Thanks for asking. I did the same mistake while practising.
+
+1st error in the logic is to use remove().
+If we keep removing and checking same List variable, program will skip(in a way) some numbers. Because of remove() few numbers got skipped the checking process of "if condition", as numbers at the index numbers are changed, and output is as below.
+For 2 3 4 5 6 output is 2 5.
+For 21 47 32 43 output is 32 43.
+For 8 9 6 5 3 output is 8 5.
+Is it working, if you are not using end="" in the print function?
+Reply Edited 7 months ago
+Lucknesh (talkcontribs)
+a=list(map(int,input().split())) c=a.copy() b=[] for i in a:
+
+   if (i%3==0):
+       c.remove(i)
+       print(c)
+   else:
+       b.append(i)
+print(*b, sep=' ')
+
+
+what about this code...its showing everything right in spyder but test cases are not passed
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Here also same problem. Why you want to remove and append?
+Once of c.remove(i) and b.append(i) is a unnecessary step. You are just creating duplicates. Both c and b have same data.
+You don't need 3 Variables for this to work.
+I think you forgot to remove print(c).
+Your code should be as below.
+
+a=list(map(int,input().split()))
+b=a.copy()
+for i in a:
+   if (i%3==0):
+       b.remove(i)
+print(*b, sep=' ')
+Reply Edited 7 months ago
+This comment was deleted by Arunkumar (history)
+AA (talkcontribs)
+The if loop in this code terminates the very first instance it encounters a multiple of 3, and spits out whatever remains in the list. How can I make the loop check all the elements of the list. What am I missing.
+
+A = [int(i) for i in input().split(" ")] for i in A:
+
+   if i%3==0:
+       A.remove(i)       
+print (*A, sep=" ", end="")
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Thanks for making me think in other ways and possibilities. You can try this way too. But here we are using del and deleting from the end. That is why we are using range.
+
+A = [int(i) for i in input().split(" ")]
+
+for i in range(len(A)-1, -1, -1):
+    if A[i]%3==0:
+       del A[i]
+
+print (*A, sep=" ", end="")
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+AA, We at least need to lists to solve this. Using a little lengthy process, we might can get it done with just one list. So i suggest you to use two lists as in the above examples. or try to create a list, which hold index values of all 3 multiples and delete them from the end. instead of beginning.
+
+Reply Edited 7 months ago
+
+week 3 programming assignment 2
+One comment • 7 months ago
+Rupesh shukla (talkcontribs)
+my code is getting passed but giving presentation error unable to understand differnce between print(....,end="") & print(....,end=" ") my code : a=input().split() b=[] for i in range (len(a)): a[i]=int(a[i]) if (a[i]%3): b.append(a[i]) else: continue for j in range (len(b)): b[j]=int(b[j]) print(b[j],end=" ")
+Reply Edited 7 months ago
+
+Assignment 3
+3 comments • 7 months ago
+Taqui (talkcontribs)
+a=input() if a.count("0" or "1")==1: print("YES") else: print("NO") how to get rid of presentation error
+Reply 7 months ago
+Arunkumar (talkcontribs)
+I didn't know about this way of using "or". Thanks for sharing. Add <code>end=""</code> in your print statements. print("YES", end="") print("NO", end="")
+Reply Edited 7 months ago
+Brijesh (talkcontribs)
+put just end="" in your print statements Example : print("NO",end="")
+Reply 7 months ago
+
+1 out of 3 tests passed. You scored 33.3333333333/100
+8 comments • 7 months ago
+Jaiprince17 (talkcontribs)
+y is this ??? even if the program is right ?
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Which Assignment? post your code please.
+Reply Edited 7 months ago
+Jaiprince17 (talkcontribs)
+Test Case 1 Passed after ignoring Presentation Error Test Case 2 Passed after ignoring Presentation Error Test Case 3 Passed after ignoring Presentation Error
+Reply Edited 7 months ago
+Jaiprince17 (talkcontribs)
+item = [3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60] z = [int(x) for x in input().split()] for i in z: if i not in item: print(i, end=" ")
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+I understand your code, this is definitely one way of solving. But what if there are numbers which are not in your item list? I mean, in the hidden private tests of the assignments? So, this is not scalable. Try to write code which is not restricted in any way, as much as possible.
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+In Which Assignment or Videos you saw this question?
+Reply 7 months ago
+Jaiprince17 (talkcontribs)
+print the elements which are not multiples of 3
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Okay. I have already posted solution here http://sccilabs.org/jocwiki/index.php/Topic:Uuhicei827ut94kk please check it once.
+Reply 7 months ago
+
+How to get with the presentation error
+One comment • 7 months ago
+Taqui (talkcontribs)
+numbers=[6,2,3,4,5] print("",max(numbers),min(numbers))
+Reply 7 months ago
+
+number A which contains only digits 0's and 1's. Your task is to make all digits same by just flipping one digit (i.e. 0 to 1 or 1 to 0 ) only. If it is possible to make all the digits same by just flipping one digit then print 'YES' else print 'NO'.
+22 comments • 7 months ago
+Joycz (talkcontribs)
+in this question it is showing you have passed all the test cases during compile but during submission i am getting that 2 out of 3 tests passed. You scored 66.6666666667/100 why this is so? I have compiled in spyder with same input test cases it does work but why not here?
+Reply 7 months ago
+Simran (talkcontribs)
+Please post your doubt again.
+Reply 7 months ago
+Joycz (talkcontribs)
+i solved the question and found you have passed all the test cases during compile but during submission i am getting that 2 out of 3 tests passed. You scored 66.6666666667/100 but same code i am running on spyder its working with all the test cases
+Reply 7 months ago
+Rishi (talkcontribs)
+in this question it is showing you have passed all the test cases during compile but during submission i am getting that 2 out of 3 tests passed. You scored 66.6666666667/100 why this is so?
+Reply 7 months ago
+Joycz (talkcontribs)
+yes this is
+Reply 7 months ago
+Venkata Swathi R (talkcontribs)
+let us look at your code once
+Reply 7 months ago
+Rishi (talkcontribs)
+you want me to paste my code here?
+Reply 7 months ago
+Rishi (talkcontribs)
+## My Code, please review number=input() numbers=[] for i in number: numbers.append(int(i)) if numbers.count(1) > 1 and numbers.count(0) > 1: print ("NO") else: print("YES")
+Reply 7 months ago
+Saumendu (talkcontribs)
+yes same problem
+Reply 7 months ago
+Sathyait2003 (talkcontribs)
+same problem for me too
+Reply 7 months ago
+Nandini25998 (talkcontribs)
+same problem for me too
+Reply 7 months ago
+C++veteran (talkcontribs)
+how all of you guys have this same problem 66.666. are you guys copy pasting from somewhere?
+Reply 7 months ago
+Innasi (talkcontribs)
+Same issue here
+Reply 7 months ago
+Nandini25998 (talkcontribs)
+Solved
+Reply 7 months ago
+Madmax (talkcontribs)
+@nandini25998 Can you explain how you solved it?
+Reply 7 months ago
+Ujjwalkansal1999 (talkcontribs)
+I can Help you all... use this code , and if you will have any doubt then feel free to contact me. A=int(input()) ones=str(A).count("1") zeros=str(A).count("0") if ones==1 or zeros==1: print("YES") else: print("NO")
+Reply 7 months ago
+Madmax (talkcontribs)
+@ujjwalkkansel999 your code works just fine
+Reply 7 months ago
+Lwardell (talkcontribs)
+Can someone tell me why this won't work? It works in Spyder. My understanding is that the first line makes the input numbers on the site into a list of integers. This code works for the first two cases, but not for the third case. a = list(map(int, input().split())) if a.count(0)>1: print("NO") else: print("YES", end="")
+Reply 7 months ago
+Arunkumar (talkcontribs)
+* The way you are converting input to '''int''' using <code>list(map())</code> will remove ''00'' from ''0011'', or any string passed to it, which has zeros in the beginning. * In the above code Change <code>print("NO")</code> to <code>print("NO", end="")</code> * Other than that there is another errors too. Your code will work only if there is one Zero in the input. (Based on my first point, you know why) * '''Your code will not work because of 1st line.'''
+Reply Edited 7 months ago
+Lwardell (talkcontribs)
+Thank you. My understanding of what 'int' does was incorrect. I thought it made a list like [0, 0, 1, 1].
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Please check my post. May be it will help you. I hope you have solved all assignments. happy learning.
+Reply 7 months ago
+Arunkumar (talkcontribs)
+@Lwardell it is possible because the way we pass our input in Spyder could be different. By Checking your code we can understand that. It also depends on how you handled your Data types too. Best way to avoid such problems (based on my experiences) is to convert our variables to a specific data type, which will work for the scenario. In my case I changed all to strings for Assignment 3. You can check the code here http://sccilabs.org/jocwiki/index.php/Topic:Uuhicei827ut94kk
+Reply Edited 7 months ago
+
+why we are keeping Y values as constant
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by mathe.ramakrishna@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+We have to show the distribution of estimates about the mean So y value has no relevance in it so we made it constant
+Reply 7 months ago
+
+if we just give only one set of values then how python it as X values or Y values..
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by mohanbalajibattu@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+It is by default taken as y values.
+Reply 7 months ago
+
+JUMBLING OF SIT
+4 comments • 7 months ago
+Bhats% (talkcontribs)
+Sir,why the original word has not been considered?
+Reply 7 months ago
+Arunkumar (talkcontribs)
+If we are playing the jumbling game. then we will never ask "SIT" as the question.
+Reply 7 months ago
+Kripan (talkcontribs)
+But can we code for it ? i mean when we import random library it chooses the word randomly so one case can be SIT too.
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Yes, random function will show SIT too. But Assignment question was tricky. Even i did the same mistake. ;)
+Reply 7 months ago
+
+read and write problem
+One comment • 7 months ago
+Yuva (talkcontribs)
+i am not able to read and write a file, but no error,where the any other i todo?
+Reply 7 months ago
+
+Why I got "Ignoring display error" message every time even when my program output the mentioned output only? Any idea?
+4 comments • 7 months ago
+Neelima (talkcontribs)
+Doubt in submission
+Reply 7 months ago
+Juturu8989 (talkcontribs)
+It's because of the formatting issue. Read the question(output) carefully. It says there shouldn't be any spaces at the end. Try with print(someX, end="").
+Reply 7 months ago
+Neelima (talkcontribs)
+Mostly all my display errors will be solved with this code. print(*B, sep=" ", end=""). This is suggested in other answers.
+Reply 7 months ago
+Arunkumar (talkcontribs)
+* As "Juturu8989" said, "there shouldn't be any spaces at the end of our 'print statement' output." * This <code>print(*B, sep=" ", end="")</code> is doing exactly that. For explanation,please check the below link. I have already explained it there. http://sccilabs.org/jocwiki/index.php/Common_Doubts:_FAQs_for_Week_2#Q._What_is_Presentation_Error.3F === '''What is this <code>print(*list_sum, sep=" ",end="")</code>'''? === * That '''asterisk''' in front of <code>list_sum</code> will unpack the contents of <code>list_sum</code> and print in a single line using a " " as separator. * I didn't use the <code>sep=" "</code> in the <code>print()</code>, as it was adding spaces by default. * '''end=""''' is part of ''print()'' function. By default, output of print is ended with a ''newline'' "'''\n'''". Which in our case is causing us presentation error. That is why we are asking ''print()'' function to not end with a ''newline'' "'''\n'''". * Some time because of the way we print a list, we might also get a single space at the end. To avoid that we can use <code>print(*list_sum, sep=" ", end="")</code>
+Reply Edited 7 months ago
+
+Week 3 programming assignment3
+2 comments • 7 months ago
+Tinu Iype Jacob (talkcontribs)
+Why is it showing 2 out of 3 correct even if all the tests are passed?
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Post your Code please.
+Reply 7 months ago
+
+MCQ
+2 comments • 7 months ago
+Teena (talkcontribs)
+Is there only 9 questions in week 3 quiz assignment?
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Yes
+Reply 7 months ago
+
+week 3 quiz
+2 comments • 7 months ago
+Joycz (talkcontribs)
+Which of the following can be an output of random.randint(1,1000) but can never be an output of random.randrange(1,1000) ? would it be 1000?
+Reply 7 months ago
+Arunkumar (talkcontribs)
+yes. as randint will include the upper limit, 1000, too.
+Reply 7 months ago
+
+quiz question 2
+6 comments • 7 months ago
+Joycz (talkcontribs)
+If the word in your mind is SIT, in how many ways can you pose the jumbled question? i think the answer would be 5
+Reply 7 months ago
+Praneeth1497 (talkcontribs)
+permutation is n! so 3!= 6 (SIT,STI,ITS,IST,TIS,TSI)
+Reply 7 months ago
+Joycz (talkcontribs)
+but question is like that its saying except sit how many words you can get then you are getting 5
+Reply 7 months ago
+Bhats% (talkcontribs)
+But if we write the code, we are separating the letters and then joining them ; so it is possible that we join those in original sequence also,I think.
+Reply 7 months ago
+Arunkumar (talkcontribs)
+=== I did this mistake too it is not <s>6</s>, it is '''5'''. === The question is <br />'''If the word in your mind is SIT, in how many ways can you pose the jumbled question?''' * Yes, it is a permutations question. so answer is 6, But read on.... *: Calculation goes this way SIT is 3 letters. So we call it as three factorial. (3!) *: It should be solved as <code>3 x 2 x 1 = 6</code> which gives '''6''' as Answer. But, As per the question, '''"In how may ways we can ask the jumbled question."''' '''So we should exclude the right answer. Which means <code>6-1 = 5</code>'''<br />
+Reply Edited 7 months ago
+Bhats% (talkcontribs)
+But in the program of the video we must have 6 combinations including the original one.
+Reply 7 months ago
+
+hi any one got answer programme for week 2 ? bcz i got some code wrong
+4 comments • 7 months ago
+Ajayrk123 (talkcontribs)
+hi any one got answer programme for week 2 ? bcz i got some code wrong
+Reply 7 months ago
+Arunkumar (talkcontribs)
+You are asking in Week 3 for week 2. Please follow the below link for Week 2 Questions and FAQs http://sccilabs.org/jocwiki/index.php/Common_Doubts:_FAQs_for_Week_2 http://sccilabs.org/jocwiki/index.php/Talk:Lecture_Notes:Week_2
+Reply 7 months ago
+Ajayrk123 (talkcontribs)
+thanks for the reply.
+Reply 7 months ago
+Arunkumar (talkcontribs)
+you are welcome Ajay. :) I hope those helped you.
+Reply 7 months ago
+
+is there no function like increasing order or decreasing order for a data ? only sort acts as ascending order.
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by allakondareddy@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+sort() sorts in ascending order and if you pass reverse=True, it will sort in descending order
+Reply 7 months ago
+
+I created file1.txt and saved in the folder .spyder.py3 , but while i executed the code , it shown error and said that no such file directory exist . So where i have to save the txt file??.
+8 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by ce18b107@smail.iitm.ac.in
+Reply 7 months ago
+Simran (talkcontribs)
+You can save the text file anywhere. Just provide proper path to the file.
+Reply 7 months ago
+Sudha Verma (talkcontribs)
+i am also facing the same problem
+Reply 7 months ago
+Simran (talkcontribs)
+Where is your text file saved?
+Reply 7 months ago
+Shitalp (talkcontribs)
+runfile('D:/Python/FileHandling.py', wdir='D:/Python') Traceback (most recent call last): File "C:\Users\user\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line 3267, in run_code exec(code_obj, self.user_global_ns, self.user_ns) File "<ipython-input-4-cebb9e2da242>", line 1, in <module> runfile('D:/Python/FileHandling.py', wdir='D:/Python') File "C:\Users\user\Anaconda3\lib\site-packages\spyder_kernels\customize\spydercustomize.py", line 704, in runfile execfile(filename, namespace) File "C:\Users\user\Anaconda3\lib\site-packages\spyder_kernels\customize\spydercustomize.py", line 108, in execfile exec(compile(f.read(), filename, 'exec'), namespace) File "D:/Python/FileHandling.py", line 9 print(myfile.read()) ^ IndentationError: unexpected indent Getting this error.
+Reply 7 months ago
+Shitalp (talkcontribs)
+Facing the same problem
+Reply 7 months ago
+Shitalp (talkcontribs)
+Following code is working now: myfile=open("test.txt") data=myfile.read() print(data) Is it correct?
+Reply 7 months ago
+Simran (talkcontribs)
+Please supply proper path to your file. Write like myfile=open("path to the file")
+Reply 7 months ago
+
+I have only 1 assignment and Quiz for 3rd week? what happend to other two assignments?
+5 comments • 7 months ago
+unable to see other assignments other than assignment3 in week3
+15 comments • 7 months ago
+Problem in assignment 2 please help
+3 comments • 7 months ago
+Abhinavy (talkcontribs)
+I can't find solution
+Reply 7 months ago
+Arunkumar (talkcontribs)
+==='''Assignment-2: Multiple of 3'''=== ====CODE:==== <nowiki>A = list(map(int,input().split())) B = [] for i in A: if i%3 != 0: B.append(i) print(*B, sep=" ", end="")</nowiki>
+Reply Edited 7 months ago
+Jaiprince17 (talkcontribs)
+solution i found is create a list of 3 tables and take input from the user to the list next step is to compare both list and print the remaining
+Reply Edited 7 months ago
+
+Week 3 Programming Assignment 3
+8 comments • 7 months ago
+Siddhanth (talkcontribs)
+I'm not able to score full marks. I have tried to write the code for all types of cases but when I submit, I am getting 2 out of 3 tests passed. You scored 66.6666666667/100 pl help me
+Reply 7 months ago
+Madmax (talkcontribs)
+Same issue here
+Reply 7 months ago
+Ujjwalkansal1999 (talkcontribs)
+I can Help you all... use this code , and if you will have any doubt then feel free to contact me. A=int(input()) ones=str(A).count("1") zeros=str(A).count("0") if ones==1 or zeros==1: print("YES") else: print("NO")
+Reply 7 months ago
+Ravi4224 (talkcontribs)
+can you explain your code??how you are flipping the digits?
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Explanation is in faqs. Follow below link http://sccilabs.org/jocwiki/index.php/Common_Doubts:_FAQs_for_Week_3#Flipping_Numbers_and_defining_a_function_too
+Reply 7 months ago
+This comment was deleted by Arunkumar (history)
+Siddhanth (talkcontribs)
+thank you
+Reply 7 months ago
+Arunkumar (talkcontribs)
+@Siddhanth, You are welcome.
+Reply Edited 7 months ago
+
+Programing Assignment3 in week 3 Problem
+4 comments • 7 months ago
+Sai Pavan (talkcontribs)
+I Got passed in all the test conditions in Assignment 3 in week 3, But Still it says 2 out of 3 tests passed. You scored 66.6666666667/100 Why am I getting this? Did any one get this? What to do now?
+Reply 7 months ago
+Siddhanth (talkcontribs)
+even i am having the same problem. Any one there who could score full marks?.. pl help.
+Reply 7 months ago
+Shanmukh (talkcontribs)
+yes, i got 3/3 tests passed code: x=str(input()) (#if count of 1 or count of 0 is ONE then it should be yes) if(x.count('1')==1 or x.count('0')==1): print("YES") else: print("NO") this is the shortest possible condition.in this we are taking input as string because if we take 01110 as integer it would be 1110 but if we take it as string it would consider as 01110.
+Reply Edited 7 months ago
+Siddhanth (talkcontribs)
+thank you
+Reply 7 months ago
+
+printing
+2 comments • 7 months ago
+Ank (talkcontribs)
+If i want to print elements of an array with spaces between each element but no space after the last element(all elements in one single line), how can it be done?
+Reply 7 months ago
+Arunkumar (talkcontribs)
+<code>print(*list, sep=" ", end="")</code> === '''Lets talk about <code>print(*list, sep=" ", end="")</code>''' === * That '''asterisk''' in front of <code>list</code> will unpack the contents of <code>list_sum</code> and print in a single line using a " " as separator. * I didn't use the <code>sep=" "</code> in the <code>print()</code>, as it was adding spaces by default, it is always better to use it as fail safe. * Usage will be like this <code>print(*list, sep=" ", end="")</code>
+Reply Edited 7 months ago
+
+Programming assignment 3 o/p for test case
+3 comments • 7 months ago
+Chuttipayan (talkcontribs)
+If we are given a testcase with lenght of 1 what should be the output Let's say input =1 or 0 output = YES/NO ?
+Reply 7 months ago
+Arunkumar (talkcontribs)
+'''Interesting question.''' As assignment is automated. we can't pass anything else other than Yes or NO. So my Try would be to add another condition. === CODE: === <nowiki>A = str(input()) if len(A) > 1: if A.count('0')==1 or A.count('1')==1: print("YES", end="") else: print("NO", end="") else: print("YES", end="")</nowiki>
+Reply Edited 7 months ago
+This comment was deleted by Arunkumar (history)
+
+Why use a string ie print(str(i)+" = Fuzz) where if we write: print(i, " = Fuzz") can work? Converting into string serves what purpose?
+3 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by roudrasaha@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
++ is a concatenation operator, used with two strings. That is why it is necessary to convert i to string.
+Reply 7 months ago
+Arunkumar (talkcontribs)
+It is for us to learn. We can do it in any other way. As there was a situation, they might have explained the string addition.
+Reply 7 months ago
+
+assignment submission
+2 comments • 7 months ago
+B.Leela madhavi (talkcontribs)
+Sir,I am successfully submitted my programming assignments of week3,but how could I submit my quiz assignment of week3? the page will contain only the "check answer" button and it doesn't contain any submit button.
+Reply 7 months ago
+Jaiprince17 (talkcontribs)
+cntrl + f5 refresh clear all cookies if (mobile) try desktop view else if (system or laptop) cntrl + f5
+Reply Edited 7 months ago
+
+I am getting below error while using Plot. TypeError: 'list' object is not callable
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by duguruchandrakanth@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+Which Python version are you using?
+Reply 7 months ago
+
+for the code in theory of evolution part 4
+3 comments • 7 months ago
+Bhavansh (talkcontribs)
+i tried executing the code but it gives the following error import random def evolve(): ind = random.randint(0,len(x)-1) p = random.randint(1,100) print(p) if (p==1): if(x[ind]=='0'): x[ind]=='1' else: x[ind]=='0' with open("dna_data.txt") as myfile: x=myfile.read() x=list(x) for i in range(0,10000): evolve(x) print(x) evolve() takes 0 positional arguments but 1 was given can someone help
+Reply Edited 7 months ago
+Neelima (talkcontribs)
+def evolve(): change it to def evolve(x):
+Reply 7 months ago
+Sudha Verma (talkcontribs)
+#then also there is error.. import random def evolve(x): ind=random.randint(0,len(x)-1) p=random.randint(1,100) if(p==1): if(x[ind]=='0'): x[ind]=='1' else: x[ind]=='0' with open("file1.txt",'r+') as myfile: x=myfile.read() x=list(myfile) for i in range(1,10000): evolve(x) print(x)
+Reply 7 months ago
+
+How to take input in List separated by a space? Help would be appreciated
+3 comments • 7 months ago
+Aritra Sarkar (talkcontribs)
+I tried executing the following code to take input separated by a space but it is throwing the following error:- TypeError: int() argument must be a string, a bytes-like object or a number, not 'list' CODE:- num = [] print("enter five numbers ") for i in range(5): a = int(input().split(" ")) num.append(a) print(num)
+Reply 7 months ago
+Sudha Verma (talkcontribs)
+use a=input().split("")
+Reply 7 months ago
+Neelima (talkcontribs)
+You are passing list to int method. Try a = map(int,input().split(" ")) a is a list remember it
+Reply 7 months ago
+
+for code in jumbled words
+2 comments • 7 months ago
+Bhavansh (talkcontribs)
+i tried executing the code but on giving c=0 as input the loop wasn't closed i had to close the console as the program was not stopping also can someone tell me how to force stop console import random def choose(): words=['rainbow','computer','science','programming','mathematics','player','condition','reverse','water','board'] pick=random.choice(words) return pick def jumble(word): jumbled="".join(random.sample(word,len(word))) return jumbled def thank(p1n,p2n,p1,p2): print(p1n,'your score is',p1) print(p2n,'your score is',p2) def play(): p1name=input('Player 1, Please enter your name') p2name=input('Player 2, Please enter your name') pp1=0 pp2=0 turn=0 while(1): #computers task picked_word=choose() #create the question qn=jumble(picked_word) print(qn) #player 1 if turn%2==0: print(p1name,'This is your turn') ans=input('What is on mind') if ans==picked_word: pp1=pp1+1 print('Your score is :',pp1) else: print('Better luck next time,I thought:',picked_word) #player 2 else: print(p2name,'This is your turn') ans=input('What is on my mind') if ans==picked_word: pp2=pp2+1 print('Your score is :',pp2) else: print('Better luck next time,I thought:',picked_word) c=input('Press 1 to continue and 0 to quit') if c==0: thank(p1name,p2name,pp1,pp2) break turn=turn+1 play()
+Reply 7 months ago
+Sudha Verma (talkcontribs)
+#i also faced the same problem ...the code given in the video is not working... #here is my code...this also has same problem import random def choose(): words=['ranbow','computer',' science','programming','mathematics','player','condition','reverse','water','board'] pick=random.choice(words) return pick def jumble(word): jumbled ="".join(random.sample(word,len(word))) return jumbled def thank(p1n,p2n,p1,p2): print(p1n,'your score is',p1) print(p2n,'your score is',p2) print('thanks for playing') def play(): p1name=input('enter player 1 name') p2name=input('enter player 2 name') pp1=0 pp2=0 turn=0 while(1): #computer task picked_word=choose() #jumble qn=jumble(picked_word) print('arrange the word',qn) #player 1 if(turn%2==0): print(p1name,'its your chance') ans=input('guess the word') if(ans==picked_word): pp1=pp1+1 print('your score is',pp1) else: print('better luck next time ,i was thinking ',picked_word) c=input('to continue press 1 else press 0') if(c==0): thank(p1name,p2name,pp1,pp2) break else: print(p2name,'its your chance') ans=input('guess the word') if(ans==picked_word): pp2=pp2+1 print('your score is',pp2) else: print('better luck next time ,i was thinking ',picked_word) c=input('to continue press 1 else press 0') if(c==0): thank(p1name,p2name,pp1,pp2) break turn=turn+1 play()
+Reply 7 months ago
+
+solution for assignment3 for week3 and i have scored 100/100
+2 comments • 7 months ago
+Madhavi rp (talkcontribs)
+str2=input() n=len(str2) c1=0 c0=0 for i in str2: if int(i) == 0: c0 = c0 + 1 if int(i) == 1: c1 = c1 + 1 if c0 == 1 or c1 == 1: print("YES") else: print("NO")
+Reply 7 months ago
+Neelima (talkcontribs)
+<pre>input_value_list = input() one_count = input_value_list.count('1') zero_count = input_value_list.count('0') if one_count == 1 or zero_count == 1 : print("YES") else: print("NO")</pre>
+Reply Edited 7 months ago
+
+fizz buzz is interesting one !!!
+3 comments • 7 months ago
+Jaiprince17 (talkcontribs)
+if we use 3 (if conditions) we get the output as we want do we want to define :P for i in range(1,51): if(i%3==0 and i%5==0): print(str(i)+"=fizzbuzz") if(i%3==0): print(str(i)+"=fizz") if(i%5==0): print(str(i)+"=buzz")
+Reply Edited 7 months ago
+Simran (talkcontribs)
+Please post it on lecture notes so that everybody can see this.
+Reply 7 months ago
+Jaiprince17 (talkcontribs)
+yeap :)
+Reply 7 months ago
+
+a doubt on FizzBuzz topic
+2 comments • 7 months ago
+Shreedevi P (talkcontribs)
+Respected Sir/Madam, i followed the programming steps taught in FizzBuzz videos.But my doubt is when the 'LINE 1 if statement' is written somewhere in the place of LINE 2 or LINE 3 statements, we get either Fizz or Buzz printed in the console but not FizzBuzz. def FizzBuzz(r): for i in range(1,r): if(i%3==0 and i%5==0): #LINE 1 print(str(i)+" FizzBuzz") else: if(i%3==0): #LINE 2 print(str(i)+" Fizz") else: if(i%5==0): #LINE 3 print(str(i)+" Buzz") else: print(str(i)) #END OF THE PROGRAM I tried to run the below program, but couldnt. Dont understand where Im going wrong.Kindly help. def FizzBuzz(r): for i in range(1,r): if(i%3==0): #LINE 2 print(str(i)+" Fizz") else: if(i%3==0 and i%5==0): #LINE 1 print(str(i)+" FizzBuzz") else: if(i%5==0): #LINE 3 print(str(i)+" Buzz") else: print(str(i))
+Reply 7 months ago
+Som (talkcontribs)
+Hey, The problem here is that firstly you will always have to check for multiples of 15 i.e. you will have to keep "if(i%3==0 and i%5==0)" in LINE 1 always because if you place this after "if(i%3==0)" or "if(i%5==0)" then what happens is that these conditions also become true if you encounter a multiple of 15 and then the counter doesn't move further and stops after executing the statements within these conditions. NOTE: If the 'if' condition becomes true then the 'else' part is not checked
+Reply 7 months ago
+
+Only seeing Programming assignment 3
+2 comments • 7 months ago
+Chuttipayan (talkcontribs)
+For Week 3 i have finished the programming assignments , i would like to submit them , but now only seeing he assignment 3 not the the others 1 and 2
+Reply 7 months ago
+Sayantoni Chaudhuri (talkcontribs)
+same problem
+Reply 7 months ago
+
+Assignment 3 issue
+4 comments • 7 months ago
+Madmax (talkcontribs)
+My code // a=[int(i)for i ininput().split("")] counter=0 for i in range(0,len(a)): if(a[i]==1): counter=counter+1 if(counter==(len(a)-1)): print("YES",end="") elif(counter==1): print("YES",end="") else: print("NO",end="") #my code gives me output in spyder but not while submitting assignment.// i get two test cases as sucess 1 test case i keep on failing any solutions anyone?
+Reply 7 months ago
+Shitalp (talkcontribs)
+same issue here
+Reply 7 months ago
+Lwardell (talkcontribs)
+Me too. It works in Spyder, but not when submitting. The 'no' case is not working.
+Reply 7 months ago
+Madmax (talkcontribs)
+@lwardell thats right no condition does not work in online compiler
+Reply 7 months ago
+
+programming question-3, week 3
+5 comments • 7 months ago
+Ibs777 (talkcontribs)
+in programming question-3, week 3, i had written following code. But my code does not recognize the zero placed before the number like it read 0011 as 11. here is my code: n=int(input()) z=0 y=0 h=[int(d) for d in str(n)] for i in range (len(h)): if (h[i]==1): z=z+1 else: if(h[i]==0): y=y+1 if (y==1 or z==1): print ("YES") else: print ("NO")
+Reply 7 months ago
+Nital (talkcontribs)
+don't convert the number to int. we can count number of 0s and 1s as character also.
+Reply 7 months ago
+Madmax (talkcontribs)
+@nital, Can you explain me why i have to use the numbers as string? Honestly i dont understand and my code is not working in the web compiler although works perfectly in spyder ide.
+Reply 7 months ago
+Nital (talkcontribs)
+@madmax i think its our habit to treat 1001 or something written using digits as number. the question asked was to flip a single digit and get all same. so it does not make any difference if we treat 0 and 1 as character and then apply our logic to check the condition
+Reply 7 months ago
+Madmax (talkcontribs)
+@nital even if it was no or character if program could recognize and switch it it shoud work . So the same result should come for no or character?. Lol i am still confused
+Reply 7 months ago
+
+Which function does the interpreter execute first?
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by vickysec28@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+Interpreter executes main function first.
+Reply 7 months ago
+
+I cant see my Programming assignment 1 and 2 in week 3
+One comment • 7 months ago
+Sathyait2003 (talkcontribs)
+Hi, In my page it shows only programming assignment of week 3 today. it does not show programming assignment 1 and 2. but last week i have seen it. kindly rectify this problem
+Reply 7 months ago
+
+Can any one help me write code for prime number
+2 comments • 7 months ago
+Pritish shubham (talkcontribs)
+Dear all I am trying to write a program which can help me identify the prime numbers for 1st 10 integers. But I am not able to do, however, I am able to determine prime numbers from 11th number onward. Please help me to modify my code so what I can identify any prime number from 1 to 100. The code which I had written is mentioned below: for i in range (11,101): if(i%i==0 and i%2 != 0 and i%3 !=0 and i%5 !=0 and i%7 !=0): print(str(i),"= Is a Prime Number") else: print(str(i),"= Is not a prime number")
+Reply 7 months ago
+Nital (talkcontribs)
+say you want to check n is prime or not? the code goes like this: for i in range (2,n): if (n%i != 0): continue else break if (i < n): print (n,"is not prime") else: print(n,"is prime") hope this will do
+Reply 7 months ago
+
+Why do we define a function?
+3 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by dannie.oct6@gmail.com (dannie.oct6@gmail.com)
+Reply 7 months ago
+Simran (talkcontribs)
+Function induces modularity in the programs. A function is expected to follow a particular task that can be used in the program again and again
+Reply 7 months ago
+Hardev k (talkcontribs)
+Code reusability is a very important part of programming in any language. For a large programming project, it is essential to abide by the "Don't Repeat Yourself" or "DRY" principle. It makes the code easier to maintain.
+Reply 7 months ago
+
+difference between randint() and rand range
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by K.Rajesh523@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+random.randint(a, b)- Returns a random integer N such that a <= N <= b. randrange(a, b)- Returns a random integer N such that a <= N < b.
+Reply 7 months ago
+
+In this program, i am printing with out str(i), i simply put the command print(i,"fizz") for this i got the same ans. this is correct?.
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by yuva.cvrde@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+Yes it is correct. str is used to convert int to string.
+Reply 7 months ago
+
+Digits Flip giving wrong output for Testcase3
+3 comments • 7 months ago
+Sai Pavan (talkcontribs)
+a=[] a=input().split() b=len(a) c=[] i=0 for i in range(b): c.append(int(a[i])) d=len(c) count=0 i=0 for i in range(d): if(c[i]==0): count=count+1 if(count>1): print("NO",end="") else: print("YES",end="") After Executing this code, the first two test cases are passed. But the last test case is giving error...
+Reply 7 months ago
+Nital (talkcontribs)
+dear sai, we have count method , which directly returns the count of the element you ask for in the list. like say, l1=[1,2,3,2,4,2,5] print(l1.count(2)) will give you 3 as 2 occurs/founf 3 times in the list
+Reply 7 months ago
+Aishwarya. H (talkcontribs)
+if(c[i]=='0'): give 0 within '0' as you have taken input as string not int
+Reply 7 months ago
+
+def scramble(word): foo = list(word) random.shuffle(foo) return ' '.join(foo)
+One comment • 7 months ago
+Aishwarya. H (talkcontribs)
+return ' '.join(foo) pls, explain what this line does?
+Reply 7 months ago
+
+How to read a file from particular location?
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by atulkmr02@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+f=open("path to file",mode)
+Reply 7 months ago
+
+l1 = list(input().split()) l=len(l1) l2 = [] for i in range(l): l2.append(int(l1[i])) for i in l2: if(i%3 != 0): print(i, end=" ") why i am getting presentation error?
+One comment • 7 months ago
+Nital (talkcontribs)
+l1 = list(input().split()) l=len(l1) l2 = [] for i in range(l): l2.append(int(l1[i])) for i in l2: if(i%3 != 0): print(i, end=" ") why i am getting presentation error?
+Reply 7 months ago
+
+doubt on lecture theory of evolution-4
+One comment • 7 months ago
+Shashidhar S (talkcontribs)
+if(x[ind]=='0') what does x[ind] mean? someone help please
+Reply 7 months ago
+
+assignment 1
+2 comments • 7 months ago
+Girish (talkcontribs)
+arr=[] arr=input().split() m1=arr[0] m2=arr[0] for i in range(len(arr)): if(m1<arr[i]): m1=arr[i] for b in range(len(arr)): if(m2>arr[b]): m2=arr[b] print(m1,m2) after executing the above code case 3 and 4 fails.can anyone explain?
+Reply 7 months ago
+Praveen897 (talkcontribs)
+convert m1 and m2 into integers. make sure that your list also stores integers
+Reply 7 months ago
+
+Correction in Q.No.6 in Assignment No.2
+3 comments • 7 months ago
+Salgare3s (talkcontribs)
+In assignment 2, question no. 6 colon is missing in the loop. So actual we get error. Make correction in result accordingly!
+Reply Edited 7 months ago
+Nandini25998 (talkcontribs)
+actually there is no semicolon in python
+Reply 7 months ago
+Adeebk15 (talkcontribs)
+he meant colon this thing " : "
+Reply 7 months ago
+
+Digits Flip giving wrong output for Testcase3
+One comment • 7 months ago
+Sai Pavan (talkcontribs)
+a=[] a=input().split() b=len(a) c=[] i=0 for i in range(b): c.append(int(a[i])) d=len(c) count=0 i=0 for i in range(d): if(c[i]==0): count=count+1 if(count>1): print("NO",end="") else: print("YES",end="") After Executing this code, the first two test cases are passed. But the last test case is giving error...
+Reply 7 months ago
+
+Having trouble in printing the numbers splitting
+3 comments • 7 months ago
+Sai Pavan (talkcontribs)
+a=[] b=[] i=0 a=input().split() c=len(a) for i in range(c): b.append(int(a[i])) d=len(b) for i in range(d): if(b[i]%3!=0): print(b[i],end='') When I take input as 2 3 4 5 the output is printing as 245. But need to print as 2 4 5.\ Help on this
+Reply 7 months ago
+Rishab (talkcontribs)
+try this: print(b[i],end=" ") ..don't forget to add space b/w collans
+Reply 7 months ago
+Sai Pavan (talkcontribs)
+Solved. Thanks
+Reply 7 months ago
+
+Mistake in Ques. no. 6 of week 2
+4 comments • 7 months ago
+Gourav (talkcontribs)
+There is no semicolon ":" in the "for" statement in question no. 6 of week 2 for which the code should show an error. Please correct this!
+Reply 7 months ago
+Saumendu (talkcontribs)
+yes same problem
+Reply 7 months ago
+Nandini25998 (talkcontribs)
+semicolon will not be used in python
+Reply 7 months ago
+C++veteran (talkcontribs)
+that is called 'colon' not 'semi colon' and yes colon is used in python.
+Reply 7 months ago
+
+in compilation we have passed 3 test cases but while submitting showing like 2 out of 3 test cases passes and got 66.666 marks. how do we know the test cases
+One comment • 7 months ago
+Lraji1973 (talkcontribs)
+in compilation we have passed 3 test cases but while submitting showing like 2 out of 3 test cases passes and got 66.666 marks. How do know the test cases
+Reply 7 months ago
+
+Week 3 -Assignment 3 - Issue
+One comment • 7 months ago
+Sathyait2003 (talkcontribs)
+In programming assignment 3 of week 3, it shows message as passed all the three test cases during compilation but when I submitting the same it shows only 2 out of 3 tests were passed. score as 66.6666666667/100 . why this is so? I have compiled in the same online portal with same input test cases it does work but why not during submission?
+Reply 7 months ago
+
+In Assignment 2 Q.No 6, Semicolon is missing.
+One comment • 7 months ago
+Praveen897 (talkcontribs)
+In Assignment 2 Q.No 6, Semicolon is missing, then how can the answer be 15. So, correct it
+Reply 7 months ago
+
+How to give list input without specifying the list range ?
+3 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by rathigautam81@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+You can use while loop. <pre> l=[] while True: in=input() if in=="": break else: l.append(int(in)) </pre>
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+You cannot directly assign value to list like mylist[0]=something because at first, there is no element and it will give an index error.
+Reply 7 months ago
+
+estimates=estimates[tv:]==>how it will work for 10% smallest values.
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by hemalathachitty@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+tv is basically the 10% of total values. tv: starts the array after dropping down first tv values.
+Reply 7 months ago
+
+ages=[51,26,83,94,56,65,74,8,39] >>> length(ages) Traceback (most recent call last): File "", line 1, in NameError: name 'length' is not defined
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by pushpa.dinne@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+Its len, not length
+Reply 7 months ago
+
+sir,a number which is divisible by 3 and 5 .that number must divisible by 15 so we can write if (i%3==0 and i %5==0 and i%15==0).
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by potusowmya06126@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+There is no need to add third condition i.e. divisibility by 15 then.
+Reply 7 months ago

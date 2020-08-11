@@ -1,0 +1,1567 @@
+python programs in windows os
+3 comments • ‪3 months ago‬
+
+
+
+
+‪Amulya (talkcontribs)‬
+‪Okay,so I am using anaconda to write my python prgms in a Windows 7 32-bit PC. I save as .py file and run the code ,it works just fine AS LONG AS I'm in the editor. when I come out, and open the folder from the c drive ,it says 'FILE FORMAT NOT SUPPORTED'.so ,the programs are not opening and I need help!!!.please leave a reply,I'll be thankful.‬
+‪Reply‬
+‪5 months ago‬
+
+
+
+‪Kamalakar (talkcontribs)‬
+‪. the files are generally saved in .py format. open with note pad‬
+‪Reply‬
+‪5 months ago‬
+
+
+
+‪Aritraghosh452 (talkcontribs)‬
+‪if your file in '.py' format and does not open then you should be open with note pad ,or spider terminal ---open file....‬
+‪Reply‬
+‪3 months ago‬
+
+
+
+
+
+make an application or game
+One comment • ‪3 months ago‬
+
+
+
+
+‪Aritraghosh452 (talkcontribs)‬
+‪try‬
+‪Reply‬
+‪3 months ago‬
+
+
+
+
+
+from random import randrange L=list() for x in range(5): L.append(randrange(0,100,2)-10) print(L) plz help not understand the output which change always how? ans: -8 88 8 58 0
+One comment • ‪5 months ago‬
+
+
+
+
+‪Anandvihar (talkcontribs)‬
+‪from random import randrange L=list() for x in range(5):‬
+‪   L.append(randrange(0,100,2)-10)‬
+print(L)
+‪plz help not understand the output which change always how?‬
+‪ans: -8 88 8 58 0‬
+‪Reply‬
+‪5 months ago‬
+
+
+
+
+
+Incorrect accepted answer for question 2 of assignment 1
+8 comments • ‪7 months ago‬
+
+
+
+
+‪Hiren (talkcontribs)‬
+‪The question 2 of assignment 1 (whose scores were declared after midnight) reads as follows:‬
+
+‪Which of the following constructs carries out a set of instructions as long as any key in the keyboard is pressed?‬
+
+‪In other words, the question is asking for a construct which will do something while a key is kept pressed.‬
+
+‪However, the accepted answer to the question is the "repeat until" construct, which is not accurate, because that construct will automatically keep doing something until (not '"as long as"') a key is actually pressed. The construct is worded as "repeat until", not "repeat as long as". I hope the difference is clear. This can be practically verified in Scratch as well.‬
+‪Another analogy which can be made is that the question is asking for a "while" loop, whereas the accepted answer is something which is equivalent to "do....while not". Once again, I hope the difference is clear.‬
+
+‪The question is asking for a construct which should stop executing the instructions when the key is no longer pressed, whereas the accepted answer is something which will actually stop carrying out the instructions when a key is indeed pressed. So the correct accepted answer should have been "None of the above", which I had submitted. Please re-evaluate this. I was given 0 points for this question.‬
+‪Reply‬
+‪Edited 7 months ago‬
+
+
+
+‪DivyaShruthi (talkcontribs)‬
+‪I had the same doubt.Even I selected the answer as if loop.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪We discussed this issue. We think that the answer provided repeat untill is correct. untill ans as long as don't make any difference here‬
+‪Reply‬
+‪7 months ago‬
+
+
+‪DivyaShruthi (talkcontribs)‬
+‪Please try it in Scratch.Repeat until block stops executing when you press any key.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Hiren (talkcontribs)‬
+‪I am sorry I cannot understand how you can consider 'until' and 'as long as' to mean the same. Let me give another example. Suppose you are at a traffic signal. Should you be saying "Vehicles must stop as long as the light is red" or "Vehicles must stop until the light is red"?‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪You can take it otherwise too. If i say repeat move 10 steps until space key is pressed and i keep on pressing key 'd' as long as the cat is moving, still repeat until is valid here. It all depends on the condition supplied.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Hiren (talkcontribs)‬
+‪In case of this question, it is asked as follows: "as long as any key in the keyboard is pressed" . So the condition supplied is not for first keeping key 'd' pressed and then pressing 'space' to signal termination. It is applicable to all keys. The question is saying that irrespective of whatever key you press, the execution should keep running.‬
+
+‪In fact, if I use your example, I can even say that the "move 10 steps" should continue even after the space key is pressed, because even this case (of pressing the space key) comes under the words used in the question, i.e. "as long as any key in the keyboard is pressed". So the movement of the sprite (as per the question asked) should not stop even after the space key is pressed.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪You have a point. We will take care of this in future.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+question 5 of assignment 1
+2 comments • ‪7 months ago‬
+
+
+
+
+‪Adeebk15 (talkcontribs)‬
+‪How can that be next costume? We want to move the sprite , then it has to move, in that case the command should be to make the sprite move and not to change the costume. Please clarify the issue.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪It is next costume. Try doing it in Scratch, you will understand the difference.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+Error Messages
+3 comments • ‪7 months ago‬
+
+
+
+
+‪Aslam (talkcontribs)‬
+‪What does it mean "Passed after ignoring Presentation Error"?‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Hardik20sharma (talkcontribs)‬
+‪Your output is correct. But there is a presentation error. For example -->‬
+‪Your output is coming 5____5___5_______5‬
+‪and the desired output is 5_5_5_5‬
+‪I have used '_' to show spaces.‬
+‪Another example can be 5_5_5_5_ (Even this will give you presentation error)‬
+‪You have to keep the presentation of output in mind.‬
+‪Reply‬
+‪Edited 7 months ago‬
+
+
+
+‪Aslam (talkcontribs)‬
+‪Thanks‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+Joy of computing using Python - Assignment - 0
+15 comments • ‪7 months ago‬
+
+
+
+
+‪Knk83 (talkcontribs)‬
+‪HI Sir, As per assignment 0 For test case 1: In the console, I code it as (a= int(input(10))), while the compiled result is shown as passed for test case 1. Then I followed the same syntax for test case 2, test case3 and test case4, while compile & run it. I got a runtime error. How can I execute Testcase2, Test case3, Testcase 4?‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Hardik20sharma (talkcontribs)‬
+‪The code should be a = int(input()). You can't write input(10)‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Knk83 (talkcontribs)‬
+‪Hi Sharma, I have tried with the syntax which you provide in the FAQs. For test case 1 I have used a=int(input(10)) Complied - Test is passed. for test case 2 I have used b=int(input(12)) compiled - Getting error " IndentationError: unexpected indent"‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Knk83 (talkcontribs)‬
+‪Once again I have tried with the following code a = int(input(10),‬
+‪       (12),‬
+       (13),
+       (14))
+For test case 1 result is shown as passed, but other test cases shown as " Runtime Error"
+‪TypeError: int() takes at most 2 arguments (4 given)‬
+‪Reply‬
+‪Edited 7 months ago‬
+
+
+
+‪Knk83 (talkcontribs)‬
+‪a = int(input(10),‬
+‪       input(12),‬
+       input(13),
+       input(14))
+EOFError: EOF when reading a line
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪You don't have to provide input. Machine will take it itself. Input function is for taking input from user, and the user is machine here, not you. So you just write a=int(input()). Machine will take input one by one itself and run the code.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Sap234 (talkcontribs)‬
+‪But Rajiv Sarkar i have tried a=int(input()) but it's still not working .Machine is not taking any input its just showing error in every cases.How did you write it?‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪After taking input you have to print it too....... print(a,end="")‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Sap234 (talkcontribs)‬
+‪Thank you very much.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪Welcome..‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Knk83 (talkcontribs)‬
+‪Thank you, Rajiv. I got it‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪Welcome:)‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Utkarsh21 (talkcontribs)‬
+‪Thank you very much, Rajiv Sarkar‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Madhav (talkcontribs)‬
+‪Hi Rajiv, Could you please explain the need for the statement, print(a,end=""). I don't remember learning it anywhere though.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪Actually whenever you write a print statement in Python, it automatically shifts the cursor to the next line. That is why if you write another print statement, the output is automatically printed on the next line. If you don't want that, you have to explicitly say that insert nothing after print statement. The end command with empty string does that only.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+assignment-programming
+22 comments • ‪7 months ago‬
+
+
+
+
+‪Amulya (talkcontribs)‬
+‪respected sir/mam, i am not sure how to give my code in the text editor during programming assignment. should i just give numbers 6 2,or is there a syntax for it..and how do i get the output?.one more thing,how do i know that my code has been evaluated?.i submitted my assgnmt last week and i am shocked to see no score given in my progress.‬
+‪  please reply,i will be grateful.‬
+thanks.
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Dear Amulya, I have added this question in common doubts section of week 2. Please check. In order to submit your assignment, you have to click on submit button. It will show you score of your program. Only Compile & Run is not enough to submit your program for evaluation.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Amulya (talkcontribs)‬
+‪thank you for replying,I saw the common doubts section,I clicked submit,it showed 4/4 tests passed(with a presentation error) your score 100.0/100.Is that how it is supposed to come once we submit the assignment? .Because there are still no marks/grade in my progess tab.Also,I saw somewhere about uploading assgnmt through google drive..is there any relation to this??‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪If you are getting 100/100, then there is no need to worry. Can you please tell me how did you write your print command?‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Amulya (talkcontribs)‬
+‪a=int(input()) print(a) ..in the week 1 assignment:introduction to online portal‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Amulya (talkcontribs)‬
+‪I just put end"" in print statement and it worked!!! thanks:) (in week 1). but still,i am getting a runtime error in week2 programming assignment 1-difference .this is my code:‬
+‪a=int(input());b=int(input())‬
+‪c=a-b‬
+‪print (c)‬
+‪Reply‬
+‪Edited 7 months ago‬
+
+
+‪Ashish.ne (talkcontribs)‬
+‪est Case 1 Runtime Error Input Expected Output Actual Output‬
+‪6 2‬
+
+‪4‬
+‪it is giving error:‬
+‪Traceback (most recent call last):\n‬
+‪ File "test.py", line 1, in <module>\n‬
+   a=int(input());b=int(input())\n
+ValueError: invalid literal for int() with base 10: '6 2'
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Dilip Kumar k (talkcontribs)‬
+‪Using this code how can I pass 4 test case at a time‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪Both a and b input are given at same line. So you need to take both as input in same line......... a, b=input().split().....after that convert both into integer. And then subtract.‬
+‪Reply‬
+‪7 months ago‬
+
+
+‪Abiramitce77 (talkcontribs)‬
+‪a,b = input().split() print(int(a) - int(b))‬
+‪I used above code, it worked. Thanks a lot!!!‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Dilip Kumar k (talkcontribs)‬
+‪How can I pass 4 test cases using this code at a time‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Amulya (talkcontribs)‬
+‪it helped,thanks a lot‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪Welcome:)‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Dilip Kumar k (talkcontribs)‬
+‪In week 2 assignment how to write a code to find largest of two numbers....can anyone please help me in this..... I'm very poor in c languages‬
+‪Reply‬
+‪7 months ago‬
+
+
+‪Enitee9 (talkcontribs)‬
+‪arr=list(map(int,input().split())) print(max(arr))‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Enitee9 (talkcontribs)‬
+‪arr=list(map(int,input().split())) print(max(arr))‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪Try searching online for how to take input, convert them into integers and then subtract and print them. You will learn a lot by learning from Google or YouTube.‬
+‪Reply‬
+‪Edited 7 months ago‬
+
+
+
+‪Sap234 (talkcontribs)‬
+‪But Rajiv i am still not getting the output after using the above mentioned code.So what to do??‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪SAP234, you are talking about which assignment?‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Sap234 (talkcontribs)‬
+‪About week 2 assignment programming assessment no 1‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Amulya (talkcontribs)‬
+‪c= int(input())‬
+‪int a‬
+‪int d‬
+‪for i in range (c):‬
+‪ a=a+i‬
+ for c in range(i):
+   c=c+i
+   d=a+c
+   print(d)
+ 
+I am getting a run time error and a syntax error for this in wk 2 programming assignment loops,list and sum.please help
+‪Reply‬
+‪Edited 7 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪Don't write int a and int d. That does not mean anything in python. Initialize two list and take input at once and split it. Then reverse the list using a function and add the elements one by one and print it one by one. View other discussions to get more idea on the question.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+problem in week-1 asignment tect cases
+2 comments • ‪7 months ago‬
+
+
+
+
+‪Khubaib tahir (talkcontribs)‬
+‪Sir/Maam,‬
+‪how to submit test case 1,2,3,4 results ? am not bale to get desired output with test cases given by you like a = int(input(10)) when i click on " Compile & Run , this test case is passed but others are showing as wrong. if write logic as below a = int(input(12)) - test case 2 this is passed but the first test case result are showing wrong though it was passed for the first time execution.‬
+‪actually how should we write the logic to read number and print and submit ? is it that we should perform all test cases in one logic execution or‬
+‪test case by test case ad submit ? it is not working properly . please respond to this.‬
+‪Thank you‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪You have to read it at once. Like a=int(input())‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+question 3 of week 2 assignment
+2 comments • ‪7 months ago‬
+
+
+
+
+‪Meyyammai V (talkcontribs)‬
+‪while reversing and adding the array elements, the testcase is passed if number of elements is 4. Other testcases are not satisfied.How to solve the question for all testcases.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Hardik20sharma (talkcontribs)‬
+‪You have to write a code which satsifies all the test cases. Try doing‬
+‪x = input().split() The x will take input and store it. Suppose input is ["1 2,3,4"] Then x will store it as ["1","2","3","4"]‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+presentation error
+9 comments • ‪7 months ago‬
+
+
+
+
+‪Amulya (talkcontribs)‬
+‪what is a presentation error‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Please refer common doubts section of week 2 and ask here again if you don't understand.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪The presentation error comes because whenever you write a print statement, it writes that thing inside the bracket, but with that, the cursor goes to the next line automatically. That is why presentation error is coming. To stop the cursor to go to the next line, you should write print("Anything, but don't go to next line", end="") After that if you write another print statement, then the statement will be printed at the end of previous statement and not on next line.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Vishaaal (talkcontribs)‬
+‪Need more explanation on how to remove this error‬
+‪Reply‬
+‪Edited 7 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪if you are writing....... print (a-b), Instead write............. print(a-b, end="")‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Vishaaal (talkcontribs)‬
+‪Thank you‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪Always welcome :)‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Thanks Rajiv :))‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Amulya (talkcontribs)‬
+‪thanks for replying‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+im enjoying scratch programes.but i ve little bit problem in saving those programes.its getting saved but not opening again. plz help.
+3 comments • ‪7 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question asked by khandagalerohitb@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Have you downloaded scratch on your stand alone PC?‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪If you are using it online, then try downloading the project by going to file menu and click downloaded to your computer. It will get downloaded in .sb2 format. So if it will open only with scratch software, whether offline or online. Otherwise it won't open.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+Catalan number part 1 lecture doubt
+2 comments • ‪7 months ago‬
+
+
+
+
+‪EddieNit (talkcontribs)‬
+‪Could you please explain how total number of possible paths were 10 choose 5 for going from 0,0 to 5,5‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪See we have to go right 5 times, and we have to go up 5 times. So we can write it as RRRRRUUUUU. We have to count in how many ways we can arrange these 5 R's and 5 U's. From mathematics, permutations with repitions, we know that it is 10!/(5!*5!). That is 10 C 5.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+what are the benefits of using python as compare to other programming languages?.
+3 comments • ‪7 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question asked by mamidijagan123@gmail.com‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Python is an open source programming language. It has extensive library support which offers many functionalities. You will eventually realise the ease of writing code in Python if you have programmed in C,C++‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪One more point is because it is the most in-demand language today and is growing at a tremendous rate. It is used in data science and machine learning, and you know how much these things are going to be focused on in the future.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+Regarding Programming Assignment 1
+3 comments • ‪7 months ago‬
+
+
+
+
+‪Adityadhakate (talkcontribs)‬
+‪Sir, my only Test case 1 show Passed But other Test case 2 3 4 is failed, How to do? can you give me an idea?‬
+‪Reply‬
+‪Edited 8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Please post your code here‬
+‪Reply‬
+‪8 months ago‬
+
+
+This comment was deleted by Rajiv sarkar (history)
+
+
+
+
+If i input "what is my name ?"... Why will it ask for my name ????... And then if i input a=3, then what will it ask here ??? I am confusing..
+3 comments • ‪7 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question asked by sohamtpn@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪You are not giving "what is my name as input". Its a prompt to ask for input from the user.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪Whatever you write inside input, it gets printed on screen so that user will know what the computer wants. After that user will enter something through keyboard that will store it in the variable. Eg. name=input ('enter your name : ') Enter your name gets printed on screen. If user enters Rohan and then press enter, then variable 'name' will become Rohan. If you instead enter a=3, the name will become "a=3" . Hope it helps :)‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+Why was _ underscore given between amit and verma ??.
+3 comments • ‪7 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question asked by sohamtpn@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Because white spaces are not permitted in variable names.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪If you write name = Amit Verma, it will think that name is Amit but Verma is a different thing. So to connect that you have to use underscore. No other symbol is permitted in variable name. It is same like when you save some file on your PC, then while saving, some symbols are not allowed in naming the file, kind of same as that.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+problem with programming assingment.
+3 comments • ‪7 months ago‬
+
+
+
+
+‪Prab (talkcontribs)‬
+‪Compilation: Passed Public Tests: 4 / 4 Passed Note: These tests may not be considered while scoring. Know more. Test Case 1 Passed after ignoring Presentation Error Test Case 2 Passed after ignoring Presentation Error Test Case 3 Passed after ignoring Presentation Error Test Case 4 Passed after ignoring Presentation Error how we have to maintain the presentation error‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Write print("whatever needs to be printed", end="") and there are private test cases apart from the public test cases.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪The presentation error comes because whenever you write a print statement, it writes that thing inside the bracket, but with that, the cursor goes to the next line automatically. That is why presentation error is coming. To stop the cursor to go to the next line, you should write print("Anything, but don't go to next line", end="") After that if you write another print statement, then the statement will be printed at the end of previous statement and not on next line.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+Hello sir,what is the need of programming actually? And can you please give us real time examples where there is the need of programming
+3 comments • ‪7 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question asked by sruthimaruboina4444@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Programming is used in every aspect of life now a days. Whether you are going for your medical check up or watching online videos of our course, programming assists everything in our daily life.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪In our life, as a common human being, we are using many things, nearly everything is programmed. The goods which we have in our house were built in a factory, and in that factory, machines are programmed to do a specific work in a specific way. Mobiles and Computers and everything inside them is all programming, maybe photos hop, the music player etc. Nearly everything which have made our life easy other than fire and wheel is in some way or the other related to programming, i.e., instructing a machine to do some task repetitively based on some conditions.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+Is it possible to write a python program that will be a simulation of a chess game?.
+3 comments • ‪7 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question asked by arvil2000sen@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Yeah it is very much possible. There are in fact many simulations available. You can design on your own‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪Yes it is possible. But I think the program is going to be very difficult and long. :D‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+Stability of programming language
+3 comments • ‪7 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪If programming languages are evolving at the current rate , can we expect a time when we don't have to do any programming but the computer will become smart enough to understand our language?Like if we say the computer to make an addition , it will simply ask for the numbers to be added and give the sum ie the computer will itself write the program in it's memory and run the program. and if C++ is much more user friendly than C ,why are we still learning the primitive language?. Question asked by arvil2000sen@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Thats what artificial intelligence is all about.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪We are learning C because it is the most efficient language, it is often called middle level language rather than higher level language. That is the reason when speed and memory are the utmost important thing in our program, we have no option but to write program in C. When we learn C, it teaches us not only programming but how numbers are stored in memory, how lists actually work, how we can locate variables using memory address. So, python is one of the most user friendly language, but that does not allows us to talk to machines in their language. If we instruct machines in their language, they will understand the instruction fast enough. That is why C is still being used and will not die till a long time. Though it is true that we should start learning programming with some simple language like python, so that we can focus more on building projects rather than finding error in our code, and later on we should learn advanced language like C. But most of the colleges in India teach C and not Python. And yes, someday we can hope computer will be that intelligent, but still that day is very far. But much work is being done in this field of machine learning and artificial intelligence, the best example is alexa or Google home, or Google now. Think about it :)‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+how to make cat to turn back and then move ?.
+3 comments • ‪7 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question asked by avi1calm@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪You can use the turn block to turn the cat by required degrees.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪The turn command is under "Motion" menu, right after MOVE command.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+Sir, which version of scratch you are using please provide a link. Because Scratch that I used has a different layout..
+3 comments • ‪7 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question asked by behunejatin@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Scratch 3.0 (0.1.0) is the current version Scratch‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪Yes, scratch used in the course is different from the current version, but the current version is much better. You can see all the Sam etyoe of commands one after another on the same side of screen. Like to use if-else statement, you don't have to know it is under controls menu. Just keep scrolling downwards and you will see it. The newer version is better and the functionality of both the versions are same.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+Sir , I don’t know c , c++ can I learn python ??
+3 comments • ‪7 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question asked by prudhviraj.arangi@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Yes, it is very much possible to learn Python even if you don't know any other languages. Our course is specially designed keeping in mind the requirements of an absolute beginner.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪Yes, python is in fact the first language in nearly all of the USA schools to be taught because it is so simple and useful.‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+Programming Assignment
+6 comments • ‪7 months ago‬
+
+
+
+
+‪Vikas004 (talkcontribs)‬
+‪Dear Sir/Ma'am, How to pass all the test cases together? I have written : a = int(input(10)) But through this code, I can pass a single test case only. What should I write in order to pass all the test cases together?‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪You have to take user input. Write a=int(input()). You cant write separate programs for every input. When you will run this program, it will ask you for input. You can give different inputs and check your program.‬
+‪Reply‬
+‪8 months ago‬
+
+
+This comment was deleted by Shreedevi P (history)
+
+
+‪Vikas004 (talkcontribs)‬
+‪Dear Ma'am, I wrote the code what you mentioned but it isn't asking for any input. Could you please explain again in detail?‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Vikas004 (talkcontribs)‬
+‪Now I have passed all the test cases with this code after ignoring presentation error. a = int(input()) print(a) What is this presentation error and what should I do now in this code?‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Write print(a,end="")‬
+‪Reply‬
+‪7 months ago‬
+
+
+
+
+
+how do you add more than 5 variables ?
+3 comments • ‪8 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question asked by trishamandal321@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪You can make as many number of variables as you want in the make variable section.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Hardik20sharma (talkcontribs)‬
+‪Another good way is array, but I guess that will come later‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+
+
+EOF error please help
+3 comments • ‪8 months ago‬
+
+
+
+
+‪Sai Manish (talkcontribs)‬
+‪Hello I am Manish end of line error How to give input? Is the input given automatically?‬
+‪Reply‬
+‪Edited 8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪You just write your input in the console. Whenever you run your program, just write the input and it will print the specified input.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Sai Manish (talkcontribs)‬
+‪Thank you ma'am‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+
+
+Reference book on Python
+6 comments • ‪8 months ago‬
+
+
+
+
+‪Arunramanathan0330 (talkcontribs)‬
+‪Anyone please suggest a good starting book on Python which works well along with this course‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪I learnt python basics through a wonderful book named "Think Python 2 - How to think like a computer scientist" . This book covers basic to advanced python. It is available for free. Search for it in Google for pdf version. This is the link to download the ebook. Another great book is Python Beginner to Advanced manuscript. Search for this is amazon, the kindle version is free to download.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Arunramanathan0330 (talkcontribs)‬
+‪Thank you Rajiv for the suggestions. Will definitely try them. Have you tried learn python the hard way?‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪Yes actually when I started learning, Jio was not there and then we used to have 1 Gb Internet for 250 Rs for a month. So watching YouTube videos to learn anything was out of question. So I learnt it through book and practice, with some competitive coding on hackerrank. Though after that too, YouTube helped a lot to learn all the functionalities of python, which makes it so easy to do anything, like everything has a built-in function.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Arunramanathan0330 (talkcontribs)‬
+‪Great to know the amount of hard work you have put in to learning...‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪Thanks. "Hard Work beats talent when talent is not working hard enough" & "If you are competing with the best, maybe you will not beat him but you will definitely reach a far superior position than your ability." These two quotes motivates me. :)‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+
+
+how to make animation with more sprites
+2 comments • ‪8 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question asked by charithavya2233@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪You can use the show and hide options to animate as done in Jumping jacks.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+
+
+What are the other control commands that are predefined in scratch?
+2 comments • ‪8 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question asked by haritejajnv@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪There is a wiki portal exclusively for scratch. Refer https://en.scratch-wiki.info/wiki/Scratch_Wiki.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+
+
+Full availability of lectures
+2 comments • ‪8 months ago‬
+
+
+
+
+‪Subhala (talkcontribs)‬
+‪I have downloaded the weekly lectures. I could listen to week 2 lectures but week 3 lectures are not responding. Is there any restriction like this lecture will open only in this week. I think that should not be there.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Prab (talkcontribs)‬
+‪if you want to download all week lecture you can follow the below link. it will give you the list off all videos. https://nptel.ac.in/courses/nptel_download.php?subjectid=106106182‬
+‪Reply‬
+‪Edited 8 months ago‬
+
+
+
+
+
+i dont have a help option in any commands on the scratch.
+2 comments • ‪8 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question by suryaprasath085@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Please post a screenshot here‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+
+
+can we take input from the user at the runtime in scratch? for example ,here ,if we can take age as an input at runtime it would make our program a whole lot of interactive..
+2 comments • ‪8 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question asked by rjyou157@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Yes, you can use ask block to take input from user at runtime.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+
+
+Python Vs Matlab
+5 comments • ‪8 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪sir i'm very curious to learn python as well as matlab , can't figure out which one is better or more useful .!? and does the course really require basic knowledge of c++ or something cause i keep hearing this thing from others ? if not the course then does it give one an edge knowing c++ and then learning python for real life problems ?. Question asked by harshvyas1510@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪I think the most important thing for a programmer is to learn how to build logic. First you should learn how to build logic and rest is always easy.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪Depends on what you want to do, if you want to do image processing and doing calculations with matrices or so, then MATLAB is used, but the popularity of Matlab is not increasing now, because of the fact that Python and its libraries are free to use, but MATLAB is very costly. Only large organisations can use MATLAB due to its cost. Python on the other hand can be used to do a lot of things, big data analytics, machine learning, Web development, etc. If you are a beginner, go with python, learn it well, from beginner level to advanced level, do some amazing projects with it. If you do this, then learning a new language after that will be a child's play for you.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Harshvyas (talkcontribs)‬
+‪okay and like which one is used in automation control ,mobility systems and all?‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪Automation control & mobility systems are past terms. These are rapidly merging with Industrial Internet of Things (IIoT). So, due to this, earlier FBD, Labview and Matlab language were used but because of this paradigm shift, the languages now being used are Pythkn, C python and Java. Although the shift is slow but it is visible everywhere.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+
+
+What is Object Oriented Programming Language?
+2 comments • ‪8 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question asked by pranavan.22meb@licet.ac.in‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪It is a programming language that uses the concepts of objects and classes.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+
+
+Query for starting new week
+3 comments • ‪8 months ago‬
+
+
+
+
+‪Ashish Devrani (talkcontribs)‬
+‪Hello Sir when will week 2 start. As i have completed week1‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Dear Ashish, It will start on Feb 4,2019‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪If you want to get fast paced search for IITM Nptel NOC channel in YouTube, go to its playlist and go to JOC course, 234 videos are there. You can watch from there but they are not arranged in any order, and also you need to do assignments of the course otherwise you will not remember anything.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+
+
+Hello sir
+10 comments • ‪8 months ago‬
+
+
+
+
+‪Tamal Bag (talkcontribs)‬
+‪I am mr.tamal bag .I am a btech student.‬
+‪Reply‬
+‪Edited 8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Hello Tamal. Welcome to the course!!‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Skaurad (talkcontribs)‬
+‪Dear Guru, thrilled to join your course. which version of python should i install; should i install scratch s/w; kindly provide me link for Assignment0 regards, skaurad‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Hello, you can install latest version of Python i.e. 3.7.2 Assignment 0 is present on the NPTEL portal.‬
+‪Reply‬
+‪8 months ago‬
+
+
+This comment was deleted by Satyam52 (history)
+
+
+‪Arunramanathan0330 (talkcontribs)‬
+‪is Idle editor which comes as a default while downloading python 3.0 is fine for this course?‬
+‪Reply‬
+‪8 months ago‬
+
+
+‪Simran (talkcontribs)‬
+‪Yeah it is fine. You can use that :)‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Skaurad (talkcontribs)‬
+‪Thanks simran‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Arunramanathan0330 (talkcontribs)‬
+‪Thanks simran‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪You don't need to download scratch. You can use it online, it works fine enough if you have normal Internet connection 3g/4g :)‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+
+
+Scratch is an amazing and creative tool. But, why we are learning this. Is 'Scratch' connected with Python (developed from python)?.
+3 comments • ‪8 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question asked by venkatesh181020021@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Scratch is related to programming in general not particularly with python.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪It is often said, if you have extra time, like a week or so and have never done programming before, it is good to learn scratch because it introduces you to basic programming concepts like loops and if-else conditions in an interactive way. If you have done programming before, scratch is then not required.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+
+
+What are prerequisites?
+3 comments • ‪8 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question asked by tanveeralamalam74@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪A thing which is required for something else to happen.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Rajiv sarkar (talkcontribs)‬
+‪Like to learn something new, what are the things you should already be familiar with. Like to learn the Maths of 12th class, you should be knowing the maths till 11th class. Like if you don't have maths in 12th, you can't study engineering. Things required like that are called prerequisites.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+
+
+SIR CAN WE HAVE MULTIPLE SPIRITS WORKING AT THE SAME TIME?.
+2 comments • ‪8 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question asked by niraj.singh301998@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Yes it is very much possible. You should write scripts for each of the sprite.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+
+
+doubt regarding assignment:introduction to online portal
+2 comments • ‪8 months ago‬
+
+
+
+
+‪Bhavansh (talkcontribs)‬
+‪here it is asked to write a code to take an input value and provide an output value. I wrote a the code below a=int(input()) print(a) but when i compile it, it shows passed after ignoring presentation error. can you please clarify what kind of presentation error am i making and how can i rectify the mistake?‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Presentation error occurs when actual output is not same as the expected one. print command automatically adds newline at the end so you need to write print(a,end=""). It changes the end character and makes it Null.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+
+
+error eof
+4 comments • ‪8 months ago‬
+
+
+
+
+‪Abdul (talkcontribs)‬
+‪I am not able to print the multiple values in the introduction to first assignment i.e a=int(input(10)) similarly I am using b as variable with input statement it is giving me error as eof what should I do‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪can you post your code here?‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Adeebk15 (talkcontribs)‬
+‪Maam, when we have not yet began programming concepts , how can we possibly solve the given programming assignment , in the week 1.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Its not a programming assignment. In the question, we have given the programming statement to be written. You just have to run it and check the output. It will make you familiar with the programming interface.‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+
+
+Sir I meant are we suppose to write the syntax for python to print the number in a form of program . or we just suppose the run the statement already given just by entering different values.
+2 comments • ‪8 months ago‬
+
+
+
+
+‪Simran (talkcontribs)‬
+‪Question as asked by monikamiyaa@gmail.com‬
+‪Reply‬
+‪8 months ago‬
+
+
+
+‪Simran (talkcontribs)‬
+‪Just write the statement for input given in the question.‬
+‪Reply‬
+‪8 months ago‬

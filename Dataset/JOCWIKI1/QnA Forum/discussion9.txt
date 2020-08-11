@@ -1,0 +1,698 @@
+wikiDownloadin gephi
+2 comments • ‪2 months ago
+
+
+
+‪Himanshukishnani3 (talkcontribs)‬
+‪I'm getting a browser error Secure Connection Failed‬
+
+
+
+‪         An error occurred during a connection to github.com.‬
+Cannot communicate securely with peer: no common encryption algorithm(s).
+‪(Error code: ssl_error_no_cypher_overlap)‬
+
+
+
+‪ The page you are trying to view can not be shown because the authenticity of the received data could not be verified.‬
+ Please contact the web site owners to inform them of this problem.
+Alternatively, use the command found in the help menu to report this broken site.
+
+‪2 months ago‬
+
+
+
+‪Himanshukishnani3 (talkcontribs)‬
+‪please help me out‬
+
+‪2 months ago‬
+
+
+
+
+
+Output in Area calculation Dont Measure
+6 comments • ‪3 months ago‬
+
+
+
+‪Dishakaur (talkcontribs)‬
+‪For the code below, answer i get is 0 always even by changing the count limit more or less than 100000: import scipy.misc import random‬
+‪img=scipy.misc.imread("map-01.png")#2481x2736‬
+	1	‪dots present in punjab region and other region‬
+‪countPunjab=0 countIndia=0 count=0 while(count<=100000):‬
+‪   #in Python, x and y are reversed in case of images‬
+   x=random.randint(0,2735)
+   y=random.randint(0,2480)
+   z=0
+   #RGB values of black and grey region
+   if(img[x][y][z]==60):
+       countIndia +=1
+   else:
+       if(img[x][y][z]==80):
+           countPunjab+=1
+           count+=1
+areaPun=(countPunjab/countIndia)*3287263 print(areaPun)
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪kindly format properly and put here.‬
+
+‪3 months ago‬
+
+
+
+‪Dishakaur (talkcontribs)‬
+‪With formatting:‬
+‪import numpy as np from PIL import Image import random‬
+
+‪im=Image.open('Map-01.png') rgb_im=im.convert("RGB") count_i=0 count_p=0 count=0‬
+‪while(count<=100000): x=random.randint(0,2480) y=random.randint(0,2735) z=0 r,g,b=rgb_im.getpixel((x,y)) if(r==60): count_i=count_i+1 count=count+1 else: if(r==80): count_p=count_p+1 count=count+1‬
+‪area_p=(count_p/count_i)*3287263 print(area_p)‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Code is working properly. Sorry, but i myself have to format it. You could use, pre tag. It's ok.‬
+‪import numpy as np‬
+from PIL import Image
+import random
+
+
+im=Image.open('Map-01.png')
+rgb_im=im.convert("RGB")
+count_i=0
+count_p=0
+count=0
+
+while(count<=100000):
+    x=random.randint(0,2480)
+    y=random.randint(0,2735)
+    z=0
+    r,g,b=rgb_im.getpixel((x,y))
+    if(r==60):
+        count_i=count_i+1
+        count=count+1
+    else:
+        if(r==80):
+            count_p=count_p+1
+            count=count+1
+
+area_p=(count_p/count_i)*3287263
+print(area_p)
+
+#Output: 49923.81552205472
+
+
+‪Edited 3 months ago‬
+
+
+
+‪Dishakaur (talkcontribs)‬
+‪Thanks alot.. Sorry for the trouble I don't know the formatting.‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪you could use pre tag of HTML here.‬
+
+‪3 months ago‬
+
+
+
+
+
+Area calculation-Is it a good version?
+2 comments • ‪3 months ago‬
+
+
+
+‪ShainJoy (talkcontribs)‬
+‪from PIL import Image im=Image.open('India.png') rgb=im.convert('RGB') ind=0 pun=0 print('Calculation in progress, please wait..') for x in range(2480):‬
+‪   for y in range(2735):‬
+       r,g,b=rgb.getpixel((x,y))   
+       if(r==60):
+           ind+=1
+       elif(r==80):
+           pun+=1
+       else:
+           pass
+area=(pun/ind)*3287263 print('Aprox. area of Punjab in sq.km.',str(area))
+
+‪3 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪We would recommend to check r,g,b values to identify the color.‬
+
+‪3 months ago‬
+
+
+
+
+
+Black screen during Spyder Launch
+3 comments • ‪3 months ago‬
+
+
+
+‪Ganesh (talkcontribs)‬
+‪I am getting black screen while launching spyder, please help me to sort this problem.‬
+
+‪3 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Refer week 2 super notes for Spyder installation‬
+
+‪3 months ago‬
+
+
+
+‪Ganesh (talkcontribs)‬
+‪thank you so much.‬
+
+‪3 months ago‬
+
+
+
+
+
+Assignment 9 : Question 4
+13 comments • ‪3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪The answer to Question 4 of Assignment 9 should be the 4th option, i.e., None of the above, as the other closest 1st option, i.e., i=scipy.misc.read(“Image_name.png”) is incorrect. Actually instead of i=scipy.misc.read(“Image_name.png”) it should have been i=scipy.misc.imread(“Image_name.png”) which includes the 'imread' part. Do you all agree with this?‬
+
+‪3 months ago‬
+
+
+‪Ankit rai (talkcontribs)‬
+‪yes , i am agree.‬
+
+‪3 months ago‬
+
+
+
+‪Shubham714 (talkcontribs)‬
+‪Yes i also agree with you‬
+
+‪3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪Moreover by using i=scipy.misc.read(“Image_name.png”) it would throw an error as it was also shown in the programming screen cast. Whereas, by using i=scipy.misc.read(“Image_name.png”) instead the issue was even resolved.‬
+
+‪3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪I mean by using i=scipy.misc.imread(“Image_name.png”) instead the issue was actually resolved. Sorry for the typo 'read' instead of 'imread' part‬
+
+‪3 months ago‬
+
+
+
+‪Saikat26 (talkcontribs)‬
+‪Yes, totally agree with you @Indrag79. Answer to the question no. 4 should be 4th option (None of the above). Why is it showing 1st option is correct? The correct answer should be i=scipy.misc.imread(“Image_name.png”) and 1st option was given as i=scipy.misc.read(“Image_name.png”).‬
+‪Please do respond. Thank you.‬
+
+‪3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪Thanks a lot for your positive response, Saikat!‬
+‪Now I have already dropped a mail to our TAs' and have kept Sudarshan Sir in Cc as well. Let's see if they respond or not. Keeping my fingers crossed.‬
+‪Should there be any updates, I would definitely let you all know.‬
+
+‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪yes i agree‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪i raised this question, a long before: http://sccilabs.org/jocwiki/index.php?title=Topic:Uldu3b71ilgi24bo&topic_showPostId=ulxh2k4yfjckhtno&fromnotif=1#flow-post-ulxh2k4yfjckhtno‬
+
+‪3 months ago‬
+
+
+
+‪ShailendraRai (talkcontribs)‬
+‪I agree. answer should be 'none of the above'‬
+
+‪3 months ago‬
+
+
+
+‪Raghav Agarwal (talkcontribs)‬
+‪i also agree with you.the answer should be "none of these".‬
+
+‪3 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪This assignment will be re-evaluated‬
+
+‪3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪Thanks to all of you for your kind concerns.‬
+
+‪3 months ago‬
+
+
+
+
+
+IS_WRONG???
+5 comments • ‪3 months ago‬
+
+
+
+‪KOUSHIK007 (talkcontribs)‬
+‪The web page's codes are so weak, in fact sometimes answers are already highlighted in white shade. I also inform you that in week_9>Area Calculation - Don't Measure - Part 05>(12:24), in this point, it was repeatedly told about a mistake. But when I'm following that, my answer was wrong. (WHY???) I hope you recheck that question ASAP. (IF POSSIBLE PLEASE REPLY)‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪formula used there was >>>> (number of points in the state (23) / number of points in the country(except the state) (70)) * 5400 km^2‬
+
+‪3 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪What is the problem that you are facing? Please elaborate‬
+
+‪3 months ago‬
+
+
+
+‪KOUSHIK007 (talkcontribs)‬
+‪How can we read an image in the form a matrix in Python?‬
+‪Answer shows:-‬
+‪i=scipy.misc.read(“Image_name.png”)‬
+
+‪but in real it should i=scipy.misc.imread(“Image_name.png”)‬
+‪so i choose "none" option‬
+
+‪(now it get check)‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Same, i chooses none as i=scipy.misc.imread(image)was command to read image in matrix form.‬
+
+‪3 months ago‬
+
+
+
+
+
+area calaulation & assignment problem-01 issue
+6 comments • ‪3 months ago‬
+
+
+
+‪Raushan1047 (talkcontribs)‬
+‪area of punjab should be calculated by this formulla ----->>>>>‬
+‪area_of_pun=(count_pun/(count_ind+count_pun))*3287263‬
+‪since,,,,‬
+‪         area of pujab=(no. of dots in punjab / no. of dots in india(included punjab))*area of india(included punjab)‬
+but in program they have caluculated area liks
+‪area_of_pun=(count_pun/count_ind)*3287263‬
+
+‪3 months ago‬
+
+
+‪Simmi (talkcontribs)‬
+‪In denominator, it is no of dots in India(excluding Punjab).‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪it is as faculty taught‬
+
+‪3 months ago‬
+
+
+
+‪Saurav (talkcontribs)‬
+‪I agree with Raushan.‬
+
+‪3 months ago‬
+
+
+
+‪Saikat26 (talkcontribs)‬
+‪I agree with @Raushan1047. I think the approach taught by faculty is not 100% correct. Corrre4me if I am wrong. Why the number of dots in punjab will be excluded in the denominator? We learned the same way as Raushan discussed above in ratio and mixture topic of Mathematics. Do you all agree?‬
+
+‪3 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪See this is an approximate calculation of the area and not the exact one. In denominator you should take no of dots excluding the concerned state.‬
+
+‪3 months ago‬
+
+
+
+
+
+smallest palindrome
+4 comments • ‪3 months ago‬
+
+
+
+‪Sam (talkcontribs)‬
+‪What are the possible input to this problem?‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪input? they are already specified in a problem as test cases.‬
+
+‪3 months ago‬
+
+
+
+‪Sam (talkcontribs)‬
+‪I meant what possible private test cases‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪it is a very simple program. just replace dots by whatever possible letters to make it palindrome.‬
+
+‪3 months ago‬
+
+
+
+
+
+'module 'networkx' has no attribute 'Graph' '
+7 comments • ‪3 months ago‬
+
+
+
+‪Rijumitra77 (talkcontribs)‬
+‪I have installed networkx 1.11, 2.1,2.2. But still the error shows up. Can anybody help me out with this?‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Please try as in https://stackoverflow.com/questions/42084985/attributeerror-module-networkx-has-no-attribute-graph else share your code‬
+
+‪Edited 3 months ago‬
+
+
+‪LaughableMaster (talkcontribs)‬
+‪I have the same problem too. I've checked this, it is not working for me.‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Rijumitra77 (talkcontribs)‬
+‪Tried the same method but didn't work. Here is my code:-‬
+‪import networkx as nx‬
+‪G=nx.Graph()‬
+‪G.add_node(1) G.add_node(2) G.add_node(3)‬
+‪G.add_edge(1,2) G.add_edge(2,3) G.add_edge(3,1)‬
+‪print(G.nodes)‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪your program gives output of [1, 2, 3] on my system.‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪please check whether your system has two python versions and same way two networkx. in many systems, python is installed by default, and it is of lower version. when you install any python ide with that too, new version of python is installed. when you install networkx on terminal it goes to old python installation and not to the new version. please check.‬
+
+‪3 months ago‬
+
+
+
+‪Rijumitra77 (talkcontribs)‬
+‪I have uninstalled the older networkx version and then installed the newer one. Still it doesn't work.‬
+
+‪3 months ago‬
+
+
+
+
+
+error after submitting assignment 2
+One comment • ‪3 months ago‬
+
+
+
+‪Satya.tvv (talkcontribs)‬
+‪after submitting assignment 2 in this week, it is showing http server error 500‬
+
+‪3 months ago‬
+
+
+
+
+
+plz.give the link of data to download in natural language processing because given link in tutorial not work
+3 comments • ‪3 months ago‬
+
+
+
+‪Sandhya vasdev (talkcontribs)‬
+‪plz.give the link of data to download in natural language processing because given link in tutorial not work‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪https://raw.githubusercontent.com/programminghistorian/ph-submissions/gh-pages/assets/introduction-to-stylometry-with-python/stylometry-federalist.zip‬
+
+‪3 months ago‬
+
+
+
+‪Sandhya vasdev (talkcontribs)‬
+‪Thank u soo much‬
+
+‪3 months ago‬
+
+
+
+
+
+OPENING A FILE
+3 comments • ‪3 months ago‬
+
+
+
+‪Himanshukishnani3 (talkcontribs)‬
+‪I've downloaded the files (federalist_...) but am unable to open them by for file in filename: with open(f'federalist_{file}.txt') as f: strings.append(f.read()) return ('\n'.join(strings)) as shown in video [stylometry ]‬
+
+‪3 months ago‬
+
+
+
+‪Himanshukishnani3 (talkcontribs)‬
+‪please help me out‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪are you having these federalist_*.txt files in the same folder where your this script is there? both are to be there in same folder.‬
+
+‪3 months ago‬
+
+
+
+
+
+downloading data set
+4 comments • ‪3 months ago‬
+
+
+
+‪Roja Rani K (talkcontribs)‬
+‪trouble in downloading data set for natural language processing‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪what sort of?‬
+
+‪3 months ago‬
+
+
+
+‪Roja Rani K (talkcontribs)‬
+‪Not able to download using given link‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪https://raw.githubusercontent.com/programminghistorian/ph-submissions/gh-pages/assets/introduction-to-stylometry-with-python/stylometry-federalist.zip‬
+
+‪3 months ago‬
+
+
+
+
+
+issue with assignment 2
+One comment • ‪3 months ago‬
+
+
+
+‪Prada gupta (talkcontribs)‬
+‪can anyone please help with the hint?‬
+
+‪3 months ago‬
+
+
+
+
+
+Assignment 3
+5 comments • ‪3 months ago‬
+
+
+
+‪Brindha (talkcontribs)‬
+‪can someone please give me a high level hint for assignment 3. I'm not able to solve it.‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪No of holes in the following characters are "A"-1, "D"-1, "O"-1, "P"-1, "R"-1,B-2 ....... Find such characters wherein holes are there and count it for ur string‬
+
+‪3 months ago‬
+
+
+
+‪Brindha (talkcontribs)‬
+‪Yeah,you are right. i thought of that. But it looked way too simple. Thought the right solution will involve PIL and scipy packages. Will apply your idea. Thank you :)‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Program is very simple too... There are only 7 alphabet out of 26 which have hole... You can search them in input string and add their values. Hint: Use dictionary (you can use list too if wanna extend lines in ur code) ...Happy Coding‬
+
+‪3 months ago‬
+
+
+
+‪Brindha (talkcontribs)‬
+‪Thank you Sachin. :)‬
+
+‪3 months ago‬
+
+
+
+
+
+ass_9
+3 comments • ‪3 months ago‬
+
+
+
+‪Sailaja.ece (talkcontribs)‬
+‪assignment 9 is not visible ,is anybody facing this problem?‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪no, all assignments are visible.‬
+
+‪3 months ago‬
+
+
+
+‪Sailaja.ece (talkcontribs)‬
+‪yes its visible‬
+
+‪3 months ago‬
+
+
+
+
+
+2 variables in for loop, week 9
+3 comments • ‪3 months ago‬
+
+
+
+‪Ashuditya (talkcontribs)‬
+‪"for author, files in papers.items(): federalistByAuthor[author]=readFiles(files) " here, there are two variables 'author' and 'files' in the for loop, How is it working? Can anyone please explain to me with general context(not the current situation)?‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪It is a dictionary. It works with key and value pairs. papers.items() returns author, files, so it works fine.‬
+
+‪3 months ago‬
+
+
+
+‪Ashuditya (talkcontribs)‬
+‪I think, you also don't get the for loop with 2 variable concept.‬
+
+‪3 months ago‬

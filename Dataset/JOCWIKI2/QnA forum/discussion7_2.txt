@@ -1,0 +1,1263 @@
+quiz question 2
+One comment • 5 months ago
+Joycz (talkcontribs)
+matplotlib is used to plot latitude longitude position on maps. this should be true why is it marked incorrect?
+
+Reply 5 months ago
+
+Question 8 of Quiz assignment 7
+5 comments • 5 months ago
+Tinu Iype Jacob (talkcontribs)
+What is the minimum number of dice throws required to reach 100 in Snakes and Ladders game?
+
+1.100
+2.less than 30
+3.more than 30
+4.can't say
+The answer is can't say as per the solution given. But can some one explain how it is possible to have more than 30 moves to reach 100(minimum)?
+
+Reply 6 months ago
+Gourav (talkcontribs)
+@Descentis please provide a solution for this question as well as Ques. 2 of week 7
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+They have not mentioned about the no of iterations to make a judgement on minimum number of dice throws. IF the minimum number of dice throws is less than 5, it could be any thing. if the minimum number of dice throws is 10, we can simulate and see the answer as less than 30. Since the number of dice throws is not given the question is not completely stated, i would give correct answer to both 2 and 4.
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+This is like the lottery simulation problem mentioned in week 8. where they mentioned the no of trails as for week=7,month=30 or year=365
+
+Reply 6 months ago
+Tinu Iype Jacob (talkcontribs)
+please provide a genuine answer for my querry
+
+Reply 5 months ago
+
+Assignment 3 week8
+4 comments • 6 months ago
+AI (talkcontribs)
+Hello. Was working on 3rd programming assignment of week 8 and my code is passing all the tests shown but when I submit the code it give me 0.00/100.00. Can anybody suggest what I might be doing wrong? Can't post my code as it is not allowed. I am declaring a list of vowels and checking via index if adjacent characters are in list of vowels. It is working for any example I take and also for the examples specified. Thank you.
+
+Reply 6 months ago
+Som (talkcontribs)
+Have you tried for this input 'your article is in queue' ?
+
+Reply 6 months ago
+Divya98 (talkcontribs)
+This happens with me too.May be your code giving you the desired output for all the test cases. but it might be possible that your logic was not correct for all situations
+
+Reply 6 months ago
+AI (talkcontribs)
+Yes. i did try for the input "your... " and it is not working. I think we will have to reverse the string as suggested by @Kamalakar I shall try that way. Thanks
+
+Reply 6 months ago
+
+Week 7 Programming Assignment-1: Upper Triangular Matrix
+19 comments • 6 months ago
+Shitalp (talkcontribs)
+if i execute my program in my spider software it execute correctly but when i compile it in submission page it gives wrong output. Can anyone help me? following is the code:
+
+n=int(input()) m=[]
+
+for i in range(n):
+
+   l1=[]
+   for j in range(n):
+       l1.append(0)
+   m.append(l1)
+   
+for i in range(n):
+
+   l1=[int(k) for k in input().split(" ")]
+   for j in range(n):
+        m[i][j]=l1[j]
+for i in range(n):
+
+   for j in range(n):
+       if j<i:
+          m[i][j]=0
+for i in range(n):
+
+   for j in range(n):
+       print(m[i][j], end=" ")
+   if i<n-1:
+       print()
+Reply 6 months ago
+Kamalakar (talkcontribs)
+While yo compile it shows the actual output and expected output.By that you can make out the difference. Arun's answer might have solved your problem already. Kindly comment if it didnot solve.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@Shitalp, Yes, your code is working fine. I believe your logic is correct. So, lets not touch bottom half (bottom 2 for loops, used to add zeros, and print) and do a changes to the above half of your program, where you are initializing your matrix and taking input.
+
+This is just to see if there is any error in taking input. So, please replace the entire top part with this below code and then try to submit please.
+
+n=int(input())
+m=[[col for col in list(map(int,input().split()))] for r in range(n)]
+Please let me know if it worked or not.
+
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+Another problem could be, there is a space at the end of every row in your output.
+
+1 2 3 4 5 6 9 8 7 8 
+0 2 3 4 5 6 9 8 7 8 
+0 0 3 4 5 6 9 8 7 8 
+0 0 0 4 5 6 9 8 7 8 
+0 0 0 0 5 6 9 8 7 8 
+0 0 0 0 0 6 9 8 7 8 
+0 0 0 0 0 0 9 8 7 8 
+0 0 0 0 0 0 0 8 7 8 
+0 0 0 0 0 0 0 0 7 8 
+0 0 0 0 0 0 0 0 0 8 
+Update: Yes this is the problem. You need to remove spaces at the end of all rows, and you will pass all hidden tests cases.
+
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+You can refer to this old discussion, from week 4, on how to remove trailing spaces
+
+http://sccilabs.org/jocwiki/index.php/Topic:Uun3hurl05g7z0is
+
+Reply 6 months ago
+Shitalp (talkcontribs)
+Thank you Arun it worked
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+You are welcome. :)
+
+Reply 6 months ago
+Naveena418 (talkcontribs)
+n=int(input()) m=[[col for col in list(map(int,input().split()))] for r in range(n)]
+
+for i in range(n):
+
+ l1=[]
+ for j in range(n):
+   l1.append(0)
+   m.append(l1)
+for i in range(n):
+
+ l1=[int(k) for k in input().split(" ")]
+ for j in range(n):
+       m[i][j]=l1[j]
+for i in range(n):
+
+  for j in range(n):
+      if(j<i):
+         m[i][j]=0
+for i in range(n):
+
+  for j in range(n):
+      print(m[i][j], end=" ")
+if(i<n-1):
+
+ print()
+ 
+I was getting EOF error in line 10. can anyone help me in solving this problem?
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Kindly tell what are lines 8,9 and 10 in your code.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@Naveena418, Why are you taking input twice? That could be one of the reasons. Correct your code, and use only one loop to take inputs.
+
+Reply 6 months ago
+Naveena418 (talkcontribs)
+after changing i an getting error that \n is spacing a space after the end of the line. for i in range(n):
+
+ for j in range(n):
+   if(j<i):
+     print(m[i][j],end=" ")
+   else:
+     print(m[i][j],end=" ")
+ if(i<n-1):
+   print()
+please help me.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Then try printing space separately, Why are you printing same print(m[i][j],end=" ") even when the condition is not satisfied?
+
+Can you please post your complete program?
+
+Reply 6 months ago
+Kousarattar (talkcontribs)
+i dont know what is the problem with my answer too. when i compile it on assignment's complier it seems fine but it evaluating as wrong answer. please kindly check what's the problem
+
+def upper(m,n):
+
+   for i in range(n):
+       for j in range(n):
+           if (i>j):
+               if(j<n-1):
+                   print('0',end=" ")
+               else:
+                   print("0",end="")
+           else:
+               print(m[i][j],end=" ")
+       if(i<n-1):
+           print()
+           
+n=(int(input()))	m=[] for i in range (n):
+
+   l=[]
+   for j in range (n):
+       l.append(0)
+   m.append(list(map(int,input().split())))
+upper(m,n)
+
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+sorry, I missed your question. Is it solved?
+
+Reply 6 months ago
+Kousarattar (talkcontribs)
+yes
+
+Reply 6 months ago
+This comment was deleted by Kousarattar (history)
+Naveena418 (talkcontribs)
+n=int(input()) m=[[col for col in list(map(int,input().split()))] for r in range(n)]
+
+for i in range(n):
+
+ l1=[]
+ for j in range(n):
+   l1.append(0)
+   m.append(l1)
+ 
+for i in range(n):
+
+  for j in range(n):
+      if(j<i):
+         m[i][j]=0
+
+for i in range(n):
+
+ for j in range(n):
+   if(i<n-1):
+     print(m[i][j],end=" ")
+   else:
+     print(m[i][j],end=" ")
+ print()
+   
+getting \n problem.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Can you please go through print matrix for assignment and try printing that way? please Spend 10 minutes on that.
+
+http://sccilabs.org/jocwiki/index.php/Common_Doubts:_FAQs_for_Week_7
+
+Reply 6 months ago
+Sayantoni Chaudhuri (talkcontribs)
+@Naveena418, this should work
+
+n=int(input()) m=[[col for col in list(map(int,input().split()))] for r in range(n)] for i in range(n):
+
+  for j in range(n):
+      if j<i:
+         m[i][j]=0
+for i in range(n):
+
+ for j in range(n):
+   if(j==n-1):
+     print(m[i][j], end="")
+   else:
+     print(m[i][j], end=" ")
+ if i!=n-1:
+   print()
+Reply 6 months ago
+
+quiz question 1
+One comment • 6 months ago
+Joycz (talkcontribs)
+State True or False. matplotlib is used to plot latitude longitude position on maps.
+
+True
+this should be true why its gone wrong?
+
+Reply 6 months ago
+
+i always hate maths
+18 comments • 6 months ago
+Jaiprince17 (talkcontribs)
+ill skip programming assignment 7..
+
+coz i never understand matrix :P :P
+
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+let me help you with matrix then. Ask me your doubts. Which part of matrix confuses you most? I think, m[0], m[0][0] etc are confusing you most.
+
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+Ha ha ha... I also hate maths. I struggled a lot with prime numbers. But programming is fun. So, where you got confused?
+
+Reply 6 months ago
+Jaiprince17 (talkcontribs)
+week 7 programming assignment bro ...
+
+Reply 6 months ago
+Jaiprince17 (talkcontribs)
+yep m[0], m[0][0]
+
+Reply 6 months ago
+Jaiprince17 (talkcontribs)
+in the beginning of the course Professor says this is not a rocket science but still we end up in mathematics :D :D
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+I have started a separate discussion on your talk page. lets talk there. This discussion will create long posts.
+
+http://sccilabs.org/jocwiki/index.php/Topic:Uw3xm8kly4qux6ck
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+I understand, Using maths for the beginners creates a lot of confusion for a student. It is possible to use non math examples in the beginning.
+
+Let it be. Now ask me your doubt. First tell me, do you have basic understanding of matrix?
+
+Reply Edited 6 months ago
+Jaiprince17 (talkcontribs)
+nope :P
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+With little patience, if your start debugging the code by introducing print statements after every line and see the output, you will be able to correct the code with ease. if the output of print statements is correct till some lines, you can remove those print statements,
+
+My sincere advice to all the people for whom the code fails is to play see the output of code after each and every line . especially in the loops print with the loop indexes also along with the calculated variable.
+
+Just an input at the beginning and expecting the output at the end is no fun.
+
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+Well said friend. Debugging by checking the output using print statements. That is called dry run (in class videos).
+
+Reply Edited 6 months ago
+Jaiprince17 (talkcontribs)
+well im following that :) thank u line by line
+
+Reply 6 months ago
+Jaiprince17 (talkcontribs)
+tracing nested loops is tough :D
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+If i can do it, you will also be able to do it with little practice
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+@ Jai Prince it is tough as long as you dont use print statements to see what is happening. if i is the index of the outer loop and j is the index of inner loop, a[i][j] is the value i want to see i will keep( print "i=",i,"j=",j,"a[i][j]=" a[i][j])) ane see how the values are changing.
+
+
+
+Every thing at the beginning is tough as you get used to it , it becomes easier. I am not that much intelligent than you. but got used to it.
+
+Reply Edited 6 months ago
+Jaiprince17 (talkcontribs)
+haha :) intelligent
+
+im just a noobie :P
+
+PRACTICE IS THE KEY
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Yes, Practice and poking the programs is how, you will learn. See, what is happening when you are removing parts of code and run the program. Or other way around, take parts of code and execute them separately.
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+This generation of youth is blessed with youtube and forums,smart phone, if they ask right and enough questions they could get answers to all they want. It is also amazing to see tools also available for them to do what they want to do. if they dont understand some thing or miss a class, they can review the videos several times and see what they need to do. And with the blessing they are challenged with many new challenges.
+
+Reply 6 months ago
+
+Binary Matrix
+35 comments • 6 months ago
+Lakshmi (talkcontribs)
+def isBinaryMatrix(m,n,mat):
+
+   for i in range(m): 
+       for j in range(n): 
+           
+           if ((mat[i][j] == 0 or mat[i][j] == 1)==False): 
+               return False; 
+ 
+   
+   return True;  
+
+n,m = (input().split()) n=int(n) m=int(m)
+
+mat = [[0]*n for _ in range(m)] for i in range(n):
+
+   mat[i] = [int(j) for j in input().strip().split(" ")]
+
+if (isBinaryMatrix(n,m,mat)):
+
+       print("Yes")
+        
+else:
+
+    print("No")
+After posting this code I am able to pass only 2 test cases.Can any one say what's wrong in code.
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Our public test cases are all passing because they have given n=m in all the public test cases. In the private cases they could have given n=2 and m=3 and in another one n=3 and m=2 So kindly check where the looping is going wrong by giving printing the matrix for the above n not equal to m cases..
+
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+you have defined your function as isbinarymatrix(m,n,matrix) and you are calling it as isbinray(n,m,matrix). When n is not equal to m, it killed your program. you have interchanged n,m in function definition and while calling the function.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Yes, it is having some problem with one of the Hidden test cases.
+
+Please change your Print statements to
+
+if (isBinaryMatrix(n,m,mat)):
+    print("YES",end="")
+else:
+    print("NO",end="")
+Maybe try to change how you test the matrix. I used a small program to pass all these test. We don't need to check every element in the matrix. Let me give you my process...
+
+Binary matrix has a strong feature on which we can build a test condition. That is 0's and 1's. One test condition you used is to see if every element in the Matrix is equal to either 1 or 0, or not.
+
+What i used is, Lets say if there is a binary list, is there any other way to check if it is not having anything other than 0 or 1?
+
+and in python, all rows are nothing but lists. So, I tried to see if min and max of a list is not bigger or smaller than these two numbers.
+
+I hope you can build a code using this information.
+
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+we may even merge all these elements into one list and find the min and max.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+You mean making them string? then yes possible.
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+or you can create a set with all the elements and find the min and max of the set
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+in this case sets are useful too, if used correctly. sets removes duplicates too. :)
+
+Reply 6 months ago
+Lakshmi (talkcontribs)
+It's a good approach.I will try it.Thankyou Arun.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+You are welcome. :)
+
+Reply 6 months ago
+Lakshmi (talkcontribs)
+Can you say what's problem in my code Arun.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Using my test conditions, I don't see any problem in your code. Maybe the test case is little tricky.
+
+Reply 6 months ago
+Lakshmi (talkcontribs)
+I tried your approach also.All test cases are not solved.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@Lakshmi, I resolved your problem. strip() is causing the problem.
+
+Change your input part to this and try, It will pass all the test cases.
+
+n,m=map(int,input().split())
+mat=[[m for m in list(map(int,input().split()))] for r in range(n)]
+
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+It is Strange! Please post your code. My code passed all test cases.
+
+Reply Edited 6 months ago
+Naveena418 (talkcontribs)
+For this code it is passing all the test cases , but after submitting it is giving 66.66667/100
+
+def isBinaryMatrix(m,n,mat):
+
+  for i in range(m): 
+      for j in range(n):
+         if ((mat[i][j] == 0 or mat[i][j] == 1)==False):
+           return False; 
+
+  return True;  
+n,m = (input().split()) n=int(n) m=int(m)
+
+mat = [[0]*n for _ in range(m)] for i in range(n):
+
+ mat[i] = [int(j) for j in input().strip().split(" ")]
+if(isBinaryMatrix(n,m,mat)):
+
+ print("YES",end="")
+else:
+
+   print("NO",end="")
+
+can anyone slove this problem.
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+I replied above, you have defined the function as def isBinaryMatrix(m,n,mat): You are passing the parameters m,n and while calling you are calling it by f(isBinaryMatrix(n,m,mat)): you have swapped the positions of n,m. as long as n=m it does not make any difference.once n is not equal to m. you will see the difference. Kindly correct this first.
+
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+Friend @Kamalakar, That is not effecting their code, possibly because of these tasks in the Assignment, that interchange of m,n is obsolete. Their input is having problem. after changing that, everything is working fine and passing all hidden cases too.
+
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+@Arun, Make N=M in the code after you take the N,M input values. i saw it passed only 2 of the 3 private cases. Try it yourself.
+
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+Friend @Kamalakar, Swapping of variable is fine in their program (in the function). Because..
+
+In function def isBinaryMatrix(m,n,mat):, they treated m as row and n as column.
+And function variables are treated separately. Because of which m, n in the function are totally different variables.
+In the main program n is row and m is column, if(isBinaryMatrix(n,m,mat)):.
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+Problem with this forum is they are not getting back on what is happening after following your advice You are doing more home work than them. For some people it is just a cake walk. keep watching the discussion till the last day in the forum, they will have their code ready. The purpose of attending the course is lost because of this.
+
+Reply 6 months ago
+This comment was deleted by Kamalakar (history)
+Arunkumar (talkcontribs)
+@Naveena418, Even @Lakshmi is having same problem.
+
+You both are taking input by using strip(), that is causing problem
+
+Change your input part to this and try, It will pass all the test cases.
+
+n,m=map(int,input().split())
+mat=[[m for m in list(map(int,input().split()))] for r in range(n)]
+
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+what will list and map do in the command
+
+mat=[[m for m in list(map(int,input().split()))] for r in range(n)]
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+we are using map to convert input to int, and list is used to convert the entire thing to List type.
+
+
+Friend @Kamalakar, Can you help @kripan to install gmplot.
+
+
+http://sccilabs.org/jocwiki/index.php/Topic:Uw5chx7oktpjh0mc
+
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+go to command prompt
+
+in dos window type py or python to start your python
+
+at the command prompt type
+
+pip install gmplot
+
+it will do it.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Please follow the above link and reply him
+
+Reply 6 months ago
+Marysubaja (talkcontribs)
+Thank you sir i got pass All the test cases
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@Marysubaja, you are welcome, from all of us on this discussion thread.
+
+Reply Edited 6 months ago
+Naveena418 (talkcontribs)
+Thank You . It's working.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@Naveena418, You are welcome. :)
+
+Reply 6 months ago
+Lakshmi (talkcontribs)
+Thanks Arun I got passed in all test cases.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@Lakshmi, You are welcome. :)
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+@Lakshmi, Keep doing dry runs by inserting Print statement after every line of code to see what is happening with your code.
+
+Reply 6 months ago
+Puneet Patel (talkcontribs)
+I solved these using logic of flag
+
+flag=0 for i in range(r):
+
+   for j in range(c):
+          	# set flag if accessed element is not binary bit (0/1)
+       .....
+if(flag==0):
+
+   print("YES",end="")
+else:
+
+   print("NO",end="")
+Is this efficient way?
+
+Reply 6 months ago
+
+All Assignments answers week7. Friends share you programs too please.
+One comment • 6 months ago
+Arunkumar (talkcontribs)
+Note: Hello friends please share your programs too, if you have a better code or different approach than these programs. Everyone, who struggled to finish assignments, please ask you questions here. So that we all can learn and help each-other.
+
+A1-Upper Triangular Matrix - code:
+row=int(input())
+SMatrix=[[col for col in list(map(int,input().split()))] for r in range(row)]
+
+for r in range(1,row):
+    for c in range(r):
+        SMatrix[r][c]=0
+for r in range(row):
+    print(*SMatrix[r], sep=" ", end="")
+    if (r<row-1):
+      print()
+A2-Symmetric - code:
+row=int(input())
+symmetric=True
+SMatrix=[0]*row
+for r in range(row):
+    SMatrix[r] = list(map(int,input().split()))
+for r in range(1,row):
+    for c in range(r):
+        if SMatrix[r][c]!=SMatrix[c][r]:
+            symmetric=False
+            break
+            
+if symmetric:
+    print('YES', end="")
+else:
+    print('NO', end="")
+A3-Binary Matrix - code:
+row,col=map(int,input().split())
+binary=True
+bMatrix=[[col for col in list(map(int,input().split()))] for r in range(row)]
+for r in range(row):
+    if min(bMatrix[r])<0 or max(bMatrix[r])>1:
+        binary=False
+        break
+if binary:
+    print('YES', end="")
+else:
+    print('NO', end="")
+Reply 6 months ago
+
+binary matrix
+2 comments • 6 months ago
+Sayantoni Chaudhuri (talkcontribs)
+2 cases passed out of 3 even though the code works correctly in Spyder Anybody?
+
+row,col=map(int,input().split()) matrix=[[col for col in list(map(int,input().split()))] for r in range(row)] for i in range(row):
+
+ for j in range(col):
+   try:
+     mat=input().split(" ")
+     matrix.append(mat)
+   except EOFError:
+      continue
+for i in range(row):
+
+ for j in range(col):
+   if((matrix[i][j]==0 or matrix[i][j]==1)==True):
+     flag=1
+   else:
+     flag=0
+     break
+if flag==1:
+
+ print("YES",end="")
+else:
+
+ print("NO", end="")
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Why are you taking input twice. Correct your code. Your a logic is always printing YES, Check it.
+
+change your if condition...
+
+row,col=map(int,input().split())
+matrix=[[col for col in list(map(int,input().split()))] for r in range(row)]
+flag=1
+
+for i in range(row):
+    for j in range(col):
+        if(matrix[i][j]>1):
+            flag=0
+            break
+if flag==1:
+    print("YES",end="")
+else:
+    print("NO", end="")
+Reply 6 months ago
+
+Question no. 2 week 7
+5 comments • 6 months ago
+Gourav (talkcontribs)
+gmplot is required when longitude and latitude co-ordinates are to be inputted in google maps. But the question is "matplotlib is used to plot latitude longitude position on maps". That means any general map, not just google map. Then why the statement is false? If Google maps would have been mentioned here then the answer would be False. The correct answer should be true.
+
+Reply 6 months ago
+Subhamohan (talkcontribs)
+Yes, the answer for this question must be true. In the video instructor talked about gmplot. As gmplot is a matplotlib, the answer must be true.
+
+Reply 6 months ago
+Anandvihar (talkcontribs)
+yes ans is true
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Google search shows gmplot is a matplotlib-like interface to generate the HTML. Matplot lib will draw a graph definetly. But in the question they have asked is to draw it on map. so matplotlib does not do it and we require gmplot to do this.
+
+Reply Edited 6 months ago
+Msd7at (talkcontribs)
+yes,i think true is the correct answer.
+
+Reply 6 months ago
+
+Quiz Question: What is the minimum number of dice throws required to reach 100 in Snakes and Ladders game
+7 comments • 6 months ago
+Kamalakar (talkcontribs)
+What will be the answer for this question. Both less than 30 and cant say looks the answers for this.
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+if they have not used the word minimum, then cannot say will be the answer. since they have used minimum for me both answers are appealing me to me as correct. kindly give me your comments
+Reply 6 months ago
+This comment was deleted by Madmax (history)
+Kamalakar (talkcontribs)
+I have simulated the game for 5 times,10 times etc. when it is for 5 times, the minimum number is variable but when we play it for 10 times, the minimum is definitely less than 10. Since the no of games is not mentioned, can i take it cant say.
+Reply 6 months ago
+Gourav (talkcontribs)
+Yes the less than 30 times seems to be a more suitable answer.
+Reply 6 months ago
+Subhamohan (talkcontribs)
+Yes, minimum number of throws required to reach 100 is definitely less-than 30. For the given board positions in the lecture if the sequence of throws are say, for example 6,2,6,6,5,6,3. Then we reach 100. So minimum number of throws are less-than 30. Given any board with snake and ladder position definitely there will be a sequence of dice throws to reach 100 in less 30 throws.
+Reply 6 months ago
+Tinu Iype Jacob (talkcontribs)
+the minimum number of moves is less than 30 anyway. what ever the snake and ladder positions are. But the answer says can't say. How is this possible...?
+Reply 6 months ago
+
+Problem 1 printing question
+8 comments • 6 months ago
+Lwardell (talkcontribs)
+I've spent too long trying to figure out the print statement. I get everything correct except a space between the last number of each row and \n and an extra \n at the end of the last row. Help??? n = int(input()) m = [[c for c in list(map(int,input().split()))] for r in range(n) for i in range(n): for j in range(n): if i > j: m[i][j] = 0 for row in m: for col in row: print(col,end=" ") print()
+Reply 6 months ago
+Arunkumar (talkcontribs)
+'''@Lwardell''', Did you check this old discussion on removing trailing spaces? http://sccilabs.org/jocwiki/index.php/Topic:Uun3hurl05g7z0is
+Reply 6 months ago
+Kamalakar (talkcontribs)
+use if statements in the last for loops if zzzzz : print(m[i][j],end=" ") else: print(m[i][j,end="") Think,play and keep appropriate value at zzzz. it will give you the answer. This should come in the last for loop instead of your single print statement . if loops you keep a space and in some of them with out a space.
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+if necessary use another statement in side the above if statement with appropriate condition
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Try this example and understand How, parts of, print statement are influencing the output. : '''print_test.py''' <pre> m=[[1,2,3],[4,5,6],[7,8,9]] row=len(m) #Output 1 print("\nOutput 1\n") for r in range(row): print(*m[r]) #Below print statement is to check trailing spaces. print('<end Test',end="") #Output 2 - lets remove space print("\n\nOutput 2 - lets remove space\n") for r in range(row): print(*m[r],sep="") print('<end Test',end="") #Output 3 - lets replace space char print("\n\nOutput 3 - lets replace space char\n") for r in range(row): print(*m[r],sep="-") print('<end Test',end="") #Output 4 - lets restrict newline printing and add space print("\n\nOutput 4 - lets restrict newline printing and add space\n") for r in range(row): print(*m[r],sep=" ", end="") print('<end Test',end="") #Output 5 - lets play with end print("\n\nOutput 5 - lets play with end\n") for r in range(row): print(*m[r],sep=" ", end="@") print('<end Test',end="") #Output 6 - lets correct this as we need print("\n\nOutput 6 - lets correct this as we need\n") for r in range(row): print(*m[r],sep="", end="") print('<end Test',end="") #Below if condition and print is to print newline(\n) if(r<row-1): print() #Output 7 - a final correction print("\n\nOutput 7 - a final correction\n") for r in range(row): print(*m[r],sep=" ", end="") print('<end Test',end="") if(r<row-1): print() #Output 8 - end result print("\n\nOutput 8 - end result\n") for r in range(row): print(*m[r],sep=" ", end="") if(r<row-1): print() </pre>
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+This is what i expected the group to do.
+Reply 6 months ago
+Lwardell (talkcontribs)
+Arunkumar, thank you. Those 8 different output statements were very helpful. Lauri
+Reply 6 months ago
+Arunkumar (talkcontribs)
+'''@Lwardell''', You are welcome. :)
+Reply Edited 6 months ago
+
+Request! please explain Symmetric matrix
+5 comments • 6 months ago
+Rishi (talkcontribs)
+is it matrix A= matrix A transpose or there is some other meaning?
+Reply 6 months ago
+Arunkumar (talkcontribs)
+; Hint for Assignment 2 : Can you print me this if i give you a number <pre> if m=4, I want 1,0 2,0 2,1 3,0 3,1 3,2 if m=2, I want 1,0 if m=7, I want 1,0 2,0 2,1 3,0 3,1 3,2 4,0 4,1 4,2 4,3 5,0 5,1 5,2 5,3 5,4 6,0 6,1 6,2 6,3 6,4 6,5 </pre> matrix A[1][0] is equal to its transpose matrix A[0][1] : <code>A[r][c] == A[c][r]</code>
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+Yes. What you said is correct.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+go though this post and see if you can understand or not http://sccilabs.org/jocwiki/index.php/Topic:Uvvjwtvwk94qiuec
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Try to go through resolved discussions here. you can use their programs as references '''Binary Assignment'''<br /> http://sccilabs.org/jocwiki/index.php/Topic:Uvz41t32t53hc8ro '''Symmetric matrix'''<br /> http://sccilabs.org/jocwiki/index.php/Topic:Uvvjwtvwk94qiuec '''Triangle Matrix'''<br /> http://sccilabs.org/jocwiki/index.php/Topic:Uvv20ry9qletw4mc
+Reply Edited 6 months ago
+
+Unable to install gmplot
+37 comments • 6 months ago
+Kripan (talkcontribs)
+Kindly help me with step by step process to install gmplot in windows10 32-bit.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+I use Linux, so my steps may not work for you. This worked for me. : Open command prompt using win+r and type cmd or somewhere in start menu you will find it. : Then you can type below command, if you already have python installed. pip install gmplot
+Reply 6 months ago
+Kripan (talkcontribs)
+I have already tried it. But it is saying pip is not recognized as an external or internal command.Yes I have anaconda installed
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Try this once python -m pip install gmplot above command is copied from this link stackoverflow.com/questions/23708898/pip-is-not-recognized-as-an-internal-or-external-command#23709194 If that didnt work, add path to your windows. It is explained in the above link.
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+This is a video link youtube.com/watch?v=zYdHr-LxsJ0
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Let see if '''@Kamalakar''' or any windows user can help you.
+Reply 6 months ago
+Kripan (talkcontribs)
+i tried it. SSL error is shown
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Try these solutions stackoverflow.com/questions/25981703/pip-install-fails-with-connection-error-ssl-certificate-verify-failed-certi#29751768
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+you tried video steps too?
+Reply 6 months ago
+Kripan (talkcontribs)
+yes
+Reply 6 months ago
+Arunkumar (talkcontribs)
+can you please share me your scripts folder path? some times it is possible for us to use the command in its local directory. So, we can "CD" into scripts directory and try to use "pip" command there.
+Reply Edited 6 months ago
+Kripan (talkcontribs)
+sir i have tried change directory command already.But nothing is working.I have googled it, they are saying reinstall anaconda and upgrade it with version 4.6.2. But i am not able to find any link for 32 bit. The path is C:\Users\Anaconda3\Scripts
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Sorry, Then windows user should help you. I am a Linux user.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+No, anaconda is not having it
+Reply 6 months ago
+Kripan (talkcontribs)
+sir kindly go to this link. "https://github.com/ContinuumIO/anaconda-issues/issues/10576".
+Reply 6 months ago
+Arunkumar (talkcontribs)
+I checked your link, You are having SSL certificate problem. In the above link, they have shown on how to add exception. did you try those. pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org gmplot or the package name you were using. pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org pymsgbox
+Reply Edited 6 months ago
+Kripan (talkcontribs)
+pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org gmplot .Sir tried this command but then also showing the same message.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Looks like windows is complicated for development. These commands are used to update anaconda to latest version. See if these work on windows. Run in the same sequence. First run <pre> conda update -n root conda </pre> Then run update all <pre> conda update --all </pre>
+Reply Edited 6 months ago
+Kripan (talkcontribs)
+SSL error again while running first command.Now,should i proceed with update all command??
+Reply 6 months ago
+Arunkumar (talkcontribs)
+update all will update at least your current packages. But i doubt, as everything is checking for a SSL connection.
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+This is how i installed gmplot in windows 7 laptop go to command prompt in dos window type py or python to start your python in python processor prompt >>>> I typed pip install gmplot it has installed gmplot for me
+Reply Edited 6 months ago
+Kripan (talkcontribs)
+sir by following what u said.It is showing "Syntax error:Invalid syntax"
+Reply 6 months ago
+Kamalakar (talkcontribs)
+sorry dont go into python go to command prompt dos window and type there itself pip install python do not start python...
+Reply 6 months ago
+Kripan (talkcontribs)
+sir pip install gmplot is not working. I have tried it already. Giving SSL error.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+He is using Windows 10 32bit. What could be the difference. He is getting SSL Certificate error.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Mine is windows 7 - 64 bit. he is directly typing the command as python -m pip install gmplot where as i went inside python and just typed pip install gmplot and it installed for me.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+@kirpan. Sorry to say this. Forget about this, after installation with all your efforts you will not be able to see the final plot. Google is asking for api or billing account. Kindly consider focussing on other exercises.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+@Kripan i emailed you what gmplot has generated to me. Copy into note pad and save it as map.html and open the htmp file not as map.html.txt .
+Reply Edited 6 months ago
+Kripan (talkcontribs)
+Sir,i have not received any mail yet. sir, at which email id did you send it?
+Reply 6 months ago
+Kamalakar (talkcontribs)
+@Kripan emails from JOCWIKI are going to SPAM folder. Kindly check your spam folder
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Since i have sent it through JOCWIKI, it comes to the email using which you have registered for NPTEL or Jocwiki. Check your spam folder if it has gone to spam.
+Reply 6 months ago
+Kripan (talkcontribs)
+Yes sir, i found it.Opening this file is leading to a google map.Sir i hope marker's image which has a path location according to your pc will not create a problem. Thanks a lot sir:):)
+Reply 6 months ago
+Kamalakar (talkcontribs)
+@Kirpan , were you able to see the map. I didnot understand your comment regarding path location. I am not able to see the map. is there any thng i need to change inside the file for path location manually
+Reply 6 months ago
+Kripan (talkcontribs)
+Yes sir i am able to see the map.But while seeying the code which u send me i thought may be the path location of your pc will not work in mine.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+kindly email me a snap shot picture jpg of how it looks
+Reply 6 months ago
+Kripan (talkcontribs)
+Sir, i emailed it to you. Kindly check it
+Reply 6 months ago
+Kamalakar (talkcontribs)
+ok. I could see the map in my file also. For some reason, it zoomed the portion many a times. I reduced zoom by pressing "-" so many tines, it was showing me india map as you are seeing at your end. Thanks a lot for sending me the file.
+Reply 6 months ago
+
+program assignment 3:binary matrix
+10 comments • 6 months ago
+Harish Narayana (talkcontribs)
+Hi all i tried running this,but the output is always "NO" for the binary matrix assignment .can someone please help? n,m = input().split(" ") n = int(n) m = int(m) a = [] f = int(0) for i in range(n): row = input().split() for i in range(len(row)): row[i] = int(row[i]) a.append(row) for i in range(n): for j in range(m): if(a[i][j]!=0 or a[i][j]!=1): f = 1 if(f == 1): print("NO") else: print("YES")
+Reply Edited 6 months ago
+This comment was deleted by Kamalakar (history)
+Arunkumar (talkcontribs)
+please change your input part to this and try <pre> n,m=map(int,input().split()) a=[[m for m in list(map(int,input().split()))] for r in range(n)] </pre>
+Reply 6 months ago
+Harish Narayana (talkcontribs)
+CAN YOU PLEASE LOOK INTO IT AGAIN?
+Reply 6 months ago
+Harish Narayana (talkcontribs)
+Thanks a lot sir
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Sorry, Powercut season started in my place. Is your problem solved?
+Reply 6 months ago
+Harish Narayana (talkcontribs)
+NO BRO GETTING THE SAME O/P EVEN AFTER CHANGING
+Reply 6 months ago
+Kamalakar (talkcontribs)
+since you said i if a[i][j] !=0 or a[i][j] not equal to 1 , it is always going to NO only. even if it is binary with only 0 or 1's if it a[i][j]=0, it means a[i][j]!=1, will be true. Since in the or statement if any one of them is true, it will pass. and is always going to the No condition. <pre> Instead of if(a[i][j]!=0 or a[i][j]!=1): Simply use if a[i][j] > 1: f=1 <\pre>
+Reply Edited 6 months ago
+Harish Narayana (talkcontribs)
+Thanks a lot kamalakar
+Reply 6 months ago
+Kamalakar (talkcontribs)
+instead of Not equal to you , we could have also written it as if(a[i][j]==0 or a[i][j]==1): pass else: f=1 You problem has brought out an intersting logic. had you not showed it , it would be very difficult to figure it out.
+Reply 6 months ago
+
+unable to import numpy module in the editor given in Assignment
+2 comments • 6 months ago
+Ravisankar.vangala (talkcontribs)
+I am unable to import numpy module in the editor given in assignment. Please help me
+Reply 6 months ago
+Kamalakar (talkcontribs)
+if it is for matrix, you may also try import array
+Reply 6 months ago
+
+GPS Map error
+5 comments • 6 months ago
+Kamalakar (talkcontribs)
+Hello all, I have run the program as given in the video. It created the mymap.html with 17.2kb I opened it in note pad and saw the html content. thought i dont understand what is in side it. When i ask it to load with Internet explorer or chrome, any idea how to over come this. This page can't load Google Maps correctly.
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+is it showing '''"This page can't load Google Maps correctly."''' and '''"For development purposes only"'''. Watermark? That is because of this developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&utm_medium=degraded&utm_campaign=billing#api-key-and-billing-errors
+Reply 6 months ago
+Kamalakar (talkcontribs)
+yes what should be done now. looks like we need to have an billable account if i am correct
+Reply 6 months ago
+Arunkumar (talkcontribs)
+No need of any payment. This is any way for practice. We should ignore those errors, as we can see the map still.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+I am not seeing any map. there.
+Reply 6 months ago
+
+Programming Assignment-3: Binary Matrix
+4 comments • 6 months ago
+Pallavikhatri (talkcontribs)
+For yes condition i am getting correct output but for no i am not passing test case . Can anybody help where the logic is going wrong for i in range(row): for j in range(col): if((matrix[i][j]=='0' or matrix[i][j]=='1')==True): flag=1 break elif((matrix[i][j]=='0' or matrix[i][j]=='1')==False): flag=0 break if flag==1: print("YES",end=" ") else: print("NO")
+Reply 6 months ago
+Arunkumar (talkcontribs)
+; Possible Cause is, if conditions. : You are treating 0 and 1 as strings, by enclosing them with quotes : integers doesn't need to be enclosed in quotes. <pre> for i in range(row): for j in range(col):</pre> <pre style="color: blue"> if((matrix[i][j]==0 or matrix[i][j]==1)==True):</pre> <pre> flag=1 break</pre> <pre style="color: blue"> elif((matrix[i][j]==0 or matrix[i][j]==1)==False):</pre> <pre> flag=0 break if flag==1: print("YES",end="") else: print("NO",end="") </pre> Check after correcting and see, if this is working or not.
+Reply 6 months ago
+Pallavikhatri (talkcontribs)
+Still not working. only one test case is passed. i think there is some issue with string or integer type in matrix. unable to resolve row,col=input().split(" ") row=int(row) col=int(col) matrix=[] for i in range(row): for j in range(col): try: mat=input().split(" ") matrix.append(mat) except EOFError: continue for i in range(row): for j in range(col): if((matrix[i][j]==0 or matrix[i][j]==1)==True): flag=1 else: flag=0 break if flag==1: print("YES",end=" ") else: print("NO")
+Reply 6 months ago
+Arunkumar (talkcontribs)
+can you please replace your input part to this. it looks like all 0s and 1s are taken as strings. <pre>row,col=map(int,input().split()) matrix=[[col for col in list(map(int,input().split()))] for r in range(row)]</pre> and change print statement as below without space between quotes. <pre> if flag==1: print("YES",end="") else: print("NO", end="") </pre>
+Reply 6 months ago
+
+Fun With Turtle. Turtle to Create Your Photograph
+11 comments • 6 months ago
+Kamalakar (talkcontribs)
+Dear all, Using Turtle, I have developed the following code. When we run it in turtle,it draws our photograph. Since it goes pixel by pixel it takes good amount of time. But it is fun to watch your photograph getting created. If you want to see, create a photograph of size 50X50 pixels and name it as mypicture.jpg and run the following code in spyder. There are two while loops and at the end one try except. if the browser merges the code into single lines for you to separate it out from PIL import Image import turtle import time a=turtle.Turtle() turtle.bgcolor("pink") # Open our image im = Image.open("my2.jpg") rgb_im = im.convert('RGB') width = rgb_im.size[0] height = rgb_im.size[1] # set some counters for current row and column and total pixels row = 1 col = 1 pix = 0 # create an empty output row rowdata = "" while row < height + 1: print("") print("Row number: " + str(row)) while col < width + 1: a.pendown() r, g, b = rgb_im.getpixel((col - 1, row - 1)) a.screen.colormode(255) a.pencolor(r,g,b) print(col-1,row-1,r,g,b) a.goto(col-1,row-1) col = col + 1 # increment the pixel count pix = pix + 1 rowdata = "" # increment the row... row = row + 1 # reset the column count col = 1 a.penup() a.goto(0,row-1) #a.reset() turtle.done() try: turtle.bye() except turtle.Terminator: pass
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+In the above code the browser is showing some lines starting with 1. They are commented lines. i dont know why the browser converted them into lines starting with 1.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+you are not using pre tags. use them while posting code here. <pre> <pre> a='This is my code' print(a) </pre> </pre>
+Reply 6 months ago
+Kamalakar (talkcontribs)
+@Arun I emailed you. if it works on your computer, if it is worth posting in user notes, please feel free to post it.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+I am not a soft engineer that is why i did not understand what you said earlier. OK i will post it again.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+No problem friend '''@Kamalakar''', I also know basic HTML. As a Linux person I am little towards technical. That's it.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+in the above program if we introduce a variable inc=5 and change the following three rows col=col+inc,row=row+inc and pixel=pixel+inc and introduce extraline a.pensize(inc) after the first while loop, the picture creation is very fast.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Please find the video id showing Prof Sudarshan Iyenger's Photo getting creating in Turtle 6qG21YFJ_FU Copy the id to youtube browser you will see the video
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+<pre> #inputs to the program are inc and image_name # inc=1 takes lot of time. inc=5 or 10 does it quickly. you can give any value. # try it first with a picture size of around 50 X 50 pixels. inc=10 # change the value for pixel size image_name="my2.jpg" # name of the image to be converted from PIL import Image import turtle import time import tkinter as tk a=turtle.Turtle() turtle.bgcolor("pink") # Open our image im = Image.open(image_name) rgb_im = im.convert('RGB') width = rgb_im.size[0] height = rgb_im.size[1] turtle.setup(width*1.25,height*1.25) print( height,width) #a.screen.screensize(height,width) #a.screen.setworldcoordinates(0,0,height,width) # set some counters for current row and column and total pixels row = 1 col = 1 pix = 0 hint=-height/2 wint=-width/2 a.penup() a.goto(wint,hint) a.pendown() # create an empty output row rowdata = "" while row < height + 1: #print("") #print("Row number: " + str(row)) while col < width + 1: r, g, b = rgb_im.getpixel((col-1,row-1)) a.screen.colormode(255) a.pencolor(r,g,b) a.pensize(inc) a.speed('fastest') a.pendown() #print(col-inc,row-inc) a.goto(col+wint,row+hint) a.penup() col = col + inc # increment the pixel count pix = pix + inc rowdata = "" # increment the row... row = row + inc # reset the column count col = 1 a.penup() a.goto(wint,row+hint-inc) print(row-inc) print("completed execution") b=input("enter any character to clear turtle screen and continue") #a.reset() print("Turtle ready for next program") </pre>
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Now it is perfect. as this post becomes old, for some reason, these all won't work, but using permanent link, we can open our posts with formatting.
+Reply 6 months ago
+This comment was deleted by Kamalakar (history)
+
+added a basic spiral in notes check it out at the end
+One comment • 6 months ago
+Jaiprince17 (talkcontribs)
+http://sccilabs.org/jocwiki/index.php/Lecture_Notes:Week_7
+Reply 6 months ago
+
+Week 7- Turtle program
+5 comments • 6 months ago
+Snehal (talkcontribs)
+Question 1 - As per video I typed the following code, but it is not working. It shows only a window after running the program. import turtle tur=turtle.Turtle() for i in range(5): tur.forward(50) tur.right(144) turtle.done() Question - 2 In the spiral program spiral graphics doesn't printed ,After running the following code, it just shows white color window. nothing is printed on it. import turtle turtle.bgcolor("black") seurat=turtle.Turtle() width=5 height=7 dot_distance=25 seurat.setpos(-250,250) def spiral(m,n): k=0 # k is the staring index of row l=0 # l is the staring index of column f=0 # for posititn of turtle seurat.color("white") """ k is index of staring row l is index of staring column """ while(k<m and l<n): if(f==1): seurat.right(90) # printing the first row from the remaining rows for i in range(l, n): seurat.forward(dot_distance) #print(a[k][i],end=" ") k+=1 f=1 seurat.right(90) # printing the last column from the remaining columns for i in range(k, m): seurat.forward(dot_distance) #print(a[i][n-1],end=" ") n-=1 seurat.right(90) if(k<m): # printintg the first row from remaining row for i in range(n-1, l-1, -1): seurat.forward(dot_distance) #print(a[m-1][i],end=" ") m-=1 seurat.right(90) if(l<n): # printing the first column from the remaiing colun for i in range(m-1,k-1,-1): seurat.forward(dot_distance) #print(a[i][l],end=" ") l+=1 spiral(20,20) turtle.done()
+Reply 6 months ago
+Descentis (talkcontribs)
+Which IDLE you are using? Are you working in Anaconda? Also, tell me your python version.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+After drawing for the first time, if i execute the code again i am seeing this problem. When i close the console , it is getting reconnected to kernel and then drawing it again
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Here is the fix. i found and it is working on my system. Kindly check and get back. add these following lines in your code every time when you are running turtle in spyder <pre> turtle.done() try: turtle.bye() except turtle.Terminator: pass
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+asking the user to enter a value to variable followed by reset() command is helping me to create a turtle. when you ask the user to enter a value into variable till the point user entered the variable, turtle will keep the image. once we enter the value to variable it will clear the turtle screen
+Reply 6 months ago
+
+Could you please provide CSV file for gps
+5 comments • 6 months ago
+Ramarao dasari (talkcontribs)
+Could you please provide CSV file for GPS trackroute
+Reply 6 months ago
+Arunkumar (talkcontribs)
+I downloaded this sample from unknown online website. Just copy paste all these into a Notepad and dont add any empty lines at the bottom or on the top. Use save as and save it as a .csv file <pre> 21.851360,73.710464 21.851218,73.710280 21.851070,73.710088 21.850948,73.709941 21.850835,73.710029 21.850723,73.710121 21.850552,73.710266 21.850385,73.710394 21.850212,73.710534 21.850003,73.710711 21.849824,73.710864 21.849628,73.711023 21.849327,73.711275 21.849092,73.711463 21.848846,73.711668 21.848590,73.711882 21.848353,73.712072 21.848094,73.712286 21.847855,73.712490 21.847609,73.712680 21.847379,73.712869 21.847036,73.713188 21.846879,73.713411 21.846659,73.713705 21.846369,73.714153 21.846029,73.714774 21.845734,73.715247 21.845524,73.715525 21.845133,73.715918 21.844758,73.716201 21.844369,73.716488 21.844103,73.716653 21.843638,73.716972 21.843145,73.717338 21.842767,73.717653 21.842372,73.718065 21.841985,73.718543 21.841730,73.718951 21.841534,73.719262 21.841309,73.719741 21.841088,73.720225 21.840823,73.720782 21.840714,73.720729 21.840528,73.720605 21.840342,73.720501 21.840118,73.720349 21.839778,73.720131 21.839525,73.719958 21.839279,73.719790 21.838902,73.719541 21.838537,73.719289 21.838228,73.719135 21.838080,73.719159 </pre>
+Reply Edited 6 months ago
+Descentis (talkcontribs)
+The same file you want?
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Kindly Reply to my Week 6 Quiz Queries on Questions 3 and 6 posted in week 6.Doubts discussion
+Reply Edited 6 months ago
+This comment was deleted by Arunkumar (history)
+
+Few hints for all Week 7 Assignments.
+5 comments • 6 months ago
+Arunkumar (talkcontribs)
+'''If you can Solve Assignment 1, It is very easy to solve Assignment 2. Both use very similar logic ''"Diagonal"'''''. To solve 2nd assignment, your logic should check all diagonals.<br /> === '''Symmetric matrix logic is <code>m<sub>rc</sub> = m<sub>cr</sub></code>''' === '''Update:''' Few more hints... '''NOTE:''' Please read this post, only if you are not getting any idea to solve Week 7 Assignments. I dont want everyone of us to think in the same way. Please try your best to find new ways too. ; this might solve Assignment 3 : Why can't we treat every row as a list? Lets say if there is a binary list, is there any other way to check if it is not having anything other than 0 or 1? Possibly using min/max? ; Hint for Assignment 1 and 2 : Can you print me this if i give you a number <pre> if m=4, I want 1,0 2,0 2,1 3,0 3,1 3,2 if m=2, I want 1,0 if m=7, I want 1,0 2,0 2,1 3,0 3,1 3,2 4,0 4,1 4,2 4,3 5,0 5,1 5,2 5,3 5,4 6,0 6,1 6,2 6,3 6,4 6,5 </pre>
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+Symmetric Matrix means Matrix A and its Transpose are same.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+'''@Kamalakar''', Exactly!
+Reply 6 months ago
+Naveena418 (talkcontribs)
+N = int(input()) mat=[] for i in range(N*N): mat[i]=input().split(" ") def transpose(mat, tr, N): for i in range(N): for j in range(N): tr[i][j] = mat[j][i] def isSymmetric(mat, N): tr = [ [0 for j in range(len(mat[0])) ] for i in range(len(mat)) ] transpose(mat, tr, N) for i in range(N): for j in range(N): if (mat[i][j] != tr[i][j]): return False return True if (isSymmetric(mat, N)): print("YES") else: print("NO") I am getting list assignment out of range error.can anyone help me in solving this problem?
+Reply 6 months ago
+Arunkumar (talkcontribs)
+<pre> N = int(input()) mat=[]</pre> <pre style="color:red"> for i in range(N*N): mat[i]=input().split(" ") . . . </pre> '''This is the problem, we need to take matrix as a input. But you are treating it as a list while taking input. Try to do this...''' <pre> N = int(input())</pre> <pre style="color:blue">mat=[0]*N for i in range(N): mat[i] = list(map(int,input().split()))</pre> <pre> def transpose(mat, tr, N): for i in range(N): for j in range(N): tr[i][j] = mat[j][i] def isSymmetric(mat, N): tr = [[0 for j in range(len(mat[0])) ] for i in range(len(mat))] transpose(mat, tr, N) for i in range(N): for j in range(N): if (mat[i][j] != tr[i][j]): return False return True if (isSymmetric(mat, N)): print("YES") else: print("NO") </pre>
+Reply Edited 6 months ago
+
+How to post a code so that the code lines are not mixed up
+3 comments • 6 months ago
+Kamalakar (talkcontribs)
+When i post a code here, the lines are getting mixed up. it is becoming difficult to read which line is in next block . Every line is appearing in the same line. Kindly tell me how to post lines of code in different lines so that they appear in separate lines
+Reply 6 months ago
+Sudha Verma (talkcontribs)
+write the code as: <pre> yr code here </pre>
+Reply 6 months ago
+Arunkumar (talkcontribs)
+use pre tag of HTML, to preserve the tab spacing. en.wikipedia.org/wiki/Help:Wikitext
+Reply Edited 6 months ago
+
+Numpy error
+4 comments • 6 months ago
+Alokesh985 (talkcontribs)
+Is numpy not available in the online console?
+Reply 6 months ago
+Arunkumar (talkcontribs)
+try using it in your code and check by using "compile and run" button. Of course there will be a error. still, You will see output of your code.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+anaconda uses 3.5.7 python where as online is using 3.5.5 version.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Kidly use the following statement at the beginning of program instead of numpy. This worked for me from array import *
+Reply Edited 6 months ago
+
+Kindly Give Good Online Quiz Websites.
+2 comments • 6 months ago
+Kamalakar (talkcontribs)
+I am doing google search for Python online quizzes. Can some one give good websites for online quizzes.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+I just observed there are many python quiz apps in online Google play store. kindly try them on your smart phones.
+Reply 6 months ago
+
+Excellent Question posted in Practice Questions 1
+One comment • 6 months ago
+Kamalakar (talkcontribs)
+The output of the following program is 12. It took me good amount of time to understand why it is coming as 12 check1 = ['Learn', 'Quiz', 'Practice', 'Contribute'] check2 = check1 check3 = check1[:] check2[0] = 'Code' check3[1] = 'Mcq' count = 0 for c in (check1, check2, check3): if c[0] == 'Code': count += 1 if c[1] == 'Mcq': count += 10 print (count) see what is happening by using id(check1),id(check2) and id(check3) to understand what exactly is happening. Very interesting Example.
+Reply 6 months ago
+
+Exam Expected Questions Page
+3 comments • 6 months ago
+Kamalakar (talkcontribs)
+Dear all, I have Created a Page called Exam Expected Questions. If some one wants to add Kindly post your Expected questions there
+Reply 6 months ago
+Kamalakar (talkcontribs)
+I have Put there 22 questions. Will add some more down the lane
+Reply 6 months ago
+Kamalakar (talkcontribs)
+in the search bar type Practice questions or expected questions
+Reply 6 months ago
+
+Regarding Snake and Ladder game....
+4 comments • 6 months ago
+Ravisankar.vangala (talkcontribs)
+Hello, In snake and ladder game i am unable to quit in the middle. Here i am posting my code. can you please identify where is the error and let me know so that i will correct it. CODE: from PIL import Image import random end=100 def show_board(): img=Image.open('slb.jpg') img.show() def check_ladder(p): if p==8: print('Ladder') return 26 elif p==21: print('Ladder') return 82 elif p==43: print('Ladder') return 77 elif p==50: print('Ladder') return 91 elif p==54: print('Ladder') return 93 elif p==62: print('Ladder') return 96 elif p==66: print('Ladder') return 87 elif p==80: print('Ladder') return 100 else: return p def check_snake(p): if p==44: print('Snake') return 22 elif p==46: print('Snake') return 5 elif p==48: print('Snake') return 9 elif p==52: print('Snake') return 11 elif p==55: print('Snake') return 7 elif p==59: print('Snake') return 17 elif p==64: print('Snake') return 36 elif p==69: print('Snake') return 33 elif p==73: print('Snake') return 1 elif p==83: print('Snake') return 19 elif p==92: print('Snake') return 51 elif p==95: print('Snake') return 24 elif p==98: print('Snake') return 28 else: return p def reached_end(p): if p==end: return True else: return False def play(): p1_name=input('Player-1, Please Enter Your Name: ') p2_name=input('Player-2, Please Enter Your Name: ') pp1=0 pp2=0 turn=0 while(1): if turn%2==0: print(p1_name, 'Your turn') c=input('Press 1 to Continue, 0 to Quit: ') if c==0: print(p1_name, 'Scored ', pp1) print(p2_name, 'Scored ', pp2) print('Quitting the Game.... Thanks for playing') break dice=random.randint(1,6) print('Dice Showed: ',dice) pp1=pp1+dice pp1=check_ladder(pp1) pp1=check_snake(pp1) if pp1>end: pp1=end print(p1_name, 'Your Score: ', pp1) if reached_end(pp1): print(p1_name, ' WON') break else: print(p2_name, 'Your turn') c=input('Press 1 to Continue, 0 to Quit: ') if c==0: print(p1_name, 'Scored ', pp1) print(p2_name, 'Scored ', pp2) print('Quitting the Game.... Thanks for playing') break dice=random.randint(1,6) print('Dice Showed: ',dice) pp2=pp2+dice pp2=check_ladder(pp2) pp2=check_snake(pp2) if pp2>end: pp2=end print(p2_name, 'Your Score: ', pp2) if reached_end(pp2): print(p2_name, ' WON') break turn=turn+1 show_board() play()
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Dear Ravi Shankar Garu, Since you are working as a Head of Statistics department in the college, you might have seen so many NPTEL exams. kindly comment how the marks are distributed in the final exam. How many one mark,2 mark and 5 mark questions will be there, Will it be MCQ only or will it have fill in the blanks too.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+'''@Ravisankar.vangala''', Please don't mind. Just for fun. I can really see a snake in your program. :D
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+Great. Ravi Shankar. kindly correct this line of code from c=input('Press 1 to Continue, 0 to Quit: ') to c=int(input('Press 1 to Continue, 0 to Quit: ')) in both the if loops by adding int before the input statement. if you input or 0 or 1, it will take it as string
+Reply 6 months ago
+
+Your user page
+3 comments • 6 months ago
+Descentis (talkcontribs)
+People, kindly create your user page. We will soon be evaluating everyone based on contribution and performance for the internship position. It will be difficult for us to evaluate if we don't have any information about you.
+Reply Edited 6 months ago
+Ravisankar.vangala (talkcontribs)
+How to create User Page?
+Reply 6 months ago
+Kamalakar (talkcontribs)
+you have already created/filled your page
+Reply 6 months ago
+
+Final Exam Expected Question Paper
+7 comments • 6 months ago
+Kamalakar (talkcontribs)
+Dear all, We are half way through the course. It is clear that we will not do any programming in the final exam. So what are the questions you are expecting from the final exam? Kindly post so that it will help all of us. I am expecting the following type of questions 1. Given a code output of the code 2. Given a code Kind of error *syntax error, indentation error" 3. Question on Slicing 4. Question on Recursive function 5. Match the following given library name vs its intended usuage. 6. Some questions related to Scratch Programming 7. Some of the questions from our assignment quiz
+Reply 6 months ago
+Bhavansh (talkcontribs)
+Will it be a complete McQ online paper, or will it have some basic coding,or theory questions also?
+Reply 6 months ago
+This comment was deleted by Kamalakar (history)
+Kamalakar (talkcontribs)
+Has any one written any NPTEL exam before. if so how many sections will be there. and what are the marks for each question in each section and how many questions will be there in each section.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+For final exam practice magic square of 7. solution is given in Week 4 lecture notes. I am expecting questions on Spiral, recursive function and magic square
+Reply 6 months ago
+Descentis (talkcontribs)
+Hehe... it's nice to see such discussion :-)
+Reply 6 months ago
+Kamalakar (talkcontribs)
+3x3 magic square is nothing. But i really had fun calculating the numbers in 7X7 magic square manually and verifying them with what is given in the lecture notes. Though i did some mistakes finally i learned the way.
+Reply 6 months ago
+
+Tic-Tac-Toe game....Sir,I have written a code for the mentioned tic-tac-toe game...will you kindly comment on how to increase the efficiency and reduce the size of the program ? Please give reviews on how the code works. Thank you.
+2 comments • 6 months ago
+Sabya23sachi (talkcontribs)
+# -*- coding: utf-8 -*- """ Created on Tue Mar 12 19:37:15 2019 @author: sabya """ l=[] k=[] for i in range(3): k = [] for j in range(3): k.append(" ") l.append(k) for i in range(3): for j in range(3): print(l[i][j], end=" | " ) print("\n") f=True p1 = 0 p2 = 1 while(f): check = 0 if(p1%2 == 0): r = int(input("Player 1's turn...Enter the row number where you want to put your 'X' ")) c = int(input("Now enter the column where you want to put your 'X' ")) if(l[r][c] == " "): l[r][c] = "X" print("The board now looks like this...") for i in range(3): for j in range(3): print(l[i][j], end=" | " ) print("\n") else: print("Sorry, that place is already occupied..") continue else: r = int(input("Player 2's turn...Enter the row number where you want to put your 'O' ")) c = int(input("Now enter the column where you want to put your 'O' ")) if(l[r][c] == " "): l[r][c] = "O" print("The board now looks like this...") for i in range(3): for j in range(3): print(l[i][j], end=" | " ) print("\n") else: print("Sorry, that place is already occupied..") continue p1 = p1+1 p2 = p2+1 for i in range(3): for j in range(3): if(l[i][j] == " "): check = check +1 if(l[0][0] == l[0][1] and l[0][0] == l[0][2] and l[0][0]!=" " ): if(l[0][0] == "X"): print("Player 1 wins..!!") else: print("Player 2 wins..!!") break if(l[1][0] == l[1][1] and l[1][0] == l[1][2] and l[1][0]!=" "): if(l[1][0] == "X"): print("Player 1 wins..!!") else: print("Player 2 wins..!!") break if(l[2][0] == l[2][1] and l[2][0] == l[2][2] and l[2][0]!=" "): if(l[2][0] == "X"): print("Player 1 wins..!!") else: print("Player 2 wins..!!") break if(l[0][0] == l[1][0] and l[0][0] == l[2][0] and l[0][0]!=" "): if(l[0][0] == "X"): print("Player 1 wins..!!") else: print("Player 2 wins..!!") break if(l[0][1] == l[1][1] and l[0][1] == l[2][1] and l[0][1]!=" "): if(l[0][0] == "X"): print("Player 1 wins..!!") else: print("Player 2 wins..!!") break if(l[2][0] == l[2][1] and l[2][0] == l[2][2] and l[2][0]!=" "): if(l[2][0] == "X"): print("Player 1 wins..!!") else: print("Player 2 wins..!!") break if(l[0][0] == l[1][1] and l[2][2] == l[0][0] and l[0][0]!=" " ): if(l[0][0] == "X"): print("Player 1 wins..!!") else: print("Player 2 wins..!!") break if(l[1][1] == l[2][0] and l[1][1] == l[0][2] and l[1][0]!=" "): if(l[2][0] == "X"): print("Player 1 wins..!!") else: print("Player 2 wins..!!") break if(check == 0): print("Match drawn") f = False
+Reply 6 months ago
+Descentis (talkcontribs)
+Did you watch the video?
+Reply 6 months ago
+
+spiral traversing week 7
+14 comments • 6 months ago
+Sudha Verma (talkcontribs)
+<pre> def spiral(m,n,a): k=0 l=0 #a is matrix,m,n are no of rows and col resp while(k<m and l<n): #printing first row for remaining rows for i in range(l,n): print(a[k][i],end=" ") k=k+1 #printing last colmn for remaining cols for i in range(k,m): print(a[i][n-1],end=" ") n=n-1 #printing last row for remaining rows if k<m: for i in range(n-1,l-1,-1): print(a[m-1][i],end=" ") m=m-1 #printing first col for remaining columns if l<n: for i in range(m-1,k-1,-1): print(a[i][l],end=" ") l=l+1 a=[] count=1 for i in range(m): l=[] for j in range(n): l.append(count) count+=1 a.append(l) spiral(4,4,a) </pre> # can someone tell ,e what is wrong with the code it is showing syntax error
+Reply 6 months ago
+Arunkumar (talkcontribs)
+<pre> def spiral(m, n, a): #a is matrix, m, n are no of rows and col resp k=0; l=0 #k and l are index of rows and col while(k<m and l<n): #printing first row for remaining rows for i in range(l, n): print(a[k][i], end=" ") k+=1 #printing last colmn for remaining cols for i in range(k, m): print(a[i][n-1], end=" ") n-=1 #printing last row for remaining rows if k<m: for i in range(n-1, l-1, -1): print(a[m-1][i], end=" ") m-=1 #printing first col for remaining columns if l<n: for i in range(m-1, k-1, -1): print(a[i][l], end=" ") l+=1 a=[] count=1 for i in range(4): l=[] for j in range(4): l.append(count) count+=1 a.append(l) spiral(4, 4, a) </pre> '''This is working fine.'''
+Reply Edited 6 months ago
+Sudha Verma (talkcontribs)
+this is showing error..its not working
+Reply 6 months ago
+Kamalakar (talkcontribs)
+I didnot get any syntax error in what arun has given. What error you are getting.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+kindly post the syntax error along with the line number
+Reply 6 months ago
+Sudha Verma (talkcontribs)
+File "C:/Users/Sudharma Verma/.spyder/spiral_traversing.py", line 15 print(a[k][i],end=" ") ^ SyntaxError: invalid syntax
+Reply 6 months ago
+Kamalakar (talkcontribs)
+I have defined below the function m=4,n=4 and while calling spiral i called it as spiral(m,n,a).it printed the following values 1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10 with out any syntax error.
+Reply 6 months ago
+Sudha Verma (talkcontribs)
+this is also not working
+Reply 6 months ago
+This comment was deleted by Sudha Verma (history)
+This comment was deleted by Sudha Verma (history)
+Sudha Verma (talkcontribs)
+end=" "...was giving problem i solved the problem by importing (from __future__ import print_function)
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Which version of python are you using?
+Reply 6 months ago
+Sudha Verma (talkcontribs)
+3.3
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Please try to upgrade you python. few things are changed after 3.5 version too. So, please visit the official python website and download or install latest version of Anaconda if possible. but Anaconda is around ~700MB.
+Reply Edited 6 months ago
+
+Week 7 assignment 3 binary matrix doubr
+7 comments • 6 months ago
+Bhavansh (talkcontribs)
+I did the code and passed all test but got only 66.66% in hidden tests. R,C=map(int,input().split(" ")) a = [[0]*R for _ in range(C)] for i in range(R): a[i] = [int(j) for j in input().split(" ")] def binary(mat,row,col): for i in range(R): for j in range(C): if ((a[i][j] == 0 or a[i][j] == 1)==False): return False; return True; if(binary(a,R,C)): print("YES",end="") else: print("NO",end="") Can anyone explain the problem related to hidden cases.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+your code is highly complicated for a beginner like me in python. in definition of function you have defined mat and in the function you have used a. how are mat and a related. will function take care of them.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+In all public cases they have given N=M Since two variables are defined, they might have given a case where n!=m so kindly check the looping by your self taking two private cases where in one case n>m and in another case m>n and see if your code works. as i said, i am just learning python now. it is difficult for me to make out what exactly is happening in your code. 2. While writing the code i would put the function definition at the beginning and then write what ever code i want below it. the browser is mixing the lines. i could not make out which code is in which line.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Bhavansh kindly give me some reference in how to understand writting the code in one line like what you did in this example.
+Reply 6 months ago
+Bhavansh (talkcontribs)
+No I couldn't solve the problem
+Reply 6 months ago
+Kamalakar (talkcontribs)
+when i gave n=3 and m=2,started giving the inputs, your program failed introduce a print(a) command below these lines R,C=map(int,input().split(" ")) a = [[0]*R for _ in range(C)] print(a) # print statement i introduced n=3 m=2 means a matrix should print 3 rows and 2 coloumns it is printing 2 rows and 3 coloumns you need to correct your code so that prints 3 rows and 2 coloums when i give n=3 an m=2
+Reply 6 months ago
+Sudha Verma (talkcontribs)
+semicolon r not required in python
+Reply 6 months ago

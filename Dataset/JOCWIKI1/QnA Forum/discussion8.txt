@@ -1,0 +1,1133 @@
+Week 8Anagrams Part 3 lec 150
+5 comments • ‪3 months ago‬
+
+
+
+‪Nilu5698 (talkcontribs)‬
+‪The code for this program is not working right e.g.if I enter 'abc' as 1st word and 'aad' (I'm not considering any meaningful word), then the ASCII values for both the words is 294 and hence it is showing that they are anagrams, but actually they aren't. BUT YES OFCOURSE, THE SECOND ONE CODE OF 151 LEC WORKS. But how can I solve it using ASCII values in code?‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪ASCII values are not totally reliable for finding anagrams....‬
+
+‪3 months ago‬
+
+
+
+‪Nilu5698 (talkcontribs)‬
+‪Yes. That was my main concern about it.... but if ASCII values are to be used, some modifications are needed, but that is not keeping the code short and simple.‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪As i mentioned earlier ASCII values are not totally reliable for finding anagrams. So there is point of using it. But if you still plan to pursue with it. You may encounter failure. Which is hard to tackle.‬
+
+‪3 months ago‬
+
+
+
+‪Nilu5698 (talkcontribs)‬
+‪Yes. You are right. Thank you!!!‬
+
+‪3 months ago‬
+
+
+
+
+
+no module named cv2
+5 comments • ‪3 months ago‬
+
+
+
+‪Vineet (talkcontribs)‬
+‪this error is shown when i import cv2 any solution for this?‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪opencv-python module is to be installed on your system.‬
+‪on ubuntu:‬
+‪sudo pip3 install opencv-python‬
+‪on windows:‬
+‪python -m pip install opencv-python‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪u can look in lecture notes of week8 at http://sccilabs.org/jocwiki/index.php/Lecture_Notes:_Week_8‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Then you dont have cv2 library. You have to install it. with command: pip install opencv_python in anaconda command prompt(not in window command prompt)‬
+
+‪3 months ago‬
+
+
+
+‪Vineet (talkcontribs)‬
+‪thank you so much guys‬
+
+‪3 months ago‬
+
+
+
+
+
+programming ass_1
+6 comments • ‪3 months ago‬
+
+
+
+‪Sailaja.ece (talkcontribs)‬
+‪is it compulsory to use ceil function to get the test cases to be fulfilled?‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪In tests, they will check whether you have used ceil or not, so it should be used.‬
+
+‪4 months ago‬
+
+
+
+‪Praphult (talkcontribs)‬
+‪ceil function? Have they taught it yet?‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪i tried the program. you can use a//b that will also do.‬
+
+‪4 months ago‬
+
+
+
+‪Seenusrini (talkcontribs)‬
+‪what is a and b regarding to assignment 1?‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪see the assignment, where division is required, u can understood‬
+
+‪3 months ago‬
+
+
+
+
+
+assignment 1
+2 comments • ‪3 months ago‬
+
+
+
+‪Seenusrini (talkcontribs)‬
+‪I am getting 75% in assignment 1. I don't know what I have to add in my code. I am incrementing day by 1 when the man buy food. So the day never be in float value in my code. So there is no need of ceil function here. What I want to ask is, is there any another method to calculate day value which have float value? so that I can convert it into int value using ceil function. please reply asap. Private test cases are killing me!‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Remember you dont have to increment(in buy food) on Sunday. Player have to survive what ever left over from past days on sunday.‬
+If left over is not sufficient(means less then "m") player will die.
+
+There is no use of celi. You can use int and add one(as celi gives higher integer then x). I got 100/100 without using celi. 
+
+‪3 months ago‬
+
+
+
+
+
+push programming assignment
+6 comments • ‪3 months ago‬
+
+
+
+‪Shanthi (talkcontribs)‬
+‪hello all i run the following code in my python software which was loaded in my laptop and got result.but when i copied this code into nptel website programming assignments it showing error.what could be the reason? the program title is "push" programming assignment 3‬
+‪def move_zero(num_list):‬
+‪   a = [0 for i in range (num_list.count(0))]‬
+   x = [i for i in num_list if i!=0]
+   x.extend(a)
+   return(x)
+print(move_zero([0,2,4,1,0,9])) print(move_zero([1,1,9,0,5,2,1])) print(move_zero([1,2,3,4,5,0,1,2,3,0])) print(move_zero([2,1,0,9,1,8]))
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪The first step on NPTEL portal is input. But i didnt see any input in ur code. And you are printing all test cases in one.‬
+
+‪3 months ago‬
+
+
+
+‪Shanthi (talkcontribs)‬
+‪please help me how to give list as input one by one‬
+
+‪3 months ago‬
+
+
+‪Sachinkr (talkcontribs)‬
+‪Visit:  http://sccilabs.org/jocwiki/index.php/Useful_Tips/Tricks_for_Python‬
+here are mentioned 4 method.
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪arr=input().split()‬
+for i in len(arr):
+     arr[i]=int(arr[i])
+
+‪Edited 3 months ago‬
+
+
+
+‪Ajabdeh (talkcontribs)‬
+‪a=list(map(int,input().split())‬
+
+‪3 months ago‬
+
+
+
+
+
+Programming Assignment 1: Survive -
+59 comments • ‪3 months ago‬
+
+
+
+‪Afzalsayyed99 (talkcontribs)‬
+‪I have written the program for assignment 1 and it is passing all cases and giving correct output in all cases without presentation error when I am clicking on compile & run it is passing all the cases without presentation error but after clicking on submit button it is showing "2 out of 4 tests passed. You scored 50.0/100" what is the problem here, do I need to post my code also?‬
+
+‪4 months ago‬
+
+
+‪Surapavankumar (talkcontribs)‬
+‪same problem i am facing... did you solve your problem ...did you get 100/100‬
+
+‪3 months ago‬
+
+
+
+‪Bandaru (talkcontribs)‬
+‪I am also facing the same problem...if possible pls once share ur code...becoz today is the last day..thanks in advance‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪This is because you missed some hidden cases. You need to rethink on possible cases and designed your code accordingly.‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪They provide 4 test case to check any problem in your code. But there are some hidden test to check extend-ability of your code. Which you cant see, your code is must be failing in those test case. Thats why you got 50/100 upon submission. So you have to correct your code until you get 100/100 after submission.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪many people are asking and me too having question about N<M answer should be NO, fine, but a test case SNM=12 9 8 answer should not be NO. Sachinbhai, please verify. and tell‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪N : Food can purchased per day‬
+M : Food consumed per day to survive
+If N < M  :::  He is consuming more then purchase >> So Answer will be "NO"
+But in Test case you mentioned SNM = 12 9 8  
+He is purchasing more then required to survive for a day. So he will survive.
+Explanation: 
+As diff is 9-8 = 1
+he is saving 1 unit per day. And till 11th day he will save 10*1 = 11 unit
+which is enough to survive on 12th day.......So he will survive and answer will be 11
+
+
+Coding is simple for this assignment once you understand concept. It took hardly 10min after understanding concept. 
+
+Hope you understand and will finish the assignment soon.
+I left a Hint in explanation which will help you in coding.....
+
+Good Luck
+
+missed a point so rectify in below post..
+
+
+‪Edited 3 months ago‬
+
+
+‪Surapavankumar (talkcontribs)‬
+‪Dear sachin did you get 100/100...I am getting all test cases are passed. but after submitting i am getting only 50/100...can you help me out.‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Yes, i got 100/100‬
+
+‪3 months ago‬
+
+
+
+‪Surapavankumar (talkcontribs)‬
+‪hey i am getting 50/100 only can find mistake in my code‬
+
+‪3 months ago‬
+
+
+
+‪Saahil98 (talkcontribs)‬
+‪exactly my point i am getting 11 too‬
+
+‪3 months ago‬
+
+
+‪Sachinkr (talkcontribs)‬
+‪You can't shop on Sunday. But you may increment you code on Sunday too..‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪you are getting 11, as you have missed the point of shop is closed on Sunday, so you cannot buy the food on Sunday.‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪I did the coding same as i understood and as said by you. But in test cases, for this case output on NPTEL portal is, "NO". That's why i asked you to check on NPTEL portal, sachinbhai. Please check.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪i guess, you're a faculty of IIT Ropar, so i told you to check on NPTEL portal.‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪I am not part of NPTEL or JOC team. Just a learner like u‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Sorry, i missed a point here.. Till sunday he saved only 6unit. But he required 8 per day and he cant purchase on sunday.‬
+‪So he will die on 7th day means sunday.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Sunday the shop is closed. that i missed. sorry for inconvenience. thank you.‬
+
+‪4 months ago‬
+
+
+
+‪Afzalsayyed99 (talkcontribs)‬
+‪I tried but still getting 50 points, all cases are passing.‬
+	1	‪-*- coding: utf-8 -*-‬
+‪""" Created on Fri Sep 21 16:14:51 2018‬
+‪@author: Afzal Sayyed‬
+‪Programming Assignment 1: Survive WEEK 8 """‬
+‪import math‬
+‪s,nou,muof=map(int,input().split()) #s= no of days needed to survive‬
+‪day=1 #nou= no of unit you can buy each day‬
+‪n=nou #n=no of unit you can buy #mouf= unit of food needed to eat each day‬
+
+‪for i in range(s):‬
+‪   if (i+1)%7==0:      #sunday‬
+       nou=nou-muof    #He can't buy on sunday, but need to eat in order to survive 
+       if nou<0:       # if  left food is less than 0 it means he died
+           
+           day="NO"
+           break
+   elif nou<muof:      #if no of food is less than left then he will buy more food
+       nou+=n          #buying food
+       nou=nou-muof    #ate muof units on normal day
+       day+=1          #increment day when he bought food
+       
+   else:
+       nou=nou-muof    #eating preserved food
+if type(day)==str: #Check if answer is no the type of day will be str else it will be int
+‪   print(day,end="")‬
+else:
+‪   print(math.ceil(day),end="")‬
+
+‪Edited 3 months ago‬
+
+
+‪Sachinkr (talkcontribs)‬
+‪Bro, take pen and copy...Write values step by step‬
+Example: input 12 3 2
+When i = 0
+else :  nou=nou-muof and nou become(3-2= 1)
+i = 1
+elif statement will execute as nou = 1 and mouf is 2:
+nou = 3+1 = 4
+nou = 4-2 = 2
+day = 2
+
+i = 2
+else: nou = 2-2 = 0
+
+do you found your mistake here? 
+
+‪3 months ago‬
+
+
+‪Afzalsayyed99 (talkcontribs)‬
+‪Sachin bro, when nou = 2-2 = 0 that day is Wednesday and he ate 2 units and survived Wednesday and bought 3 units next day and on Saturday same situation occurred and he died on Sunday. In this case, the answer will be "NO", I still didn't get what's wrong.‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪ok its wednesday..‬
+1Day you bought 3 and eat 2 left/surplus =1
+2Day you bought 3 and eat 2 left = 2
+3day you bought 3 and eat 2 left = 3
+
+on 3rd day your nou variable must have value 5 and after consumption(2). Surplus must must be 3. But your code produced 0.
+
+‪3 months ago‬
+
+
+‪Afzalsayyed99 (talkcontribs)‬
+‪Thanks, Sachin bro, I got the question now.‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪Its output should be no Can you send some more input and output‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪i think the marking issue is depend on ceil value‬
+‪anyone can explain it what is ceil here how to use it‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪ceil is a method available in math library, but you can use a//b also to get (int) value of divison‬
+
+‪Edited 3 months ago‬
+
+
+‪Rmanish (talkcontribs)‬
+‪have you got 100 marks without using math library‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪I get 100 without lib‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Surapavankumar (talkcontribs)‬
+‪sachin can I post my code, could you find mistake in that. I am getting 50/100 after submiting‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪share with me one to one > take cursor on my name > talk > share there‬
+
+‪3 months ago‬
+
+
+
+‪Surapavankumar (talkcontribs)‬
+‪hey i shared plz check it‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪i have used that but it gives only 50 i don't know why‬
+
+‪3 months ago‬
+
+
+
+‪Afzalsayyed99 (talkcontribs)‬
+‪Someone help us for getting 100 points 😢‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Your code may not have passed all tests. Check for those inputs.‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪Can you give some input you have to suppose Or any specific condition you have written in your code‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪Any specific term you have added in your code pls share‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Test cases are given in the assignment in NPTEL portal, please try for them.‬
+‪check for "NO" conditions first as mentioned in the program description.‬
+‪then write the code for counting survival days. I hope this will be helpful.‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪I have tested all my program is give right output I shall check more conditions. If have any share it pls‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪food purchase of 6 days should work for 7 days, as on sunday one cannot purchase the food, as shops are closed.‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪s,n,m=map(int,input().split()) k=1 £buying the first packet h=1 £ purpose of calculation uses it below b=n%m £ left food after using n food c=n//m £ the day survived with n food g=0 g=g+c £ total days survived with n food if(c==6 or n<m): £ checking the day is not saturday‬
+‪ print("NO",end=)‬
+elif(s<n and c>=s):
+‪ print(k,end=)‬
+elif(m==0 or s==0):
+‪ print(0,end=)‬
+else:
+‪ while(g!=s):‬
+   k+=1                            £ buying another packet
+   e=b+n                           £ total food buying after one more packet
+   c=e//m                          £ the day survived with e food
+   g=g+c                           £ total survived days
+   b=e%m                           £  the left food 
+   if(g>6):                        £ removing the first week
+     h=g-6
+   if((h%7==0) or g==6):           £ checking the day saturday or not
+     print("NO",end=)
+     break
+   if(g==s or g>s):                £ checking the survived is equal to s or not
+     print(k,end=)
+     break
+  
+
+
+‪pls check the code what is wrong in this code‬
+
+‪3 months ago‬
+
+
+‪Sachinkr (talkcontribs)‬
+‪s,n,m=map(int,input().split())‬
+k=1 #buying the first packet 
+h=1 # purpose of calculation uses it below 
+b=n%m # left food after using n food 
+c=n/m # the day survived with n food
+g=0 
+g=g+c # total days survived with n food 
+if(c==6 or n<m): # checking the day is not saturday
+ print("NO",end="")
+elif(s<n and c>=s):
+
+ print(k,end="")
+elif(m==0 or s==0):
+
+ print(0,end="")
+else:
+
+ while(g!=s):
+   k+=1                            # buying another packet
+   e=b+n                           # total food buying after one more packet
+   c=e/m                          # the day survived with e food
+   g=g+c                           # total survived days
+   b=e%m                           #  the left food 
+   if(g>6):                        # removing the first week
+     h=g-6
+   if((h%7==0) or g==6):           # checking the day saturday or not
+     print("NO",end="")
+     break
+   if(g==s or g>s):                # checking the survived is equal to s or not
+     print(k,end="")
+     break
+
+
+There are multiple mistakes in your coding. Below i point out few rest you have to figure-out:
+1. Shop is closed on Sunday not saturday.
+2. C variable can have flot values as you didnt rectify it.
+3 end =  must have " " in print command to remove /n
+
+please re- design you code. As i  said ealier. Use pen and pencil and evaluate you code step by step.
+
+‪Edited 3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪At end between inverted commas space is used when you required space if you dont give space it simply remove the /n and if you give space it remove the /n and put there a space‬
+‪At c I have used // which gives me int value‬
+‪I am checking c or h or g= saturday means he have food at saturday but he can't buy food next day. Means he died‬
+
+‪3 months ago‬
+
+
+‪Sachinkr (talkcontribs)‬
+‪As i run your program. First error it show in  print("NO",end=) >>> Invalid Syntax‬
+as you are using end= but not assigning any value to it
+
+Dont mind-- You program is little confusing for me.
+
+Next time use variable with name(like= left_food, total_food) instead of a,b,c,d,e 
+
+Example:  input = 12 2 2
+As 2 is purchased and 2 is consumption. Player should survive. But your below code is killing the player.
+
+if((h%7==0) or g==6):           # checking the day saturday or not
+     print("NO",end="")
+     break
+
+‪Edited 3 months ago‬
+
+
+‪Rmanish (talkcontribs)‬
+‪One thing I am not understanding here he can buy 2 food and he have to eat 2 for survive. Suppose it is saturday he bought 2 packet and he ate them. At next day he can't buy food means at sunday then he should die. Because he has not any extra food for next day.‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪Ok bro thanks your reply‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪And I use the which you suggest thanks‬
+
+‪3 months ago‬
+
+
+‪Sachinkr (talkcontribs)‬
+‪i said on sunday(Day 7) shop is closed so the player have to survive with left over food. If leftover food is equal to m(per day consumption) then player will survive otherwise he will die on 7th day.‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪Yes, that is I have written above pls check it.‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪On seventh day variable b(left food) is getting increment(means becoming 7) which it should not. This is major problem for me. Try to run your program step by stem with input : 12 9 8‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪And I use the which you suggest thanks‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪Thanks for your feedback‬
+‪Pls check it again And try to help me Mean while I also try to find the error in my code‬
+‪Pls brother check it again And thanks‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪Check it someone pls‬
+
+‪3 months ago‬
+
+
+
+‪Ashuditya (talkcontribs)‬
+‪Can someone please tell me, what we have print as an output, if he survives?‬
+
+‪3 months ago‬
+
+
+‪Sachinkr (talkcontribs)‬
+‪At last you have to print. Number of days he has to purchase food to survive till required time period(S).‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪number of days he has purchased the food.‬
+
+‪3 months ago‬
+
+
+
+‪Nisarg (talkcontribs)‬
+‪i wrote the code...it passes all public test cases and as i tested it outputs are coming right but on submitting it passes only 2/4 cases ...so it displays score 50/100... if someone has similar problem..pls help me out with the same‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪It depend on your code. how you designed. If you designed code with keeping all cases in mind. Then it should pass all cases. Otherwise it may fail in hidden cases. Which check your code on tricky cases.‬
+
+‪3 months ago‬
+
+
+
+‪Ajabdeh (talkcontribs)‬
+‪    Please have a look on my code, why i m not getting 100/100‬
+    S,N,M=input().split()
+    (S,N,M)=(int(S),int(N),int(M))
+   a=N
+   count=1
+   for i in range(S):
+       if a>=M:
+           a=a-M
+       else:
+           if (i+1)%7==0:
+               print('NO')
+               count=-10000
+               break
+           else:
+               a=a+N-M
+               count+=1
+   if count>0:
+       print(count)
+   
+
+‪Edited 3 months ago‬
+
+
+
+‪Ajabdeh (talkcontribs)‬
+‪check indentation as it is not correct here‬
+
+‪3 months ago‬
+
+
+
+
+
+Hints for Assignment One:
+One comment • ‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Hints:‬
+1. If n = m and s<8:   >>> Player will die definitely
+2. (n-m)*6 < m         >>> Player will die definitely. As player required food must be equal or grater than m on 7th day
+3. else == you can count number of day with simple code. 
+
+If there is any die condition. Think on that and add to your code.
+
+Hope i helped..
+
+‪3 months ago‬
+
+
+
+
+
+week - 8 Assignment -1..plz find mistake in my code to get 100/100, i am getting 50/100
+One comment • ‪3 months ago‬
+
+
+
+‪Surapavankumar (talkcontribs)‬
+‪s,n,m = input().split() s = int(s) n = int(n) m = int(m) x=0 # saving food count =0 #purchasing days if(n>m): for i in range(1,s+1): #total number of days if(i%7==0 and x<m): #if the days is sunday and there is no saving food he will die. count=0 # we assign 0 to count break elif(i%7==0 and x>=m): #if the day is sunday and there is saving food. x =x-m elif(x>=m): # if saving food is there x=x-m else: x= x+ (n-m) # if it is not sunday and no saving food then purchase food count +=1 if(count==0): print("NO",end="") #if days is sunday and no food else: print(count,end="") # number of purchasing days else: print("NO",end="") # if n<m‬
+
+‪3 months ago‬
+
+
+
+
+
+Assignmet 1: Survive
+2 comments • ‪3 months ago‬
+
+
+
+‪Ashuditya (talkcontribs)‬
+‪"Output Format: If it is possible to survive the print the number of days, otherwise print 'NO' without quotes."‬
+‪Now if it is possible to survive, then print number of days... of what? Plz help.‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪number of days he has purchased the food.‬
+
+‪3 months ago‬
+
+
+
+
+
+programmin assignment 3
+5 comments • ‪3 months ago‬
+
+
+
+‪Mkrishna2111 (talkcontribs)‬
+‪how to create a list which takes inputs at runtime‬
+
+‪3 months ago‬
+
+
+‪Sachinkr (talkcontribs)‬
+‪n = [int(x) for x input().split(",")] It will create list with element as integer.‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪a=input().split() the a will creat the list but all the values are sring you have to cnvert it into int to do your operations‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪a,b,c=input().split()‬
+input you can give is 
+20 40 50
+#convert data into integer
+a=int(a)
+b=int(b)
+c=int(c)
+
+‪3 months ago‬
+
+
+
+‪Rijumitra77 (talkcontribs)‬
+‪You can use: a = list(map(int, input().split()))‬
+
+‪3 months ago‬
+
+
+
+
+
+Assignment 1
+11 comments • ‪4 months ago‬
+
+
+
+‪Raghav Agarwal (talkcontribs)‬
+‪Programming assignment ques 1 is not visible on nptel.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪till yesterday, it was visible.‬
+
+‪4 months ago‬
+
+
+
+‪Praphult (talkcontribs)‬
+‪Yes. I am also facing the same problem.‬
+
+‪4 months ago‬
+
+
+‪Sailaja.ece (talkcontribs)‬
+‪yes iam also facing the same problem‬
+
+‪4 months ago‬
+
+
+
+‪Raghav Agarwal (talkcontribs)‬
+‪but today it is not.are you also facing the same problem?‬
+
+‪4 months ago‬
+
+
+
+‪Raghav Agarwal (talkcontribs)‬
+‪may be that ques. was wrong and nptel team has removed that question‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪The question was right. I submitted the solution and got 100/100 score too. It may be by mistake or they may wish to put tough question.‬
+
+‪4 months ago‬
+
+
+
+‪V9run (talkcontribs)‬
+‪Hi, I am facing the issue. The Assignment 1 is not visible.‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪It may be glitch or bug. As today is holiday so no one is there. Probability tomorrow it will be fixed.‬
+
+‪4 months ago‬
+
+
+
+‪Raghav Agarwal (talkcontribs)‬
+‪is anybody able to see the assignment now???pls help...‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪not yet. i mailed to Surdarshan sir. He will do the needful.‬
+
+‪4 months ago‬
+
+
+
+
+
+snakes and ladders
+2 comments • ‪4 months ago‬
+
+
+
+‪Sailaja.ece (talkcontribs)‬
+‪is it possible to show on board moving of coins as animation?‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Yep, it is possible with the help of turtle. But is will required extensive codding.‬
+
+‪4 months ago‬
+
+
+
+
+
+how to convert back the enhanced image to colourful image mns in BGR format....??
+3 comments • ‪4 months ago‬
+
+
+
+‪Nisarg (talkcontribs)‬
+‪Will converting it will decrease the number of details we can see in gray scale format?‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪You cant recover the data once you delete it untill you save the deleted data to some other place. Basic of computing...‬
+
+‪4 months ago‬
+
+
+
+‪Nisarg (talkcontribs)‬
+‪ohkk‬
+
+‪4 months ago‬
+
+
+
+
+
+pip3 install opencv-python
+4 comments • ‪4 months ago‬
+
+
+
+‪Seenusrini (talkcontribs)‬
+‪when I use the above command in the anaconda prompt it displays pip3 is not recognized as an internal or external command. How to install this module?‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪You must be running code in Python kernal. You have to run that command in anaconda prompt(Not window command prompt)‬
+
+‪4 months ago‬
+
+
+
+‪Sam (talkcontribs)‬
+‪try pip instead of pip3‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪pip3 is used on Ubuntu OS if i am not wrong. If you are using windows. Use "pip" instead "pip3" as Sam mentioned above.‬
+
+‪4 months ago‬
+
+
+
+
+
+Programming Assignment 1: Survive -
+7 comments • ‪4 months ago‬
+
+
+
+‪Lakkaraju n (talkcontribs)‬
+‪Hello, I have doubt regarding "Programming Assignment 1 (i.e. Survive) in Test Case 2 Input:(s, n, m) = (12 9 8) Output: NO" According to my understanding, if n < m, output should be "NO". But, in this case, n > m. i.e. poor person can buy food (8) which is less the day max limit (i.e. 9 ). Can you please check the question and confirm whether my understanding is correct or not? Thanks, Raju.‬
+
+‪4 months ago‬
+
+
+
+‪Mt4descentis (talkcontribs)‬
+‪True. But this is one of the conditions. Try enumerating all the possibilities. What if you buy every day with the given constraint. Can you survive? Please check once :-) NOTE: What will happen on Sunday?‬
+
+‪4 months ago‬
+
+
+
+‪Chaya (talkcontribs)‬
+‪sir please help in understanding logic of this question‬
+
+‪4 months ago‬
+
+
+
+‪Shubham Sood (talkcontribs)‬
+‪I'm also not able to understand the question. Elaborate it for better understanding.‬
+
+‪Edited 4 months ago‬
+
+
+
+‪Mkrishna2111 (talkcontribs)‬
+‪i am facing \n problem during no condition‬
+
+‪4 months ago‬
+
+
+
+‪Mkrishna2111 (talkcontribs)‬
+‪if (((N * 6) < (M * 7) and S > 6) or M > N): print("NO",end="") this the condition for NO‬
+
+‪4 months ago‬
+
+
+
+‪Sam (talkcontribs)‬
+‪<pre> S – Number of days you are required to survive. N – Maximum unit of food you can buy each day. M – Unit of food required each day to survive. It is a Monday. Step 1: You buy N items and eat M items. There are two possibilities. a. (N > M) You may buy excess of what you really eat. So, the remaining items are accumulated. b. (N < M) ie. You buy less quantity, so you can not survive. Step 2 : Since Sunday is a holiday, you can not buy food. So the remaining items must be sufficient on Sunday. If not, you can not survive. Step 3: Calculate how many items are required to survive for S no. of days. Find out how many times you need to buy items. Hint : you may gave to use a function to find the ceiling of a value. </pre>‬
+
+‪Edited 4 months ago‬
+
+
+
+
+
+Week 8: Anagrams , Void in 1st logic
+2 comments • ‪4 months ago‬
+
+
+
+‪Yashipro13 (talkcontribs)‬
+‪In the first logic of anagram,if we sum up the ascii value of both the strings, the code may give incorrect output in any case like following scenario string 1 : ad string 2 : bc The code will say anagrams because ascii value sum is same.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪very nice. i have given two other logic in lecture notes of week8. faculty too has given sorted() one logic. You may try for that.‬
+
+‪4 months ago‬

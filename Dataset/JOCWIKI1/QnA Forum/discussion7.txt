@@ -1,0 +1,592 @@
+how to install gmplot in windows 10 32 bit Operating System?
+2 comments • ‪3 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Question asked by rajavaradhan2000@gmail.com‬
+
+‪3 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Go to Python console in Anaconda and type pip install gmplot‬
+
+‪3 months ago‬
+
+
+
+
+
+number pattern
+13 comments • ‪4 months ago‬
+
+
+
+‪Kingsly (talkcontribs)‬
+‪def numpat(n):‬
+
+‪   num = 1‬
+ 
+
+   for i in range(0, n): 
+     
+       
+       num = 1
+     
+ 
+       for j in range(0, i+1): 
+         
+              
+           print(num,end=' ' ) 
+         
+           
+           num = num + 1
+     
+       
+       print("") 
+ 
+n = input() n=int(n) numpat(n)
+
+‪output:‬
+‪1 \n 1 2 \n 1 2 3 \n 1 2 3 4 \n‬
+‪expected output:‬
+‪1\n 1 2\n 1 2 3\n 1 2 3 4‬
+‪how to remove \n at the end of the last row‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Following code may help you.‬
+def numpat(n):
+   num = 1
+   for i in range(0, n): 
+       num = 1
+       for j in range(0, i+1):
+           if(j ==i):
+               print(num,end='' )
+           else:
+               print(num,end=' ' ) 
+           num = num + 1
+       if(i!=n-1):
+           print("")
+       else:
+           print("",end="")
+ 
+n = input()
+n=int(n)
+numpat(n)
+
+
+‪Edited 4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪add this small code in I loop‬
+if(i = n-1):
+   print(end = "")
+else:
+   print()
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪SachinKr, she has to remove space also which is available at the end of each line‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪I just answered her question... She asked "how to remove \n at the end of the last row" ‬
+I think you misread/skip her words. 
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪i m not finding your mistake, u did right. i didn't miss her words. i saw her code properly, you probably miss to see.‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪I can see other mistakes too. But i never give full code to anyone even though i can. Bcz it will stop her leaning phase.‬
+They will just copy paste the code. You learn more when you find-out solutions your own. Otherwise google is there..
+.they can search every thing
+‪Ex: Challenge question...I can see almost all ans were copied from google. ‬
+Everyone is using functions which were not taught yet. 
+
+‪Edited 4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪I have only modified the code she gave.‬
+
+‪4 months ago‬
+
+
+
+‪Pratiyush (talkcontribs)‬
+‪def a(b):‬
+‪   for i in range(1,b+1):‬
+       for j in range(1,i+1):
+           print(j,end=" ")
+       print()
+b=int(input()) a(b)
+‪this is my code. it is saying wrong output.please help me‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪please add the code to test last element in each row and last element, and put print(j,end="").‬
+
+‪4 months ago‬
+
+
+
+‪Kingsly (talkcontribs)‬
+‪guys first of all I'm a boy‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪thx for correction‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪ok, kingsly bhai.‬
+
+‪4 months ago‬
+
+
+
+
+
+counter spiral
+3 comments • ‪4 months ago‬
+
+
+
+‪Mkrishna2111 (talkcontribs)‬
+‪can any one help in counter spiral i am unable to print the inside values for ex:in 4X4 i am going till 1 5 9 13 14 15 16 12 8 4 3 2‬
+
+‪4 months ago‬
+
+
+
+‪Mkrishna2111 (talkcontribs)‬
+‪i got it now‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪glad to know that..‬
+
+‪4 months ago‬
+
+
+
+
+
+Unable to take input as matrix
+2 comments • ‪4 months ago‬
+
+
+
+
+
+How to Remove Space before newline(\n) of matrix
+One comment • ‪4 months ago‬
+
+
+
+‪Mkrishna2111 (talkcontribs)‬
+‪a=[] r,c = input().split() r = int(r) c = int(c) for i in range (r):‬
+‪   l=[]‬
+   a.append(list(map(int, input().rstrip().split())))
+   
+def spiral(m,n,a):
+‪   k=0                                    ‬
+   l=0                                    
+   while(k<m and l<n):
+       for i in range(k,m):              
+           print(a[i][l],end=" ")
+       l+=1
+       for i in range(l,n):              
+           print(a[m-1][i], end=" ")                      
+       
+       m-=1                               
+       if(l<n):                           
+            for i in range(m-1,k-1, -1): 
+               print(a[i][n-1],end=" ")
+       n-=1                              
+       if(k<m):                          
+           for i in range(n-1,l-1,-1):       
+               print(a[k][i],end=" ")
+       k+=1
+       
+spiral(r,c,a) its working in lappy but showing error Actual Output 3 1 2 3 4 5 6 7 8 9 1 4 7 8 9 6 3 2 5 Traceback (most recent call last):\n
+‪ File "test.py", line 2, in <module>\n‬
+   r,c = input().split()\n
+ValueError: not enough values to unpack (expected 2, got 1)
+
+‪4 months ago‬
+
+
+
+
+
+Anticlockwise spiral
+7 comments • ‪4 months ago‬
+
+
+
+‪Shubham Sood (talkcontribs)‬
+‪Help me in correcting the code‬
+
+‪4 months ago‬
+
+
+
+‪Shubham Sood (talkcontribs)‬
+‪k = 0 l = 0‬
+‪mat = [] for i in range(1,a+1):‬
+‪ l = list(map(int, input ().split ()))‬
+ mat.append(l) 
+     
+ 
+while (k < a and l < a) :
+‪ if (l < a):‬
+   for i in range(k, a) :
+     print(mat[i][l], end = " ") 
+             
+   l += 1 
+   
+ if ( k < a) :
+   for i in range(l,a) :
+     print(mat[a - 1][i], end = " ") 
+             
+   a -= 1    
+             
+ for i in range(a-1, k-1,-1) :
+   print(mat[i][a- 1], end = " ") 
+             
+   a -= 1 
+        
+ for i in range(a-1, l-1,-1) : 
+   print(mat[k][i], end = " ") 
+             
+ k+=1
+
+‪4 months ago‬
+
+
+‪Mannukr10 (talkcontribs)‬
+‪row and column are the same. you -1 double times thinking it two different variable.‬
+
+‪4 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪n=0 def spiralPrint(m,n,a):‬
+‪ k=0;l=0‬
+ while(k<m and l<n):
+   for i in range(k,m):
+     print(a[i][l],end=" ")
+   l+=1
+   for i in range(l,n):
+     print(a[m-1][i],end=" ")
+   a-=1
+   if(k<m):
+     for i in range(m-1,k-1,-1):
+       print(m[i][n-1], end=" ")
+     a-=1
+   if(l<n):
+     for i in range(n-1,l-1,-1):
+       print(m[k][i], end=" ")
+     k+=1
+a=[] l1=[] m=int(input()) n==m for i in range(1,m+1):
+‪ l1=list(map(int,input().split()))‬
+ a.append(l1)
+spiralPrint(m,n,a)
+‪it is compiling correctly but output is not displayed‬
+
+‪4 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪make n=m instead of n==m‬
+
+‪4 months ago‬
+
+
+
+‪Shubham Sood (talkcontribs)‬
+‪Expected output 1 4 7 8 9 6 3 2 5 Actual output 1 4 7 8 9 6 3 3 2‬
+
+‪Expected output 46 35 28 29 8 1 43 17 16 Actual output 46 35 28 29 8 1 43 43 17‬
+
+‪Expected output 14 35 5 13 29 47 50 22 19 49 47 10 48 3 19 29 25 29 49 47 37 4 33 15 49 Actual output 14 35 5 13 29 47 50 22 19 49 47 10 48 48 3 19 29 25 29 49 4 47 10 10 33 15‬
+
+‪Expected output 26 6 15 21 11 11 34 34 18 6 46 25 41 39 45 33 16 25 12 16 20 8 32 43 24 29 4 39 34 4 29 32 35 26 7 35 22 15 20 41 32 47 23 47 11 46 32 35 12 11 7 22 17 17 17 34 30 26 41 19 44 36 11 26 41 49 27 3 27 40 11 20 13 44 21 49 43 29 50 22 38 Actual output 26 6 15 21 11 11 34 34 18 6 46 25 41 39 45 33 16 25 12 16 20 8 32 43 24 24 29 4 39 34 4 29 32 35 26 7 35 22 15 44 36 11 26 41 46 12 16 20 8 32 43 43 7 22 17 17 17 34 30 26 41 44 38 29 27 35 20 8 32 32 11 27 40 11 20‬
+
+
+‪Not getting correct output Please correct the code‬
+
+‪4 months ago‬
+
+
+
+‪Mannukr10 (talkcontribs)‬
+‪I also got similar problems in older assignment. When I don't get answer, I just make "+1" in "for" loop or "if" condition. Try one by one. Hope you get the correct answer.‬
+
+‪4 months ago‬
+
+
+
+
+
+In printing pattern how to remove space at end before \n
+5 comments • ‪4 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪In printing pattern how to remove space before \n‬
+
+‪4 months ago‬
+
+
+‪Sachinkr (talkcontribs)‬
+‪Use logic :‬
+There is hidden element in print command. Which we can use that to remove extra space after elements. 
+its end=" "
+default value : end = "\n"  \n new line
+If you removed \n and place space(" ") it will add space after each print. 
+Think little how you can use it to fulfill your requirement. 
+
+‪Edited 4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪you have to write logic for the last line to be printed, and do not add space in it.‬
+
+‪4 months ago‬
+
+
+
+‪Pratiyush (talkcontribs)‬
+‪it's not helping. please tell me the solution how to remove that. i'm stuck on it.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪See the following sample program. You can modify your code accordingly.‬
+‪for i in range(n):‬
+if(i==n-1):
+        print(i,end="")
+else:
+        print(i," ")
+
+‪Edited 4 months ago‬
+
+
+
+
+
+turtle
+4 comments • ‪4 months ago‬
+
+
+
+‪Pragati srivastava (talkcontribs)‬
+‪Facing this error while using turtle lib:‬
+‪module 'turtle' has no attribute 'Turtle'‬
+‪Can anyone help me with this? Thankyou.‬
+
+‪4 months ago‬
+
+
+
+‪Sam (talkcontribs)‬
+‪Turtle is not an attribute. It is a method. Use turtle.Turtle()‬
+
+‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪put () after it‬
+
+‪4 months ago‬
+
+
+
+‪Pragati srivastava (talkcontribs)‬
+‪still getting the same error, though i have used it as method and not as an attribute. tur=turtle.Turtle()‬
+
+‪4 months ago‬
+
+
+
+
+
+in counter clockwise spiral i have defined m and n for rows and columns. in order to be m and n to have same values how to use input
+One comment • ‪4 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪n counter clockwise spiral i have defined m and n for rows and columns. in order to be m and n to have same values for square matrix how to use input‬
+
+‪4 months ago‬
+
+
+
+
+
+snake and ladder error in choice
+4 comments • ‪4 months ago‬
+
+
+
+‪Palak (talkcontribs)‬
+‪In if condition when i press 0 to quit, the program is not break it work like 1 to continue when i press 0‬
+
+‪4 months ago‬
+
+
+
+‪RajaMeenakshi (talkcontribs)‬
+‪Provide the condition with 0 as string, i.e., if c == "0" or get the input for 0 using the command input() and typecast it to integer using int(). Follow any one of the above methods.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Please try for code in lecture notes at http://sccilabs.org/jocwiki/index.php/Lecture_Notes:_Week_7#Snakes_and_Ladders_By_Ms.Ami_Tusharkant_Choksi‬
+
+‪4 months ago‬
+
+
+
+‪Palak (talkcontribs)‬
+‪when i run the program the command prompt is open by default‬
+
+‪4 months ago‬
+
+
+
+
+
+Indian National Olympiad in Informatics, 2007 I need some help in solve this problem
+One comment • ‪4 months ago‬
+
+
+
+‪Rohit09 (talkcontribs)‬
+‪(Indian National Olympiad in Informatics, INOI, 2007) In the pre-smartphone era, most mobile phones with numeric keypads had a private dictionary of words to allow users to type messages quicker. On a typical phone of this type, each number key is assigned a subset of the alphabet {a,b,…,z}: 2 is assigned the subset {a,b,c}, 3 is assigned {d,e,f}, 4 is assigned {g,h,i}, 5 is assigned {j,k,l}, 6 is assigned {m,n,o}, 7 is assigned {p,q,r,s}, 8 is assigned {t,u,v} and 9 is assigned {w,x,y,z}. When the user types a sequence of numbers, this sequence is mapped to all possible words that can be constructed from the key assignment. For instance, if the user types 66, this could correspond to any one of the letter sequences "mm", "mn", "mo", "nm", "nn", "no", "om", "on" or "oo". These letter sequences are looked up in the dictionary stored in the phone and all matches are reported. For instance, if the phone's dictionary contains only "on" and "no" from this set of sequences, the user will be offered a choice of "on" or "no" to insert in the message. Similarly, the input 4663 might be interpreted as either "good" or "home". An input sequence may have a unique interpretation---for example, the only word in the dictionary matching the input 28 may be "at". Other sequences may not match any word in the dictionary—for instance, 99999. Your task is the following. Given the typical assignment from number keys to letters of the alphabet given above and given a dictionary of words, report the input sequence that matches the largest number of words in the dictionary. For example, if the dictionary consists of the words {at,on,good,no} then the answer is 66, because 66 matches both "on" and "no" while no other input matches more than one word in the dictionary. On the other hand, with the dictionary {at,on,good,no,home,gone}, the answer is 4663, because 4663 matches three words, "good", "home" and "gone" in the dictionary. Solution hint For each word in the input, compute the number key sequence that creates it by inverting the mapping 2→{a,b,c}, 3→{d,e,f} etc. Store the number corresponding to the word in an array. After reading all the input, sort the numbers in the array. Input format The first line of input is an integer M, the number of words in the dictionary. This is followed by M lines of input. Each line contain one word from the dictionary, where a word is sequence of characters from the lowercase alphabet {a,b,c,…,z}. Note: Each word in the dictionary is, in general, an arbitrary sequence of letters from {a,b,c,…,z}. In particular, it is not assumed that the words stored in the dictionary are valid words in English or any other language. Output format A single line containing the input sequence that matches the maximum number of words in the dictionary. If multiple input sequences qualify for the maximum number of matches, it suffices to report any one. Test data For all inputs, 1 ≤ M ≤ 100000. Each word in the dictionary is at most 8 characters long. In 50% of the inputs, 1 ≤ M ≤ 1000. Example Here is the sample input and output corresponding to the example discussed above. Sample input 1 4 at on good no Sample output 1 66 Sample input 2 6 at on good no home gone Sample output 2 4663‬
+
+‪Edited 4 months ago‬
+
+
+
+
+
+turtle
+One comment • ‪4 months ago‬
+
+
+
+‪Seenusrini (talkcontribs)‬
+‪turtle.bgcolor("black") seurat=turtle.Turtle() width = 5 height=7 dot_distance = 25 seurat.setpos(-250,250) def spiral(m,n,a) "what is the error in the above code? In the console it is showing as "module turtle has no attribute bgcolor‬
+
+‪4 months ago‬
+
+
+
+
+
+installation of gmplot
+4 comments • ‪4 months ago‬
+
+
+
+‪Sam (talkcontribs)‬
+‪I have installed both anaconda and Ipython. If I use import some modules in Ipython, I get module not found. If I try pip command in my command prompt, I get requirements already satisfied in anaconda. What should I do?‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪you have to install modules...search and install required modules.‬
+
+‪4 months ago‬
+
+
+
+‪Sam (talkcontribs)‬
+‪I resolved this issue by giving the command py -3 -m pip install gmplot in my command line Thank you any way‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪It is python3 -m pip install gmplot‬
+
+‪4 months ago‬
+
+
+
+
+
+ImportError: No module named 'numpy'
+3 comments • ‪4 months ago‬
+
+
+
+‪Sakhayadeep (talkcontribs)‬
+‪The error message: ImportError: No module named 'numpy' is showing when i try to submit Week 6 Programming assignment 3.‬
+
+‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪numpy is not a builtin module. You can only use builtin standard modules on an online judge. Try a solution without using numy, it's possible‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪numpy is not available on NPTEL portal. If you want to use, in your system, you have to install numpy. On NPTEL, you have to use your solution without numpy.‬
+
+‪4 months ago‬

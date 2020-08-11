@@ -1,0 +1,447 @@
+week-10 data compression
+8 comments • 5 months ago
+Meda harsha (talkcontribs)
+i am getting TypeError: '<=' not supported between instances of 'int' and 'tuple'
+
+
+for i in range(img.size[0]):
+
+   for j in range(img.size[1]):
+       if(pixelMap[i,j]>=0 and pixelMap[i,j]<=31) :
+           pixelNew[i,j] = 0
+       
+       elif(pixelMap[i,j]>=32 and pixelMap[i,j]<=63) :
+           pixelNew[i,j] = 1
+how to remove this type error
+
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+When i printed pixelMap[i,j] it printed a tuple. so i have worked on the code below. kindly go through it.
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+comment the if loops try printing pixelMap[i,j] and see what it returns.
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+harsha, run the following code with comp = 2,4,8,16,32 and see how the pictures look like. pixelmap and pixel new are tuples. i dont know how their code worked. run the following code with any picture. I dowloaded a colour india map and saw what is the difference.
+
+
+
+import numpy
+
+
+from PIL import Image
+
+
+im=Image.open("india_map.jpg")
+
+
+comp=32
+
+
+pixelmap=im.load()
+
+
+m=numpy.asanyarray(Image.open('india_map.jpg'))
+
+
+print(m) # orignial matirx
+
+
+img=Image.new(im.mode,im.size)
+
+
+pixelnew=img.load()
+
+for i in range(img.size[0]):
+
+
+
+   for j in range(img.size[1]):
+
+
+       temp=[1,2,3]
+
+
+       for k in range(3):
+
+
+         temp[k]=int(pixelmap[i,j][k]/comp)
+
+
+       pixelnew[i,j]=tuple(temp)
+
+
+       #print(pixelnew[i,j])
+       
+       
+img.save('india_map1.jpg')
+
+
+j=numpy.asanyarray(Image.open('india_map1.jpg')) #reduced matrix
+
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+I posted the code in the Super user notes. instead of writing so many if statements i just divided the pixelmap by the number and took the integer portion of it, which made to play with the code so that i can see what happens when i change the values of compression
+
+Reply 5 months ago
+Meda harsha (talkcontribs)
+thank you i got the output by your method
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+Kindy make it a habbit of sharing your experience in user forums when time permits you will gain a lot by learning from the mistakes of others.
+
+Reply 5 months ago
+Meda harsha (talkcontribs)
+yes, thank you i will take your advice
+
+Reply 5 months ago
+
+All Assignments answers week 10. Friends share you programs too please.
+6 comments • 5 months ago
+Arunkumar (talkcontribs)
+Forgive me for being busy. This week's Assignment was fun (I mean looking at answers and comparing with my solutions). I understood in a different way and still was able to finish Assignments 2: Jump. Please go through my code and you are welcome to laugh. :D
+
+A1-Special Character - code:
+I experimented with this assignment. I wanted to see if we can do it all in a single "print", and I did. :) List comprehension is such a beautiful part in Python. I am Loving it.
+
+
+-----------
+# METHOD :1
+-----------
+print(*['NO' if ''.join(input().split()).isalnum() else "YES"],sep="",end="")
+
+-----------
+# METHOD :2
+-----------
+S = input()
+def anythingspecial(a):
+    a=''.join(a.split())
+    if a.isalnum():
+        return 'YES'
+    return 'NO'
+
+print(anythingspecial(S), end="")
+
+-----------
+# METHOD :2.1
+-----------
+S = input()
+def anythingspecial(a):
+    if ''.join(a.split()).isalnum():
+        return 'YES'
+    return 'NO'
+
+print(anythingspecial(S), end="")
+
+A2-Jumps - code:
+This is the assignment I was talking about. Still it works... because of the if condition. This could be wrong too. I admit that the question is still confusing for me.
+
+A = int(input())
+
+def possible(a):
+  if a == 0 or a%3 == 0:
+    return "YES"
+  else:
+    return "NO"
+
+print(possible(A), end="")
+
+A3-Calculate - code:
+import math
+D = list(map(int,input().split(',')))
+C = 50; H = 30;
+Q = [round(math.sqrt((2*C*d)/H)) for d in D]
+print(*Q,sep=",", end="")
+
+For those who didn't understand the Q "comprehension" part
+
+#Comprehension Part.
+for d in D:
+    Q.append(round(math.sqrt((2*C*d)/H)))
+
+NOTE: Please also check Sample solutions, Provided by instructor they are interestingly different approach/methods.
+
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+Jumps is a puzzle . Here is my code which is almost similar to provided by TAs
+
+
+n=int(input())
+m=n%6
+l=[0,1,3]
+if m in l:
+  print("YES",end="")
+else:
+  print("NO",end="")
+
+Reply 5 months ago
+Arunkumar (talkcontribs)
+I love to see different approaches friend. Your code is simple and good. :)
+
+Reply 5 months ago
+Descentis (talkcontribs)
+I hope you people enjoyed the assignments :-)
+
+Reply 5 months ago
+Arunkumar (talkcontribs)
+Yes Assignments were interesting. :)
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+For Next Semester if possible consider giving different assignments for different people ie four or five assignments under programming assignment 1 and so on.. So that they will not copy. Because some one is posting the assignment solutions in youtube, excpet for few students who are trying their best, for the rest the course has become just copy and paste. Any how since they have not gone through the material thoroughly they will have issues in scoring in the final exam.
+
+Reply Edited 5 months ago
+
+Assignment 9:question 5
+One comment • 5 months ago
+AI (talkcontribs)
+How can quantitative be correct. We cannot analyze the whole body of work done by any author and if we are doing a quantitative study the purpose of analysis is defeated. I think we are doing a qualitative analysis as we are studying the author's style of writing, words commonly used by the author and so on. This cannot be called quantitative study. Else I request you to elaborate the difference between the two as interpreted in this answer. Thank You.
+
+Reply 5 months ago
+
+ASSIGNMENT 9: QUESTION NO. 5 (Wrong Answer)
+17 comments • 5 months ago
+Require HINTS FOR WEEK 10 PROGRAMMING ASIGNMENTS2 Jumps
+8 comments • 5 months ago
+Snehal (talkcontribs)
+Require HINTS
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+The given steps are one step, two steps and three steps. ie after one step again you cannot take only one step. you have to take two steps only and after two steps you have to take three steps not one step or two steps. No matter what the final destination is you will be either on the spot, or one step away from it or One+two= three steps or one+two+three=six steps away from the destination Since it is always in one+two+three=six. So you can group them in steps of six and see how many steps are remaining either one step or three steps or have you already reached the destination(Six steps=zero steps)
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Suppose 57. So 57=6*9+3 so 3 means i can achieve it because 1+2=3
+
+
+
+1000=6*166+4. So 4 cannot be achieved because only possibilities are 0,1,3, as 6 is nothing but zero.
+
+Reply Edited 6 months ago
+GhayathriJ (talkcontribs)
+Thank you for the hints.
+
+Reply 5 months ago
+Venkata Swathi R (talkcontribs)
+dest = int(input())
+
+x = 0 f = 0 i = 0 l = [1,2,3]
+
+while True:
+
+ if dest == x:
+   f = 1
+   break
+ elif dest < x:
+   f = 0
+   break
+ else:
+   x = x + l[i]
+   i = (i + 1) % 3
+   
+if f == 1:
+
+ print('YES')
+else:
+
+ print('NO')
+
+but this is not working for hidden test cases
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+I tested your code for variable dest with values from 7 to 18. it is working fine. They have already mentioned your program needs to be efficient. This is exactly what they said you should not do. I have given dest = 10**18. in spyder looks like it is going to take good amount of time .
+
+As i said in hints earlier only the last steps are important. why are doing calculations from the beginning till the end.
+
+1+2+3=6 after 6 say 7,8,9,10,11,12 I am least bother about the first 6 steps. I will calculate (7-6),(8-6),(9-6),(10-6),(11-6),(12-6). What ever value i get i will check if they can be achieved.
+
+
+case 1: So going forward in this manner suppose if dest =53 I am least bothered about the first 48 steps. i will check is 53-48 = 5 will check weather 5 can be achieved with the given steps pattern
+
+
+case 2: suppose dest=1000 I am least bothered about the first 996 steps(6*166) and i will focus on only 1000-996=4 and will check weather the 4 can be achieved with the given pattern
+
+
+case 3 Suppose dest=15769 ( a Random number) and the number closet to it is 15768(2628*6) and the difference i will be focused is 15769-15768=1 and will check if 1 can be achieved or not..
+
+.
+in case 1, if i know 5, in case 2 if i know 4 and in case 3 if i know 1, ie sufficent for me. so how are these numbers achieved they are nothing but remainders when divided by 6.
+
+
+After this the decide the possible remainders you can have
+
+they are 1, 1+2=3,1+2+3=6 6 is nothing but zero. so the remainders you can have are 0,1,3. Hence in short get the remainder and see if it equal to 0,1,3 you can achieve it else you can drop.
+
+Others may comment on how they have achieved.
+
+
+For the last 10 minutes when i gave dest=10*18, your code is still running. I dont know wheather browser will wait that much time to get the response.
+
+Reply 5 months ago
+Pallavikhatri (talkcontribs)
+thank you. i understood the problem after your explanation
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+simple words take the number divide it by 6 and get the remainder. check if the remainder is 0,1 or 3. if is 0,1,or 3 print yes other wise no. I was just trying to explain whats happening here with out using the word remainder
+
+Reply 5 months ago
+
+week - 10 programming assignment - 3
+5 comments • 5 months ago
+Naveena418 (talkcontribs)
+d=[int(i) for i in input().split(",")] c=50 h=30 l=len(d) f=[] for i in range(l):
+
+   q = ((2 * c * d[i]/h)**(0.5)
+   f.append(round(q))
+for i in range(l):
+
+ if i==l-1:
+   print(f[i],end="")
+ else:
+   print(f[i],end=",")
+      
+I am getting 8th line as error. I am not able to understand the error.
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+My observation with python is if it says an error in a particular line and if you dont find an error in that particular line, the error will be definitely in the previous line. if i understand your code properly the 8th line is f.append. there is no error in this line. in the previous line if you see you have opened 3 brackets and closed only two brackets. may this could be an error. kindly check
+
+Reply 5 months ago
+Naveena418 (talkcontribs)
+Thank You.It's working.
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+I really appreciate you giving feedback. Thanks a lot.
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+If some line is giving error and if i am not able to understand it, i generally remove that line from the code and see what happens. then the error is either shifted to next line or the error is removed.if the error is shifted to next line, you can repeat the process or removing next line. if the error is eliminated that means that line has some error. if the error is shifted to next line may be the previous line also may have the error.
+
+Reply 5 months ago
+
+assignment9 question 5
+4 comments • 5 months ago
+Subbareddy (talkcontribs)
+Stylometry is the quantitative study of literary style through computational distant reading methods.
+
+in assignment evaluation its taken as qualitative study of literary. Please cross check sir.
+
+Reply 6 months ago
+AI (talkcontribs)
+I think the correct answer should be qualitative as the style of writing is checked and not quantitative as the entire quantity of an author's work is not checked. I feel it has been evaluated correctly. But then the video transcripts say differently. This needs a clarification. Thanks
+
+Reply 6 months ago
+Simran (talkcontribs)
+Q5 will be reevaluated
+
+Reply 5 months ago
+Venkata Swathi R (talkcontribs)
+it is quantitative
+
+Reply 5 months ago
+
+Assignment:9 question number:3 wrong answer
+6 comments • 5 months ago
+Nandini25998 (talkcontribs)
+G.nodes() alone prints tuple only know . along with print function it prints list . you did not asked with print function know then tuple is the answer right? Pls give us explanation to this question
+
+Reply 6 months ago
+Raghav (talkcontribs)
+You are right, it returns tuple only.
+
+Reply 6 months ago
+AI (talkcontribs)
+Yes. it returns tuples only. Please re evaluate. Thank you.
+
+Reply 6 months ago
+Simran (talkcontribs)
+It returns a list not tuple.
+
+Reply 5 months ago
+Raghav (talkcontribs)
+Answer should be tuple of nodes because in console we can see after writing G.nodes() we get output Out[4]: NodeView((1, 2, 3, 4, 7, 9)) which is a tuple. Documentation also says it returns tuple. When we use print(G.nodes()) then it returns list. So, according to question answer must be tuple.
+
+Reply 5 months ago
+Venkata Swathi R (talkcontribs)
+it is returning a list
+
+Reply 5 months ago
+
+many questions in quiz week9 are evaluated as wrong please reevalaute
+3 comments • 5 months ago
+Madhavi rp (talkcontribs)
+many questions in quiz week9 are evaluated as wrong please reevalaute
+
+Reply 6 months ago
+Simran (talkcontribs)
+They will be reevalusted
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+@simran. There are around 36 programming assignments and 12 quiz assignments. how is the final assignment score evaluated? Kindly also comment on the type of exam questions in the final exam and where we need to focuss. Do we have to remember python commands used in speech recognition image processing etc.
+
+Reply 5 months ago
+
+Please elaborate Tokenization
+2 comments • 5 months ago
+Kempu (talkcontribs)
+Please elaborate tokenization. How Tokenisation involves splitting sentences from the text. As I understood, it only involves splitting of the words from the text.
+
+Reply 6 months ago
+Simran (talkcontribs)
+It depends on the delimiter being used. If you use ., then it will split the text after every .
+
+Reply 5 months ago
+
+Exam admit card and change of exam city
+2 comments • 5 months ago
+Pallavikhatri (talkcontribs)
+Respected sir, From where can we get admit card for the exam? is exam exactly for 3 hrs. can we change our city of exam from the options we gave?
+Reply 6 months ago
+Simran (talkcontribs)
+Contact lakshmi@nptel.iitm.ac.in
+Reply 5 months ago
+
+Week 9: Quiz question no.4
+2 comments • 5 months ago
+Kempu (talkcontribs)
+scipy.misc.read(), infact, gives error. This is also evident in the programming screen cast. Hence the question itself is wrong as error or none of the above are not given in the answers. Instead of scipy.misc.read() , scipy.misc.imread() gives the result. Please check the programming screen cast. Please re-evaluate this question.
+Reply 6 months ago
+Simran (talkcontribs)
+This will be deleted from evaluation
+Reply 5 months ago
+
+The value of a can be as large as 10**18
+7 comments • 6 months ago
+Praveen897 (talkcontribs)
+How to declare an integer variable that can store such a large variable.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+why do you need to declare it. if you read it as input, it will automatically declare itself. if not what error are you getting
+Reply 6 months ago
+Praveen897 (talkcontribs)
+after submission of the Assignment program, i am getting zero marks. all the public test cases are passed.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+what is your approach. i have given i=10**!8 print(i) print(type(i)) it is properly printing the i value and type as integer. The reason you are getting zeros could be the reason they have mentioned in the description. your program should be efficient other wise it will give run time error. I am not sure how runtime error will result in. If you could give your approach we could discuss further. I have discussed the way i have approached this in comment to other users question. kindly go through it.
+Reply 6 months ago
+C++veteran (talkcontribs)
+Do a dry run on your copy. Write all jump places upto a point and try to find a pattern. Then you'll see you don't have to worry about large numbers. Hint:- It has something to do with no. 3
+Reply Edited 6 months ago
+Praveen897 (talkcontribs)
+Done. got the answer. my first program is taking some time to process/execute larger numbers. so i modified the code. now it is working fine, and l got 100.0/100.0 marks
+Reply 6 months ago
+This comment was deleted by Mnikitha24 (history)
+
+Special Characters for Programming assignment 1
+One comment • 6 months ago
+Kamalakar (talkcontribs)
+Special Characters m='''!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~''' m=list(m) special characters are to be enclosed in tripple quotes.
+Reply Edited 6 months ago

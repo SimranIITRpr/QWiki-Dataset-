@@ -1,0 +1,945 @@
+Assignment 10 : Questions 6 & 7
+16 comments • ‪3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪Dear All,‬
+‪This is regarding the purpose as mentioned in the header line of the topic.‬
+‪Firstly, the answer to Question 6 of Assignment 10 should be the 4th option, i.e., None of the above, as the other closest 2nd option, i.e., x is 3*3 matrix comprising of zeros is incorrect.‬
+‪Reason - 1: Actually instead of import numpy as np x=np.zeros(3,3) [i.e, one more parenthesis () is missing the absence of which would lead to the generation of an error message "TypeError: data type not understood"] it should have been import numpy as np x=np.zeros((3,3)) [i.e, presence of one more parenthesis () would not generate any error message thereby leading to a 3*3 matrix comprising of zeros]‬
+‪Secondly, the answer to Question 7 of Assignment 10 should also be the 4th option, i.e., None of the above, as the other closest 3rd option, i.e., (2,3) is incorrect.‬
+‪Reason - 2: Now here the given function, i.e., a.shape() has got parenthesis which would produce an error message "TypeError: 'tuple' object is not callable". Instead of the parenthesis (), i.e., a.shape, the correct answer would have been (2,3).‬
+‪Hence, my understanding along with the above explanations says that the answers to these two specific questions need to be re-evaluated.‬
+‪So kindly share your opinion in this regard.‬
+‪Thank you!‬
+
+‪3 months ago‬
+
+
+
+‪Astrixsanath14 (talkcontribs)‬
+‪I totally agree to this!!‬
+
+‪3 months ago‬
+
+
+
+‪ShailendraRai (talkcontribs)‬
+‪Agree. there was syntex error for option a, so answer should be d(none of above)‬
+
+‪3 months ago‬
+
+
+
+‪ShailendraRai (talkcontribs)‬
+‪Agree. there was syntex error for option b, so answer should be d(none of above)‬
+
+‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪agree‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪Agree me to‬
+
+‪3 months ago‬
+
+
+
+‪Nisarg (talkcontribs)‬
+‪i also agree‬
+
+‪3 months ago‬
+
+
+
+‪Aruna (talkcontribs)‬
+‪I also totally agree.We knew logically the given answers are correct but I thought the syntax has to be also taken care of .A request to look into the matter.‬
+
+‪3 months ago‬
+
+
+
+‪Balakrishna (talkcontribs)‬
+‪Hi Sir/Leads,‬
+‪I have the same opinion. The answers have to be "None of the above" for questions 6 and 7 for Week 10 assignment.‬
+‪Can you please look into this and if possible re-evaluate the quiz for week 10.‬
+‪Thanks, Balakrishna‬
+
+‪3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪Dear Mates, Thank you for your valuable responses!‬
+
+‪Dear Sir/Madam,‬
+‪Whosoever is concerned in this regard, kindly look into the matter for re-evaluation especially for Questions 6 & 7 for Assignment 10.‬
+‪Many thanks in advance for your necessary action.‬
+
+‪3 months ago‬
+
+
+
+‪Hemanthv55 (talkcontribs)‬
+‪I also agree.‬
+
+‪3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪Hello Mates,‬
+‪Till now haven't got any response(s) from any of the concerned person(s) to consider for a re-evaluation of "Questions 6 & 7 of Assignment 10".‬
+‪Hence, requesting you to raise your concerns individually to the appropriate person whosoever is associated mainly with the re-evaluation part.‬
+‪Thank you!‬
+
+‪3 months ago‬
+
+
+
+‪Rakesh (talkcontribs)‬
+‪I raised it and sent an mail also.Let's see.‬
+
+‪3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪Okay. Thanks for the update, Rakesh!‬
+
+‪3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪Hi All,‬
+‪Just to update you all that one of our TA's Amit Kumar Verma has confirmed me by mail that these two specific questions 6 & 7 of Assignment 10 would be re-evaluated.‬
+‪In case, any one of you have any further updates in this regard then request you to let us know accordingly.‬
+‪Thank you.‬
+
+‪3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪Hello Mates,‬
+‪This is to further update you that the "Questions 6 & 7 of Assignment 10" have already been re-evaluated and the latest marks have now been properly reflected under the 'Progress' section of the course site.‬
+‪So all of you could now check whether the same has been done at your end or not.‬
+‪Thank you!‬
+
+‪3 months ago‬
+
+
+
+
+
+Image compression
+3 comments • ‪3 months ago‬
+
+
+
+‪Vaibhav sachdeva` (talkcontribs)‬
+‪I wrote the exact same code described in the video , but when I run it it's showing 'cannot write mode P as JPEG'‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪filetype u may have taken different.‬
+
+‪3 months ago‬
+
+
+
+‪Vaibhav sachdeva` (talkcontribs)‬
+‪filetype was jpg‬
+
+‪3 months ago‬
+
+
+
+
+
+[Problem] Regarding the Week 10 Programming Assignment 2 submission
+6 comments • ‪3 months ago‬
+
+
+
+‪Saiyerniakhil (talkcontribs)‬
+‪I passed all the 4 test cases https://ibb.co/dVuCg9 but While I click on submit it shows only 3 test cases have been passed https://ibb.co/ndMiM9‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪I tried 5 different implementation of the program to get 100/100. No need of using max. Use simple ones.‬
+
+‪3 months ago‬
+
+
+
+‪Pratiyush (talkcontribs)‬
+‪a= [int(x) for x in input().split()] a=list(a) s=sum(a) s1=[] for i in range(max(a)+1):‬
+‪   s1.append(i)                    ‬
+s2=sum(s1) diff=s2-s print(diff) I'm not getting full marks. please tell me what should i do
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪use len function to implement.‬
+
+‪3 months ago‬
+
+
+
+‪Rakesh (talkcontribs)‬
+‪As my understanding and the practicals shown in the videos there is some mistake in the evaluation.‬
+‪Question # 6:-import numpy as np x=np.zeros(3,3) What is x in the above code snippet?‬
+‪This one is not correct syntax so output will be an error. The correct answer should be 'None of the above'. Because either it should be x=np.zeros((3,3)) or x=np.zeros[(3,3]).‬
+
+‪Question #7:- If a is 2*3 numpy array, what would the function a.shape() return?‬
+‪Again answer should be 'None of the above'. Because as shown in tutorials videos shape is a property not a function and correct syntax should be 'a.shape' but in the question it is a trick (a.shape()).‬
+‪Based upon the practical demos these are correct outputs and can be cross checked. Please re-evaluate the assignment 10.‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Simran mam, replied that both those question will be reevaluated.‬
+
+‪3 months ago‬
+
+
+
+
+
+Programming Assignment 3 week 10
+5 comments • ‪3 months ago‬
+
+
+
+‪Ashuditya (talkcontribs)‬
+‪Can anyone please explain me, What we have to do, esp the input part.‬
+
+‪3 months ago‬
+
+
+
+‪Pratiyush (talkcontribs)‬
+‪a= [int(x) for x in input().split()] use this.‬
+
+‪3 months ago‬
+
+
+
+‪Ashuditya (talkcontribs)‬
+‪I was asking that, can anyone explain me the question. And regarding input, I just wants to know what they are replacing with -1 and so.‬
+
+‪3 months ago‬
+
+
+‪Sachinkr (talkcontribs)‬
+‪Suppose the values are 1,3,5 in sequence of 5. As you can see 2 and 4 is missing in this sequence. Instead 2 and 4 they inserted -1 in place of missing number and scramble it. So we get input as -1,5,-1,3,1 we have write to sort this sequence into(increasing order) like this: 1, -1, 3, -1, 5‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪initialize the array with all elements as -1, put the values at proper position. that's all‬
+
+‪Edited 3 months ago‬
+
+
+
+
+
+in rearrangement program
+5 comments • ‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪arr[i] += (arr[arr[i]] % n1) * n1 \n TypeError: list indices must be integers or slices, not str how to solve it‬
+
+‪3 months ago‬
+
+
+‪Sachinkr (talkcontribs)‬
+‪convert i into integer with int()‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪i seems not integer from the code. please share code.‬
+
+‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪i=int(0) def rearrange(arr, n1):‬
+‪ for i in range(0, n1): ‬
+   arr[i] += (arr[arr[i]] % n1) * n1 
+   for i in range(0, n1): 
+     arr[i] = int(arr[i] / n1) 
+def printArr(arr, n1):
+‪   for i in range(0, n1): ‬
+     print (arr[i], end =" ") 
+   print ("") 
+ 
+arr=[] n=input() for i in n:
+‪ arr.append(i) ‬
+n1 = len(arr)
+‪print ("Given array is") printArr(arr, n1)‬
+‪rearrange(arr, n1) print ("Modified array is") printArr(arr, n1)‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪n=input() is a string ONLY, irrespective of what you enter from the shell. arr[arr[i]] considers, arr[string], that's why it gives error.‬
+‪I guess, you actually want,‬
+‪arr=input().split(',')‬
+
+‪3 months ago‬
+
+
+
+
+
+programming assignment 1.
+9 comments • ‪3 months ago‬
+
+
+
+‪Pratiyush (talkcontribs)‬
+‪please give me alittle hint in programming assignment 1.‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪it's simple just use the formula that is given. for square root- (number)**0.5 use it. and remember all the answers in the round form‬
+
+‪3 months ago‬
+
+
+
+‪Pratiyush (talkcontribs)‬
+‪I couldn't get you. The question is‬
+‪"You are provided with a number D containing only digits 0's and 1's. Your aim is to convert this number to have all the digits same. For that, you will change exactly one digit i.e. from 0 to 1 or from 1 to 0. If it is possible to make all digits equal (either all 0's or all 1's) by flipping exactly 1 digit then output "YES", else print "NO" (quotes for clarity).‬
+‪Input Format: The first line of the input contains the number D made of only digits 1's and 0's.‬
+‪Output: Print 'YES' or 'NO' depending on whether its possible to make it all 0s or 1s or not. "‬
+‪what it has to do square root??‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪no-int(no)>=.5 then ceil(no) else floor(no)‬
+
+‪3 months ago‬
+
+
+
+‪Pratiyush (talkcontribs)‬
+‪i still can't get it!!!‬
+
+‪3 months ago‬
+
+
+‪Amichoksi (talkcontribs)‬
+‪You're talking of different problem and Rmanish told something else. I replied w.r.to Rmanish.‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪logic i told you, completely.‬
+
+‪3 months ago‬
+
+
+
+‪Aditianmol (talkcontribs)‬
+‪It's quite simple, just count the occurrences of 0's and 1's in the given number by either converting the given number to a list or treating it as a string. If any of the 2 digits have a single occurrence, then you can change it and hence answer is "yes" else the number can not be converted and therefore answer is "NO"‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Pratiyush (talkcontribs)‬
+‪thanks aditianmol.‬
+
+‪3 months ago‬
+
+
+
+
+
+programming Assignment 1 week 10
+4 comments • ‪3 months ago‬
+
+
+
+‪Pratiyush (talkcontribs)‬
+‪hello, I couldn't get the the logic to solve program by taking n as int; but took it as input inform of string and got desired output as "YES" "NO". I'm sharing my code, please give feedback whether its eligible or not. a=input() a=list(a) count0=int(0) count1=int(0) for i in range(len(a)):‬
+‪       if(a[i]=='0'):                                                                                        ‬
+           count0=count0+1                                                              
+           #print(count0)                                      
+       elif(a[i]=='1'):                                                       
+           count1=count1+1                                         
+           #print(count1)                                                                
+if(count0==1 or count1==1):
+‪   print("YES")                                                                         ‬
+else:
+‪   print("NO")‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪it seems fine. submit the code in NPTEL portal, you should get 100/100 score. If getting fine.‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪a=input()‬
+a=list(a) 
+count0=int(0)   ### Not required
+count1=int(0)   ### Not required
+for i in range(len(a)): 
+       if(a[i]=='0'):                                                                                        
+           count0=count0+1                                                              
+           #print(count0)                                      
+       elif(a[i]=='1'):                                                       
+           count1=count1+1                                         
+           #print(count1)                                                                
+if(count0==1 or count1==1):
+   print("YES")                                                                         
+else:
+   print("NO")
+
+
+
+Above code have no mistake. But if you think above is designed for Assignment1 week 10. Then you didnt understand the question.
+You code is counting how many zero's and one's
+are in input. If number of one and zero are equal. You are printing yes otherwise no.
+This is not assignment requirement.
+
+
+Question is :
+You are provided with a number D containing only digits 0's and 1's. Your aim is to convert this number to have all the digits same.
+For that, you will change exactly one digit i.e. from 0 to 1 or from 1 to 0. If it is possible to make all digits equal
+(either all 0's or all 1's) by flipping exactly 1 digit then output "YES", else print "NO"
+
+Question Explanation: Is possible to to make all zero's or all one's just by changing one(only one) digit from either (0 to 1) or (1 to 0)
+
+‪3 months ago‬
+
+
+
+‪Pratiyush (talkcontribs)‬
+‪I'm using using OR operator.‬
+
+‪3 months ago‬
+
+
+
+
+
+SPYDER SHOWING RIGHT OUTPUT BUT NOT THE ONLINE COMPILER OF NPTEL
+15 comments • ‪3 months ago‬
+
+
+
+‪Anu (talkcontribs)‬
+‪Hello friends, I was wrote a code for changing a digit of to 0 to 1 and vice versa (programming assignment 1) Though I'm getting the satisfactory output as per given example test cases in spyder ide but while executing the code online on nptel platform it's showing wrong output for the same two test cases I got right in spyder. If you allow I would like to share my code too for reference.‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Publicly sharing code is not recommendable. You share one to one or part of code which is creating problem.‬
+
+Or probably didn't understand the question properly.
+I cleared all 3 programs with 100/100. And didnt find any difficulty.  
+
+Even i find this week Programming assignment the Easiest if compared with last few weeks.
+
+‪Edited 3 months ago‬
+
+
+‪Karthik.c (talkcontribs)‬
+‪Hi.i have compiled my code on ide which is giving no wrong result even also when I was executing my code on nptel spider platform all the test cases were passed but I got only 75%. What was wrong with that?need help.‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪In which programming assignment you are facing issue? Tell me, my be i will provide few more test case so you can test your code and rectify the issues.‬
+
+‪3 months ago‬
+
+
+‪Afzalsayyed99 (talkcontribs)‬
+‪Sachin Brother I am getting 75 points in both assignment 1 and 2, can you help me, please. Amichoksi you also, You guys are saviours of JOC students.‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪First: Take pen and paper and execute code line by line and write down value of each variable. This way you can find-out your mistake and improve your coding.‬
+
+‪3 months ago‬
+
+
+
+‪Afzalsayyed99 (talkcontribs)‬
+‪Okay Brother, Thanks!‬
+
+‪3 months ago‬
+
+
+
+‪Mokarala harika (talkcontribs)‬
+‪In programming assignment 2 when we compile the code it is showing all test cases are passed but after submission it is showing 75/100 passed.can u plz give a solution to it..‬
+
+‪3 months ago‬
+
+
+
+‪Surapavankumar (talkcontribs)‬
+‪I am also facing same problem‬
+
+‪3 months ago‬
+
+
+
+‪Anu (talkcontribs)‬
+‪When I compiled and submitted my assignment, it's showing all test cases passed then and I'm got 100/100, quite strange though....‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪wao ...XD‬
+
+‪3 months ago‬
+
+
+
+‪Kartik20393 (talkcontribs)‬
+‪when i am compiling my code on nptel compiler only 2 out of 4 public test case are satisfied but when i submit the same code then 4 out of 4 private case are satisfied and it shows you scored 100/100.will it be considered for final grading.‬
+
+‪3 months ago‬
+
+
+‪Anu (talkcontribs)‬
+‪I faced the same situation. Don't worry. Everything should be fine as long as you get right set of outputs on the spyder ide. Just run your code and test cases there also once to be doubly sure.‬
+
+‪3 months ago‬
+
+
+
+‪Kartik20393 (talkcontribs)‬
+‪thanks‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪If it show 100/100 then it will be considered for final grading (Just keep Screen Shot)‬
+
+‪3 months ago‬
+
+
+
+
+
+in digit program
+3 comments • ‪3 months ago‬
+
+
+
+‪Revathy (talkcontribs)‬
+‪n=input() a=n[::-1] if(n==a):‬
+‪ print("YES")‬
+else:
+‪ print("NO")  ‬
+im getting 25/100
+
+‪3 months ago‬
+
+
+‪Sachinkr (talkcontribs)‬
+‪First understand the requirement then code accordingly. You code is not meeting question requirement. I explained it below in Pratiyush reply.‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Try other logic. For one program, i tried 5 logic, then got 100/100‬
+
+‪3 months ago‬
+
+
+
+
+
+in digit program
+5 comments • ‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪i =input()\n EOFError: EOF when reading a line how to solve it‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪here no prob. please share code‬
+
+‪3 months ago‬
+
+
+
+‪Ajabdeh (talkcontribs)‬
+‪If you use spider then sometime it is possible to get some unusual output. Then either restart the kernal or remove all variables or reopen the spider‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪t=int(input()) for i in range(t):‬
+‪ i=input()‬
+ count1 = 0
+ count0 = 0
+ a = 0
+ b = 0
+ s=len(i)
+ for x in range(s):
+   if i[x] == '1':
+     count1 += 1
+   elif i[x] == '0':
+     count0 += 1
+   if count1 > 1 and count0 > 1:
+       a = 1
+       break  
+if count1 == 1 or count0 == 1:
+‪ print("YES")‬
+else:
+‪ print("NO")‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪It is required to read whole number together. else code runs fine on my system. m not getting any error‬
+
+‪Edited 3 months ago‬
+
+
+
+
+
+missing number program
+3 comments • ‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪sum_of_A=sum(A)\n TypeError: unsupported operand type(s) for +: 'int' and 'str' how to solve it‬
+
+‪3 months ago‬
+
+
+‪Sachinkr (talkcontribs)‬
+‪Sum(A) or n, one of them may be string....Convert both into integer‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪what is there in A?‬
+
+‪3 months ago‬
+
+
+
+
+
+TypeError: 'int' object is not subscriptable
+3 comments • ‪3 months ago‬
+
+
+
+‪Janakiraam (talkcontribs)‬
+‪when i am creating program as described in screen caste this is error what i am getting File "C:/FLAMS.py", line 37, in <module> proceed = con_list[1] TypeError: 'int' object is not subscriptable How to clear this? Tried but unable to do.‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪con_list is int object, not list. please print con_list n see value.‬
+
+‪3 months ago‬
+
+
+
+‪Balakrishna (talkcontribs)‬
+‪Hi Amichoksi, you are correct. The con_list was holding an int value and hence the error.‬
+
+‪3 months ago‬
+
+
+
+
+
+Week 10 Quiz Wrong Answers
+2 comments • ‪3 months ago‬
+
+
+
+‪Ajabdeh (talkcontribs)‬
+‪<code> Q-6 ----------------------------------- x=np.zeros(3,3) Here the answer should be (d)None of the above But the given answer is x is (b)3*3 matrix comprising of zeros. (b) is possible only when x=np.zeros((3,3)) In the question, the syntax is wrong as per the expected answer. Q-7 ----------------------------------- If a is 2*3 numpy array then a.shape will (2,3) but the question is asking about a.shape() which will give error So, my humble request to the team is to please resolve the issue. Thanks & Regards‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪FYI/A, I have already raised these two concerns to our TAs and Sudarshan Sir as well for which I have already dropped a separate mail to them with detailed explanations. This explanation could be seen here in this discussion forum also. So let's wait and watch for their action in this regard. Thank you!‬
+
+‪3 months ago‬
+
+
+
+
+
+FLAMES:
+3 comments • ‪3 months ago‬
+
+
+
+‪ShailendraRai (talkcontribs)‬
+‪Do all matching charcters need to strike out or only 1 par? like from "aba" and "ade" do both a from "aba" will be crossed out or only one 'a' ?‬
+
+‪3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪The common letters between two words should be stricken out on a one-to-one basis. For e.g., between "aba" and "ade" only single 'a' should be stricken out and the remaining letters from those two words would be "ba" (i.e., from the 1st word) + "de" (i.e., from the 2nd word) => "bade" with a total remaining letters of 4. Hope this answers your query. Thanks!‬
+
+‪3 months ago‬
+
+
+
+‪ShailendraRai (talkcontribs)‬
+‪Thanks. it matches with program and solve my query. otherwise on wikihow(https://www.wikihow.com/Play-%22Flame%22) it says to cross out all letters.‬
+
+‪3 months ago‬
+
+
+
+
+
+Assignment 10 : Question 7
+3 comments • ‪3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪Hello All, I have observed that the function a.shape(), i.e., with the parenthesis (), would generate an error message "TypeError: 'tuple' object is not callable". Whereas without the parenthesis () it would have generated the 3rd option, i.e., (2,3). So as per the given function in the question, i.e., a.shape(), the answer should be the 4th option, i.e., None of the above. Do you all agree here?‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪i agree.‬
+
+‪3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪Hi @Amichoksi, Thanks for your response!‬
+
+‪3 months ago‬
+
+
+
+
+
+Quiz : Assignment 10 - Question 5
+5 comments • ‪3 months ago‬
+
+
+
+‪Balakrishna (talkcontribs)‬
+‪Hi, I have a query on the below question from the quiz of Assignment 10: 5) What is the output of the statement print(numpy.array([1,2,3])) in Python? - My question is - should we consider the numpy module already loaded? because the answer would be - [1 2 3] - if we consider that numpy library was already loaded. - None of the above - if we consider that numpy library was not loaded. In this case we would get compilation error. Please advise. Thanks, Balakrishna‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪As per me: If we are using numpy function in program that means numpy library already imported.‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪We should consider numpy library is already loaded.‬
+
+‪3 months ago‬
+
+
+
+‪Saranya v s (talkcontribs)‬
+‪YES, we should consider library already loaded. it is default so according to me ans [1 2 3]‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Saranya v s, you should not reveal the answers before due date..‬
+
+‪3 months ago‬
+
+
+
+
+
+Quiz Assignment 10 - que 6)
+2 comments • ‪3 months ago‬
+
+
+
+‪Ankit rai (talkcontribs)‬
+‪In question given x=np.zeros(3,3), which is invalid syntax. correct syntax is x = np.zeros((3,3)). which we consider for giving the answer of this question ?? if i am considering invalid syntax then i have to go with none of the above option d ,if i am considering correct syntax then i have to go with option b).‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪If question has x=np.zeros(3,3) Then you should go with, and answer accordingly without assuming any modification.‬
+
+‪3 months ago‬
+
+
+
+
+
+Compression coding
+6 comments • ‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪Its shows "typeerror: '>=' not supported between instance of 'tuple' and 'int'" What is going wrong with the code‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪you may have taken wrong file type,same as me. i.e. png. when you read png, it returns tuple. use the jpg file.‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪Ok I shall check Thanks‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪Ok I am using jpg in code But it's not working. What should the file type . should it be png or jpg or any type‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪Yes it's work on gif type as well and png‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪for jpg it worked fine. with png it can work right if you accept it as tuple‬
+
+‪3 months ago‬
+
+
+
+
+
+Assignment 3-Rearrangement
+3 comments • ‪3 months ago‬
+
+
+
+‪Cskanda (talkcontribs)‬
+‪I wrote the code using 'numpy' library and it worked well on Spyder. It worked for all the test cases. However, when I run the code in online programming assignment, it shows message " ImportError: No module named 'numpy'". Can anyone suggest a hint, where is the problem?‬
+
+‪3 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Use loop..‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪u should not use numpy with NPTEL portal, as it is not available for these programs‬
+
+‪3 months ago‬

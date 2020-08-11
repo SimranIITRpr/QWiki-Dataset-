@@ -1,0 +1,516 @@
+time limit exceed error
+5 comments • ‪4 months ago‬
+
+
+
+‪Anu (talkcontribs)‬
+‪hello everyone i'm getting time limit exceed message again and again for week 8 assignment 2. My code is of hardly 12 lines having nested while. Please help.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪If it is having the infinite loop, it may happen. I too faced once the same problem, when by mistake i put infinite loop. Please check, else you may share your code. So we all people may be able to support you.‬
+
+‪4 months ago‬
+
+
+
+‪Anu (talkcontribs)‬
+‪Ok I'll check my code again and get back.‬
+
+‪4 months ago‬
+
+
+
+‪Anu (talkcontribs)‬
+‪Hi I tried several times I'm unable to get it pls help. I'm attaching code also‬
+
+‪n=input("")‬
+‪n=int(n) c=0‬
+‪s=0‬
+‪while(n>0):‬
+‪r=n%10‬
+n=n/10
+c=c+1
+s=s+r
+while(1):
+‪if(c==1):‬
+ print(s)
+ break
+else:
+ c=0   
+ while(n>0):
+  r=n%10
+  n=n/10
+  c=c+1
+  s=s+r
+
+‪Edited 4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪3 loops ? infinite loop is there. please use‬
+‪  to put ur code. why these many loops? please  simplify‬
+
+‪4 months ago‬
+
+
+
+
+
+Can anyone help me for programming assignment 1: Duplicate??
+7 comments • ‪4 months ago‬
+
+
+
+‪HalfWorld (talkcontribs)‬
+‪My piece of code has passed Test case 3 and 4 but it got error in Testcase 1 and 2..‬
+‪Program code :---‬
+
+‪list1=[]‬
+‪list1=[int(n) for n in input().split()]‬
+‪list1.reverse()‬
+‪for i in list1:‬
+‪   while(list1.count(i)>1):‬
+      
+         list1.pop(list1.index(i))
+list1.reverse()
+‪str=' '.join(str(x) for x in list1)‬
+‪print(str)‬
+
+‪Test Case 1 OP : Test Case 1 Wrong Answer Input Expected Output Actual Output 1 1 9 5 2 1 4 1 1 4 0 6 1 4 3 3 2 2 0 1 9 5 2 4 0 6 3 1 9 5 2 4 0 6 3 3\n‬
+
+‪Testcase 2 OP: Input Expected Output Actual Output 8 0 4 5 4 2 6 1 7 1 4 8 8 5 8 0 2 2 5 7 8 0 4 5 2 6 1 7 8 0 4 5 2 6 1 7 0\n‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+after reverse list1 will be
+[0, 2, 2, 3, 3, 4, 1, 6, 0, 4, 1, 1, 4, 1, 2, 5, 9, 1]
+
+In loop
+First element >> I = 0 > Zero will be removed [2, 2, 3, 3, 4, 1, 6, 0, 4, 1, 1, 4, 1, 2, 5, 9, 1]
+Second element>> I = 2 > both will be removed using while loop >> [3, 3, 4, 1, 6, 0, 4, 1, 1, 4, 1, 2, 5, 9, 1]
+Third Element>>  I = 4 > 4 will be removed  >>> [3, 3, 1, 6, 0, 4, 1, 1, 4, 1, 2, 5, 9, 1]
+
+As you can see 3 will be untouched. Bcz for loop incrementor move to third element.
+
+‪Edited 4 months ago‬
+
+
+
+‪HalfWorld (talkcontribs)‬
+‪Thank you sachinkr‬
+
+‪4 months ago‬
+
+
+
+‪Suji (talkcontribs)‬
+‪just add numbers to a second list after checking if the number already exists in the second list... if not in list2.. list2.append(list1[i])‬
+
+‪4 months ago‬
+
+
+
+‪Anu (talkcontribs)‬
+‪list1=[]‬
+‪list1.append(input("").split(" "))‬
+‪for i in range(len(list1)):‬
+‪for j in range(i+1,len(list1)-1):‬
+ if(list1[i]==list1[j]):
+  list1[j]=list1[j+1]
+for i in range(len(list1)-1):
+‪print(list1[i])‬
+
+
+
+‪I tried this code but im not getting the desired output please help. My logic says this, if we encounter a duplicate of list1[ i ] in list1[j] then we overwrite the the list1[j] value with the adjacent right hand side value.‬
+‪We then print n-1 one elements of the list as last one second last elements will be the same. So we avoid the last element.‬
+‪But I'm not getting any output after accepting value please help.‬
+
+‪Edited 4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Suppose = list1 = [1,2,2,2,3,4,4,5]‬
+when you reached index 2 and you notice "2" is duplicate. So you set index 2 elements as index 3. And loop will take your index 3.
+This way you left index 1 and 2 as duplicate elements.  
+
+‪4 months ago‬
+
+
+
+‪Anu (talkcontribs)‬
+‪Thanks got your point. But why I was not getting any output?‬
+
+‪4 months ago‬
+
+
+
+
+
+syntax error
+9 comments • ‪4 months ago‬
+
+
+
+‪Anu (talkcontribs)‬
+‪for i in range(len(list1)):‬
+
+‪why does this segment show a syntax error while executing the code?‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪It seems ok, are you sure you are getting error on this line.‬
+
+‪4 months ago‬
+
+
+
+‪Anu (talkcontribs)‬
+‪yes, it is showing the error for this particular line. I tried executing the program on different IDE also, it is showing the same syntax error.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Have you define the list1? i.e. list1=[1,2,3]‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪If you have defined the list and still getting error. It will be helpful to share code so we can figure out the root of error.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪i agree with Sachinkr‬
+
+‪4 months ago‬
+
+
+
+‪Anu (talkcontribs)‬
+‪Hello all, now I'm not getting the error. Sorry I am unable to share the code when it showed error as I did not save it. Now when I'm executing using the above for loop condition, its not showing any error. Thanks for help and support.‬
+
+‪4 months ago‬
+
+
+‪Sachinkr (talkcontribs)‬
+‪Just share what ever code you have...Without code how we can understand that you are wrong.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪That's great, you could do. if you cannot share the code publicly, i guess private talks too are available to a particular user only.‬
+
+‪Edited 4 months ago‬
+
+
+
+
+
+why in python3 else,elif shows invalid syntax error
+2 comments • ‪4 months ago‬
+
+
+
+‪Kingsly (talkcontribs)‬
+‪why in python3 else,elif shows invalid syntax error‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪You may have put more/less space for other statements. Please look at https://stackoverflow.com/questions/24851569/else-invalid-syntax-python‬
+
+‪4 months ago‬
+
+
+
+
+
+can anyone help me for lower triangular matrix
+3 comments • ‪4 months ago‬
+
+
+
+‪Kingsly (talkcontribs)‬
+‪can anyone help me for lower triangular matrix‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪We can help with idea but this is assignment which you have to do yourself.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪The logic of implementation is : i<=j => print arr[i][j] for others, print 0. This will help you.‬
+
+‪4 months ago‬
+
+
+
+
+
+Programming assignment 3
+16 comments • ‪4 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪I am able to fetch the input but while displaying output I am getting 0 correctly but remaining position are also displaying 0 I have used code if I<j print 0 else m[i][j]‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪if i>=j i.e.print(m[i][j]) else print 0‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪please paste code, i may be able to detect the problem.‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪we have to accept diagonals too and we are creating lower triangular matrix...condition must be if i <= j print(0) and this code will help only for perfect square matrix only.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪perfect square matrix is only asked in assignment, so no worries‬
+
+‪4 months ago‬
+
+
+‪Sachinkr (talkcontribs)‬
+‪we dont know the hidden questions..‬
+
+‪4 months ago‬
+
+
+
+‪Sakshoaib (talkcontribs)‬
+‪how to take input for the matrix‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪n=int(input())‬
+a=[0]*n
+for i in range(n):
+    a[i]=[]
+
+for i in range(n):
+    k=[]
+    k=(input().split())
+    for km in range (len(k)):
+        a[i].append(k[km])
+
+‪Edited 4 months ago‬
+
+
+
+‪Shashi (talkcontribs)‬
+‪the logic for this-->>There should not be any extra space after the elements of the last column and no extra newline after the last row of the matrix. unable to print without extra space :( #help Me out plzz‬
+
+‪Edited 4 months ago‬
+
+
+
+‪Pinkydec28 (talkcontribs)‬
+‪if(j==column-1):‬
+‪           print(m[i][j], end="")‬
+       else:
+           print(m[i][j], end=" ")
+   if(i!=row-1):
+       print()
+
+‪Edited 4 months ago‬
+
+
+
+‪Shashi (talkcontribs)‬
+‪this snippet didn't provide any solution for lower triangular matrix.‬
+‪http://sccilabs.org/jocwiki/index.php/File:Esd.JPG‬
+
+‪Edited 4 months ago‬
+
+
+
+‪Sakshoaib (talkcontribs)‬
+‪pinkydec28 this also not working‬
+
+‪4 months ago‬
+
+
+
+‪Shashi (talkcontribs)‬
+‪Can Any One Please Find the bug in this Snippet :(‬
+‪(Today (ie:13/09/2018 )Last date to submit the assignment‬
+‪I am trying this from last few days :( :(‬
+‪mat=[]‬
+‪n=int(input())‬
+‪for i in range(0,n):‬
+‪     mat.append(list(map(int, input().rstrip().split())))‬
+for i in range(0,n):
+‪   for j in range(0,n):‬
+       if(i<j):
+          print(0,end="")    
+       else:   
+           if(j==n-1):
+               print(mat[i][j], end="")
+           else:
+               print(mat[i][j], end=" ")
+   if(i!=n-1):
+       print()
+
+‪Input‬
+‪3‬
+‪2 3 4‬
+‪5 6 7‬
+‪7 6 5‬
+‪Actual output‬
+‪2 00\n‬
+‪5 6 0\n‬
+‪7 6 5‬
+‪Expected output‬
+‪2 0 0\n‬
+‪5 6 0\n‬
+‪7 6 5‬
+
+‪Edited 4 months ago‬
+
+
+
+‪Sakshoaib (talkcontribs)‬
+‪finally i got the output‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪Great..cheers.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪great. कोशिश करने वालों की हार नहीं होती‬
+
+‪4 months ago‬
+
+
+
+
+
+Can we use numpy for programming assignment 3? Compiler provides error message as "import error-no module named numpy"
+5 comments • ‪4 months ago‬
+
+
+
+‪Niranjani (talkcontribs)‬
+‪Can we use numpy for programming assignment 3? Compiler provides error message as "import error-no module named numpy"‬
+
+‪4 months ago‬
+
+
+
+‪Sachinkr (talkcontribs)‬
+‪They want you to think the logic instead of using such functions.‬
+
+‪4 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪nice answer Sachinkr‬
+
+‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪Numpy doesn't come bundled with official python distribution also it is not some built in module. It needs to be separately imported, but the online interpreter allow using only built in modules.‬
+
+‪4 months ago‬
+
+
+
+‪Niranjani (talkcontribs)‬
+‪ok thanks Bhavesh‬
+
+‪4 months ago‬
+
+
+
+
+
+Lets Calculate 1000!
+One comment • ‪4 months ago‬
+
+
+
+‪Bhavesh (talkcontribs)‬
+‪Without Recursion:‬
+‪answer=1‬
+for i in range(1,1001):
+    answer=answer*i
+
+print(answer)
+Output(this is huge!!) 
+‪402387260077093773543702433923003985719374864210714632543799910429938512398629020592044208486969404800479988610197196058631666872994808558901323829669944590997424504087073759918823627727188732519779505950995276120874975462497043601418278094646496291056393887437886487337119181045825783647849977012476632889835955735432513185323958463075557409114262417474349347553428646576611667797396668820291207379143853719588249808126867838374559731746136085379534524221586593201928090878297308431392844403281231558611036976801357304216168747609675871348312025478589320767169132448426236131412508780208000261683151027341827977704784635868170164365024153691398281264810213092761244896359928705114964975419909342221566832572080821333186116811553615836546984046708975602900950537616475847728421889679646244945160765353408198901385442487984959953319101723355556602139450399736280750137837615307127761926849034352625200015888535147331611702103968175921510907788019393178114194545257223865541461062892187960223838971476088506276862967146674697562911234082439208160153780889893964518263243671616762179168909779911903754031274622289988005195444414282012187361745992642956581746628302955570299024324153181617210465832036786906117260158783520751516284225540265170483304226143974286933061690897968482590125458327168226458066526769958652682272807075781391858178889652208164348344825993266043367660176999612831860788386150279465955131156552036093988180612138558600301435694527224206344631797460594682573103790084024432438465657245014402821885252470935190620929023136493273497565513958720559654228749774011413346962715422845862377387538230483865688976461927383814900140767310446640259899490222221765904339901886018566526485061799702356193897017860040811889729918311021171229845901641921068884387121855646124960798722908519296819372388642614839657382291123125024186649353143970137428531926649875337218940694281434118520158014123344828015051399694290153483077644569099073152433278288269864602789864321139083506217095002597389863554277196742822248757586765752344220207573630569498825087968928162753848863396909959826280956121450994871701244516461260379029309120889086942028510640182154399457156805941872748998094254742173582401063677404595741785160829230135358081840096996372524230560855903700624271243416909004153690105933983835777939410970027753472000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 ‬
+‪and i got this in less than 1 second.‬
+‪Now let's try it using recursion..‬
+
+‪def fact(n):‬
+    if(n==1):
+        return 1
+    else:
+        return n*fact(n-1)
+print(fact(1000))
+
+‪Output‬
+‪RecursionError: maximum recursion depth exceeded in comparison‬
+Why is it so ?
+‪It's to avoid a stack overflow. The Python interpreter limits the depths of recursion to help you avoid infinite recursions, resulting in stack overflows. We can adjust the stack limit but it's just beyond the scope for now.‬
+‪Share your thoughts and comments over this, everyone.‬
+‪and let's bring more knowledge to each other.‬
+
+‪Edited 4 months ago‬

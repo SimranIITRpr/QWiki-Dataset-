@@ -1,0 +1,1717 @@
+Explanation for Assignment-2 Question 3 - Loops, List and Sum. Trial and error method. This is what I learnt from my errors.
+22 comments • 6 months ago
+Arunkumar (talkcontribs)
+Note: If below post is shown with no formatting. use this permanent link
+
+http://sccilabs.org/jocwiki/index.php/Topic:Uu3k27awhz3wu2jo
+
+Hi friends. I saw that lot of you are also struggling to understand the assignments. Especially this was difficult for me too. After going through few of the questions and googling. I understood and trying to explain through this post. I hope this will help others, like me, to understand.
+
+NOTE: Copying and pasting this program for assignment will not work. because there are few changes and errors in the program. (unless you correct them)
+I always try using trial and error method to solve programming, and i am explaining the same here. if anybody like this way of explanation. please let me know in the reply. I will try to post for the future assignments too on the last day or earlier if posting is allowed.
+
+This is how i will approach this Question.
+
+Read the values into the variables (l,list_a).
+Reverse and save the list into another variable.
+Convert the numbers in list_a, list_b to integers.
+Add both (list_a, list_b) lists/arrays and save them into another variable (list_sum) OR is it really necessary?
+print the list_sum as per the conditions.
+Trail 1: reading the values and copying
+
+l = 4
+list_a = ["1", "2", "3", "4"]
+
+print(list_a)   #Just for testing.
+list_b = list_a
+print(l)   #Just for testing.
+
+list_b.reverse() #To reverse the list items
+print(list_b)   #Just for testing.
+print(list_a)   #Just for testing.
+Actual Output:
+ ['1', '2', '3', '4']
+ 4
+ ['4', '3', '2', '1']
+ ['4', '3', '2', '1']
+Error explanation:
+
+As you can see reverse() didn't work as expected, it effected both list_a and list_b. But the error is not because of reverse(). It is because I used usual "assign" method, list_b=list_a. This way of assigning will only create a reference, instead of copying list_a into list_b. As a result reverse will effect both list_a and list_b, as both share the same data.
+
+Instead we should use list.copy() function as below
+
+list_b = list_a.copy()
+Trail 2: solve reverse problem
+
+l = 4
+list_a = ["1", "2", "3", "4"]
+list_b = list_a.copy()  #Now it will work.
+print(list_a)   #Just for testing.
+print(l)   #Just for testing.
+list_b.reverse()
+print(list_b)   #Just for testing.
+print(list_a)   #Just for testing.
+Actual Output:
+ ['1', '2', '3', '4']
+ 4
+ ['4', '3', '2', '1']
+ ['1', '2', '3', '4']
+SUCCESS! list_a is not reversed.
+Trail 3: Convert lists to integers
+
+l = int(input())
+list_a = input().split()
+
+list_b = list_a.copy()
+list_b.reverse()
+
+for i in range(l):
+    list_a[i] = int(list_a[i])
+    list_b[i] = int(list_b[i])
+
+ #Below print is to see if conversion is successful or not
+ print(list_a[0]+3,"-",list_b[0]+3)
+Actual Output:
+ 4 - 7
+
+SUCCESS! Conversion went fine and addition is accepted.
+list_a[0]+3, "-", list_b[0]+3
+1+3 - 4+3
+4 - 7
+Trail 4: add and output the list
+
+l = 4
+list_a = ["1", "2", "3", "4"]
+list_sum=[] # Predefining for later use.
+
+list_b = list_a.copy()
+list_b.reverse()
+
+for i in range(l):
+    list_a[i] = int(list_a[i])
+    list_b[i] = int(list_b[i])
+    
+    x = list_a[i] + list_b[i]
+    list_sum.append(x)
+    
+    print(list_sum[i], end="")
+    if(i<l-1):
+        print(" ", end="") 
+Actual Output:
+ 11 12 10 10 12 11
+SUCCESS! output is space separated, without brackets and there is no space at the end too.
+We can use below print statement at the end of the program, and exclude last 3 lines in the above "for loop".
+
+print(*list_sum, end="")
+If anyone is still unable to understand, please feel free to ask me questions. I will try my best to answer.
+
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+We can simplify this code even further. Using extra features of python. Google helped me with the below code.
+
+But! what is the catch?
+There are so many ways to solve a problem. More than one, at least. So, as a new learner, we no need to think too deep and confuse ourselves. Slowly we can pickup such techniques in future. For now, lets choose the simple ways. Try to check others answers. We are getting exposed to more possibilities. Choose the answer which is simple and good for you.
+
+Below code is only for those, who want to know other ways too. For now lets have a little fun. Try to understand why below code is also correct. You can ask me questions, because, I understood it enough, I spent a lot of time understanding(googling).
+
+list_sum=[]
+l = int(input())
+list_a = list(map(int,input().split()))
+
+list_b = list_a.copy()
+list_b.reverse()
+
+list_sum = map(lambda x, y: x + y, list_a, list_b)
+
+print(*list_sum, end="")
+Reply Edited 6 months ago
+Gourav (talkcontribs)
+What is the function of 'map'?
+
+And what is the use of '*' in the 'print' statement?
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Lets dissect list_a = list(map(int,input().split()))
+This part input().split() takes the string 1 2 3 4 and splits it at space. As a result we get individual strings 1 2 3 4.
+split() was able to break 1 2 3 4 into 1 2 3 4. But still all these numbers are not integers. So, we are using map(int,input().split()) to convert all these into integers.
+Syntax of map is : map(function, iterable, ...)
+Now we are calling int() function, through map(), and asking int to work on iterables generated by input().split().
+As a result, all the numbers are converted to integers and, then gets assigned to the list list_a.
+NOTE: But from Python 3, we need to convert output of map() to list, using list().
+That is why, we enclosed this entire map(int,input().split()) 
+in a list(map(int,input().split())).
+
+
+Lets talk about print(*list_sum, end="")
+That asterisk in front of list_sum will unpack the contents of list_sum and print in a single line using a " " as separator.
+I didn't use the sep=" " in the print(), as it was adding spaces by default. Still it is a good idea to add this as a fail safe.
+Usage will be like this print(*list_sum, sep=" ", end="")
+NOTE: Check python 3 documentation, to understand print() function a little better.
+
+Syntax:
+
+  print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+
+Print objects to the text stream file, separated by sep and followed by end. 
+sep, end, file and flush, if present, must be given as keyword arguments.
+
+All non-keyword arguments are converted to strings like str() does and written to the stream, separated by sep and followed by end. Both sep and end must be strings; they can also be None, which means to use the default values. If no objects are given, print() will just write end.
+
+Reply Edited 7 months ago
+Skumar13269cs (talkcontribs)
+what is the end="" here? is it a predefinde fuction or what ?
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+sorry for the late reply.
+
+end="" is part of print() function. By default, output of print is ended with a newline "\n". Which in our case is causing us presentation error. That is why we are asking print() function to not end with a newline "\n".
+NOTE: Check python 3 documentation, to understand print() function a little better.
+
+Syntax:
+
+  print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+
+Print objects to the text stream file, separated by sep and followed by end. 
+sep, end, file and flush, if present, must be given as keyword arguments.
+
+All non-keyword arguments are converted to strings like str() does and written to the stream, separated by sep and followed by end. Both sep and end must be strings; they can also be None, which means to use the default values. If no objects are given, print() will just write end.
+
+Reply Edited 7 months ago
+Haloakash (talkcontribs)
+The end=' ' is just to say that you want a space after the end of the statement instead of a new line character.
+
+Reply 7 months ago
+This comment was deleted by Arunkumar (history)
+Simran (talkcontribs)
+Please post it on commmon doubts.
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Please provide me the link.
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+No problem, I found the page. I will do it later.
+
+Reply Edited 7 months ago
+Khubaib tahir (talkcontribs)
+please provide a right code
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+l = int(input())
+list_a = input().split()
+list_sum=[] # Predefining for later use.
+
+list_b = list_a.copy()
+list_b.reverse()
+
+for i in range(l):
+    list_a[i] = int(list_a[i])
+    list_b[i] = int(list_b[i])
+    
+    x = list_a[i] + list_b[i]
+    list_sum.append(x)
+    
+print(*list_sum, end="") 
+Reply Edited 7 months ago
+This comment was deleted by Arunkumar (history)
+Haloakash (talkcontribs)
+Refer to this code as it is easy to understand.
+
+n=int(input()) # Taking Input and simultaneously converting it to integer.
+
+list1=input().split() # split() function is used to take multiple inputs in a single line
+
+list2=list1.copy() # Copying list1 in list2 using copy() function
+
+list1.reverse() # Then reversing the first list
+
+
+for i in range(n): # Converting both the strings into integer datatype
+
+list1[i]=int(list1[i])
+list2[i]=int(list2[i])
+
+for i in range (n): # Adding the respective elements of two lists
+
+list3=list1[i]+list2[i]
+print(list3,end=" ")       # The end=' ' is just to say that you want a space after the end of the 
+                                       statement instead of a new line character.
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+That is my plan too. In future I will use comments, to explain in short. Typing a long post with formatting is a time consuming process.
+
+Reply 7 months ago
+Jaiprince17 (talkcontribs)
+please explain this ?
+
+ list_a = input().split()  #y 2 inputs ????? 
+  
+and this
+
+print(list_sum[i], end="") 
+   if(i<l-1):
+       print(" ", end="")    # explain this 
+last 3 lines ( logic kolapifying ) ?????
+
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+First we need to understand this. Who is passing inputs to our assignment programs?
+
+Answer is, it is a automated process, simulating exact same way of a human passing numbers.
+
+Secondly, remember \n means newline, or as if we are pressing "enter" key on the keyboard.
+
+For this assignment, inputs are as below...
+ 4
+ 1 2 3 4
+But for the program, it is passed as below...
+  4\n1 2 3 4\n
+In our program we have written code, as below, to save this information into two variables. First one is integer l and second one is list list_a.
+  l = int(input())
+  list_a = input().split()
+As you might already know, in the above, list_a is a list.
+Here input().split() are used together. Because of which, input is asked from the user, and then split() function will split the input 1 2 3 4 into individual string items, before assigning to the list_a. Below i have given the process. please continue reading to understand.
+When the compiler reads l = int(input()), It will start reading "user given numbers" till the first \n. As a result "4" is assigned to "l", and compilers goes to the next line.
+when the compiler reads the next line of the program, which is list_a = input().split(). It will go back, to read the rest of "user given numbers" till the next \n.
+But for the second line we also used split() function. As a result 1<SPACE>2<SPACE>3<SPACE>4 is split at "<SPACE>", and assigned to the list "list_a" as individual strings, as below...
+   list_a = ['1', '2', '3', '4']
+
+
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+Just looking at those 3 lines, you may not understand the logic. I think I have confused few of you, with the formatting of program. Sorry for that. There is a simple one line solution for this. but still as you asked, i am explaining the lengthy process.
+
+for i in range(l):
+    list_a[i]=int(list_a[i])
+    list_b[i]=int(list_b[i])
+    x=list_a[i]+list_b[i]
+    list_sum.append(x)
+    print(list_sum[i],end="")
+    if(i<l-1):
+        print(" ",end="") 
+
+Those 3 lines are part of for loop. In my program
+
+conversion to integer,
+array addition,
+appending addition result to a new list
+final output and spaces
+all these are done with in the for loop.
+
+Those three lines are just printing the final output 6 6 6 6 6 in one line.
+
+Using print(list_sum[i], end="") i am printing contents of list_sum one at a time. As I am using end="", print function will not append \n to the output. At this stage output will be as below
+6
+Then control goes to if(i<l-1):. Here "if condition" will make sure, that a space is added after every number. But space should not be added after the last number, in the final output. Lets understand how this is done.
+As per our assignment test conditions, l will have the length of the list, and this length is different in every test.
+So, for example, lets say l = 4. which means list_a will have 4 numbers in it, like this
+[1, 2, 3, 4].
+Which means at the end of list addition list_sum will have the length of 4, and will look like this
+[6, 6, 6, 6]
+But if we use print(list_sum), the out put will have brackets and commas too.
+[6, 6, 6, 6]
+To solve this, we can write a for loop, through which we will call only one number of the list and print without trailing new line \n at the end as below.
+     for i in range(l):
+        print(list_sum[i], end="")
+
+This loop works fine but output of the loop will be 6666
+To add spaces we will use if condition, and the condition will be if(i<l):, it will print a space using another print statement 
+print(" ",end="")
+Now output looks like correct, but there is a rule in the question, that the output should not have space at the end. If we see the out put of our program, it will be 
+6 6 6 6 .
+It is having a space at the end, because the loop will run 4 times to print 4 numbers. in the same way if condition will be checked and printed 4 times.
+To correct this we reduce the loop range by one if(i<l-1):. Now everything works fine and output will be 
+6 6 6 6.
+I Hope this helped you understand my trick in the program.
+
+Reply Edited 6 months ago
+Dayana (talkcontribs)
+Thank you.finally cleared with this topic.
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+You are welcome Dayana. I feel good to know that my time and efforts to type this lengthy post is helping few of you. :)
+
+Reply 7 months ago
+This comment was deleted by Arunkumar (history)
+
+assignment submission
+5 comments • 7 months ago
+B.Leela madhavi (talkcontribs)
+Sir,I could not submit my week2 assignment before the due date.is there any problem with this?
+
+Reply 7 months ago
+Simran (talkcontribs)
+Yes, you can
+
+Reply 7 months ago
+This comment was deleted by B.Leela madhavi (history)
+B.Leela madhavi (talkcontribs)
+If I submit only program assignments but not the quiz assignment.is it countable or not?
+
+Reply 7 months ago
+Simran (talkcontribs)
+Both will be counted in final score
+
+Reply 7 months ago
+
+Assignment 2, Question 4
+2 comments • 7 months ago
+Gowthami J (talkcontribs)
+Regarding Assignment 2, Question 4 I got the answer on execution is only 15. But after the evaluation of answers, the correct answer is marked as 555. How is it? please clarify me.
+
+Reply Edited 7 months ago
+Simran (talkcontribs)
+That is because it has not been converted to int.
+
+Reply 7 months ago
+
+Doubt in Assignment 3 of Week 2
+14 comments • 7 months ago
+Pritish shubham (talkcontribs)
+Dear sir
+
+ I am having some difficulty in understanding the solution of the assignment problem 3 of week 2. There is a line which says "for i in range(len(A)-1, -1,-1): ".Here, what does "-1,-1" represents? 
+Also sir, the problem says that 1st the total numbers of input need to be specified and then the input. The output will be addition of original and its reverse of numbers.
+
+ However, When I run the solution you have provided, if i give input as 5, but if I feed 6 numbers inputs, it shows sum of all the 6 inputs. Can you please tell me that what is the need of giving initial inputs?
+
+Regards
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Please provide the code, for your 2nd question.
+
+Reply 7 months ago
+Pritish shubham (talkcontribs)
+its same as the solution given in the programming assignment:
+
+
+N = int(input()) A = [int(i) for i in input().split(" ")] B = [] for i in range(len(A)-1, -1,-1):
+
+   B.append(A[i])
+C = [] for i in range(len(B)):
+
+   C.append(A[i]+B[i])
+for i in range(len(C)):
+
+   if(i==len(C)-1):
+       print(C[i])
+   else:
+       print(C[i],end=" ")
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Okay. Now I understood what you mean. You are not changing anything in the above code. But you are passing...
+1 2 3 4 5 6 instead of 1 2 3 4 5
+and expecting it to work only for 5 digits?
+
+Here you need to understand that, code is no-where strict or specfic about that. It will add the entire list, no matter how lengthy your input is.
+
+If you really want to see 6 6 6 6 6. you can do that by editing the code to skip the last number. By limiting through loop.
+
+Did you notice... In the above code N variable is nowhere used.
+
+Reply Edited 7 months ago
+Pritish shubham (talkcontribs)
+I tried, but it still not accepting it.
+
+ Can you please guide me how to modify the code to get it done.
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Possibly, instead of using len() function in the loop. we can use N and limit it to N length.
+
+N = int(input())
+A = [int(i) for i in input().split(" ")]
+B = []
+
+for i in range(N-1, -1, -1):
+    B.append(A[i])
+C = []
+for i in range(N):
+    C.append(A[i]+B[i])
+for i in range(N):
+    if(i==N-1):
+        print(C[i])
+    else:
+        print(C[i],end=" ")
+I didn't check the output of above code. Please let me know of the errors, if any.
+
+Reply Edited 7 months ago
+This comment was deleted by Arunkumar (history)
+Arunkumar (talkcontribs)
+Answer for your 1st question is as follows
+
+range() Syntax:
+range(start, stop, step)
+start Optional. An integer number specifying at which position to start. Default is 0.
+stop Generate numbers up to, but not including this number.
+step Difference between each number in the sequence.
+Example 1:
+a = 6
+for i in range(a-1, -1, -1):
+    print(a,",",i)
+
+ Example 2:
+a = 6
+for i in range(a-1, -1, -2):
+    print(a,",",i)
+
+ Example 3:
+a = 6
+for i in range(a-1, -5, -2):
+    print(a,",",i)
+
+ Example 4:
+for i in range(0, 10, 2):
+    print(i)
+Check these examples. You might understand based on outputs.
+
+Reply Edited 7 months ago
+Pritish shubham (talkcontribs)
+Thanks
+
+ Now i understood the concept of it.
+Regards
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+You are welcome Pritish shubham. :)
+
+Reply 7 months ago
+Simran (talkcontribs)
+Please post your complete problem.
+
+Reply 7 months ago
+Pritish shubham (talkcontribs)
+I have 2 queries
+
+1. what does "-1,-1" represents in the line - "for i in range(len(A)-1, -1,-1):"?
+
+   This line is taken from solution of Programming Assignment 3 of week 2.
+2. What will be the outcome of code if I give:
+
+   Input = 5  (This specifies that 5 numbers need to be fed.)
+   Number = 1 2 3 4 5 6 ( I had deliberately given 6th number)
+  
+With these input,I expected that only "1st 5 numbers" should be considered for adding the original and its reverse, despite feeding 6th number and my outcome should be - (6 6 6 6 6).
+But why I am getting outcome as (7 7 7 7 7)?
+
+Reply 7 months ago
+This comment was deleted by Arunkumar (history)
+Simran (talkcontribs)
+1. In for loop, the syntax is for i in range(start,stop,jump)
+
+2. Does 7 appear 5 times?
+
+Reply 7 months ago
+
+Week 2 Programming assignment
+2 comments • 7 months ago
+Assignment-2 Question-6
+6 comments • 7 months ago
+Bhats% (talkcontribs)
+Sir,there was no : after the for block.So the answer I have clicked is "error" .But my answer is showing "wrong".
+
+Reply 7 months ago
+Anandvihar (talkcontribs)
+some for me...ans is error but not consider for marking
+
+Reply 7 months ago
+Abhilash (talkcontribs)
+Same here! Answer should be error.
+
+a=5 for i in range(10)
+
+   a=a+1
+The for loop does not contain :
+
+Reply 7 months ago
+Juturu8989 (talkcontribs)
+Yes. Answer should be "Error"
+
+Reply 7 months ago
+Simran (talkcontribs)
+Sent for reevaluation
+
+Reply 7 months ago
+Sudha Verma (talkcontribs)
+same here
+
+Reply 7 months ago
+
+At 0:02:04 it was told that "if we don't give any x values, they will automatically be generated. Are the values supposed to be randomly generated? or will it use y values as x values as well?
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by hkhitter00@gmail.com
+
+Reply 7 months ago
+Simran (talkcontribs)
+Since python ranges start with 0, the default x vector has the same length as y but starts with 0. Hence the x data are [0,1,2,3].
+
+Reply 7 months ago
+
+Question 4 of quiz assignment 2
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by many students
+
+Reply 7 months ago
+Simran (talkcontribs)
+Here, in this question the input is not converted to int. So it is taken as a string. Therefore, it will print 5 3 times instead of 15.
+
+Reply 7 months ago
+
+Quiz 2 ,6th question
+2 comments • 7 months ago
+Harish Narayana (talkcontribs)
+Sir,in the 6th question of quiz 2,there was no colon(:)after the for statement,so the answer must be error,but it is showing WRONG. Please do see it sir
+
+Reply 7 months ago
+Simran (talkcontribs)
+Sent for reevaluation
+
+Reply 7 months ago
+
+1 point What is the output of the following code snippet? a=5 for i in range(10) a=a+1 15 5 0 Error No, the answer is incorrect. Score: 0 Accepted Answers: 15
+3 comments • 7 months ago
+Anandvihar (talkcontribs)
+What is the output of the following code snippet? a=5 for i in range(10)
+
+ a=a+1  
+15
+
+5 
+0 
+Error 
+No, the answer is incorrect. Score: 0 Accepted Answers: 15
+
+with above questions answer is Error,,because colon in not shown or given there for Error when compile and run..
+
+plz consider for marking.
+
+with colon ans is 15.
+
+check and reply
+
+Reply 7 months ago
+Adeebk15 (talkcontribs)
+i am also having the same issue
+
+Reply 7 months ago
+Simran (talkcontribs)
+Sent for reevaluation
+
+Reply 7 months ago
+
+Mistake in Ques. no. 6 of week 2
+2 comments • 7 months ago
+Gourav (talkcontribs)
+There is no semicolon ":" in the "for" statement in question no. 6 of week 2 for which the code should show an error. Please correct this!
+Reply 7 months ago
+Simran (talkcontribs)
+Sent for reevaluation
+Reply 7 months ago
+
+Question 6 of Assignment 2
+2 comments • 7 months ago
+Sabya23sachi (talkcontribs)
+Sir, in question 6 of assignment 2, there isn't a colon(:) after the 'for loop'. So, an error should be thrown if I am not mistaken.Please clear my doubt.
+Reply 7 months ago
+Simran (talkcontribs)
+Sent for reevaluation
+Reply 7 months ago
+
+colon missing in Q.No 6 of Assignment-2
+3 comments • 7 months ago
+Praveen897 (talkcontribs)
+Please change the answer for the Q.No-6 in Assignment-2. Actual answer is: Error
+Reply 7 months ago
+Juturu8989 (talkcontribs)
+Please re-evaluate the exam.
+Reply 7 months ago
+Simran (talkcontribs)
+Sent for reevaluation
+Reply 7 months ago
+
+Assignment 2 (Doubts)
+2 comments • 7 months ago
+HARJEET CHAHAL (talkcontribs)
+What is the output of the following code snippet? a=5 for i in range(10) a=a+1 ------> The output for the program should be error as colon after for is missing.
+Reply 7 months ago
+Simran (talkcontribs)
+Sent for reevaluation
+Reply 7 months ago
+
+quiz assignment 2, 6th question
+2 comments • 7 months ago
+Venkata Swathi R (talkcontribs)
+6th questio from 2nd quiz assignment has got a syntax error (missing colon) at the end of for loop. the answer is error. you gave marks for 15.
+Reply 7 months ago
+Simran (talkcontribs)
+It will be reevaluated
+Reply 7 months ago
+
+Week 2 Assignment Qs: 6 -Answer Issue
+2 comments • 7 months ago
+Sathyait2003 (talkcontribs)
+Dear Sir, As per the given question the correct answer is Error because there is no Colon at the end of for loop. but you gave mark for if the answer is 15 but it is wrong. kindly look into this matter and give marks for those answered as Error which is the correct answer. thanking you.
+Reply 7 months ago
+Simran (talkcontribs)
+It will be reevaluated
+Reply 7 months ago
+
+Week 2 Quiz Assignment 2 Qs: 6 -Answer Issue
+4 comments • 7 months ago
+Amey Sawant (talkcontribs)
+there is an error in the program a=5 for i in range(10) a=a+1 there is no " : " at the end of command so that appears to be error in the program
+Reply 7 months ago
+Mohan2010 (talkcontribs)
+yes missing of ":" is an error. My answer is also declared wrong.
+Reply 7 months ago
+Amminavishnupriya (talkcontribs)
+I m not clear with question 4 on how 555 is printed.Can you please explain in detail. Thanking you
+Reply 7 months ago
+Simran (talkcontribs)
+Because the input has been converted to int, it is a string
+Reply 7 months ago
+
+In WEEK 2 Assigment Qno:6 a=5 for i in range(10) a=a+1 There is no colon at the end of for according to syntax.The answer is error
+2 comments • 7 months ago
+Aruna (talkcontribs)
+In WEEK 2 Assigment Qno:6 a=5 for i in range(10) a=a+1 There is no colon at the end of for according to syntax.The answer is error
+Reply 7 months ago
+Simran (talkcontribs)
+It will be reevaluated
+Reply 7 months ago
+
+have your programming assignement grade?
+2 comments • 7 months ago
+Ansarahemad shaikh (talkcontribs)
+My progress is not showing the result of Programming assignment, Is it Ok. I am confused because due date is over now..
+Reply 7 months ago
+Simran (talkcontribs)
+Contact lakshmi@nptel.iitm.ac.in
+Reply 7 months ago
+
+Regarding the duedate for Assignment 2
+2 comments • 7 months ago
+Sidpalande (talkcontribs)
+I am not able to submit the assignment on 14 Feb 2019. Due date mentioned in Announcement is 14Feb2019.
+Reply 7 months ago
+Simran (talkcontribs)
+It was on 13th Feb
+Reply 7 months ago
+
+Assignment 2,Question 6
+4 comments • 7 months ago
+Teena (talkcontribs)
+What is the output of the following code snippet? a=5 for i in range(10) a=a+1 15 5 0 Error There is no : in the for loop. I got error as answer but my answer is wrong. How it is? Please clarify this doubt.
+Reply 7 months ago
+C++veteran (talkcontribs)
+i think they did a typing mistake in that question. Not much we can do about it.
+Reply 7 months ago
+Arghyadip91 (talkcontribs)
+6)a=5 for i in range(10) a=a+1 The correct output of this code snippet will be - error as there is no ":" present in the for loop syntax.
+Reply 7 months ago
+Pythonmurthy (talkcontribs)
+Even if one writes without a : in the for loop, Spyder automatically includes : in the syntax. The answer is 15! Please verify this using the IDE. Best,
+Reply 7 months ago
+
+week-2 large
+3 comments • 7 months ago
+Dayana (talkcontribs)
+anyone here to help me out from this? In my week-2 programming assignment , i used the code a,b=input().split() if(a>b): print(a,end="") else: print(b,end="") all my test cases are passed ,except the fourth one.
+Reply 7 months ago
+Khubaib tahir (talkcontribs)
+same here please rply
+Reply 7 months ago
+Srijan18gupta (talkcontribs)
+I wish this may help u. a,b=input().split() if(int(a)>int(b)): print(a,end="") if(int(b)>int(a)): print(b,end="")
+Reply 7 months ago
+
+how is this ?????
+One comment • 7 months ago
+This comment was deleted by Jaiprince17 (history)
+
+week 2 assignment 2 (print biggest one ) . 4th test case shows error .
+5 comments • 7 months ago
+Khubaib tahir (talkcontribs)
+a,b = input().split() if (a > b): largest = a else : largest = b print(largest, end="")
+Reply 7 months ago
+Tom Thomas (talkcontribs)
+try this........... if(int(a)>int(b))
+Reply Edited 7 months ago
+Dayana (talkcontribs)
+Thank you tom thomas. I too struggled with the same error.i really works well.Now i have passed all my 4 test cases.
+Reply 7 months ago
+Khubaib tahir (talkcontribs)
+but it shows error in 4th output
+Reply 7 months ago
+Khubaib tahir (talkcontribs)
+please help me fastt
+Reply 7 months ago
+
+Week 2 assignment 1 doubt
+5 comments • 7 months ago
+Siddhanth (talkcontribs)
+pl help me with week 2 assignment 1.I don't know how to take input of two no.s on the same line and print the output by subtracting those two no.s
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+For taking input, write........... a,b=input().split() Then convert them into integers by writing..... a=int(a)..... And...... b=int(b) For printing you can write....... print(a-b)
+Reply 7 months ago
+Shivani (talkcontribs)
+but it's not working please help me
+Reply 7 months ago
+Siddhanth (talkcontribs)
+thank you
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Welcome:)
+Reply 7 months ago
+
+I am not getting how to pass all test cases at once as it is needed.
+12 comments • 7 months ago
+Ansarahemad shaikh (talkcontribs)
+I am not getting how to perform multiple operation at one go to pass all the test cases of given programming assignment. please help me in this regard.
+Reply 7 months ago
+Ratyagi (talkcontribs)
+Which exercise are you talking about?
+Reply 7 months ago
+Ansarahemad shaikh (talkcontribs)
+it is programming assignment 1 in Week 2..
+Reply 7 months ago
+Ansarahemad shaikh (talkcontribs)
+I wrote this and got the result as test passed: # Bemused me..how i am getting test passed with 4/4 even without passing any # value to the input. # please confirm me is it the correct code... a,b = [int(x) for x in input().split()] c = a - b print(c)
+Reply 7 months ago
+Akash raj (talkcontribs)
+Dear Ansarahemad, Your code is working. Thanks for help.
+Reply 7 months ago
+Shivani (talkcontribs)
+but this code is not working
+Reply 7 months ago
+Ansarahemad shaikh (talkcontribs)
+it is programming assignment 1 in Week 2..
+Reply 7 months ago
+Ratyagi (talkcontribs)
+Your code looks correct to me, once you click on "Compile & Run" button in assignment window, it will take the Inputs mentioned in test Cases one by one and run your piece of code. And that's why you Pass.
+Reply 7 months ago
+Hardik20sharma (talkcontribs)
+I think you should write print(c, end=""). Normally the print function ends with a new line but we don't need that.
+Reply 7 months ago
+Simran (talkcontribs)
+Hardik is right. In Python, print command automatically shifts the cursor to next line. So you have to change the end variable. Now that you all know it, i would expect you all to help your peers.
+Reply 7 months ago
+Ansarahemad shaikh (talkcontribs)
+Thank you Hardik20sharma, but my ? is, I am not passing any value as an input to the "INPUT()" function then how it is getting the values and giving the result as "Passed"..
+Reply 7 months ago
+Hardik20sharma (talkcontribs)
+The code you write is tested. Its given a set of inputs and matches the expected output to the output printed by your code. You are not passing any values because the values are being passed by the computer itself. Its like a machine is testing if the machine working is perfect or not.
+Reply 7 months ago
+
+Assignment 2 Question 6
+2 comments • 7 months ago
+Girishsinghal (talkcontribs)
+Regarding Assignment 2 Question 6, colon (:) is missing after the for statement and hence I marked the answer as "Error". Now after evaluation, my answer is shown as incorrect. Kindly please check.
+Reply 7 months ago
+Mohit badiyani (talkcontribs)
+I have the same problem .....Please help ...
+Reply 7 months ago
+
+Difficulty in the Programming Assignments
+2 comments • 7 months ago
+HARJEET CHAHAL (talkcontribs)
+Being a beginner in python I am finding the programming assignments really difficult as it is having too many confusing concepts as a beginner.What is being taught in tutorials is way simpler than the programming assignments given.Also the case of passing test cases is not understandable.It would be of great help if a sample tutorial could be uploaded " On how to pass test cases ". Also concept of lists , maps and all is going bouncer.
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Please check my post and see if it can help you. here is the link http://sccilabs.org/jocwiki/index.php/Topic:Uu3k27awhz3wu2jo
+Reply 7 months ago
+
+Week-2 Programming assignment 2 Loop, List and Sum
+3 comments • 7 months ago
+Puneet Patel (talkcontribs)
+Expected output of test case is 5 5 5 5 and actual output i am getting is [5,5,5,5]\n The same is for all other test cases. please convey issue and how to map the out put?
+Reply 7 months ago
+Arunkumar (talkcontribs)
+I have explained it in my answer here. please follow this link... http://sccilabs.org/jocwiki/index.php/Topic:Uu3k27awhz3wu2jo
+Reply 7 months ago
+S (talkcontribs)
+This is because you are printing the output as list. You can have many other options to print output
+Reply 7 months ago
+
+Regarding the test cases in programming assignments
+3 comments • 7 months ago
+Shwetha v (talkcontribs)
+Every time the program is compiled it shows test case passed after ignoring presentation errors I just wanted to know what is this presentation error and how can it be resolved
+Reply 7 months ago
+Arunkumar (talkcontribs)
+:: By default, output of print is ended with a ''newline'' "'''\n'''". Which in our case is causing us presentation error. That is why we are asking ''print()'' function to not end with a ''newline'' "'''\n'''". :: So to solve this we should add '''end=""''' in ''print()'' function. <br /><code>print(*list_sum, end="")</code> '''NOTE:''' Check python 3 documentation, to understand print() function a little better. ---- '''Syntax:''' print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False) Print '''objects''' to the text stream '''file''', separated by '''sep''' and followed by '''end'''. <br /> '''sep''', '''end''', '''file''' and '''flush''', if present, must be given as keyword arguments. All non-keyword arguments are converted to strings like <code>str()</code> does and written to the stream, separated by '''sep''' and followed by '''end'''. Both '''sep''' and '''end''' must be strings; they can also be <code>None</code>, which means to use the default values. If no objects are given, <code>print()</code> will just write '''end'''.<br />
+Reply Edited 7 months ago
+This comment was deleted by Arunkumar (history)
+
+Quiz -2 Doubts
+3 comments • 7 months ago
+HARJEET CHAHAL (talkcontribs)
+What happens when the following code is executed? n=5 if(n>1): print("Hello") WHY ERROR WILL BE THROWN FOR THIS CODE ?
+Reply 7 months ago
+Horic (talkcontribs)
+Hi there, unlike any other programming language, python has no curly braces to define "scope" hence indentation is used, and because the print("hello") statement is not properly indented, hence the code will throw a syntax error.
+Reply 7 months ago
+HARJEET CHAHAL (talkcontribs)
+oh thank you for this minute detail.Missed it out.
+Reply 7 months ago
+
+Assignment-2 Question 2
+3 comments • 7 months ago
+Abhinav (talkcontribs)
+num1, num2 = input().split() num1=int(num1) num2=int(num2) if (num1>num2): print(num1) else: print(num2) Why i am getting presentation error?
+Reply 7 months ago
+Raghav (talkcontribs)
+Use print(num1, end='') to get rid of presentation error, same with other print statement.
+Reply 7 months ago
+Adeebk15 (talkcontribs)
+it has to be print(num1,end='')
+Reply 7 months ago
+
+week 2: assignment question2
+3 comments • 7 months ago
+Rajasekar K (talkcontribs)
+I am getting Server error. HTTP status code: 500. error again and again when compile and run
+Reply 7 months ago
+Ravi4224 (talkcontribs)
+I am also getting the same error
+Reply 7 months ago
+Rajasekar K (talkcontribs)
+a,b = input().split() c=int(a);d=int(b) while(c>d): print(c) print(d,end="") when i am compiling this i am getting error "Could not compile at this time. Try Later. "
+Reply 7 months ago
+
+Programming Assignment
+One comment • 7 months ago
+Navneet (talkcontribs)
+Traceback (most recent call last):\n File "test.py", line 2, in <module>\n b=input()\n EOFError: EOF when reading a line Why editor is throwing this error?
+Reply 7 months ago
+
+week 2- assignment 3
+5 comments • 7 months ago
+Mukilasubbiah (talkcontribs)
+I have created an array and its reverse but I dont know the logic to add the two array elements.I tried my logic but it doesnt work..The concept of list is not in the lecture videos..So,I cant able to answer the question correctly..please help me in this regard..
+Reply 7 months ago
+Hardik20sharma (talkcontribs)
+You can add the array elements by converting them into int. for i in range(num) int(array1[i]) + int(array2[i])
+Reply 7 months ago
+Mukilasubbiah (talkcontribs)
+thanks a lot hardik
+Reply 7 months ago
+Jaiprince17 (talkcontribs)
+did it work oink _-_
+Reply 7 months ago
+Mukilasubbiah (talkcontribs)
+yah..
+Reply 7 months ago
+
+week 2 qst 3
+One comment • 7 months ago
+This comment was deleted by Khubaib tahir (history)
+
+week 2 question 2
+2 comments • 7 months ago
+Khubaib tahir (talkcontribs)
+a = int(input()) b = int(input()) if (a > b): largest =a else : largest =b print(largest) this shows error please provide a right code .
+Reply 7 months ago
+Khubaib tahir (talkcontribs)
+please help me out from this problem
+Reply 7 months ago
+
+what about the program for out put: hello amit hello simran hello vidya in a single program.
+3 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by minidommati321@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+You can use + operator to concatenate all the strings.
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Otherwise you can use comma to print multiple things, or you can use formatting. Formatting is the best method but is of a little high standard.
+Reply 7 months ago
+
+Please explain split method ,use of split ,map method.. Upload a video related to assignment 3 of week 2 so that all the basic concepts will be clear
+4 comments • 7 months ago
+Mrunal 202 (talkcontribs)
+Please explain split method ,use of split ,map method Upload a video related to assignment 3 of week 2 so that all the basic concepts will be clear
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Mrunal, see if you can understand my explanation. http://sccilabs.org/jocwiki/index.php/Topic:Uu3k27awhz3wu2jo
+Reply 7 months ago
+Arunkumar (talkcontribs)
+As map is not there in the notes too try this below link. <br /> https://www.geeksforgeeks.org/python-map-function/
+Reply 7 months ago
+Simran (talkcontribs)
+Only use split to take multiple inputs in single line.
+Reply 7 months ago
+
+hi ...
+7 comments • 7 months ago
+This comment was deleted by Jaiprince17 (history)
+Simran (talkcontribs)
+Hello :)
+Reply 7 months ago
+Jaiprince17 (talkcontribs)
+n=int(input()) j= [] k =[] i = 1 result = [] while i <= n: j.append(i) i =i +1 print(j) j.reverse() k = j.copy() print(k)
+Reply Edited 7 months ago
+Jaiprince17 (talkcontribs)
+give me a solution to add and print tried a lot but everyone is making it complex i want it easy :) python says (everyone should learn to program)
+Reply Edited 7 months ago
+Rajiv sarkar (talkcontribs)
+See I am going to give you the steps. You have to implement it... 1. Initialize two arrays. One for original numbers and one for reversed form. 2. Take input the size. 3. Take input the 2nd line and store it in a variable. 4.Split the 2nd input. It will convert it into a list. 5.Convert each of the element of list into integer one by one. 6.Reverse the list and store it in another list. 7.Sum the elements of both list one by one and store it in a third list using append function. 8.Print the elements of third list one by one separated by space.
+Reply 7 months ago
+Jaiprince17 (talkcontribs)
+trying it now :) thank u Rajiv
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Welcome:)
+Reply 7 months ago
+
+why nptel is not accepting this code
+One comment • 7 months ago
+Abdul (talkcontribs)
+a=[] b=[] c=[] d=[] n=input() n=int(n) a=list(map(int,input().split())) print(a) b=a i=0 b.reverse() print(b) j=n-1 while(i<=n-1 and j>=0): c=a[i]+b[j] d.append(c) i=i+1 j=j-1 print(d)
+Reply 7 months ago
+
+question of week 2 programming assignment
+6 comments • 7 months ago
+Gyaneshsharma (talkcontribs)
+num1=(input()); n1=int(num1); num2=(input()); n2=int(num2); print(n1-n2); i wrote this code , but it is not passing the test cases. How am i supposed to complete the assignment? please help.
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Take input in single line....... num1, num2 = input().split()
+Reply 7 months ago
+Gyaneshsharma (talkcontribs)
+thank you
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Welcome:)
+Reply 7 months ago
+Abhinav (talkcontribs)
+num1, num2 = input().split() num1=int(num1) num2=int(num2) print(num1-num2) This is my code for programming assignment 1 I am getting passed after ignoring presentation error. How can i get rid of presentation error?
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+print(num1-num2, end="")..... This way cursor won't go to next line after printing.
+Reply 7 months ago
+
+question 3 of week 2 assignment
+21 comments • 7 months ago
+Amudha (talkcontribs)
+i have created a list and reversed the list also. but getting error in adding elements of two list. can anyone suggest how to add elements of two list
+Reply 7 months ago
+Varghese (talkcontribs)
+Same doubt
+Reply 7 months ago
+Hardik20sharma (talkcontribs)
+Yoc can convert every value of array into int and add them, store them respectively in an array. for i in range(num) Result[i] = int(a[i]) + int(b[i])
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Before this you should write ..........result = [0]*num.......so that the array result could be initialized.
+Reply 7 months ago
+Teena (talkcontribs)
+a=[] b=[] rev=[] s=[] n=int(input()) a=input().split() for i in range(n): x=int(a[i]) b.append(x) rev=list(reversed(b)) for i in range(n): s.append(b[i]+rev[i]) for i in range(n): print('',s[i],end=""); This is my code.I am getting a presentation error.Can anyone please suggest me how to overcome this error.
+Reply 7 months ago
+Gokul4u (talkcontribs)
+use print(*s,sep=" ",end="") to get rid of presentation error
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Why is there a comma at the beginning of last print statement? It should not be there.
+Reply 7 months ago
+Gourav (talkcontribs)
+no, you have to give two double inverted commas(" ") at the beginning of last print statement, i.e., before the comma
+Reply Edited 7 months ago
+Teena (talkcontribs)
+My test cases are passed after ignoring presentation error. Then, is my answer correct?
+Reply 7 months ago
+Teena (talkcontribs)
+My score is 100/100.What is meant by passed: After ignoring presentation error?
+Reply 7 months ago
+Hardik20sharma (talkcontribs)
+Your output is correct. But there is a presentation error. For example --> Your output is coming 5____5___5_______5 and the desired output is 5_5_5_5 I have used '_' to show spaces. Another example can be 5_5_5_5_ (Even this will give you presentation error) You have to keep the presentation of output in mind.
+Reply 7 months ago
+Marysubaja (talkcontribs)
+Dear sir, I also got the same message that is" My score is 100/100.What is meant by passed: After ignoring presentation error?".will they awarded 100 marks?? How can i avoid this presentation error.
+Reply 7 months ago
+Hardik20sharma (talkcontribs)
+@Teena Please change your last for loop statement into for i in range(n): print(s[i], end="") if(i!=n-1): print(" ", end="") Do check and tell how is the output coming
+Reply 7 months ago
+Venkata Swathi R (talkcontribs)
+new_list = [old_list[i]+old_list[-i-1] for i in range(len(old_list))] this keeps adding 0th and last element 1st and last but one element and so on when i = 0 old_list[0] + old_list[-1] i = 1 old_list[1 + old_list[-2] i = 2 old_list[2] + old_list[-3] NOTE: old_list[-1] gives the last element, old_list[-2] gives last but one element and so on
+Reply 7 months ago
+Venkata Swathi R (talkcontribs)
+I updated the list concept with negative index. check it
+Reply 7 months ago
+Teena (talkcontribs)
+Even though I am not getting output sir. There is problem with space. I am getting it as 5555 instead 5 5 5 5.
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Print it with space.... print(a[i], end=" ")
+Reply 7 months ago
+Teena (talkcontribs)
+a=[] b=[] rev=[] s=[] n=int(input()) a=input().split() for i in range(n): x=int(a[i]) b.append(x) rev=list(reversed(b)) for i in range(n): s.append(b[i]+rev[i]) for i in range(n): print(s[i],end=" ") if(i!=n-1): print(" ", end=" ") Sir,please kindly check whether this program is correct. I am not able to overcome my errors.
+Reply 7 months ago
+Lwardell (talkcontribs)
+Teena, try indenting the if statement to the same position as the print statement above it.
+Reply 7 months ago
+C++veteran (talkcontribs)
+try this :- count=size count=int(count) while count !=0: a2.append(a1[count-1]) count=count-1 a3=[a1[i]+a2[i] for i in range(size)] ('count' is a variable)
+Reply Edited 7 months ago
+Rajiv sarkar (talkcontribs)
+See teena, mistake is in the 4th and 5th line. You have to convert elements into integer and append them into new list one by one, inside a for loop..
+Reply 7 months ago
+
+Doubt regarding 'insert' command
+3 comments • 7 months ago
+question 3 of week 2
+2 comments • 7 months ago
+Sai Krishna (talkcontribs)
+please give me the correct code . i'm not getting that!
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+See the discussion page, you will get all the necessary ideas needed to solve the problem.
+Reply 7 months ago
+
+assignment 3 of week 2
+3 comments • 7 months ago
+Mrunal 202 (talkcontribs)
+n=input() n=int(n) list1=list(map(int,input().split())) list2=list1.copy() list1.reverse() for i in range(n): list3= list1[i]+list2[i] print(list3) my answer is right but format is like this 5\n 5\n 5\n 5\n how to avoid \n and give one line output with spaces?
+Reply 7 months ago
+Bose (talkcontribs)
+for i in range(len(list3)): print(list3[i],end=" ") for an output of 5 5 5 5
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Yes, you need to print the elements one by one.
+Reply 7 months ago
+
+Problem with list sum
+10 comments • 7 months ago
+Sai Pavan (talkcontribs)
+n=int(input("Enter Number of elements")) i=0 while(i<n): a[i]=int(input()) i=i+1 b[i]=a[::-1] i=0 while(i<n): c[i]=a[i]+b[i] print(c[i]) I have written the above code... but it is showing error...
+Reply 7 months ago
+Simran (talkcontribs)
+You should first define what is a? a is a list. So write a=[]
+Reply Edited 7 months ago
+Sai Pavan (talkcontribs)
+Got the result after modifying... Thank You
+Reply 7 months ago
+Sai Pavan (talkcontribs)
+n=int(input("Enter Number of elements")) i=0 a=[] b=[] c=[] for i in range(n): a.append(int(input())) b=a[::-1] for i in range(n): c.append(a[i]+b[i]) print(c) After modifying the code like above.. it is running perfectly in Spyder but still shows some error in the Assignment ..
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Don't write "Enter number of Elements". Machine will itself understand when to enter what.
+Reply 7 months ago
+Sai Pavan (talkcontribs)
+I got it.. But the error is not about that.below is the error invalid literal for int() with base 10: '1 2 3 4'
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Don't take input of a inside a for loop. the input a is being given at once. So take it at once. a=input()....... Then split its components.........a=a.split()..........then convert all of the elements into integers. After that you can reverse and add them.
+Reply 7 months ago
+Sai Pavan (talkcontribs)
+Thanks for the advice.. I have modified. It shows Wrong answer n=int(input()) i=0 a=[] b=[] c=[] a=input().split() for i in range(n): a[i]=int(a[i]) b=a[::-1] for i in range(n): c.append(a[i]+b[i]) print(c) After executing the code it says like below Test Case 1 Wrong Answer Input	Expected Actual Output 4 1 2 3 4 5 5 5 5 [5, 5, 5, 5]\n
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Don't print C at once. Print its element one by one separated by space.
+Reply 7 months ago
+Sai Krishna (talkcontribs)
+\n is printing in each and every output
+Reply 7 months ago
+
+no knowledge of arrays week2 assignment3
+3 comments • 7 months ago
+Ronakngp (talkcontribs)
+we have not discussed arrays and topics included in assignment3 how can we solve it please tell
+Reply 7 months ago
+Lwardell (talkcontribs)
+The assignments are a week ahead of the lecture. Can this please be looked at and changed? Thanks.
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Week 3 has been released. Go through the lectures and try to solve it. Also, there is a page dedicated on lists in this forum, which can be reached from the index page. That will help you solve the assignment.
+Reply 7 months ago
+
+Code Problem
+2 comments • 7 months ago
+Sahdevian (talkcontribs)
+import networkx as nx import matplotlib.pyplot as plt import random G=nx.Graph() city_set=['Delhi','Bangalore','Mumbai','Hyderabad','Ahmedabad','Chennai','Kolkata','Surat','Pune','Jaipur'] for each in city_set: G.add_node(each) costs=[] value=100 while (value<=2000): costs.append(value) value=value+100 while (G.number_of_edges()<5): c1=random.choice(city_set) c2=random.choice(city_set) if c1!=c2 and G.has_edge(c1,c2)==0: w=random.choice(costs) G.add_edge(c1,c2,weight=w) for u in G.nodes(): for v in G.nodes(): print (u,v,nx.has_path(G,u,v)) pos=nx.circular_layout(G) nx.draw_networkx_edge_labels(G,pos) nx.draw(G,pos,with_labels=1) #If I replace city_set in c1 and c2 with G.nodes() the code is not working anymore. Does it has anything to do with string/G.node-property ? ##G.nodes() is working fine in the videos and not in my spyder console
+Reply Edited 7 months ago
+Rajiv sarkar (talkcontribs)
+I guess this is the problem of Social Network course and this is not the correct place for posting that. This is a forum for a different course. Still someone may help you if they know the answer!
+Reply 7 months ago
+
+answer=0 for i in range(5): answer=answer+1 print(answer) Can anyone tell what is the output for this.
+4 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by dilipkgowda878@gmail.com
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Answer will be 5. The loop runs 5 times and every time answer gets increased by 1.
+Reply 7 months ago
+Dilip Kumar k (talkcontribs)
+In video it is answer=answer+i.....but in assignment it is answer=answer+1
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Try dry running your code. That means follow your code with pen and paper and see value of which variable changes when. After that you will understand very easily the output of the program.
+Reply 7 months ago
+
+Sir, why are those numbers printed line by line why it doesn't print in the same line. Please explain
+5 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by santhoshkumarp.1702106@srit.org
+Reply 7 months ago
+Simran (talkcontribs)
+In Python, print automatically shifts the cursor to next line.
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+To print it in same line write......... print(num,end="")
+Reply 7 months ago
+Nikhil3996 (talkcontribs)
+sir but its coming with a comma. how to remove that
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Can you post the command by which you are printing?
+Reply 7 months ago
+
+Programming Assignment-2: Loops ,List and Sum
+4 comments • 7 months ago
+Salgare3s (talkcontribs)
+a=int(input()) b=input() c=b.split() k=[] for i in range (a): w=int(c[i]) k.append(w) k1=[] k1=k[::-1] sum1=[] for i in range(a): sum1.append(k[i] + k1[i]) print(sum1 I written the above code and run in spider, i got required o/p. Still i am getting wrong answer in assignment. Plz help
+Reply Edited 7 months ago
+Rajiv sarkar (talkcontribs)
+Don't print sum1 at once but print its element one by one separated by space.
+Reply 7 months ago
+Salgare3s (talkcontribs)
+Thank you!
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Welcome:)
+Reply 7 months ago
+
+List Sum Showing error,
+One comment • 7 months ago
+Sai Pavan (talkcontribs)
+n=int(input("Enter Number of elements")) i=0 while(i<n): a[i]=int(input()) i=i+1 b[i]=a[::-1] i=0 while(i<n): c[i]=a[i]+b[i] print(c[i]) I have written the above code. but it shows error... Help me in Further steps...
+Reply 7 months ago
+
+Anaconda navigator not running
+2 comments • 7 months ago
+Kavit (talkcontribs)
+After installing ananconda, in the start menu,only command prompt is appearing. ANACONDA NAVigator is not appearing. when we type anaconda-navigator in command prompt, it says nothing such exists. Also Anaconda Navigator is appearing as file folder, not as app. Plz resolve
+Reply Edited 7 months ago
+Rajiv sarkar (talkcontribs)
+Maybe some problem occurred during installation. I think you may try to reinstall it or just see whether you can use spyder directly without anaconda navigator. If you can run spyder and import libraries, there is not much need of anaconda navigator.
+Reply 7 months ago
+
+Assignment 2, program 3
+4 comments • 7 months ago
+Malolan (talkcontribs)
+n=int(input()) a=[0]*n for i in range(n): a[i] = int(input()) b=a[::-1] for i in range(n): c= a[i]+b[i] print( c,'' ,end='') I got my output in Spyder but I'm getting a error in the fourth line in assignment
+Reply Edited 7 months ago
+Rajiv sarkar (talkcontribs)
+You can't take input inside for statement. All the inputs in second line are given at once separated by space, so you must split them. Take input as normal....... a=input()..... Then split them... a=a.split()...... This will convert a into a list.... After that.. Make all elements of list a into integer using for loop.
+Reply 7 months ago
+Malolan (talkcontribs)
+Thanks a lot
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+No problem :)
+Reply 7 months ago
+
+Query regarding the result in Programming Assignment-2: Loops ,List and Sum:
+6 comments • 7 months ago
+Meenakshi (talkcontribs)
+In Programming Assignment-2: Loops ,List and Sum: After compiling the result is like all the test cases are passed, but after submitting the passed test cases is showing as 3.Can I know what may be the reason.
+Reply 7 months ago
+0o 3.14thon o0 (talkcontribs)
+how did you print the answers without brackets?
+Reply 7 months ago
+Meenakshi (talkcontribs)
+Thanks for the response... yes, I converted the list into string before printing sample output:	5 5 5 5
+Reply 7 months ago
+0o 3.14thon o0 (talkcontribs)
+i did that too. i used .join() function at last. is there any other way to do that? google didn't work for me.
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+You can print the elements one by one separated by space.
+Reply 7 months ago
+Venkata Swathi R (talkcontribs)
+' '.join(list_name)
+Reply 7 months ago
+
+Difference between pass and continue statement?
+5 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by pooja.e7943@cumail.in
+Reply Edited 7 months ago
+Simran (talkcontribs)
+Yes, there is a difference. continue forces the loop to start at the next iteration while pass means "there is no code to execute here" and will continue through the remainder or the loop body. There is a difference between them, continue skips the loop's current iteration and executes the next iteration.
+Reply 7 months ago
+Kaplesh (talkcontribs)
+Is pass statement used practically??? Or just a theoretical concept
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Pass is used extensively in professional programming. Suppose you are doing a program and writing if else statement. Now, you may want to write the else block first and test it. So you can write pass inside if and then write the else block. Then you can run and check if everything is working fine in else block. Then you can proceed with writing statements in if block and then can test them.
+Reply 7 months ago
+Venkata Swathi R (talkcontribs)
+Thank you. That's really interesting insight
+Reply 7 months ago
+
+ValueError: invalid literal for int() with base 10: '6 2 why i am getting this error?
+4 comments • 7 months ago
+Nital (talkcontribs)
+ValueError: invalid literal for int() with base 10: '6 2 what is this error?
+Reply 7 months ago
+Hardev k (talkcontribs)
+This is because the question says you need to take two inputs as integer in a single line. Try out this code, x, y = map(int, input().split()) Hope this helps.
+Reply Edited 7 months ago
+Rajiv sarkar (talkcontribs)
+Or this..... x,y=input().split().........x=int(x)........y=int(y)
+Reply 7 months ago
+Venkata Swathi R (talkcontribs)
+the default type of inputted data is string. so you need to convert it to desired type(here it is integer) before you work on your data. so read and then convert if needed.
+Reply 7 months ago
+
+question 3 of week 2 assignment
+3 comments • 7 months ago
+Joysilky (talkcontribs)
+a=input().split() for i in range(size): a[i]=input().split() for i in range(size): s.append(b[i] + rev[i]) rev=list(reversed(b)) for i in range(size): s.append(b[i]+rev[i]) for i in range (size): print(s[i], end=" ") whats wrong in this
+Reply 7 months ago
+Venkata Swathi R (talkcontribs)
+for i in range(size): a[i]=input().split() no need to take a loop. Simply a = input().split()
+Reply 7 months ago
+Venkata Swathi R (talkcontribs)
+then for i in range(len(a)): a[i] = int(a[i])
+Reply 7 months ago
+
+more advanced assignment questions than explained in lectures
+One comment • 7 months ago
+Shashidhar S (talkcontribs)
+in lecture videos the explanation was only till for and while loops.but in assignments there are questions on lists, arrays about which I don't have any idea.how do you expect beginners to progam using untaught command sir?
+Reply 7 months ago
+
+Why we use Anaconda ? We can also use Python on terminal and also create script and run using python3 test.py and ./test.py.
+3 comments • 7 months ago
+Descentis (talkcontribs)
+Asked by kumawatpraful218@gmail.com
+Reply 7 months ago
+Descentis (talkcontribs)
+Yes you can. We encourage beginners to use Anaconda because it is easy to use and comes with a lot of libraries already installed.
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+I you continue to work on advance python projects then you will need to install lot of libraries yourself, but with anaconda there is no such problem.
+Reply 7 months ago
+
+why the number is taking as string?
+3 comments • 7 months ago
+Descentis (talkcontribs)
+Asked by bhanusri.ammulu@gmail.com
+Reply 7 months ago
+Descentis (talkcontribs)
+input() command takes input as a string. You have to explicitly convert it into another type.
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Like to change it to number, write a=int(a) after taking input or directly a=int(input())
+Reply 7 months ago
+
+showing error in assigment but working properly in spyder why?
+4 comments • 7 months ago
+This comment was deleted by Varun78643 (history)
+Varun78643 (talkcontribs)
+n=input("How many number you want to enter") n=int(n) arr=[] b=[] s=[] for i in range(n): a=int(input()) arr.append(a) print(arr) b=list(reversed(arr)) print(b) for i in range(n): s.append(arr[i]+b[i]) print(s)
+Reply 7 months ago
+Varun78643 (talkcontribs)
+it is not showing any error in spyder but while i am submitting in assigment it is showing error why?
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+1. Don't input anything in first line. Just write n=int(input())........ In this assignment, input is provided by computer, computer don't need your message that how many number you want to enter. It knows that. 2. Don't write print(arr). 3.Dont print S at once, print its element one by one, with a space.
+Reply 7 months ago
+
+the process of taking input code is not appropriate
+2 comments • 7 months ago
+Descentis (talkcontribs)
+sir i don't find the way of writing codes as as appropriate one the for the same requirment the code is working well on jupyter ,but here it's not working i can perform the required task but on jupyter notebook code for assignment 3,week 2: a=[] n=int(input()) for i in np.arange(n): i=int(input()) a=np.append(a,i) b=[] for i in np.arange(n-1,-1,-1): b=np.append(b,a[i]) c=a+b print(c) plz don't ristrict the way of coding their may be various ways to reach the same goal ,but your process accepts the only one. it's probably the limitation of machine but has to be explained any way.... Asked by sudhanshuranjan022@gmail.com
+Reply Edited 7 months ago
+Descentis (talkcontribs)
+1) You are not supposed to post codes online. 2) Your program is incorrect. In online programming environment, the input should be in standard form. Hence we cannot allow any format of the input.
+Reply Edited 7 months ago
+
+while taking the inputs in the first line it said take n as input which represents the array elements what does that mean can anyone give me a hint?
+2 comments • 7 months ago
+Descentis (talkcontribs)
+Asked by joychakraborty441@gmail.com
+Reply 7 months ago
+Descentis (talkcontribs)
+It means that the number of elements in the input array should be n.
+Reply 7 months ago
+
+Can we compare strings?
+2 comments • 7 months ago
+Descentis (talkcontribs)
+Asked by samirtd2000@gmail.com
+Reply 7 months ago
+Descentis (talkcontribs)
+Yes, you can. In later videos, we will show how to do that also.
+Reply 7 months ago
+
+runtime error in python3
+2 comments • 7 months ago
+Descentis (talkcontribs)
+Asked by kamalendu2k16@gmail.com
+Reply 7 months ago
+Descentis (talkcontribs)
+A runtime error is caused when the logic is not correct. Try to fic the logic of your code.
+Reply 7 months ago
+
+what does "The first line of input contains two numbers separated by a space ",exactly mean?
+2 comments • 7 months ago
+Descentis (talkcontribs)
+Asked by kazisoaibikbal@gmail.com
+Reply 7 months ago
+Descentis (talkcontribs)
+It means that the input provided by the user will contain numbers which are space separated. For example, 2 3 4 Can be one of the input as 2,3,4 are separated by space
+Reply 7 months ago
+
+clearing the Public Test cases
+2 comments • 7 months ago
+Descentis (talkcontribs)
+Asked by geetika.vyas@iisuniv.ac.in
+Reply 7 months ago
+Descentis (talkcontribs)
+Each programming assignment has some public test cases and some private test cases. You should write your program in such a way that it should work for the general test cases. Passing only the public test cases doesn't mean that your program is correct. Your program should also pass those private test cases.
+Reply 7 months ago
+
+regarding python version
+2 comments • 7 months ago
+Descentis (talkcontribs)
+Asked by nuthananutz233@gmail.com
+Reply Edited 7 months ago
+Descentis (talkcontribs)
+You can use any version of the python. For this course, we have used Python-3
+Reply 7 months ago
+
+how to zoom in the console to increase font size?
+2 comments • 7 months ago
+Descentis (talkcontribs)
+Asked by mailshaan13@gmail.com
+Reply 7 months ago
+Descentis (talkcontribs)
+Use Clt plus +
+Reply 7 months ago
+
+how to over come this error : EOFError ?
+2 comments • 7 months ago
+Descentis (talkcontribs)
+Asked by kunam2311@gmail.com
+Reply 7 months ago
+Descentis (talkcontribs)
+It mostly happens when you have missed some brackets or comments. Please check your code for that
+Reply 7 months ago
+
+Problem loading Spider
+2 comments • 7 months ago
+Descentis (talkcontribs)
+Asked by myyouryou@gmail.com
+Reply 7 months ago
+Descentis (talkcontribs)
+Mostly it happens if you have downloaded the wrong version of spyder. Try to download the correct version (32-bit or 64-bit). Sometimes Spyder might crash automatically, try to run it again.
+Reply 7 months ago
+
+How data type is decided for a loop variable?
+2 comments • 7 months ago
+Descentis (talkcontribs)
+Asked by srihari.99.anand@gmail.com: Consider a loop for i in range(10): statement How does python knows that i is an integer or a character?
+Reply Edited 7 months ago
+Descentis (talkcontribs)
+In python, variables are assigned on fly. So if I write i = 10, it automatically knows that it is of integer type.
+Reply 7 months ago
+
+Week 2 assignment 3 doubt
+One comment • 7 months ago
+This comment was deleted by Ymdraj (history)
+
+why python don't implement do while?
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by pooja.e7943@cumail.in
+Reply 7 months ago
+Simran (talkcontribs)
+Yes, Python doesn't have do while. But there is no need of separate construct like do while. You can emulate do while with the help of while only.
+Reply 7 months ago
+
+list index out of bound exception in question3
+4 comments • 7 months ago
+Vaishali Goyal (talkcontribs)
+b=[] a=[] rev=[] s=[] size=int(input()) for i in range(size): a[i]=input().split() for i in range(size): t = int(a[i]) b.append(t) rev=b.reverse() for i in range(size): s[i]=b[i]+rev[i] print(s) the given code is throwing outofbound error " File "E:/python files/week1 assignment/ass2q3.py", line 8, in <module> a[i]=input().split() IndexError: list assignment index out of range"
+Reply 7 months ago
+Hardik20sharma (talkcontribs)
+Problem is in line 8, try writing s.append(b[i] + rev[i]). The issue is we can't assign value to a list position if it does not exists. The append will make sure the position in list is there.
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+There are a few errors in your code. 1. Don't take input inside for loop. Since you are using split function, just write a=input().split(), this will be all. After that you can convert them to integer inside for loop, that you have done right. 2.Dont write rev=b.reverse()....... It will make b reverse itself and original b will be lost. Write rev=list(reversed(b)) 3.you can't write s[i] =b[i] + rev[i], instead write s.append(b[i]+rev[i]).......this is because when it executes, in the first step it becomes s[0]=b[0]+rev[0] but there is no s[0], still now it was a list with no items so s[0] simply don't exist and it can't be assigned anything. 4.make the required changes and your code will run fine. You will understand this answer more clearly when you do more and more programming :)
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+One last point don't print S at the end but print each member one by one separated by space. Like...... for i in range (size) : print(s[i], end=" ")
+Reply 7 months ago
+
+Profit calculation
+One comment • 7 months ago
+Simran (talkcontribs)
+Hello Sir, To calculate 15% profit, i applied the formula SP=CP*1.15 I gave 100 as CP, after calculation it is showing 114.999999999, but if i am applying the formula SP=CP+(CP*0.15) it gives me 115 as answer. Can you please tell me why it is showing 14.99... in above formula? Question asked by shubhisbd@gmail.com
+Reply 7 months ago
+
+if we use array=input().split() it take as string and prints like ['3','4'] if i use array=int(array) then it is not converting into integer
+4 comments • 7 months ago
+Nandini25998 (talkcontribs)
+e use array=input().split() it take as string and prints like ['3','4'] if i use array=int(array) then it is not converting into integer
+Reply 7 months ago
+0o 3.14thon o0 (talkcontribs)
+i think you have to use .append() function inside a loop to change elements to integer. 'array' is not a array. it's a list.
+Reply 7 months ago
+Ratyagi (talkcontribs)
+You can't change object type of a List to Integer directly like this, There are ways to do that, you can Google it. If you want to keep it simple, What you can do is, that you can reference to individual elements of a List and format them to integer, something like, int(array[i]) -> "i" represents the index value of an element in List "array".
+Reply Edited 7 months ago
+Rajiv sarkar (talkcontribs)
+Do this. for i in range(len(array)): array[i] = int(array[i])
+Reply 7 months ago
+
+Sir in the if condition part,we can only compare the integer condition?? Means ---- if(d==10): Here d is an integer,will it work with strings in the same manner?
+3 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by raviyadav4224@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+Yes, it works for strings also. You can compare any two similar datatypes.
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Even you can compare lists and dictionaries in that way (when you learn lists and dictionaries) . That is the beauty of python.
+Reply 7 months ago
+
+Installing Anaconda on Mac - Issue
+2 comments • 7 months ago
+PrasadM (talkcontribs)
+Hello, On trying to install Anaconda on Mac, the GUI pops a screen at the end of installation stating that "Installation is failed". However, it seems one can safely ignore it. Launch Anaconda and it should work fine. Though this may be useful to other Mac users.
+Reply 7 months ago
+Simran (talkcontribs)
+Did you consult the week 2 super notes?
+Reply 7 months ago
+
+why did you right c=1 in the 3rd line sir? is it necessary for the programme to run ?.
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by neelriteshyadav@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+C variable is used in the while loop. So it is necessary to initialise it.
+Reply 7 months ago
+
+how the python is designed? what is building block to design python software?
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by tejaswini12cp12@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+Objects are the building blocks of python. Everything in python like int,string is an object.
+Reply 7 months ago
+
+How does computer follow input?
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by MONGALMOYKARMAKAR047@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+The instructions of a program are converted to machine language understood by computer. In this way, computer is able to understand the instructions that we give.
+Reply 7 months ago
+
+what is IDE?.
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by AbhishekNandy360@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+IDE is Integrated Development Environment which has basic tools required to run a particular software.
+Reply 7 months ago
+
+what is difference between if and while loop.
+4 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by avi1calm@gmail.com
+Reply 8 months ago
+Simran (talkcontribs)
+If is a conditional loop and while is an iterative loop.
+Reply 8 months ago
+Venkata Swathi R (talkcontribs)
+statements written under if gets executed only once if the condition is true. while repeats executing the same set of statement till the condition fails
+Reply 7 months ago
+Simran (talkcontribs)
+Thanks Venkata :)
+Reply 7 months ago
+
+about assignment 2 , last programming assignment
+3 comments • 7 months ago
+Adeebk15 (talkcontribs)
+How to initiate arrays , and how to link the variable with its place in the array.
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+You can initialize the array by writing..... Array_name = [] Can you please elaborate second part of your question?
+Reply 7 months ago
+Hardik20sharma (talkcontribs)
+For initializing you have to type array = []. In assignment 2 you will notice that all the input will be given in a line, so you can use: array = input().split() Suppose you have ["1 4 5 2 3"] in an array, the split function will change it into ["1","4","5","2","3"]
+Reply 7 months ago
+
+About installation of Anaconda
+2 comments • 7 months ago
+Hardev k (talkcontribs)
+I have successfully installed Anaconda from the cloud website and the setup has run successfully but I am not able to find the Spyder IDE. Also note that I already have Python 3.7 application in my windows laptop already which opens as a console. But how should I open Spyder IDE ?
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Maybe YouTube tutorials will help here. Try looking there.
+Reply 7 months ago
+
+answer=0
+3 comments • 7 months ago
+Simran (talkcontribs)
+Why isn't the answer value i.e, zero converted into int before adding one to it?. Question asked by machavaram.bhavana@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+Here, we are not taking answer as an input. We are assigning a value to variable answer. input function takes string input by default. In that case, we need to convert, otherwise we dont have to.
+Reply 7 months ago
+Venkata Swathi R (talkcontribs)
+when we mention answer = 0, 0 is clearly integer we need not to convert it to integer. It is only when you take input from input(), we need to do conversion
+Reply 7 months ago
+
+Assignment-2
+5 comments • 7 months ago
+Ch18m001 (talkcontribs)
+In week two, programming assignment-2, I am unable to understand how to input two variables as(The first line of the input contains two numbers separated by a space) I did something like this, a = input("Enter the first number..") b = input("Enter the second number..") a = int(a) b = int(b) print("The difference between", a,"and", b, "is", a-b) kindly explain
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+a,b=input().split() This will store the numbers in both a and b. And don't add all the lines like enter the number, the difference is this, etc. That will give you errors. Don't write any English sentences from your own. Just print what is asked in the question.
+Reply 7 months ago
+Venkata Swathi R (talkcontribs)
+i did not understand the last programming question in assignment2 (on loops, lists & sum). can any body help please
+Reply 7 months ago
+Hardik20sharma (talkcontribs)
+Let me explain you the example: Input: 4 2 5 3 1 Output: 3 8 8 3 First you have to take an input from the user. Suppose you have taken 4 as input. Then, after taking the input you have to initialize a loop which runs 4 times and takes 4 input. You have to store these inputs in an array, let's call that array A. Now after storing the information in an array, take the first element and the last element. 2+1 = 3 Take the second and second last element. 5+3 = 8 Now, here is the tricky part. You have to take the second last element and the second element. 3+5 = 8 And again, the last element and the first element. 1+2 = 3 So, now your output should be 3 8 8 3
+Reply 7 months ago
+Venkata Swathi R (talkcontribs)
+thank you Hardik
+Reply 7 months ago
+
+does increment operator like age++ work in Python??
+5 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by sombit.bose15@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+No, it doesn't work in Python.
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Instead you can use age=+1.
+Reply 7 months ago
+Venkata Swathi R (talkcontribs)
+it is not age =+ 1, but age += 1
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Yes, you are right. I am extremely sorry for my typo.
+Reply 7 months ago
+
+Assignments from topics not yet discussed
+2 comments • 7 months ago
+Tinu Iype Jacob (talkcontribs)
+The concept of array has not been yet discussed. But the assignment demands a good understanding on its operations(Sorry if I am wrong). Please suggest some authentic resources to read on it. Since I am a beginner I find it really difficult to certain assignments. I am getting the logic, but syntax is the problem.
+Reply 7 months ago
+Rajiv sarkar (talkcontribs)
+Array is same as list in python. Search in YouTube and you will get a lot of tutorials. Geegsforgeeks is another good website for reading about it. And yes, you may have problem in doing the assignment. Just give your best try :)
+Reply 7 months ago
+
+HOW TO INCREASE THE FONT SIZE IN SPYDER APPLICATION?
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by shiroysub@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+Tools → Preferences → General → Appearance → Fonts
+Reply 7 months ago
+
+For loop
+4 comments • 7 months ago
+Salgare3s (talkcontribs)
+In the for loop the value of i starts with 0. Is it possible to start the loop with user defined value of i?
+Reply 8 months ago
+This comment was deleted by Anupama N (history)
+Bose (talkcontribs)
+yes you can use for i in range(start value,stop value)
+Reply 7 months ago
+Simran (talkcontribs)
+Thank you Bose for answering. Keep it up :)
+Reply 7 months ago
+
+discount problem
+2 comments • 7 months ago
+Anupama N (talkcontribs)
+dear sir/madam, actually in this problem we are saying that we are going to display final price after discount. But we are calculating only discounted price to get final price the following code has to be there i think final=c-answer print(final)
+Reply 8 months ago
+Simran (talkcontribs)
+Yes we are already subtracting the discount from the percentage. if selling price is 100 and discount is 20% then final selling price would be 80% of 100
+Reply 7 months ago
+
+Why Python is named so?
+2 comments • 8 months ago
+Simran (talkcontribs)
+Question asked by aparnadutta1972@gmail.com
+Reply Edited 8 months ago
+Simran (talkcontribs)
+When he began implementing Python, Guido van Rossum was also reading the published scripts from “Monty Python's Flying Circus”, a BBC comedy series from the 1970s. Van Rossum thought he needed a name that was short, unique, and slightly mysterious, so he decided to call the language Python.
+Reply 8 months ago
+
+in the table if i dont need 10*0=0 then what change required?.
+2 comments • 8 months ago
+Simran (talkcontribs)
+Question asked by salgare.ss@sginstitute.in
+Reply 8 months ago
+Simran (talkcontribs)
+You can modify the for loop accordingly. You can write for i in range(1,10)
+Reply 8 months ago
+
+is it possible to give initial value to i as per our requirement in for loop? or it takes default as 0. for example i=1 for i in range (100).
+2 comments • 8 months ago
+Simran (talkcontribs)
+Question asked by salgare.ss@sginstitute.in
+Reply 8 months ago
+Simran (talkcontribs)
+Yes, this is very much possible. You can also write for i in range(1,100)
+Reply 8 months ago
+
+d=int(c) you are specifying that c is integer but what about d.
+2 comments • 8 months ago
+Simran (talkcontribs)
+Question asked by avi1calm@gmail.com
+Reply 8 months ago
+Simran (talkcontribs)
+Here, we are converting c to integer and storing it to d.
+Reply 8 months ago
+
+Can we use '+' instead of ',' to print the string along with the variable values?
+2 comments • 8 months ago
+Simran (talkcontribs)
+Question asked by teja3678@gmail.com
+Reply 8 months ago
+Simran (talkcontribs)
+Concatenation operator '+' is only used for concatenating two strings. In that case you need to convert your variable to str and use '+' operator.
+Reply 8 months ago
+
+unable to compile sample cases in Assignment
+3 comments • 8 months ago
+Ashish.ne (talkcontribs)
+how to submit test case 1,2,3,4 results? am not able to get desired output with test cases given by you like when I click on " Compile & Run, this test case is passed but others are showing as wrong. this is passed but the first test case result are showing wrong though it was passed for the first time execution.
+Reply 8 months ago
+Ayush2307 (talkcontribs)
+i have the same doubt. please help me with that
+Reply 8 months ago
+Simran (talkcontribs)
+Please refer common doubts section of week 2. If you still face issues, then post your code here and i will help you.

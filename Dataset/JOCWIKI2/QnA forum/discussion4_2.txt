@@ -1,0 +1,1113 @@
+how to exit an infinite loop in the ipython console..?
+4 comments • 6 months ago
+Narendra (talkcontribs)
+with a wrong perspective a wrote a code and it went to an infine loop. how to terminate it ..?
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+use Ctrl+c to kill the execution.
+
+Reply 7 months ago
+Narendra (talkcontribs)
+thank you :)
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@Narendra, You are welcome. :)
+
+Reply 6 months ago
+
+Programming Assignment-2: End-Sort - Test Case 3
+16 comments • 6 months ago
+Koushik Kamalahasan (talkcontribs)
+Programming Assignment-2: End-Sort Due on 2019-03-07, 23:59 IST Given a list A of N distinct integer numbers, you can sort the list by moving an element to the end of the list. Find the minimum number of moves required to sort the list using this method in ascending order.
+
+Input Format: The first line of the input contains N distinct integers of list A separated by a space.
+
+Output Format Print the minimum number of moves required to sort the elements.
+
+Example:
+
+Input: 1 3 2 4 5
+
+Output: 3
+
+Explanation: In the first move, we move 3 to the end of the list. In the second move, we move 4 to the end of the list, and finally, in the third movement, we move 5 to the end.
+
+Hi all,
+
+I am trying to do the above assignment. Below is my code:
+
+A=input().split(" ") N=len(A) count = 0
+
+app = 0 j=0
+
+while (j<=N):
+
+   for i in range(j, N-1):
+       if(A[j] > A[i+1]):
+           app = 1
+           
+   if (app == 1):
+       temp=A[j]
+       del A[j]
+       A.append(temp)
+       count +=1
+       app=0
+       
+   else:
+       j=j+1
+print(count, end="")
+
+
+My code works fine for the given above example and also for the first two test cases (with input as 1,2,3,4,5 and 1,3,5,2,6)
+
+For the third test case (with input as 5,1,3,2,7) I am getting the number of moves as 5 and not 3.
+
+I tried it manually and I am getting 5 moves. Below is my manual moves: Given Array	5	1	3	2	7 Step 1 - Move 5 to the end	1	3	2	7	5 Step 2- Move 3 to the end	1	2	7	5	3 Step 3 - Move 7 to the end	1	2	5	3	7 Step 4 - Move 5 to the end	1	2	3	7	5 Step 5 - Move 7 to the end	1	2	3	5	7
+
+Can someone help me and let me know where I am wrong?
+
+Thanks Koushik
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+no, move 3 to the end first, then 5, then 7. thats it. 3 steps.
+
+Reply 7 months ago
+Koushik Kamalahasan (talkcontribs)
+For the third test case with input as 5,1,3,2,7
+
+Aren't we suppose to move the first number ('5') we come across which is greater than the next number ('1') in the list to the end of the list?
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+but if we move 5 first, but then when we move 3... 5 should be moved again. that means we added an extra step. condition is to use less moves to sort, and that too by moving to the last.
+
+Reply 7 months ago
+Koushik Kamalahasan (talkcontribs)
+how do I tell the computer that 3 needs to be moved first to the end of the list
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Still i am failing one of the hidden tests. but for your question, i can share a logic.
+
+NOTE: Maybe experienced or smarter person can come up with a different solution. This is just one of many possibilities.
+
+As a human, we can see a sorted list in our brain before sorting something. That is what led to my approach. so, I am using a sorted list as reference only.
+Then I used index numbers to check if a number is on the left instead of right?
+For example
+
+Lets say 2 is at index 1, and 3 is at the index 0.
+Then there is a problem. they are not sorted.
+Your question is, how do we say 3 is 1st. Based on my human approach. in a sorted list, the next unsorted number would be 3.
+
+In 5 1 3 2 7, 1 and 2 doesn't need to be moved, because 2 is on the right side of the 1.
+Then we should move to next smallest number, 3.
+Is 3 on the right side of 2?
+If not! Move, and so on...
+5 1 2 7 3
+1 2 7 3 5
+1 2 3 5 7
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+updated my answer check
+
+Reply 7 months ago
+Koushik Kamalahasan (talkcontribs)
+Thanks for the reply.
+
+I found the first lowest and second lowest (here 1 and 2) compared the position and if required moved the second lowest to the end (here it is not moved). I am struck in finding the third lowest and so on... I am still working on it
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Code is in a Bare Bones state:
+#A=list(map(int,input().split()))
+A=[1,3,2,4,5]
+#A=[1,5,6,3,7,8,2]
+#A=[1,3,2,4,5]
+B=sorted(A)
+moves=0
+if (len(A) > 1):
+    for i in range(len(B)-1):
+        print(B[i],B[i+1])
+        if(A.index(B[i]) > A.index(B[i+1])):
+            A.append(B[i+1])
+            A.remove(B[i+1])
+            moves=moves+1
+            print(B[i+1],"is not on the right side of",B[i],
+                  "! kicking it from left to right.")
+            print(A)
+
+print(moves, end="")
+
+This is the basic code I created. But this will not work completely for the assignment. You should work on this code to make it work on all possible test cases.
+Possibly, you can take Idea from this and create your own code.
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+Write a loop which will go through the indexes in such a way that, they will cover the list from 0 till n
+
+Lets say above list index range is 0 - 4
+write a loop which will generate numbers and 2 variables will take the increment and then, checking processes will run on those two variables.
+for i in range(len(list)):
+     j=i+1
+     print(i,j)
+
+OR use two loops where one loop stays at 0 and second loop checks with all elements in the list.
+Then 1st loop will increment to 1 and 2nd loop checks with rest of the elements, etc...
+for i in range(len(list)):
+     for j in range(len(list)):
+          print("Inner Loop",i,j)
+     print("Outer Loop",i,j)
+
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+I just noticed! We are discussing Week 5 Question in Week 4! :))
+Lets move this to Week 5. What do you day?
+
+Reply Edited 7 months ago
+Koushik Kamalahasan (talkcontribs)
+Below is my new code:
+
+A=input().split(" ") N=len(A) for i in range (N):
+
+   A[i] = int (A[i])
+   
+count = 0 lowest = A[0] lowest2 = None for i in range (1, N-count):
+
+   if A[i] < lowest:  
+       lowest2 = lowest 
+       lowest = A[i]  
+   elif lowest2 == None or lowest2 > A[i]:  
+       lowest2 = A[i]  
+for n in range (N-1):
+
+   lowest_pos = A.index(lowest)
+   lowest2_pos = A.index(lowest2)
+   if lowest_pos > lowest2_pos :
+       temp=A[lowest2_pos]
+       A.remove(temp)
+       A.append(temp)
+       count=count+1
+   
+   nlowest = lowest
+   nlowest2 = lowest2
+   for i in range (1, N):    
+       if A[i] > nlowest2:
+           lowest = A[i]
+           lowest2 = None
+           break
+       
+   for k in range(N):
+       if A[k] > nlowest and A[k] < lowest:  
+           lowest2 = lowest 
+           lowest = A[k]  
+       elif lowest2 == None or lowest2 > A[k]:  
+           lowest2 = A[k]  
+                 
+print(A) print(count,end="")
+
+It works good for all the given test cases, but when I submit I am getting only 2/3 correct. Need to look into it. Thanks for your help. Will look into your logic later. Thanks
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Everyone is having the same problem. I am waiting to hear some one to announce that they have scored 100 after submission. :) or till 8th. finally when Hidden test cases will be revealed.
+
+Reply Edited 7 months ago
+Koushik Kamalahasan (talkcontribs)
+We can move the question to week 5.
+
+I did try assign array A to B. Sorting B and comparing it with A. I want to write a logic to sort A directly for the given problem.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+it is simple too. I am trying now. I had this Idea in the morning. But I was Exhausted. I will try now.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+I was also able to finish the test. after doing this.
+
+We need to create a basic code and set it in a while loop, which should run till both lists(sorted and unsorted) are same.
+
+Possibly Biggest number is not distinct. I am waiting for 8th. ;))
+
+Reply Edited 6 months ago
+
+""timetuple().tm_yday"" what does this do..????
+4 comments • 7 months ago
+Narendra (talkcontribs)
+i want to know what function will it perform..""timetuple().tm_yday"" please help me out...!!!
+
+Reply 7 months ago
+HardcodeCoder (talkcontribs)
+This will return the day of the year.
+
+For example -
+print today.timetuple().tm_yday
+56
+Reply Edited 7 months ago
+Narendra (talkcontribs)
+works fine thanks a lot..!
+
+Reply 7 months ago
+HardcodeCoder (talkcontribs)
+Happy coding :-)
+
+Reply 7 months ago
+
+Programming Assignment-2: End-Sort
+4 comments • 7 months ago
+Aadillawaye (talkcontribs)
+please check the output option of test case 3, the correct output will be 5 instead of 3
+
+5 1 3 2 7 ['1', '3', '2', '7', '5'] ['1', '2', '7', '5', '3'] ['1', '2', '3', '7', '5'] ['1', '2', '3', '5', '7'] ['1', '2', '3', '5', '7']
+
+Reply Edited 7 months ago
+HardcodeCoder (talkcontribs)
+Please share your code. Without the code it is not possible to help you out.
+
+Reply 7 months ago
+Aadillawaye (talkcontribs)
+i have shown u the output of the program above
+
+Reply 7 months ago
+Aadillawaye (talkcontribs)
+-*- coding: utf-8 -*-
+""" Created on Fri Mar 1 21:59:23 2019
+
+@author: Addy Laptop """
+
+str_input=input() input_list=[] input_list=str_input.split() n=len(input_list) count=0 flag=0 for i in range(0,n):
+
+   j=i+1
+   while(j<n):
+       if(int(input_list[i])>int(input_list[j])):
+           input_list.append(input_list[i])
+           input_list.pop(i)
+           count+=1
+           flag=1
+           j=j-1
+       else:
+           j=j+1
+   print(input_list)
+print(count,end="")
+
+Reply 7 months ago
+
+Compiler Problem
+18 comments • 7 months ago
+Ravisankar.vangala (talkcontribs)
+I wrote a piece of code for finding factorial of a number in my Spyder editor. If execute the same program in the editor given in assignment it is not showing any output or even any error also. Please fix this problem.
+
+Reply 7 months ago
+HardcodeCoder (talkcontribs)
+There is no print statement to print the output.
+
+>>> def fact(n):
+
+     if n == 1 or n==0:
+        return(1)
+     else:
+        return(n*fact(n-1))
+num = int(input ("Enter a number :"))
+
+>>> print(fact(num))
+
+
+
+Hope it helps.
+
+Reply Edited 7 months ago
+HardcodeCoder (talkcontribs)
+Can you please share your code? It's impossible to help you without the actual code
+
+Reply 7 months ago
+Ravisankar.vangala (talkcontribs)
+def fact(n):
+
+   if n==1 or n==0:
+       return(1)
+   else:
+       return(n*fact(n-1))
+Reply 7 months ago
+Arunkumar (talkcontribs)
+This doesn't look like full code. or may be you didn't call the function fact()?
+
+Reply 7 months ago
+Ravisankar.vangala (talkcontribs)
+I called the function fact() in the else part
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+A function should be called from outside the function. Try this sample code. and let me know if it doesn't work. Please observe that last two lines in the program are out side of the function. 
+
+def fact(n):
+   if n==1 or n==0:
+       return(1)
+   else:
+       return(n*fact(n-1))
+
+n=int(input())
+print(fact(n), end="")
+
+
+Reply Edited 7 months ago
+Sonia (talkcontribs)
+You need to initially call the function
+
+Use Fact(5)
+
+Or any number to call the function
+
+Reply 7 months ago
+This comment was deleted by HardcodeCoder (history)
+Poojakaul24 (talkcontribs)
+i have a query. when i am compiling and running a program it show time limit exceeded. what is that error about. when i am compiling this prog in spider it executed well and give the desired output. please help me. today is the last day to submit. thanks in advance.
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+post your cod please.
+
+Reply 7 months ago
+Abiramitce77 (talkcontribs)
+I tried the code in jdoodle Python 3, it gives the expected output for Week 4 Assignment 3 Question - randint() and sorting list. When I compile and execute in NPTEL, it gives me error, saying index out of range. For whatever may be the value, it says index out of range error. Is there any problem in the execution environment?
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+share your code please.
+
+Reply 7 months ago
+Abiramitce77 (talkcontribs)
+Here is my code. It perfectly works in Jdoodle Python 3.
+
+from random import randint flag = 0 p = -1 q = -1 n = int(input()) b = [int(x) for x in input().split()] while True:
+
+ x = randint(0,n-1)
+ y = randint(0,n-1)
+ if ( (p==x and q == y) or (p==y and q==x)):
+   continue
+ else:
+   if (x != y):
+     if ((b[x] < b[y]) or (b[y] < b[x])):
+       t = b[x]
+       b[x] = b[y]
+       b[y] = t
+   else:
+     continue
+   for i in range(n-1):
+     if ( b[i] < b[i+1]):
+       if (i == n-2):
+         flag=1
+         break
+       else:
+         continue
+     else:
+       break
+   p=x
+   q=y
+   if flag == 1:
+     break
+for i in range(n):
+
+ print(b[i], end="")
+Reply 7 months ago
+HardcodeCoder (talkcontribs)
+Avoid copy and pasting code from spyder IDE to the the Assignment console.
+
+Reply Edited 7 months ago
+Ravisankar.vangala (talkcontribs)
+Even if i typed the code in the assignment console as shown below: n=int(input()) def fact(n):
+
+ if n==1 or n==0:
+   return(1)
+ else:
+   return(n*fact(n-1))
+   I am unable to get the output
+Reply 7 months ago
+Abiramitce77 (talkcontribs)
+Time out error may be due to "Infinite Loop". Please check.
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+possible. Without seeing the code, we can't be sure.
+
+Reply 7 months ago
+
+For the assignment Power of randomness
+22 comments • 7 months ago
+Rishi (talkcontribs)
+For the assignment Power of randomness I am able to sort, just not sure how can i run my look till the list is sorted. Can some one please share a suggestion on it.
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+This is what i came up with. Friend, I hope this wont complicate your situation more! Updated! Sorry, a condition missed while copy pasting. Now it works fine.
+
+import random
+n=int(input())
+list_1=[0]*n
+for i in range(n):
+  list_1[i]=int(input())
+list_2=list_1.copy()
+fin=1
+oldi=oldj=-1
+
+def Akranpos():
+    a=b=0;
+    while a==b:
+        a=random.randint(0, len(list_2)-1)
+        b=random.randint(0, len(list_2)-1)
+    return a,b
+
+def Akswap(a, b):
+    return b,a
+
+def Akcheck():
+    x=0; y=1; d=1
+    while x<len(list_2)-1:
+        if list_2[x]>list_2[y]:
+            break
+        x=x+1; y=x+1
+    if y==len(list_2):
+        d=0
+    return d
+
+if len(list_1) > 1:
+
+    while fin!=0:
+        for oneturn in range(len(list_2)):
+
+            i,j=Akranpos()
+            while oldi==i and oldj==j:
+                i,j=Akranpos()
+
+            if i<j and list_2[i]>list_2[j]:
+                list_2[i],list_2[j] = Akswap(list_2[i],list_2[j])
+            elif i>j and list_2[i]<list_2[j]:
+                list_2[i],list_2[j] = Akswap(list_2[i],list_2[j])
+
+            oldi=i; oldj=j
+
+        fin=Akcheck()
+
+print(*list_2, sep=" ", end="")
+
+
+
+
+Reply Edited 7 months ago
+C++veteran (talkcontribs)
+well, the purpose of this question fails if you're using sorted() function. We don't want things that much easy are we?
+
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+Updated just Now.
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+I agree with you. Still I am just cross checking with it, But I didn't use to sort. for now as I have no time to go further. I stopped there. I will sure improvise that code later. Thanks for pointing that. :)
+
+Reply 7 months ago
+Joycz (talkcontribs)
+this code can be optimised??
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Maybe! completely possible. I wish to see someone post their code.
+
+Reply 7 months ago
+C++veteran (talkcontribs)
+This is what i did:
+
+import random
+n=int(input())
+if n==0:
+  print("0",end="")
+list_1=[0]*n
+for i in range(n):
+    list_1[i]=int(input())
+   
+def factorial(list_1):
+    fact=1
+    if (len(list_1)==0):
+        return 1
+    else:
+        for i in range(1,len(list_1)+1):
+            fact=fact*i
+        fact=int(fact)
+        return fact
+   
+def swap(list_1):
+    for k in range(1,f):
+        i=random.randrange(0,n,2)
+        j=random.randrange(1,n,2)
+        if (list_1[i]<list_1[j] and j<i):
+            temp=list_1[j]
+            temp=int(temp)
+            list_1[j]=list_1[i]
+            list_1[i]=temp
+        else:
+            if (list_1[j]<list_1[i] and i<j):
+                temp=list_1[i]
+                temp=int(temp)
+                list_1[i]=list_1[j]
+                list_1[j]=temp
+            else: continue
+   
+f=factorial(list_1)
+swap(list_1)
+list_1=[str(x) for x in list_1]
+print(' '.join(list_1),end="")
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+Thanks for sharing! good to see different ways of achieving the same. :)
+
+You created functions for everything. That's good. :)
+
+Reply Edited 7 months ago
+This comment was deleted by C++veteran (history)
+HardcodeCoder (talkcontribs)
+Try this, it works just fine
+
+import random as ran
+
+def check_sorted(a):
+
+   min = a[0]
+   for i in range(1, len(a)):
+       if a[i] < min:
+           return False
+       else:
+           min = a[i]
+   return True
+
+
+def swap(a, i, j):
+
+   temp = a[i]
+   a[i]=a[j]
+   a[j] = temp
+   
+   
+n = int(input()) list_1 = [] for i in range(0, n):
+
+   list_1.append(int(input()))
+   
+b = False while b == False:
+
+   i = ran.randint(0, len(list_1)-1)
+   j = ran.randint(0, len(list_1)-1)
+   swap(list_1, i, j)
+   b = check_sorted(list_1)
+     
+for i in range(0, len(list_1)):
+
+   print(list_1[i], sep=" ", end = "")
+   if(i < len(list_1)-1):
+       print(" ", end = "")
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+Thanks for sharing!
+
+Reply 7 months ago
+Prateek.vashishtha (talkcontribs)
+Short & easy solution to problem
+
+from random import randint n=int(input()) x=[] for i in range(n):
+
+   x.append(int(input()))
+y=x y.sort() while(x!=y):
+
+   p=randint(0,n-1)
+   q=randint(0,n-1)
+   #print(p,q,sep=' , ')
+   x[p],x[q]=x[q],x[p]
+for k in x:
+
+   print(k,end=' ')
+Reply 7 months ago
+Arunkumar (talkcontribs)
+main condition itself is to not use sort()
+
+Reply 7 months ago
+Rishi (talkcontribs)
+my current code sorts some times while other times it doesnt sort.
+
+Reply 7 months ago
+C++veteran (talkcontribs)
+I've been there. What i did is I have put 'continue' statement in the last else. So if the I and J element are already sorted then it doesn't swap it again.
+
+Reply Edited 7 months ago
+Rishi (talkcontribs)
+that i am already using, my problem is I am not sure who to execute the program till the sorting is complete and then exit
+
+Reply 7 months ago
+AI (talkcontribs)
+can you explain this question? what are the inputs that are to be selected by the random function and which ones should we input?
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+@ AI, Yes, this Assignment was complicated to get the inputs in the 1st place. Yet, after taking some rest, i was able to figure-out a solution. Check my code in the above reply to @Rishi.
+
+Answer for your question is:
+
+Test case 1
+5
+3
+1
+6
+2
+7
+
+Test case 2
+3
+3
+2
+1
+
+Test case 3
+5
+8
+1
+4
+3
+6
+
+Explanation: 
+
+The first line of the input is 4. Which means that n is 4, or the number of elements in list_1 is 4. The elements of list_1 are 3, 1, 2, 5 in this order.
+
+The sorted version of this list is 1 2 3 5, which is the output.
+
+Reply Edited 7 months ago
+This comment was deleted by Arunkumar (history)
+AI (talkcontribs)
+Thanks a lot all of you. I could grasp different approaches to achieve the same goal. Thank you.
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+@AI, That is the point of sharing friend. Happy learning.
+
+Reply 7 months ago
+
+Week 4 Programming Assignment 3
+3 comments • 7 months ago
+Radha Krishna (talkcontribs)
+I was trying to execute the code given with slight modifications. I wanted to count the number of iterations performed for sorting Please correct the code given below. Also was checking with below code for number of iterations for a sorted list.
+
+The Number of iterations are below. Iterations 19949
+
+from random import randint n = int(input()) arr = [] for i in range(n):
+
+   x = int(input())
+   arr.append(x)
+sorted = True a=1 while(sorted):
+
+   j = randint(0,n-1)
+   i = randint(0,n-1)
+   arr[i],arr[j] = arr[j],arr[i]
+   for k in range(0,n-1):
+       if (arr[k] > arr[k+1]):
+           sorted = False
+   a=a+1
+   if(sorted):
+       break
+   else:
+       sorted = True
+print("Iterations",a) for i in range(n):
+
+   if(i==n-1):
+       print(arr[i])
+   else:
+       print(arr[i],end=" ")
+Reply Edited 7 months ago
+Som (talkcontribs)
+I have uploaded detailed explanation for this in SUPER NOTES WEEK 5.
+Check the link
+http://sccilabs.org/jocwiki/index.php/Lecture_Notes:Week_5#SORTING_BY_SWAPING_RANDOM_INDEXES
+
+Reply Edited 7 months ago
+HardcodeCoder (talkcontribs)
+Thanks for sharing.
+
+Reply 7 months ago
+
+MAGIC SQUARE
+6 comments • 7 months ago
+Sai Manish (talkcontribs)
+Can you please tell me where i am going wrong . I have tried to put the elements in the list directly without using another list
+
+def magicsquare(n):
+
+   ms=[]
+   for i in range(0,n):
+       for j in range(0,n):
+             ms[i][j].append(0)
+Reply Edited 7 months ago
+Som (talkcontribs)
+This is syntactically incorrect in python.
+One easy way could be:
+
+ms = [ ]
+for i in range(n):
+
+   ms.append([0]*n)
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+is there any way to fill a uneven dimension like 3x6 or 4x9 etc
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Thank you @Som. That is wonderful.
+
+Reply 7 months ago
+Som (talkcontribs)
+Ya @Arunkumar, any dimension can be generated, an example for 3X6 below:
+
+ms = []
+for i in range(3):
+    ms.append([0]*6)
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+Thank you @Som
+
+row=3
+col=6
+ms = []
+for i in range(row):
+    ms.append([0]*col)
+Reply 7 months ago
+
+Presentation error
+One comment • 7 months ago
+Ravisankar.vangala (talkcontribs)
+After i click on Compile & Run but in the assignment console the test cases are showing that the message passed after ignoring the presentation error. But i am unable to find out what the presentation error is?
+
+Reply 7 months ago
+
+Presentation Error
+4 comments • 7 months ago
+Abh300 (talkcontribs)
+Dear All, After submitting week 4 assignments, i could get the required outputs but got "Successful after ignoring presentation error". Any guide/link on how to improve that? I've been using Spyder IDE
+
+Reply 7 months ago
+Arunkumar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php/Common_Doubts:_FAQs_for_Week_2#Q._What_is_Presentation_Error.3F
+
+
+
+This is already answered in faqs please follow this link.
+Reply 7 months ago
+HardcodeCoder (talkcontribs)
+Thanks for sharing the link :-)
+
+Reply 7 months ago
+HardcodeCoder (talkcontribs)
+This mainly occurs when a blank space gets printed after the desired output of the program. Make sure your code does not print any new line/additional blank space after the final output
+
+Reply 7 months ago
+
+Magic Square program
+8 comments • 7 months ago
+Ravisankar.vangala (talkcontribs)
+I was tried the following program of magic square as explained in the video. def magic_square(n): magicSquare=[] for i in range(n): l=[] for j in range(n): l.append(0) magicSquare.append(l) p=n//2 q=n-1 num=n*n count=1 while(count<=num): if(p==-1&q==n): q=n-2 p=0 else: if(q==n): q=0 if(p<0): p=n-1 if(magicSquare[p][q]!=0): q=q-2 p=p+1 continue else: magicSquare[p][q]=count count+=1 p=p-1 q=q+1 for i in range(n): for j in range(n): print(magicSquare[i][j],end=" ") print() But i am getting the following error message: magic_square(3) Traceback (most recent call last): File "<ipython-input-12-4d830d07f1e2>", line 1, in <module> magic_square(3) File "C:/Sankar/magicSquare.py", line 28, in magic_square if(magicSquare[p][q]!=0): IndexError: list index out of range Can please fix this?
+Reply 7 months ago
+HardcodeCoder (talkcontribs)
+magic_square=[] for i in range(n): l=[] for j in range(n): l.append(0) magic_square.append(l) In your code the indent is not correct. We need to append "l" when the inner for loop ends. But you are appending it inside the inner for loop.
+Reply 7 months ago
+Ravisankar.vangala (talkcontribs)
+even if i correct the indent, i am getting the same error message
+Reply 7 months ago
+HardcodeCoder (talkcontribs)
+Okay the problem lies here if(p==-1&q==n): In python we cannot use "&" symbol to denote the 'AND' logical operation (we use that in java). Use keyword "and", so the syntax will be: if(p==-1 and q==n): Hope it helps.
+Reply Edited 7 months ago
+Ravisankar.vangala (talkcontribs)
+Ok Thank you
+Reply 7 months ago
+HardcodeCoder (talkcontribs)
+Your welcome :-)
+Reply 7 months ago
+Poojakaul24 (talkcontribs)
+i have a query. when i am compiling and running a program it show time limit exceeded. what is that error about. when i am compiling this prog in spider it executed well and give the desired output. please help me. today is the last day to submit. thanks in advance.
+Reply 7 months ago
+HardcodeCoder (talkcontribs)
+Please share your code, so that the problem can be debugged
+Reply 7 months ago
+
+create_question()
+7 comments • 7 months ago
+Harish Narayana (talkcontribs)
+can someone tell me where create_question() function is ddefined?
+Reply 7 months ago
+Arunkumar (talkcontribs)
+create_question() is a function we should define it in the program. docs.python.org/3/tutorial/controlflow.html
+Reply Edited 7 months ago
+HardcodeCoder (talkcontribs)
+I think he is referring to the create_question() function defined in "guess the movie" game.
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Yes. he is referring to Guess the movie. Based on his question, may be he didn't understood functions topic. so, it is better to go through Python official Docs. :) it would help him a lot.
+Reply 7 months ago
+HardcodeCoder (talkcontribs)
+Yes you are correct
+Reply 7 months ago
+HardcodeCoder (talkcontribs)
+Refer to video lecture "Guess the Movie Name 05" for complete explanation.
+Reply 7 months ago
+HardcodeCoder (talkcontribs)
+Please clarify which video lecture you are referring to.
+Reply 7 months ago
+
+Assignment4(Q.2)
+4 comments • 7 months ago
+Kripan (talkcontribs)
+Please point out the mistake causing error."sep" is not creating space in between m,n=map(int,input().split()) def matrix1(): matrix=[] k=0 for i in range(m): l=[] for j in range(n): k=k+1 l.append(k) matrix.append(l) for i in range(m-1): for j in range(n): print(*str(matrix[i][j]),sep=" ",end="") print() i=i+1 for j in range(n): print(matrix[i][j],end=" ")
+Reply 7 months ago
+Arunkumar (talkcontribs)
+'''That is why I printed only i.''' I mean one row at once, as each row is a list. '''Thanks for sharing your codes friend.''' <nowiki>R,C =map(int,input().split(" ")) p=1 z=[[0 for x in range(C)]for y in range(R)] for i in range(R): for j in range(C): z[i][j]=p p=p+1 print(*z[i],sep=" ", end="") if (i<R-1): print()</nowiki><br />
+Reply Edited 7 months ago
+HardcodeCoder (talkcontribs)
+The function "sep" does not works like that in a for loop.For instance if we have a print statement like this : print('09','12','2016', sep='-') OUTPUT : 09-12-2016 "sep" works if there are multiple print element in the same block, it separates them with the character provided in sep = "character to separate with" Hope it helps
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+Yes, you are correct. Sep is used only when there are multiple variables.
+Reply 7 months ago
+
+Assignment-4 Q.3
+One comment • 7 months ago
+KuntalPaul (talkcontribs)
+import random list_1=[] n=int(input()) for i in range(n): x=input() list_1.append(x) for i in range(n): list_1[i]=int(list_1[i]) list_b=list_1.copy() list_b.sort() while(list_1!=list_b): i=random.randint(0,len(list_1)-1) j=random.randint(0,len(list_1)-1) temp=list_1[i] list_1[i]=list_1[j] list_1[j]=temp print(*list_1,end="")
+Reply Edited 7 months ago
+
+Week 4 Assignment 3- Power of Randomness
+2 comments • 7 months ago
+Suman chandra modak (talkcontribs)
+In the assignment Power of Randomness the code is correct but the output is varying with the actual output Code:- n=int(input()) list=[] import random for i in range(0,n): list.append(random.randint(1,10)) for i in range(0,n): for j in range(i+1,n): if(list[i]>list[j]): t=list[i] list[i]=list[j] list[j]=t for i in range(len(list)): print(list[i],end=" ") Please help
+Reply 7 months ago
+HardcodeCoder (talkcontribs)
+Try using this code, it worked fine for me. :) import random as ran def check_sorted(a): min = a[0] for i in range(1, len(a)): if a[i] < min: return False else: min = a[i] return True def swap(a, i, j): temp = a[i] a[i]=a[j] a[j] = temp n = int(input()) list_1 = [] for i in range(0, n): list_1.append(int(input())) b = False while b == False: i = ran.randint(0, len(list_1)-1) j = ran.randint(0, len(list_1)-1) swap(list_1, i, j) b = check_sorted(list_1) # # Prints the sorted list with space in between elements and no space at the end for i in range(0, len(list_1)): print(list_1[i], end = "") if(i < len(list_1)-1): print(" ", end = "")
+Reply Edited 7 months ago
+
+Assignment-4(Quiz):
+4 comments • 7 months ago
+Chaklu2675 (talkcontribs)
+The question no. 2 says, "Which of the following statements is true about 'Double' game?" It is asking about the Double not Dobble game. So, whether to answer considering this or should ignore it? Assignment-3 had an issue quite similar to this.
+Reply 7 months ago
+Som (talkcontribs)
+That is probably a minute error, I solved it considering Dobble Game.
+Reply 7 months ago
+Vivek.kumar (talkcontribs)
+Just see the videos for Dobble game
+Reply 7 months ago
+HardcodeCoder (talkcontribs)
+Yes, it is indeed "Dobble game" and not "Double game". It is a typo consider, it as "Dobble game"
+Reply 7 months ago
+
+for i in range(x): for j in range(y): print(n,end=" ") n=n+1 if
+13 comments • 7 months ago
+Sudha Verma (talkcontribs)
+x,y=input().split(" ") x=int(x) y=int(y) for i in range(x): for j in range(y): print(n,end=" ") n=n+1 if(i!=x-1): print() #assignment 2 week 4 ..even if the output is same it is showing wrong ans
+Reply 7 months ago
+Chuttipayan (talkcontribs)
+You will have do the same for J there should not be any space printed for the last number
+Reply 7 months ago
+Puneet Patel (talkcontribs)
+I have same query. I am trying this way r,c=input().split(" ") r=int(r) c=int(c) e=1 for i in range(r): for j in range(c): print(e,end=" ") e=e+1 if(i<r-1): print() Pleas convey how to remove space for last row of put put.
+Reply 7 months ago
+Arunkumar (talkcontribs)
+'''Try this''' <pre>r,c=input().split(" ") r=int(r) c=int(c) e=1 for i in range(r): for j in range(c):</pre> <pre style="color: red"> if j<c-1: print(e,end=" ") else: print(e,end="")</pre> <pre> e=e+1 if(i<r-1): print()</pre>
+Reply Edited 7 months ago
+Sudha Verma (talkcontribs)
+x,y=input().split(" ") x=int(x) y=int(y) n=1 for i in range(x): for j in range(y): print(n,end=" ") n=n+1 if(i!=x-1): print() #this is my code its perfectly working in spyder...and output is also same in assignment but still its showing wrong ans...(its week 4 assignment 2)
+Reply 7 months ago
+C++veteran (talkcontribs)
+you need to remove '\n' after every column. if(j==y-1): print(n,end="") n=n+1 else: print(n,end=" ") n=n+1 add that in the nested loop.
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+'''This is similar to what @C++veteran said:''' Just use a condition to limit the <space> usage. <pre>x,y=input().split(" ") x=int(x) y=int(y) n=1 for i in range(x): for j in range(y):</pre> <pre style="color: red"> if j<y-1: print(n,end=" ") else: print(n,end="")</pre> <pre> n=n+1 if(i!=x-1): print()</pre>
+Reply Edited 7 months ago
+Madmax (talkcontribs)
+Thank you this works well i was puzzled with the problem
+Reply 7 months ago
+This comment was deleted by Sudha Verma (history)
+Lwardell (talkcontribs)
+I am having the same problem. I get answers of 1 2 3\n. How do I remove the space after this line?
+Reply 7 months ago
+Joycz (talkcontribs)
+same prblm
+Reply 7 months ago
+Arunkumar (talkcontribs)
+'''Maybe... my Code is little complicated. But this worked.''' Above examples are good. '''Thanks for sharing your codes friends.''' <nowiki>R,C =map(int,input().split(" ")) p=1 z=[[0 for x in range(C)]for y in range(R)] for i in range(R): for j in range(C): z[i][j]=p p=p+1 print(*z[i],sep=" ", end="") if (i<R-1): print()</nowiki><br />
+Reply Edited 7 months ago
+Msaikat2004 (talkcontribs)
+use this code it will work i think row,col=map(int,input().split()) matrix = [] a=0 for i in range(row): l = [] for j in range(col): #num=int(input()) a=1+a l.append(a) matrix.append(l) for i in range(row): for j in range(col): if(j==col-1): print(matrix[i][j], end="") else: print(matrix[i][j], end=" ") if i!=row-1: print()
+Reply 7 months ago
+
+Indentation error
+4 comments • 7 months ago
+Lwardell (talkcontribs)
+I have gotten this code to properly write out the answer when I use Spyder, but when I run it in the compiler, I am getting an indentation error on the first print statement. Any idea why? for i in range(r): for j in range(c): print(output[i][j], end = " ") print()
+Reply 7 months ago
+Lwardell (talkcontribs)
+It's hard to see what I had. The first line is not indented. The second line is indented, the first print statement is indented again. The second print statement is unindented by one.
+Reply 7 months ago
+Som (talkcontribs)
+for i in range(r):<br> for j in range(c):<br> print(output[i][j],end=" ")<br> print()<br> This should be the correct indentation.
+Reply Edited 7 months ago
+Lwardell (talkcontribs)
+This is what I have. It didn't format correctly in the post above.
+Reply 7 months ago
+
+Week4-Programming Assignment-3: The power of Randomness
+3 comments • 7 months ago
+Descentis (talkcontribs)
+Asked by gbfulia@gmail.com
+Reply 7 months ago
+Descentis (talkcontribs)
+This question is not clear to me. Especially steps. Please elaborate on the steps. Some doubts: 1) In step 2 it is written that "take the elements of the list_1 as input", that inputs will be given by users or selected randomly? 2) And, what will be the no of elements in the list that will be given by the user or selected randomly? All steps are not clear to me. Please help in this case. Please post the question again with more details. As we are a beginner so it will be problematic if questions are posted in this manner. It will be better if questions are given with more details.
+Reply 7 months ago
+Descentis (talkcontribs)
+Please read the question carefully. All the steps have been written in details. In the input format, we have mentioned taking the size of the list as input.
+Reply 7 months ago
+
+magic square
+8 comments • 7 months ago
+Joycz (talkcontribs)
+def magic_square(n): magicSquare = [] for i in range(n): l=[] for j in range(n): l.append(0) magicSquare.append(l) for i in range(n): for j in range(n): print(magicSquare[i][j], end=" ") its saying list index out of range when i am calling the function magic_square of n=3
+Reply Edited 7 months ago
+Pritish shubham (talkcontribs)
+you need to indent one step forward for the 3rd "for statement" try this: def magic_square(n): magicSquare = [] for i in range(n): l = [] for j in range(n): l.append(0) magicSquare.append(l) for i in range(n): for j in range(n): print(magicSquare[i][j], end=" ") print() magic_square(3)
+Reply 7 months ago
+Joycz (talkcontribs)
+okay how would i know i will have to indent that for when i finished the line before for and hit entered that line came what i have written
+Reply 7 months ago
+Pritish shubham (talkcontribs)
+As per my understanding - "it depends on the kind of outcome you want the code to perform". In the above program, you have used 1 for loop for generating matrix and another for loop for printing the matrix. So, accordingly loop was indented. Performing different functionality, loops are indented with similar spatial space. The issue in the "list index out of range: Here "i and j" are the acting as row and column vectors. When you defined "3rd for loop" with same indentation, the "i and j" became undefined because its difficult to define row within row and column within column. This is best to my understanding, as I am not the expert in coding. Please correct me if I am wrong; any one, who can explain this more appropriately is most welcome. Regards
+Reply 7 months ago
+Joycz (talkcontribs)
+okkk thanks a lot it was helpful
+Reply 7 months ago
+Joycz (talkcontribs)
+def magic_square(n): magicSquare = [] for i in range(n): l=[] for j in range(n): l.append(0) magicSquare.append(l) i=n//2 j=n-1 num = n*n count =1 while(count<=num): if(i==-1 and j==n): j=n-2 i=0 else: if(j==n): j=0 if(i<0): i=n-1 if(magicSquare[i][j]!=0): j=j-2 i=i+1 continue else: magicSquare[i][j]= count count+=1 i=i-1 j=j+1 for i in range(n): for j in range(n): print(magicSquare[i][i], end=" ") print() print("the sum of each row/column/diagonal is: "+str(n*(n**2+1)/2)) magic_square(3) can you please see it was saying the same index error
+Reply 7 months ago
+Pritish shubham (talkcontribs)
+The code need to be corrected for 2 things 1. magic.append(l) - this need to be appended a step forward 2. The last for statement need to be appended for 1 step forward, print() need to be appended 1 step forward and the last print statement need to be appended 2 step forward. You can use this modified code. def magic_square(n): magicSquare = [] for i in range(n): l = [] for j in range(n): l.append(0) magicSquare.append(l) i = n // 2 j = n - 1 num = n * n count = 1 while (count <= num): if (i == -1 and j == n): j = n - 2 i = 0 else: if (j == n): j = 0 if (i < 0): i = n - 1 if (magicSquare[i][j] != 0): j = j - 2 i = i + 1 continue else: magicSquare[i][j] = count count += 1 i = i - 1 j = j + 1 for i in range(n): for j in range(n): print(magicSquare[i][i], end=" ") print() print("the sum of each row/column/diagonal is: " + str(n * (n ** 2 + 1) / 2)) magic_square(3)
+Reply 7 months ago
+Joycz (talkcontribs)
+thanks a lot...
+Reply 7 months ago
+
+Problem regarding the editor in programming assignment
+4 comments • 7 months ago
+Arunkumar (talkcontribs)
+Problem regarding the editor in programming assignment (Someone posted this question in the description. Please comment/reply below to start/participate in the discussion.) : The problem is when i run the code in spyder console it shows me exact output as required. When i run the same code in the editor given in the assignments it didn't show me the output. May i know the reason why this is happening?
+Reply 7 months ago
+This comment was deleted by C++veteran (history)
+Arunkumar (talkcontribs)
+can you please share your code?
+Reply 7 months ago
+This comment was deleted by C++veteran (history)
+
+Problem in Submiting Assignment-3
+6 comments • 7 months ago
+Gayathri (talkcontribs)
+while compiling and running my Assignment-3(Power of Randomness) it is saying that all test cases are passed but once i submit the assignment it gives me 2 test cases are passed. I could not understand the reason why it is saying so. can some one help me on this.
+Reply 7 months ago
+C++veteran (talkcontribs)
+i am suffering with same problem. Have you found the error yet?
+Reply 7 months ago
+C++veteran (talkcontribs)
+solved it. never mind.
+Reply 7 months ago
+Simran (talkcontribs)
+There are private test cases too. You are awarded marks based on number of private test cases passed.
+Reply 7 months ago
+Gayathri (talkcontribs)
+how do i test those?
+Reply 7 months ago
+Simran (talkcontribs)
+When you submit, it shows you the marks obtained based on private test cases.
+Reply 7 months ago
+
+are programming assignments counted for evaluation of final marks?
+One comment • 7 months ago
+Prateek.vashishtha (talkcontribs)
+I missed programming asignments for previous weeks, will marks for same counted in final score of certification?
+Reply 7 months ago
+
+datetime.date.today().strftime("%B") why there in qutations give the capital "B".
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by pushpa.dinne@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+%B	Month as locale’s full name.	September
+Reply 7 months ago
+
+Can any give me the code for assignment3 in week4
+One comment • 7 months ago
+Madhavi rp (talkcontribs)
+Can any give me the code for assignment3 in week4
+Reply 7 months ago
+
+To all the students, please bookmark the below link
+One comment • 7 months ago
+Arunkumar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php/Main_Page : On this page there are links for FAQs and all JOCwiki activity. I observed that most of you are not checking FAQs, Super Notes and practice questions, Hence still asking the same doubts which are solved in previous weeks. Please go through them in your free times friends.
+Reply Edited 7 months ago
+
+Could you please keep deadline to submit assignment for Quiz & Programming assignment same date?
+One comment • 7 months ago
+Dharmesh.enc (talkcontribs)
+Could you please keep deadline to submit assignment for Quiz & Programming assignment same date. Out of confusion with dates missed to submit Quiz Assignment for Week 3. Just a request if feasible and makes sense.
+Reply 7 months ago
+
+Out of the several possibilities, isn't it possible to get the same word jumbled out as in the input of the random.sample() function. Like we do random.sample("water",5) and somehow out of the several cases it joins w,a,t,e,r and gives water as the output??.
+3 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by shivamtripathiknp@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+It is possible if you try all 5! possibilities.
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Try below code and see if you ever get '''in''' or '''to'''. This is one way, I have found to limit the unjumbled word output from random. <nowiki>import random cwords=['in','to'] rec_word=random.choice(cwords) jumbled=rec_word while (jumbled == rec_word): jumbled="".join(random.sample(rec_word,len(rec_word))) print(jumbled)</nowiki>
+Reply Edited 7 months ago
+
+Problem regarding the editor in programming assignment
+One comment • 7 months ago
+Ravisankar.vangala (talkcontribs)
+The problem is when i run the code in spyder console it shows me exact output as required. When i run the same code in the editor given in the assignments it didn't show me the output. May i know the reason why this is happeninng?
+Reply 7 months ago
+
+Hi sir,mam In 'Permutations-Jumbled Words' program we have defined (def) functions. how will python know which one to execute first or which is the main function or way in which the defined functions are executed.??
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by akhilesh236025@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+The statements which are not defined under any function are executed first in Python.
+Reply 7 months ago
+
+In thank function why you pass parameter thank(p1n,p2n,p1,p2):. In function jumble why you pass word parameter jumble(word) because we created array name called words.
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by mpmukundh@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+You pass those parameters in the function which are required to carry out the execution.
+Reply 7 months ago
+
+assignment not answered
+One comment • 7 months ago
+Amulya (talkcontribs)
+can i know how much of the total score will be reduced if a week's assignment is not answered?
+Reply 7 months ago
+
+p value in Theory of Evolution
+2 comments • 7 months ago
+Simran (talkcontribs)
+Question asked by vidhya136m@gmail.com
+Reply 7 months ago
+Simran (talkcontribs)
+The change in the bits is done according to the p value
+Reply 7 months ago

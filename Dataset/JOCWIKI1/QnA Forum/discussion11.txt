@@ -1,0 +1,825 @@
+25% score
+3 comments • ‪2 months ago‬
+
+
+
+‪Kumesh (talkcontribs)‬
+‪how to calculate 25% score,out of 12 assignment how many will be considered? Assignment and programming questions in each week were present. also exam pattern is not yet clear anywhere for Joy of computing using Python please clear all above‬
+
+‪3 months ago‬
+
+
+
+‪Ajabdeh (talkcontribs)‬
+‪I think sum all and the calculate it's 25%. 300 for assignment and 100 for quiz.‬
+
+‪3 months ago‬
+
+
+
+‪Sanchit3008 (talkcontribs)‬
+‪Nptel website states best 8 out of 12 will be considered‬
+
+‪2 months ago‬
+
+
+
+
+
+Doubts Regarding assignment 11 solution
+6 comments • ‪3 months ago‬
+
+
+
+‪Pythoncourse123 (talkcontribs)‬
+‪So Basically I have doubts regarding the answers of question 4 & 6 of assignment 11.‬
+‪First Q6, according to me answer should be the now() method which is used to return the current date and time and hence should be the answer instead of current() (Current also doesn't seem to be a functionality in the python library.. )‬
+‪For Q4, the question is a bit ambiguous to me. The questions says...‬
+‪  "WebDriver is a web automation framework that allows you to execute your‬
+   programs on different browsers."
+  "Different Browsers" - while 1 specific WebDriver can work only for 1 specific browser. The question can be interpreted in another way, of talking about all the WebDrivers as whole, unlike the first interpretation talking about a single WebDriver in general.
+Both yield different answers, and the latter has been chosen as the correct. Please clarify !
+
+‪3 months ago‬
+
+
+‪Python (talkcontribs)‬
+‪I agree with you‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪i too agree it should be now()‬
+
+‪3 months ago‬
+
+
+
+‪Pythoncourse123 (talkcontribs)‬
+‪Score of Question 6 has been updated to 0. So it isn't being counted.‬
+‪However, no one has yet clarified about the question 4..‬
+‪Please help !‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪in progress it shows ........not in quiz. please check. what about question 4.‬
+
+‪3 months ago‬
+
+
+
+‪Pythoncourse123 (talkcontribs)‬
+‪Yes in quiz, the answer has not been corrected, but check the points allocated to that question. Instead of 1, it is allocated as 0 points.‬
+‪For question 4, I am confused -‬
+‪"WebDriver is a web automation framework that allows you to execute your programs on different browsers."‬
+‪"Different Browsers" - while 1 specific WebDriver can work only for 1 specific browser. The question can be interpreted in another way, of talking about all the WebDrivers as whole, unlike the first interpretation talking about a single WebDriver in general.‬
+
+‪3 months ago‬
+
+
+
+
+
+browser automation error
+4 comments • ‪3 months ago‬
+
+
+
+‪Vineet (talkcontribs)‬
+‪from selenium import webdriver browser=webdriver.chrome("C:\webdrivers") browser.get("https://www.seleniumhq.org/")‬
+‪TypeError: 'module' object is not callable‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪you have to specify the chromedriver executable also in the path in webdriver.chrome(...)‬
+
+‪3 months ago‬
+
+
+
+‪Vineet (talkcontribs)‬
+‪i didn't get you. plz elaborate‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪webdriver.chrome("C:\webdrivers\chromeDriver") browser.get("https://www.seleniumhq.org/")‬
+
+‪3 months ago‬
+
+
+
+
+
+Assignment 11 : Question 6
+6 comments • ‪3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪Hi All,‬
+‪This is regarding the purpose as mentioned in the Topic line.‬
+‪Here, the answer to Question 6 of Assignment 11 should be the 2nd option, i.e., now(), as the provided answer is the 1st option, i.e., current(), which is an incorrect one due to the following reason as cited out.‬
+‪Reason: On executing the following code snippet produces the desired output, i.e., the present date and time using datetime library.‬
+‪Correct Code: from datetime import datetime as dt print(dt.now())‬
+‪Whereas, on executing the below piece of code produces the error message "AttributeError: type object 'datetime.datetime' has no attribute 'current'"‬
+‪Incorrect Code: from datetime import datetime as dt print(dt.current())‬
+‪Hence, my understanding along with the above explanation says that the answer to this specific question needs to be re-evaluated.‬
+‪So please share your thoughts in case if any.‬
+‪Thank you.‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪i too agree‬
+
+‪3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪Thanks for your response, @Amichoksi!‬
+‪FYI/A, this specific question has already been re-evaluated at my end and is correctly reflected under my 'Progress' section.‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪oh, yes in progress it shows, not in quiz. thanks. u told n i checked‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪but it's 89 instead of 90‬
+
+‪3 months ago‬
+
+
+
+‪Indrag79 (talkcontribs)‬
+‪Hello Mates,‬
+‪But the marks for Assignment 11 in my case is now showing a perfect 100 after the re-evaluation.‬
+
+‪3 months ago‬
+
+
+
+
+
+week 11: assignment 3
+5 comments • ‪3 months ago‬
+
+
+
+‪Vineet (talkcontribs)‬
+‪m,n= input().split()\n ValueError: not enough values to unpack (expected 2, got 1). this is what i'm getting when i'm running this in nptel ide but its working perfectly fine in spyder. any solutions?‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪give 2 inputs. e.g.2000 2020<enter>‬
+
+‪3 months ago‬
+
+
+
+‪Vineet (talkcontribs)‬
+‪how can i give inputs in nptel ide. though its working fine in spyder‬
+
+‪3 months ago‬
+
+
+
+‪Sanchit3008 (talkcontribs)‬
+‪When you say that m,n = input().split() , it is not creating two values - but making returning a list. For example, if input is "2000 2002", then input().split() will return ["2000", "2002"]. You can confirm this by printing values of m and n on spyder - n should be None or some garbage value. ‬
+‪You can read the input like this - ‬
+‪input_list = input().split()‬
+‪m = input_list[0]‬
+‪n = input_list[1]‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Vineet (talkcontribs)‬
+‪thanks‬
+
+‪3 months ago‬
+
+
+
+
+
+Assignment Feedback
+2 comments • ‪3 months ago‬
+
+
+
+‪Sanchit3008 (talkcontribs)‬
+‪I just want to express my surprise that this is the second time the correct answer has been marked incorrect on a weekly MCQ test.‬
+
+‪3 months ago‬
+
+
+
+‪Saahil (talkcontribs)‬
+‪yup. same thing is keep happening again & again and can't find the reason why‬
+
+‪3 months ago‬
+
+
+
+
+
+Assignment 11: Question 6
+2 comments • ‪3 months ago‬
+
+
+
+‪Ghost (talkcontribs)‬
+‪Please revaluate question 6 of Assignment 11. The correct answer should be option (b) i.e. now().‬
+
+‪3 months ago‬
+
+
+
+‪Vineet (talkcontribs)‬
+‪agreed.‬
+
+‪3 months ago‬
+
+
+
+
+
+Assignment 11: Question 6
+3 comments • ‪3 months ago‬
+
+
+
+‪Hemanthv55 (talkcontribs)‬
+‪Please reevaluate Question 6 Answer should be now(). If not please explain the solution. Thank you‬
+
+‪3 months ago‬
+
+
+
+‪Ankit rai (talkcontribs)‬
+‪The correct option should be B) now() not d) current(), current() method is not a inbuild method of datetime library.‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪i too agree‬
+
+‪3 months ago‬
+
+
+
+
+
+Error in send_keys during whatsapp automation
+10 comments • ‪3 months ago‬
+
+
+
+‪Palak (talkcontribs)‬
+‪raise exception_class(message, screen, stacktrace)‬
+‪WebDriverException: chrome not reachable‬
+‪ (Session info: chrome=69.0.3497.100)‬
+ (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.17134 x86_64)
+
+‪3 months ago‬
+
+
+‪Vishalaker (talkcontribs)‬
+‪1. Mistake in defining class 2. or syntax error 3. Check these 3 lines properly input_box=driver.find_element_by_class_name('_1Plpp') for i in range(25):‬
+‪   input_box.send_keys(string+Keys.ENTER)‬
+Even I was also getting same error, now I debugged within these 3 lines of codes!
+
+‪3 months ago‬
+
+
+
+‪Simmi (talkcontribs)‬
+‪Your web driver is not reachable. Please give proper path to the web driver.‬
+
+‪3 months ago‬
+
+
+‪RajaMeenakshi (talkcontribs)‬
+‪It's working till opening the contact. Only the messaging part is not working. Please help to Rectify the error in the final module.‬
+
+‪3 months ago‬
+
+
+
+‪Palak (talkcontribs)‬
+‪It is showing another error‬
+‪File "C:\Users\Silent_introder\Anaconda3\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response‬
+‪   raise exception_class(message, screen, stacktrace)‬
+WebDriverException: unknown error: call function result missing 'value'
+‪ (Session info: chrome=69.0.3497.100)‬
+ (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.17134 x86_64)
+
+‪3 months ago‬
+
+
+
+‪Palak (talkcontribs)‬
+‪call function result missing value‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪Here is also the same case the contact is opening. But it's not typing any message. since it's not typing messages so it's not sending any message.‬
+
+‪3 months ago‬
+
+
+
+‪Palak (talkcontribs)‬
+‪hey, Rmanish my problem is solved by updating chromedriver from their website i have download 2.40 and latest is 2.42 so by updating my problem is solved.‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪wow That's a good news your program is working. but I am using firefox and my os kali linux I have already update my browser as well my firfoxdriver but it's still not working It's not showing me any error only in my case it is not typing messages. I am trying to solve this problem‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪and thank you so much you tries to help me‬
+
+‪3 months ago‬
+
+
+
+
+
+browser automation error
+5 comments • ‪3 months ago‬
+
+
+
+‪Pratiyush (talkcontribs)‬
+‪browser=webdriver.edge("C:\Users\Pratiyush\Downloads")‬
+‪ File "<ipython-input-11-e4902d2878c5>", line 1                                                                               ‬
+   browser=webdriver.edge("C:\Users\Pratiyush\Downloads")                                                                       
+                         ^                                                                                            
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+
+‪                                          How can i handle this error??????‬
+
+‪Edited 3 months ago‬
+
+
+‪Vaibhav sachdeva` (talkcontribs)‬
+‪browser=webdriver.edge(r"C:\Users\Pratiyush\Downloads")‬
+‪the r prefix specifies that the string is a rawstring and this causes the python interpreter to read the backslash characters as literal backslashes‬
+
+‪3 months ago‬
+
+
+
+‪Vishalaker (talkcontribs)‬
+‪1. type --> browser=webdriver.edge("C:\\Users\\Pratiyush\\Downloads\\ ") 2. type name of the file after Downloads (That should not be in zip file, extract it there itself if it is)‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Here,‬
+‪browser=webdriver.Chrome("c:\\users\\ami\\Downloads\\chromedriver")‬
+‪have u set path of chromedriver in system's path?‬
+‪u can see in lecture notes at http://sccilabs.org/jocwiki/index.php/Lecture_Notes:_Week_11#Browser_Automation‬
+
+‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪m,n=map(int,input().split()) items = [] for i in range(m,n):‬
+‪ s = str(i)‬
+ if (int(s[0])%2==0) and (int(s[1])%2==0) and (int(s[2])%2==0):
+   items.append(s)
+ print( ",".join(items))
+
+‪3 months ago‬
+
+
+
+
+
+Week 11 Assignment 3
+20 comments • ‪3 months ago‬
+
+
+
+‪Sanchit3008 (talkcontribs)‬
+‪Has anyone been able to submit https://onlinecourses.nptel.ac.in/noc18_cs35/progassignment?name=269 ? Please help.‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪it's a very simple program. Say input is 2000 to 2020 run a for loop for (2000, to 2020) in step of 2. for each number check of each digit, it should be even ONLY, then print that number.‬
+
+‪3 months ago‬
+
+
+
+‪V9run (talkcontribs)‬
+‪I took each number in the range and checked whether each digit is a prime or not, if all the digits were prime for that number I accepted that number in my list. Hope this helps.‬
+
+‪3 months ago‬
+
+
+
+‪Sanchit3008 (talkcontribs)‬
+‪The problem isn't with the ease of the question, but due to the face when i submit it the website throws error code 500.‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪Make some change in your code. May be the code is the reason of error msg. I have already faced this problem. After changing the code it not gives the error.‬
+
+‪3 months ago‬
+
+
+
+‪Sanchit3008 (talkcontribs)‬
+‪Thanks a lot, that helped‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪welcome‬
+
+‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪m,n=map(int,input().split())\n ValueError: invalid literal for int() with base 10: '2000,2020' how to slove it‬
+
+‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪m,n=map(int,input().split()) items = [] for i in range(m,n): s = str(i) if (int(s[0])%2==0) and (int(s[1])%2==0) and (int(s[2])%2==0): items.append(s) print( ",".join(items))‬
+
+‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪solution please‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪<pre> m,n=input().split() Give input as : 2000 2020 #convert to integer m=(int)m n=(int)n </pre>‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Your program is fine, except you have not converted data to integer. Your modified code is : <pre> m,n=input().split() m=int(m) n=int(n) items=[] def fun(i): s = str(i) if (int(s[0])%2==0) and (int(s[1])%2==0) and (int(s[2])%2==0): items.append(s) ",".join(items) return(items) for i in range(m,n+1,2): items=fun(i) print(items,end="") </pre>‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪m,n=input().split()\n ValueError: not enough values to unpack (expected 2, got 1)‬
+
+‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪how to solve it‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪give input as: 2000 2020 it will not raise error‬
+
+‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪for random numbers‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪no error, bhai.‬
+
+‪3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪i am getting output as['2000', '2002', '2004', '2006', '2008', '2020'] how to remove brackets, ' ' and ,‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Iterate the list using for loop, convert string to integer‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Jagaenator (talkcontribs)‬
+‪thanks‬
+
+‪3 months ago‬
+
+
+
+
+
+problem in pip install selenium
+5 comments • ‪3 months ago‬
+
+
+
+‪Vineet (talkcontribs)‬
+‪The following command must be run outside of the IPython shell: $ pip install selenium showing this above written message whenever i write pip install selenium in ipython console‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪please run it on terminal/command prompt‬
+
+‪3 months ago‬
+
+
+
+‪Vineet (talkcontribs)‬
+‪sorry but couldn't find this terminal thing . could you please tell me exactly where is it.?‬
+
+‪3 months ago‬
+
+
+
+‪Rmanish (talkcontribs)‬
+‪which os you are using‬
+
+‪3 months ago‬
+
+
+
+‪Sriramamurthy (talkcontribs)‬
+‪if you are using Windows then the Anaconda3 path in ENV var, then run python -m pip install selenium in cmd prompt‬
+
+‪3 months ago‬
+
+
+
+
+
+programming3
+2 comments • ‪3 months ago‬
+
+
+
+‪Sandhya vasdev (talkcontribs)‬
+‪x=int(input()) ValueError: invalid literal for int() with base 10: '1000,2000' why this error occur???????‬
+
+‪3 months ago‬
+
+
+
+‪Ajabdeh (talkcontribs)‬
+‪It is required to take two inputs with comma separated. Use a,b=list(map(int,input().split(','))) if you want to take integer as input. By the way there is nothing wrong in x=int(input()) but this do not fill the question requirement.‬
+
+‪3 months ago‬
+
+
+
+
+
+programming assignment 1
+4 comments • ‪3 months ago‬
+
+
+
+‪Raghav Agarwal (talkcontribs)‬
+‪for d=10 the output that they are showing is 6 but the output is 5 as (2*50*10)/30=33.33 5<sqrt(33.33)<6 so ans=5 please help...‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪sqrt(33.33) is 5.77. as after decimal point value is greater than .5 so it will be next integer, so 6.‬
+
+‪3 months ago‬
+
+
+
+‪Sakthigvel (talkcontribs)‬
+‪use round() method to solve this problem.‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪u may use ceil and floor methods.‬
+
+‪3 months ago‬
+
+
+
+
+
+Unable to open Assignment 11 : https://onlinecourses.nptel.ac.in/noc18_cs35/unit?unit=270&assessment=195 in week 11
+7 comments • ‪3 months ago‬
+
+
+
+‪Rakesh (talkcontribs)‬
+‪I can only see 2 programming questions and 3rd New "Programming Assignments" in week 11. Please confirm do we have objective questions also because it is mentioned in the mail :- Assignment 11 : https://onlinecourses.nptel.ac.in/noc18_cs35/unit?unit=270&assessment=195. When i try to open it, I get https://onlinecourses.nptel.ac.in/noc18_cs35/course . Can somebody please confirm if we have Assignment 11 apart from these 3 coding questions ? If yes, r u guys can able to open it ?‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪But no such assignment, i can find.‬
+
+‪3 months ago‬
+
+
+‪Rakesh (talkcontribs)‬
+‪Thanks for confirmation .The link was mentioned in the mail. If no one is able to open this assignment link :- Assignment 11 : https://onlinecourses.nptel.ac.in/noc18_cs35/unit?unit=270&assessment=195. Than no issues.I only wanted confirmation from others and clarification from Python team.‬
+
+‪3 months ago‬
+
+
+
+‪Sanchit3008 (talkcontribs)‬
+‪Same is happening with me but raising this issue here hasn't fetched any satisfactory reply.‬
+
+‪3 months ago‬
+
+
+
+‪Rakesh (talkcontribs)‬
+‪May be they are doing some other important work. Should wait for their reply.‬
+
+‪Edited 3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪Simran mam, replied that she can see the assignment. But we are not, i mailed her.‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪now it is available, she confirmed.‬
+
+‪3 months ago‬
+
+
+
+
+
+Reg: Selenim install in windows.
+4 comments • ‪3 months ago‬
+
+
+
+‪Sakthigvel (talkcontribs)‬
+‪The following command must be run outside of the IPython shell: $ pip install selenium The Python package manager (pip) can only be used from outside of IPython. Please reissue the `pip` command in a separate terminal or command prompt. See the Python documentation for more information on how to install packages: https://docs.python.org/3/installing/‬
+
+‪3 months ago‬
+
+
+
+‪Sriramamurthy (talkcontribs)‬
+‪me too have same problem, I gone through that highlighted link but I couldn't get out. if an installed in windows plz share.‬
+
+‪3 months ago‬
+
+
+
+‪Sriramamurthy (talkcontribs)‬
+‪I added ipython path in user env variables and system variables path, but when I tried to check it from cmd prompt I am seeing below issue: 'python' is not recognized as an internal or external command, operable program or batch file.‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪open command prompt, after setting the environment variable for "python" executable. See at http://sccilabs.org/jocwiki/index.php/Lecture_Notes:_Week_11#Browser_Automation‬
+
+‪3 months ago‬
+
+
+
+
+
+Error in whatsapp program
+3 comments • ‪3 months ago‬
+
+
+
+‪Rijumitra77 (talkcontribs)‬
+‪from selenium.webdriver.common.keys import keys ImportError: cannot import name 'keys' from 'selenium.webdriver.common.keys' (F:\Anaconda3\lib\site-packages\selenium\webdriver\common\keys.py)‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪from selenium.webdriver.common.keys import Key check for the above statement, whether u have written 'K'. it is capital K‬
+
+‪3 months ago‬
+
+
+
+‪Amichoksi (talkcontribs)‬
+‪see lecture notes at http://sccilabs.org/jocwiki/index.php/Lecture_Notes:_Week_11#Browser_Automation‬
+
+‪3 months ago‬
+
+
+
+
+
+Exam format
+One comment • ‪3 months ago‬
+
+
+
+‪ShailendraRai (talkcontribs)‬
+‪what will be the format of exam? can a program be given to write? please provide few samples ot type of questions to be asked in exam hall. Regards Shailendra‬
+
+‪3 months ago‬
+
+
+
+
+
+Can't submit "New Programming Assignments"
+One comment • ‪3 months ago‬
+
+
+
+‪Sanchit3008 (talkcontribs)‬
+‪Website times out whenever I try to submit "New Programming Assignments" in week 11.‬
+
+‪3 months ago‬

@@ -1,0 +1,731 @@
+Score
+One comment • 4 months ago
+Atulgnit (talkcontribs)
+96
+
+Reply 4 months ago
+
+Kindly post your scores when they are published
+14 comments • 4 months ago
+Kamalakar (talkcontribs)
+I wish the people who are benefited by this forum will come back and post their scores.
+
+Reply 5 months ago
+Dharmesh.enc (talkcontribs)
+When exam results will be out?
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+March 31st exam results are published by April 14. So April 28th results should be published by May 12th or May 14th hopefully
+
+Reply 5 months ago
+Dharmesh.enc (talkcontribs)
+Thanks for the info.
+
+Reply 4 months ago
+Kamalakar (talkcontribs)
+see column G in this excel sheet
+
+https: //docs.google.com/spreadsheets/d/e/2PACX-1vSem585rhcvZ8KyJsL9flP1Qs_-fDAFzfHV44NQ8nWhcH8un2BFVTdPc--EAJDLni8AEYBEjzahKhdl/pubhtml
+
+Reply Edited 4 months ago
+Kamalakar (talkcontribs)
+//groups.google.com/a/nptel.iitm.ac.in/d/msgid/noc19-me27-announce/000000000000bdefac05886c9429%40google.com?utm_medium=email&utm_source=footer
+
+
+
+They started publishing the results. Any time from now we will get python exam results.
+
+Reply Edited 4 months ago
+Praneeth1497 (talkcontribs)
+when will come results out?
+
+Reply 4 months ago
+Kamalakar (talkcontribs)
+Out of 208 courses, they have published so far results of 155 courses. They are publishing at the rate of 15 to 20 courses per day. So hope fully they should complete the publication of results of all the courses in this week.
+
+you can monitor the status here by clicking the link below
+
+Reply Edited 4 months ago
+Kenny (talkcontribs)
+Results are out now.
+
+Reply 4 months ago
+Kamalakar (talkcontribs)
+https://docs.google.com/spreadsheets/d/e/2PACX-1vS0P4yTZbjm0iIa5iDSJwzT1ti6j8QnQIcnt7nxbVZ2l2IJUDQbGCVlebfUJPGScEe91jxsw4rA018D/pubhtml
+
+Reply 4 months ago
+Kamalakar (talkcontribs)
+I got 94 with (25 internal + 69 External) in the exam.I am happy with my score. I thank all those who helped us in getting better scores. I wish many of those who came on to JOCWIKI are happy with their scores.
+
+Reply 4 months ago
+Dharmesh.enc (talkcontribs)
+Cheers! Thanks all for making a platform for learning together. A new feather added to my cap.
+
+Reply 4 months ago
+Samm (talkcontribs)
+i got 97 (24 internals and 73 final). i really liked this course and would like to thank the faculty that facilitated this course and also the students that helped me and others in the course.
+
+Reply 4 months ago
+Kamalakar (talkcontribs)
+560 people achieved Gold medal in the course //nptel.ac.in/noc/individual_course.php?id=noc19-cs09 Go to Statistics.
+
+Reply 4 months ago
+
+Hello!
+3 comments • 5 months ago
+AI (talkcontribs)
+Hello everybody. Hope everyone has done the exam well. I think the paper was on expected lines. The link Mr. Kamalakar gave was helpful. Thanks for the same. Hope we all get together again for JOC 2.0. Sir, We are waiting for JOC2.0. Thanks to the entire team who made this course possible. Take care all.
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+It was a long story. When I was studying 10th class one of my friend scored 98 in social studies and I managed to get 80 marks. In intermediate, some of my friends scored 90+ in Sanskrit while I scored 72. When I enquired how could they score that much they whispered we focussed on previous year question papers on the day before the examination. you know I have learned from my experience. we are putting our best efforts why not we put in an intelligent manner.
+
+Any how the professor is kind enough not to give some complicated syntax from the different games they thought.
+
+Reply 5 months ago
+AI (talkcontribs)
+-). That's nice to know.
+Reply 5 months ago
+
+Few Final Words to all...
+2 comments • 5 months ago
+Arunkumar (talkcontribs)
+Hi Friends,
+
+It was great to be here for 12 Weeks. I enjoyed Assignments a lot, and few mixed feelings too. But over all, I had a great time after a long time. I hope everyone, learnt something from everyone too.
+
+As Someone rightly said, A Curious person is a lifelong student! (Even if one is not curious, still... life makes them learn) We all are lifelong students. Be Curious, Keep questioning and Keep learning too.
+
+I wish everyone The Best of Their Efforts. Goodbye everyone.
+
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+Keep helping others so that your network of friends decreases from 6 to one. With curiosity and helping in other's problems, we will learn a lot.
+
+Reply 5 months ago
+
+Exam Question Which of the following is not a graph visualization software
+3 comments • 5 months ago
+Kamalakar (talkcontribs)
+For a person who started learning the beginner course in python , i dont know if it possible to know the softwares like eclipse and cytoscape and answer this question.
+
+Reply 5 months ago
+Sreevalli (talkcontribs)
+Actually eclipse is a software so i hope it is the correct answer
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+eclispe is the correct answer
+
+Reply 5 months ago
+
+Any other NPTEL Course which gives Programming Assignments Every Week
+2 comments • 5 months ago
+Kamalakar (talkcontribs)
+Dear all, Is there any other NPTEL course which gives Programming assignments every week similar to JOY of Computing in Python.
+
+Reply 5 months ago
+Sreevalli (talkcontribs)
+Introduction to Programming in c
+
+Reply 5 months ago
+
+All Assignment's answers week 12. Friends share you programs too please.
+9 comments • 5 months ago
+Arunkumar (talkcontribs)
+Note: Hello friends please share your programs too, if you have a better code or different approach than these programs. Everyone, who struggled to finish assignments, please ask you questions here. So that we all can learn and help each-other.
+
+A1-Holes - CODE:
+T = input()
+#T = "DRINKEATCODE"
+H = "ABDOPQR"
+holes=0
+for h in H:
+    if h == "B":
+        holes=holes+(T.count(h)*2)
+    else:
+        holes=holes+T.count(h)
+print(holes, end="")
+A2-Smallest Palindrome - CODE:
+S = input()
+def smallPgen(sp,m,switch):
+    for L in range(m+switch):
+        R = -(L+1)
+        if sp[L] == "." == sp[R]:
+            sp = sp.replace(sp[L],"a",1)
+            sp = sp[:R] + sp[R:].replace(sp[R],sp[L],1)
+        elif sp[L] == "." != sp[R]:
+            sp = sp.replace(sp[L],sp[R],1)
+        elif sp[L] != "." == sp[R]:
+            sp = sp[:R] + sp[R:].replace(sp[R],sp[L],1)
+        elif sp[L] != sp[R] and (sp[L] != "." != sp[R]):
+            return -1
+    return sp
+
+if len(S)%2 == 0:
+    M = len(S)//2
+    print(smallPgen(S,M,0), end="")
+else:
+    M = (len(S)-1)//2
+    print(smallPgen(S,M,1), end="")
+
+Below code is with Print functions. It is interesting to see what happens at every stage, and for debugging too.
+
+#S = '..l.n..o.em.rd.il.p'
+S = "p.li..r.m.go.dn..ap"
+#S = input()
+def smallPgen(sp,m,switch):
+    for L in range(m+switch):
+        R = -(L+1)
+        print(switch,"for loop : (", sp[L],"-", sp[R],") L:",L," R:",R)
+        if sp[L] == "." == sp[R]:
+            sp = sp.replace(sp[L],"a",1)
+            sp = sp[:R] + sp[R:].replace(sp[R],sp[L],1)
+            print("@ @",sp[L],sp)
+        elif sp[L] == "." != sp[R]:
+            sp = sp.replace(sp[L],sp[R],1)
+            print("@ _",sp[L],sp)
+        elif sp[L] != "." == sp[R]:
+            sp = sp[:R] + sp[R:].replace(sp[R],sp[L],1)
+            print("_ @",sp[L],sp)
+#        elif '.' != sp[L] == sp[R]:
+#            print("_ _",sp[L],sp)
+#            pass
+#        elif L == m:
+#            sp = sp[:M]+'a'+sp[M+1:]
+#            print("_@_",sp[L],sp)
+        elif sp[L] != sp[R] and (sp[L] != "." != sp[R]):
+            return -1
+    return sp
+if len(S)%2 == 0:
+    M = len(S)//2
+    print("M =",M)
+    print(smallPgen(S,M,0), end="")
+else:
+    M = (len(S)-1)//2
+    print("M =",M)
+    print(smallPgen(S,M,1), end="")
+Reply Edited 5 months ago
+Arunkumar (talkcontribs)
+A3-Letters - CODE:
+-----------
+# METHOD :1,2
+-----------
+T = input()
+C = len([l for l in T if l.isupper()])
+c = len([l for l in T if l.islower()])
+#C = len("".join([l for l in T if l.isupper()]))
+#c = len("".join([l for l in T if l.islower()]))
+print(C,c, end="")
+
+---------------
+# METHOD :3,4
+---------------
+import re
+T = input()
+C = len(re.findall(r'[A-Z]',T))
+c = len(re.findall(r'[a-z]',T))
+#C = sum(1 for l in T if l.isupper())
+#c = sum(1 for l in T if l.islower())
+print(C,c, end="")
+
+-----------
+# METHOD :5 (One line code)
+-----------
+T = input()
+print(len([l for l in T if l.isupper()]), len([l for l in T if l.islower()]), end="")
+
+NOTE: Please also check Sample solutions, Provided by instructor they are interestingly different approach/methods.
+
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+Smalles Palindrome code
+
+
+import time
+now = time.time()
+s=list(input())
+# storing the reversed string in r
+r=list(s[::-1])
+n=[]
+#finding the "." locations in the string
+for x in range(len(s)):
+  if s[x]==".":
+    n.append(x)
+# Replacing the "." locations with characters assuming it to be a palindrome
+for i in range(len(n)):
+  s[n[i]]=r[n[i]]
+
+#finding the "." locations in the string after replacement  
+n=[]
+for x in range(len(s)):
+  if s[x]==".":
+    n.append(x)
+
+# Replacing the "." locations with "a" for smalles palindrome
+for i in range(len(n)):
+  s[n[i]]="a"
+
+# storing the reversed string in r
+r=list(s[::-1]) 
+
+s="".join(s)
+r="".join(r)
+
+# chacking if the given string is palindrome or not
+if r==s :
+  print(r,end="")
+else:
+  print(-1,end="")
+
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+# holes program
+
+s=list(input())
+one=["A","D","O","P","Q","R"]
+two=["B"]
+
+count=0
+
+for x in s:
+  if x in one:
+    count+=1
+  elif x in two:
+    count+=2
+print(count,end="")
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+Letters Program
+
+m=input()
+a=list(m)
+import string
+
+b=list(string.ascii_uppercase)
+s=list(string.ascii_lowercase)
+
+countb=0
+counts=0
+for x in a:
+  if x in b:
+    countb+=1
+  elif x in s:
+    counts+=1
+    
+print(countb,counts,sep=" ",end="")
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+some times we think too much. look at the private test cases. we should have just replaced the dots with a and checked it the given string and the reversed string are one and the same or not.
+
+Reply 5 months ago
+Arunkumar (talkcontribs)
+Thanks for sharing friend @Kamalakar! Looking at different code styles and logics, helps a lot to think in different ways and learning/approaching a problem.
+
+Reply Edited 5 months ago
+This comment was deleted by Arunkumar (history)
+Puneet Patel (talkcontribs)
+def palindrom(str1):
+    s=list(str1)
+    sr=list(str1)
+    l=len(s)
+    m=l//2
+    sr.reverse()
+    f=0
+    i=0
+    while i<=m:
+        if s[i]!=sr[i]:
+            f=1
+        i=i+1
+        
+    if f==0:
+        print(str1,end="")
+    else:
+        print(-1)
+
+str1=input()
+s=list(str1)
+l=len(s)
+opl=""
+LH=[]
+
+RH=[]
+
+mi=l//2
+
+if (l%2==1):
+    LH=s[0:mi]
+    RH=s[mi+1:l]        
+    if s[mi]==".":
+        s[mi]='a'
+else:
+    LH=s[0:mi]
+    RH=s[mi:l]
+
+RH.reverse()
+for i in range(len(RH)):
+    if (LH[i]=="." and RH[i]=="."):
+        LH[i]='a' 
+        RH[i]='a'
+    elif (LH[i]=="." and RH[i]!="."):
+        LH[i]=RH[i]
+    elif (RH[i]=="." and LH[i]!="."):
+        RH[i]=LH[i]
+
+
+flag=0
+for i in range(len(RH)):
+    if LH[i]!=RH[i]:
+        falg=1
+
+if (flag==1):
+    print(-1,end="")
+else:
+    RH.reverse()
+    if (l%2==1):
+        o1="".join(LH)
+        o2="".join(s[mi])
+        o3="".join(RH)
+        opl=o1+o2+o3
+    else:
+        o1="".join(LH)
+        o3="".join(RH)
+        opl=o1+o3
+    
+    #print(opl,end="")
+    palindrom(opl)
+sorry mistake in using tag
+
+Reply 5 months ago
+
+Week 12 question 2 should be False
+One comment • 5 months ago
+Bubla47 (talkcontribs)
+Collatz Conjecture is not yet proven or disproven, hence we cannot say whether it will always end in 1. Sir himself clarifies this in the first video on Collatz Conjecture. Please update the marks accordingly
+
+Reply 5 months ago
+
+Binary Search of a Number Made Easy
+2 comments • 5 months ago
+Kamalakar (talkcontribs)
+I am expecting a question on this.
+
+It is little bit confusing how to do the calculation
+
+I am showing the procedure of how to do the calculation easily
+
+//youtu.be/lcjJJQ545ec
+
+kindly watch it at the above link
+
+Reply 5 months ago
+Kamalakar (talkcontribs)
+Remember binary search is different from binary sort. They have already given a question on binary sort in Quiz in that week. dont get confused about binary sort and binary search
+
+Reply 5 months ago
+
+What is the & doing in the code below
+7 comments • 5 months ago
+Kamalakar (talkcontribs)
+l=[1,2,3,4,5] print([x&1 for x in l])
+
+output is [1, 0, 1, 0, 1]
+
+what is the & operator doing here.
+
+Edited 5 months ago
+Varshitha (talkcontribs)
+Explanation sir?
+
+5 months ago
+Kamalakar (talkcontribs)
+No idea that is why i am asking if some one could help.
+
+5 months ago
+Bhats% (talkcontribs)
+This is bitwise and operator. In the case of odd numbers for an example 3 3=11(in binary) and 3&01 will return 01=1 for even numbers let say 2 2=10 (in binary) 2&01 will return 00=0
+
+5 months ago
+Bhats% (talkcontribs)
+The bitwise and will return 1 if the bit in both number is 1,else it will return 0.
+
+5 months ago
+Kamalakar (talkcontribs)
+Thanks a lot for the explanation.
+
+5 months ago
+Varshitha (talkcontribs)
+Thank you
+
+5 months ago
+While and For loop Tricky questions in Sanfoundary.com
+3 comments • 5 months ago
+Kamalakar (talkcontribs)
+I was trying to solve the sanfoundary website questions for the last few weeks I have repeatedly failed in these as these are trikcy. copy and paste the code in spyder and see the results. I assumed you will be able to solve the remaining questions easily as i am able to do it. Go through the sanfoundary python questions to check your capability www.sanfoundry.com/python-technical-questions-answers/ <pre> i = 1 while True: if i%3 == 0: break print(i) i + = 1 Answer error because of space between + and = ---------------------------------------------------- i = 1 while True: if i%2 == 0: break print(i) i += 2 a) 1 b) 1 2 c) 1 2 3 4 5 6 to infinity d) 1 3 5 7 9 11 to infinity Answer D -------------------------------------------------- x = "abcdef" while i in x: print(i, end=" ") a) a b c d e f b) abcdef c) i i i i i i … d) error I is not defined Answer D -------------------------------- x = "abcdef" i = "a" while i in x: print(i, end = " ") a) no output b) i i i i i i … c) a a a a a a … d) a b c d e f Answer B. because in print statement i is in quotes. ----------------------------- x = "abcdef" i = "a" while i in x: print('i', end = " ") a) no output b) i i i i i i … c) a a a a a a to infinity d) a b c d e f answer C x is not changed in the loop ---------------------------------------------- x = "abcdef" i = "a" while i in x: x = x[:-1] print(i, end = " ") a) i i i i i i b) a a a a a a c) a a a a a d) none of the mentioned answer is B. X becomes empty after six times ---------------------------------------- x = "abcdef" i = "a" while i in x[:-1]: print(i, end = " ") a) a a a a a b) a a a a a a c) a a a a a a to infinity d) a Answer C x is not changed --------------------------------------- x = 'abcd' for i in range(len(x)): x[i].upper() print (x) a) abcd b) ABCD c) error d) none of the mentioned Answer is A. x is not assigned the value ----------------------------------------------------------- x = 'abcd' for i in range(len(x)): x = 'a' print(x) a) a b) abcd abcd abcd c) a a a a d) none of the mentioned Answer C -------------------------------------------------- d = {0: 'a', 1: 'b', 2: 'c'} for x, y in d: print(x, y) a) 0 1 2 b) a b c c) 0 a 1 b 2 c d) none of the mentioned Answer D error. it should be d.items() ---------------------------------- d = {0: 'a', 1: 'b', 2: 'c'} for x in d.values(): print(d[x]) a) 0 1 2 b) a b c c) 0 a 1 b 2 c d) none of the mentioned Answer D error values cannot be keys in the dictionary ------------------------------------------- d = {0, 1, 2} for x in d: print(d.add(x)) a) 0 1 2 b) 0 1 2 0 1 2 0 1 2 … c) None None None d) None of the mentioned Answer C. d.add(x) will return None three times ---------------------------------------------- for i in range(2.0): print(i) a) 0.0 1.0 b) 0 1 c) error d) none of the mentioned Answer C Range cannot have integer Value ------------------------------------- x = 2 for i in range(x): x += 1 print (x) a) 0 1 2 3 4 … b) 0 1 c) 3 4 d) 0 1 2 3 Answer C ----------------------------------------------- x = (i for i in range(3)) for i in x: print(i) for i in x: print(i) a) 0 1 2 b) error c) 0 1 2 0 1 2 d) none of the mentioned Answer A cannot loop over generator object twice -------------------------------------- a = [0, 1, 2, 3] i = -2 for i not in a: print(i) i += 1 a) -2 -1 b) 0 c) error d) none of the mentioned string = "my name is x" for i in ' '.join(string.split()): print (i, end=", ") a) m, y, , n, a, m, e, , i, s, , x, has comma at the end b) m, y, , n, a, m, e, , i, s, , x c) my, name, is, x, d) error Answer A. ------------------------------------------------------- string = "my name is x" for i in string.split(): print (i, end=", ") a) m, y, , n, a, m, e, , i, s, , x, b) m, y, , n, a, m, e, , i, s, , x c) my, name, is, x, d) error Answer C. Kindly study the difference between this question and previous question </pre>
+Reply 5 months ago
+Varshitha (talkcontribs)
+x = "abcdef" i = "a" while i in x: print(i, end = " ") Here i got option c as output
+Reply 5 months ago
+Kamalakar (talkcontribs)
+I also have given C only as output.
+Reply 5 months ago
+
+Easy Way to calculate the numbers in magic square
+One comment • 5 months ago
+Kamalakar (talkcontribs)
+Hi, I have showed here the easy way to reproduce the numbers in magic square. Kindly watch the videos in youtube <pre> //youtu.be/9bQzBoWAqX4 for 7X7 and 3X3 //youtu.be/jxsiGQyaNcc for 5X5 if n is the size of the square than the sum of rows and coloums is given by (n*(n**2 + 1))/2 so for 3x3, n=3, n**2 =9 hence the sum is 3*(9+1)/2=15 for 5x5 ,n=5, n**2 =25 the sum is 5*(25+1)/2= 65 for 7X7,n=7, n**2= 49 the sum is 7*(49+1)/2= 175 </pre>
+Reply 5 months ago
+
+Click on Permalink in the picture shown at the link below to watch the pages properly
+One comment • 5 months ago
+Kamalakar (talkcontribs)
+http://sccilabs.org/jocwiki/index.php/File:Permalink.jpg To view the contents of these pages properly kindly click on the permalink shown in the picture
+Reply Edited 5 months ago
+
+QUIZ ASSIGNMENT
+4 comments • 5 months ago
+Bhats% (talkcontribs)
+The first question seems to be confusing... Page Rank is used to rank nodes in a network based on their in-degrees I think; so option a and b both have to be correct.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+Through out the lecture this is what we are doing. i have selected option indegree. dont know the reason why it is given in correct.
+Reply 5 months ago
+Bhats% (talkcontribs)
+Yes, I have also marked in-degree.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+let us for get about these and focus on our exam prepration
+Reply 5 months ago
+
+Application of + operator to lists tupples and sets
+One comment • 5 months ago
+Kamalakar (talkcontribs)
+<pre> for tupples a=(1,2) >>> b=(3,4) >>> c=a+b >>> c a) (4,6) b) (1,2,3,4) c) Error as tuples are immutable d) None for sets	>>> a={4,5,6} >>> b={2,8,6} >>> a+b a) {4,5,6,2,8} b) {4,5,6,2,8,6} c) Error as unsupported operand type for sets d) Error as the duplicate item 6 is present in both sets for lists list1 = [1, 2, 3, 4] list2 = [5, 6, 7, 8] print((list1 + list2)) + operator is not applicable to sets </pre>
+Reply 5 months ago
+
+Application of * operators to lists tupples and sets
+One comment • 5 months ago
+Kamalakar (talkcontribs)
+<pre> for tupple t = (1, 2) 2 * t a) (1, 2, 1, 2) b) [1, 2, 1, 2]. c) (1, 1, 2, 2) d) [1, 1, 2, 2]. a=("Check")*3 a a) (‘Check’,’Check’,’Check’) b) * Operator not valid for tuples c) (‘CheckCheckCheck’) d) Syntax error for set >>> s={5,6} >>> s*3 a) Error as unsupported operand type for set data type b) {5,6,5,6,5,6} c) {5,6} d) Error as multiplication creates duplicate elements which isn’t allowed for list Suppose list1 is [1, 3, 2], What is list1 * 2 ? a) [2, 6, 4]. b) [1, 3, 2, 1, 3]. c) [1, 3, 2, 1, 3, 2] . D) [1, 3, 2, 3, 2, 1]. + and * operators are not applicable to sets and will result in error. </pre>
+Reply 5 months ago
+
+Interesting difference between lists tupples, sets and dictionaries
+One comment • 5 months ago
+Kamalakar (talkcontribs)
+<pre> In a dictionary What will be the output? d1 = {"john":40, "peter":45} d2 = {"john":466, "peter":45} d1 > d2 a) True b) False c) Error d) None in a list list1 = [11, 2, 23] >>>list2 = [11, 2, 2] >>>list1 < list2 is a) True b) False c) Error d) None in a tuple a=(1,2,(4,5)) >>> b=(1,2,(3,4)) >>> a<b a) False b) True c) Error, < operator is not valid for tuples d) Error, < operator is valid for tuples but not if there are sub-tuples in a set a={5,4} >>> b={1,2,4,5} >>> a<b a) {1,2} b) True c) False d) Invalid operation you will see the comparison operator is not applicable in dictionary </pre>
+Reply 5 months ago
+
+Question 5. Week 12 Which Process requires less iterations
+3 comments • 5 months ago
+Kamalakar (talkcontribs)
+When we review your videos and the program output n the videos, Random Walk method required almost one lakh iterations to converge. while the points distribution method converged in less than 10 iterations. you are just entering space for it go to next iteration. So i have considered Points distribution method requires less iterations. Can some explain why None is selected as answer to this question.
+Reply Edited 5 months ago
+Atulgnit (talkcontribs)
+Yes same issue
+Reply 5 months ago
+Bose (talkcontribs)
+Same issue with me
+Reply 5 months ago
+
+Scratch
+4 comments • 5 months ago
+AI (talkcontribs)
+Will there be questions based on Scratch in the final exam? if yes do we need to study some more about it or is week1 sufficient. Will appreciate a reply. Thanks
+Reply 5 months ago
+Kamalakar (talkcontribs)
+My guess on Question paper. http://sccilabs.org/jocwiki/index.php/Final_Exam_Notes http://sccilabs.org/jocwiki/index.php/Expected
+Reply Edited 5 months ago
+Madhavi1 (talkcontribs)
+Sir,my students have chosen the option to write python exam on 28/4/19 afternoon session but they got in hall ticket morning session .And most of the students have MAINS exam in the morning session.Is there any possibility to change exam timings.
+Reply 5 months ago
+Aravind23 (talkcontribs)
+Sir, I have chosen for the afternoon session but I have allotted morning session. I am having police examination on the same day & same session.can you please change my exam timings.
+Reply 5 months ago
+
+Curiosity Question. How is the internal final score evaluated
+One comment • 5 months ago
+Kamalakar (talkcontribs)
+With all these assignemts how is the final internal score evaluated and when will we know the internal score.
+Reply 5 months ago
+
+Hints for Week 12 - Assignment : 2 Smallest Palindrome
+16 comments • 5 months ago
+Arunkumar (talkcontribs)
+This time I am not trying to explain logic. But if anyone wants to know... You can ask below. I am giving you all some test cases. If your program can pass all these test cases, Then possibly your program will pass all hidden test cases. <pre> input: a.ba output: abba input: a.b output: -1 input: "a" output: a input: "." output: a input: cb.bc output: cbabc input: aaa.a.aaaa output: aaaaaaaaaa input: dsadsa.dsadsa output: -1 input: dsa.sa.as.asd output: dsaasaaasaasd input: t.b..s..mx.j. output: tjbxmsasmxbjt input: ..l.n..o.em.rd.il.p output:palindromemordnilap input: p.li..r.m.go.dn..a. output: -1 </pre>
+Reply Edited 5 months ago
+Arunkumar (talkcontribs)
+=== '''Hints:''' === : '''1.''' Palindrome will read same, when read from right to left or from left to right. :: '''Eg:''' '''''rad'''ar, '''civ'''ic, '''mo'''m, '''race'''car, '''lev'''el, '''sta'''ts, '''no'''on'' etc... : '''2.''' Which means, '''right half''' of the string ''is'' just ''the mirror of'' '''Left half'''. : '''3.''' Then comes to the missing alphabets. Where both left half and right half of the string doesn't have any alphabet and is having ''''.'''', this is where you should think "What to replace it with?". : '''4.''' In such case you should think of '''replac'''ing the ''''.'''', '''with''' some alphabet, which can make the entire string, '''a''' smallest possible Palindrome. : '''5.''' And as always, try to remove trailing space at the end or at the beginning of the string before printing. : '''6.''' Think of how you handle strings with even and odd lengths, if needed. : '''7.''' Write if conditions, such that... '''n''' and '''(n-1)*-1''' index positions are checked and replaced (if needed). You need 3 or 4 if elif conditions to solve this Assignment. Writing a function will reduce the length of the code. '''NOTE:''' Question could have been little more complicated. If... they asked us to replace dot with some alphabet, which is the next smallest, instead of the smallest possible. So, compared to this possibility, our question is simple. As we can just replace '''dot''' with '''a''', when both halves have '''dots''' at the same mirroring position.
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+Do a google search to understand what a palindrome is.
+Reply 5 months ago
+Meda harsha (talkcontribs)
+i got output for all the sample inputs you have given ....but after submitting i am getting 2/3 only 66.66% correct. I am not getting one of the internal test cases correct
+Reply 5 months ago
+Arunkumar (talkcontribs)
+Please post your code.
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+Does your code have nested for loops.
+Reply 5 months ago
+Rajon (talkcontribs)
+Try removing any spaces.....worked for me
+Reply 5 months ago
+Kamalakar (talkcontribs)
+scroll down in the page below to see if it helps. http://sccilabs.org/jocwiki/index.php/Final_Exam_Notes what is the procedure you are using to fill in the blanks how are you using the hint smallest palindrome means what letter/letters will you choose to fill in the blanks
+Reply 5 months ago
+Kamalakar (talkcontribs)
+Keeping in mind the jumps program and marks distribution from previous week, they might have given a very big string for checking. thats the reason why your program failed in one of the three cases. Since two cases passed, i am expecting you are using nested for loop in your program ie a for loop in side another for loop. you can have three to four independent for loops but not a nested for loop. when the length of the string is too long and the result is not obtained in 20 seconds , your browser will not pass the test. try submitting the result early in the morning between 2:00 am to 6:00 am when internet is very fast or remove the nested for loop in your program by writing a different logic. if they have given a string with say 30 characters in length and you have used a nested for loop it means you are going to do minimum of 30*30 =900 calculations. I hope you got the point Run your program in spyder by giving a string of 30 or 40 characters in length and see what time it takes.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+Can you give the following line at the beginning of the code <pre> import time now = time.time() and the following lines at the end of the code later=time.time() print("\n",(later-now)*10000) and tell me the the output of your code. When i submitted them in the browser my program is returning 1. What does yours return </pre> One more thing. There is another clue in the public test cases and in the examples explained. they are increasing the length of the string from the example test cases till the last test case in the public test cases. so the private test cases they could have given still bigger test cases
+Reply Edited 5 months ago
+AI (talkcontribs)
+I tried putting the time code in my palindrome program and it gave me the output as 59041.10670089722 when input is a.ba and 46990.28968811035 when input was a.b
+Reply 5 months ago
+Kamalakar (talkcontribs)
+Just for fun and out of curiosity i have given print(-1), it gave me 33.33% marks with one test case passed. They should have given two test cases atleast which will print (-1) as output.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+@ Meda harsha, i dont know what happened to your program since you didnot come back. Using the code below i have found that the length of the string that is not palindrome given as private test case is 16. define your program as function called meda and use the code below to see if you can get 100%. <pre> def meda() print("",end="") import time now = time.time() s=list(input()) if len(s) ==16: print(-1) else: meda() </pre>
+Reply 5 months ago
+AI (talkcontribs)
+Hello. Am using a single for loop and am unable to get the correct answer if the original and reversed string have a missing alphabet at the same point. It is not replacing the '.' with 'a'. Any idea??
+Reply 5 months ago
+Arunkumar (talkcontribs)
+write your if condition such that '''n''' and '''(n-1)*-1''' index positions are checked and replaced if needed. You need 3 or 4 if elif conditions to solve this Assignment. Writing a function will reduce the length of the code.
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+you need to replace " " with 'a' in one string and then the reverse that string and check weather both the strings are same or not
+Reply Edited 5 months ago
+
+Assignment 12 ques 5
+One comment • 5 months ago
+Atulgnit (talkcontribs)
+Answer should be b according to video implementation. Why answer is none?
+Reply 5 months ago
+
+Review these for before Final exam
+4 comments • 5 months ago
+Kamalakar (talkcontribs)
+Kindly go through these videos and quizzes before your exam. http://sccilabs.org/jocwiki/index.php/Final_Exam_Notes
+Reply Edited 5 months ago
+Puneet Patel (talkcontribs)
+thank you kamalakar. You helped a lot throughout course
+Reply 5 months ago
+Kamalakar (talkcontribs)
+it is two way help. instead of copying the solution from some channel in youtube, you tried your with your way of thinking. Because of that i could see there is other side of the coin. other wise it was only theoretical for me that for a problem there will exist more than one solution. We all could copy the solution provided in youtube channel. But when we tried with our way of thinking we could understand how the code fails and how to write program and many things, which we could not get by just copying it from the website. i really appreciate the people who have tried in their own way to code and come with a program even though it does not work instead of just copying. This will increase their confidence when they write the final exam. because they know how a code works.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+some of the questions in quiz and in the live session in python are present in this website. https://www.sanfoundry.com/1000-python-questions-answers/ Verify in spyder the answers in the website.
+Reply Edited 5 months ago
+
+Question 1 Week 12. What is page rank.
+One comment • 5 months ago
+Kamalakar (talkcontribs)
+All the calculations are made based upon the nodes that are in-degree. What is in- degree here. I am not sure why the option A is given correct instead of option B.
+Reply 5 months ago
+
+Can some one help me in giving the correct syntax for the list comprehension
+4 comments • 5 months ago
+Kamalakar (talkcontribs)
+print([if i%2==0: i; else: i+1; for i in range(4)]) Can some one help me in giving the correct syntax for the list comprehension
+Reply 5 months ago
+C++veteran (talkcontribs)
+[i for i in range(4) if i%2==0; else i+1]
+Reply 5 months ago
+This comment was deleted by Kamalakar (history)
+Kamalakar (talkcontribs)
+[i if i%2==0 else (i+1) for i in range(4)] this produced answer with out nay error
+Reply 5 months ago
+
+QUESTION PAPER
+3 comments • 5 months ago
+Bhats% (talkcontribs)
+Can we get previous year's question papers?
+Reply 5 months ago
+Kamalakar (talkcontribs)
+if some one has it kindly post it here or atleast give the most difficult or the problems that require calculations to be done. I have prepared a page with what i am expecting in the exam at the following pages http://sccilabs.org/jocwiki/index.php/Final_Exam_Notes http://sccilabs.org/jocwiki/index.php/Expected#Expected_Questions_in_Final_exam
+Reply Edited 5 months ago
+AI (talkcontribs)
+In live session they said previous QP is not available
+Reply 5 months ago
+
+Question pattern of nptel exam
+3 comments • 5 months ago
+Dhananjay giri (talkcontribs)
+Which type of question is asked in nptel final exam? Will there any programming questions is present.
+Reply 5 months ago
+Kamalakar (talkcontribs)
+My guess on Question paper. http://sccilabs.org/jocwiki/index.php/Final_Exam_Notes http://sccilabs.org/jocwiki/index.php/Expected
+Reply 5 months ago
+AI (talkcontribs)
+No programming only MCQs
+Reply 5 months ago
+
+final exam
+3 comments • 5 months ago
+Praneeth1497 (talkcontribs)
+what is exam pattern ?
+Reply 5 months ago
+Kamalakar (talkcontribs)
+My guess on Question paper. http://sccilabs.org/jocwiki/index.php/Final_Exam_Notes http://sccilabs.org/jocwiki/index.php/Expected
+Reply 5 months ago
+AI (talkcontribs)
+In the live session they said it will be only MCQs and the toughness level will be similar to the quiz questions. They also advised to go through the quiz for all the weeks.
+Reply 5 months ago
+
+Internal Assessment
+3 comments • 5 months ago
+AI (talkcontribs)
+Hello! Any idea how the internal marks will be decided? What will be the distribution between the three programs given each week and the Quiz? Thanks
+Reply 5 months ago
+Kamalakar (talkcontribs)
+When will we know what our internal marks are.
+Reply 5 months ago
+AI (talkcontribs)
+Do they actually let us know our internal assessment marks before the exams? Any case it can happen only after 25th of April. any idea how they will finalize the marks.
+Reply 5 months ago
+
+Fun with Recursion
+5 comments • 5 months ago
+Kamalakar (talkcontribs)
+<pre> def fun(n): if (n > 100): return n - 5 return fun(fun(n+11)); print(fun(45)) The output is 100. Can any one explain how the intermediate calculations how this is arrived. I used the print statements. and it is interesting to see the output </pre>
+Reply Edited 5 months ago
+Arunkumar (talkcontribs)
+Here is a diagram explaining the internal process. [[File:Function_Recursion_ar.png|500px|thumb|left|Function Recursion Explanation]]
+Reply Edited 5 months ago
+Arunkumar (talkcontribs)
+<pre> def fun(n): print(n) if (n > 100): return n - 5 print(n) return fun(n+11) print(fun(45)) </pre> But this gives 106! Why? ;p
+Reply Edited 5 months ago
+Kamalakar (talkcontribs)
+I didnot understand why fun(fun45) is used may be the first one returns 106 and when the second time it is called it returns 100. what did you use to calculate this . was that excel.
+Reply 5 months ago
+Arunkumar (talkcontribs)
+<pre> def fun(n): print(n) if (n > 100): return n - 5 print(n) return fun(fun(n+11)) print(fun(45)) </pre><br /> # When we run above with print functions, we get same numbers. # Because of <code>'''fun(fun(n+11))'''</code>, multiple instances of itself gets started. # No. I used Inkscape to create this. But it is possible to understand this by using, Excel alternate "LibreOffice Calc" on my Linux system.
+Reply Edited 5 months ago
+
+Hall ticket
+2 comments • 5 months ago
+GhayathriJ (talkcontribs)
+Yet I didn't receive my hall ticket. What to do?
+Reply 5 months ago
+Kamalakar (talkcontribs)
+login into this link http://nptelonlinecourses.iitm.ac.in
+Reply 5 months ago
+
+problem in downloading the hall ticket
+3 comments • 5 months ago
+Varshitha (talkcontribs)
+Iam unable to download the hallticket from the link sent to my mail. kindly help me someone
+Reply 5 months ago
+Kamalakar (talkcontribs)
+Try now. yesterday just after i received the email the browser took lot of time for me to download. That could be becuase all the people might be trying to download it. I have downloaded it from the NPTEL login. http://nptelonlinecourses.iitm.ac.in the other link they have given didnot work for me. But i got my hall ticket from the nptelonlinecourses.iitm.ac.in
+Reply 5 months ago
+Varshitha (talkcontribs)
+Thank you sir.
+Reply 5 months ago

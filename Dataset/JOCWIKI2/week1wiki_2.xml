@@ -1,0 +1,1670 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="en">
+  <siteinfo>
+    <sitename>JOCWiki</sitename>
+    <dbname>Jocwiki_second</dbname>
+    <base>http://sccilabs.org/jocwiki2/index.php/Main_Page</base>
+    <generator>MediaWiki 1.30.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">JOCWiki</namespace>
+      <namespace key="5" case="first-letter">JOCWiki talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="2300" case="first-letter">Gadget</namespace>
+      <namespace key="2301" case="first-letter">Gadget talk</namespace>
+      <namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+      <namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+      <namespace key="2600" case="first-letter">Topic</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Lecture Notes:Week 1</title>
+    <ns>0</ns>
+    <id>125</id>
+    <revision>
+      <id>376</id>
+      <timestamp>2019-01-23T00:28:36Z</timestamp>
+      <contributor>
+        <ip>103.118.50.4</ip>
+      </contributor>
+      <comment>Created page with &quot;'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''   Week 1...&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3004">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a set of instructions that performs a specific task. 
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning.
+
+
+10th Standard/High school passed student can also do this course.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+{{#ev:youtube|https://youtu.be/DxRm8YWVHzE|250|right}}
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+
+[[#Top]]</text>
+      <sha1>ms3px5o88ehgo5az235ekmay31kndft</sha1>
+    </revision>
+    <revision>
+      <id>390</id>
+      <parentid>376</parentid>
+      <timestamp>2019-01-23T04:38:33Z</timestamp>
+      <contributor>
+        <username>Utkarsh Malviya</username>
+        <id>355</id>
+      </contributor>
+      <comment>/* What is a computer program? */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3063">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a solution to a problem implemented by giving set on instruction to the computer to solve that specific problem.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning.
+
+
+10th Standard/High school passed student can also do this course.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+{{#ev:youtube|https://youtu.be/DxRm8YWVHzE|250|right}}
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+
+[[#Top]]</text>
+      <sha1>ab1gz4mbz6yfma58eig0er3b63bn9ve</sha1>
+    </revision>
+    <revision>
+      <id>393</id>
+      <parentid>390</parentid>
+      <timestamp>2019-01-23T06:54:27Z</timestamp>
+      <contributor>
+        <username>Grace kiriti</username>
+        <id>482</id>
+      </contributor>
+      <comment>/* What is a computer program? */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3112">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a tool which we use to make computer to do expected tasks and give desired output using set of instructions in any computer language like c,c++,java, python etc.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning.
+
+
+10th Standard/High school passed student can also do this course.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+{{#ev:youtube|https://youtu.be/DxRm8YWVHzE|250|right}}
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+
+[[#Top]]</text>
+      <sha1>q1w3r9eoic5te52274umqhza8s7adi2</sha1>
+    </revision>
+    <revision>
+      <id>396</id>
+      <parentid>393</parentid>
+      <timestamp>2019-01-23T11:43:15Z</timestamp>
+      <contributor>
+        <username>Simran</username>
+        <id>4</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3058">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a tool which we use to make computer to do expected tasks and give desired output using set of instructions in any computer language like c,c++,java, python etc.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning.
+
+
+10th Standard/High school passed student can also do this course.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+
+[[#Top]]</text>
+      <sha1>eh3u4468otejqhx09hksj3kt7y9id63</sha1>
+    </revision>
+    <revision>
+      <id>397</id>
+      <parentid>396</parentid>
+      <timestamp>2019-01-23T12:37:55Z</timestamp>
+      <contributor>
+        <username>Mechhie</username>
+        <id>357</id>
+      </contributor>
+      <comment>/* What is programming? */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3175">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a tool which we use to make computer to do expected tasks and give desired output using set of instructions in any computer language like c,c++,java, python etc.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning.
+
+
+10th Standard/High school passed student can also do this course.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+
+[[#Top]]</text>
+      <sha1>4odjoolr9sgb8crdg03ny7m93wf5q2d</sha1>
+    </revision>
+    <revision>
+      <id>398</id>
+      <parentid>397</parentid>
+      <timestamp>2019-01-23T12:39:16Z</timestamp>
+      <contributor>
+        <username>Mechhie</username>
+        <id>357</id>
+      </contributor>
+      <comment>/* How to give instructions? */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3225">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a tool which we use to make computer to do expected tasks and give desired output using set of instructions in any computer language like c,c++,java, python etc.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning.
+
+
+10th Standard/High school passed student can also do this course.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+[[#Top]]</text>
+      <sha1>mald8faeobq9bagc529x6r4snibfp0o</sha1>
+    </revision>
+    <revision>
+      <id>399</id>
+      <parentid>398</parentid>
+      <timestamp>2019-01-23T12:45:48Z</timestamp>
+      <contributor>
+        <username>Mechhie</username>
+        <id>357</id>
+      </contributor>
+      <comment>/* Where to start? */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3281">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a tool which we use to make computer to do expected tasks and give desired output using set of instructions in any computer language like c,c++,java, python etc.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning.
+
+
+10th Standard/High school passed student can also do this course.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+Knowing and trying to implement the Art of Articulation.
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+[[#Top]]</text>
+      <sha1>qny6t5royub0yv4z0to49nln4w91vst</sha1>
+    </revision>
+    <revision>
+      <id>407</id>
+      <parentid>399</parentid>
+      <timestamp>2019-01-25T11:57:35Z</timestamp>
+      <contributor>
+        <username>Siri</username>
+        <id>795</id>
+      </contributor>
+      <minor/>
+      <comment>/* What is a computer program? */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3298">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a tool used to make computer to do an expected task and give desired output, using a defined set of instructions in any computer programming language like c,c++,java, python etc.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning.
+
+
+10th Standard/High school passed student can also do this course.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+Knowing and trying to implement the Art of Articulation.
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+[[#Top]]</text>
+      <sha1>hmyvj95hf6uf8fv2tlxorylh6if8oh8</sha1>
+    </revision>
+    <revision>
+      <id>419</id>
+      <parentid>407</parentid>
+      <timestamp>2019-01-28T20:04:02Z</timestamp>
+      <contributor>
+        <username>Hardik20sharma</username>
+        <id>1109</id>
+      </contributor>
+      <minor/>
+      <comment>/* Are there any prerequisites for the course? */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3369">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a tool used to make computer to do an expected task and give desired output, using a defined set of instructions in any computer programming language like c,c++,java, python etc.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning.
+
+
+10th Standard/High school passed student can also do this course.
+Also, one should have the basic knowledge of using computer and mouse.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+Knowing and trying to implement the Art of Articulation.
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+[[#Top]]</text>
+      <sha1>2h598oin2geyktl7qp0nedi3a6t9bqg</sha1>
+    </revision>
+    <revision>
+      <id>420</id>
+      <parentid>419</parentid>
+      <timestamp>2019-01-28T20:18:10Z</timestamp>
+      <contributor>
+        <username>Hardik20sharma</username>
+        <id>1109</id>
+      </contributor>
+      <comment>Added information regarding scratch and the download link</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3685">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a tool used to make computer to do an expected task and give desired output, using a defined set of instructions in any computer programming language like c,c++,java, python etc.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning.
+
+
+10th Standard/High school passed student can also do this course.
+Also, one should have the basic knowledge of using computer and mouse.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+Knowing and trying to implement the Art of Articulation.
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+[[#Top]]
+
+=Introduction to Scratch =
+
+Scratch is a very easy programming language which can be understood by even an 8 year old. It is a block-based visual programming language and online community. 
+
+It can be downloaded from https://scratch.mit.edu/download. Scratch works on Windows and macOS operating systems.
+
+[[#Top]]</text>
+      <sha1>68xqadzicct5bkwiycc74b97rshess9</sha1>
+    </revision>
+    <revision>
+      <id>447</id>
+      <parentid>420</parentid>
+      <timestamp>2019-01-30T21:50:29Z</timestamp>
+      <contributor>
+        <username>Sundaravalli</username>
+        <id>993</id>
+      </contributor>
+      <comment>/* What is a computer program? */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3746">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a tool used to make computer to do an expected task and give desired output, using a defined set of instructions in any computer programming language like c,c++,java, python etc.It act as an interface between the user ideas and the system.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning.
+
+
+10th Standard/High school passed student can also do this course.
+Also, one should have the basic knowledge of using computer and mouse.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+Knowing and trying to implement the Art of Articulation.
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+[[#Top]]
+
+=Introduction to Scratch =
+
+Scratch is a very easy programming language which can be understood by even an 8 year old. It is a block-based visual programming language and online community. 
+
+It can be downloaded from https://scratch.mit.edu/download. Scratch works on Windows and macOS operating systems.
+
+[[#Top]]</text>
+      <sha1>0s1pgtzbxx6flvf322jql8dlqaqvcsx</sha1>
+    </revision>
+    <revision>
+      <id>454</id>
+      <parentid>447</parentid>
+      <timestamp>2019-02-01T03:04:37Z</timestamp>
+      <contributor>
+        <username>Aravindhanmohan.tvm</username>
+        <id>550</id>
+      </contributor>
+      <minor/>
+      <comment>/* Introduction to Scratch */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3826">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a tool used to make computer to do an expected task and give desired output, using a defined set of instructions in any computer programming language like c,c++,java, python etc.It act as an interface between the user ideas and the system.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning.
+
+
+10th Standard/High school passed student can also do this course.
+Also, one should have the basic knowledge of using computer and mouse.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+Knowing and trying to implement the Art of Articulation.
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+[[#Top]]
+
+=Introduction to Scratch =
+
+Scratch is a very easy programming language which can be understood by even an 8 year old. It is a block-based visual programming language and online community. One of the easiest way to learn control structures, without a bit code written. 
+
+It can be downloaded from https://scratch.mit.edu/download. Scratch works on Windows and macOS operating systems.
+
+[[#Top]]</text>
+      <sha1>rc39dp7op8gwpetajp68344872iitkm</sha1>
+    </revision>
+    <revision>
+      <id>483</id>
+      <parentid>454</parentid>
+      <timestamp>2019-02-03T17:29:23Z</timestamp>
+      <contributor>
+        <username>Surya</username>
+        <id>1595</id>
+      </contributor>
+      <comment>/* What is a computer program? */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3825">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a well defined set of instructions used to make computer to do an expected task and give desired output,written in any computer programming language like c,c++,java, python etc.It act as an interface between the user ideas and the system.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning.
+
+
+10th Standard/High school passed student can also do this course.
+Also, one should have the basic knowledge of using computer and mouse.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+Knowing and trying to implement the Art of Articulation.
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+[[#Top]]
+
+=Introduction to Scratch =
+
+Scratch is a very easy programming language which can be understood by even an 8 year old. It is a block-based visual programming language and online community. One of the easiest way to learn control structures, without a bit code written. 
+
+It can be downloaded from https://scratch.mit.edu/download. Scratch works on Windows and macOS operating systems.
+
+[[#Top]]</text>
+      <sha1>djnety00tpie1muig2a9k6d26r2aiem</sha1>
+    </revision>
+    <revision>
+      <id>603</id>
+      <parentid>483</parentid>
+      <timestamp>2019-02-10T10:37:48Z</timestamp>
+      <contributor>
+        <username>Pbadola</username>
+        <id>2167</id>
+      </contributor>
+      <comment>/* Introduction to Scratch */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3941">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a well defined set of instructions used to make computer to do an expected task and give desired output,written in any computer programming language like c,c++,java, python etc.It act as an interface between the user ideas and the system.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning.
+
+
+10th Standard/High school passed student can also do this course.
+Also, one should have the basic knowledge of using computer and mouse.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+Knowing and trying to implement the Art of Articulation.
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+[[#Top]]
+
+=Introduction to Scratch =
+
+Scratch is a very easy programming language which can be understood by even an 8 year old. It is a block-based visual programming language and online community. One of the easiest way to learn control structures, without a bit code written. 
+
+It can be downloaded from https://scratch.mit.edu/download. Scratch works on Windows and macOS operating systems.You can also perform task online by going on this link https://scratch.mit.edu/projects/editor/?tutorial=getStarted.
+
+[[#Top]]</text>
+      <sha1>aut6lxc9vp8r3f1ci5fhmaq82onz7js</sha1>
+    </revision>
+    <revision>
+      <id>766</id>
+      <parentid>603</parentid>
+      <timestamp>2019-02-16T13:52:05Z</timestamp>
+      <contributor>
+        <username>Mukundji</username>
+        <id>2059</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3943">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a well defined set of instructions used to make computer to do an expected task and give desired output,written in any computer programming language like c,c++,java, python etc.It act as an interface between the user's ideas and the system.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning.
+
+
+10th Standard/High school passed student can also do this course.
+Also, one should have the basic knowledge of using computer and mouse.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+Knowing and trying to implement the Art of Articulation.
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+[[#Top]]
+
+=Introduction to Scratch =
+
+Scratch is a very easy programming language which can be understood by even an 8 year old. It is a block-based visual programming language and online community. One of the easiest way to learn control structures, without a bit code written. 
+
+It can be downloaded from https://scratch.mit.edu/download. Scratch works on Windows and macOS operating systems.You can also perform task online by going on this link https://scratch.mit.edu/projects/editor/?tutorial=getStarted.
+
+[[#Top]]</text>
+      <sha1>96ypunv3ai5qquoxalpsb5ngnc5j0b6</sha1>
+    </revision>
+    <revision>
+      <id>2533</id>
+      <parentid>766</parentid>
+      <timestamp>2019-04-03T12:26:37Z</timestamp>
+      <contributor>
+        <username>Rashmi N</username>
+        <id>3361</id>
+      </contributor>
+      <comment>/* How to give instructions? */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3952">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a well defined set of instructions used to make computer to do an expected task and give desired output,written in any computer programming language like c,c++,java, python etc.It act as an interface between the user's ideas and the system.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning.
+
+
+10th Standard/High school passed student can also do this course.
+Also, one should have the basic knowledge of using computer and mouse.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+Knowing and trying to implement the Art of Articulation.
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written stepwise in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+[[#Top]]
+
+=Introduction to Scratch =
+
+Scratch is a very easy programming language which can be understood by even an 8 year old. It is a block-based visual programming language and online community. One of the easiest way to learn control structures, without a bit code written. 
+
+It can be downloaded from https://scratch.mit.edu/download. Scratch works on Windows and macOS operating systems.You can also perform task online by going on this link https://scratch.mit.edu/projects/editor/?tutorial=getStarted.
+
+[[#Top]]</text>
+      <sha1>b1kyco9zf0j8nv9jpwkjsoyu5uy6yz5</sha1>
+    </revision>
+    <revision>
+      <id>2565</id>
+      <parentid>2533</parentid>
+      <timestamp>2019-04-04T14:31:52Z</timestamp>
+      <contributor>
+        <username>Manav2107</username>
+        <id>3151</id>
+      </contributor>
+      <minor/>
+      <comment>/* Introduction to Scratch */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3951">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a well defined set of instructions used to make computer to do an expected task and give desired output,written in any computer programming language like c,c++,java, python etc.It act as an interface between the user's ideas and the system.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning.
+
+
+10th Standard/High school passed student can also do this course.
+Also, one should have the basic knowledge of using computer and mouse.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+Knowing and trying to implement the Art of Articulation.
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written stepwise in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+[[#Top]]
+
+=Introduction to Scratch =
+
+Scratch is a very easy programming language which can be understood by even an 8-year-old. It is a block-based visual programming language and online community. One of the easiest way to learn control structures, without a bit code written. 
+
+It can be downloaded from https://scratch.mit.edu/download. Scratch works on Windows and Mac Operating Systems. You can also perform task online by going on this link https://scratch.mit.edu/projects/editor/?tutorial=getStarted.
+
+[[#Top]]</text>
+      <sha1>rr5chdh2qpw1hk3vcfufjx80hngvfvu</sha1>
+    </revision>
+    <revision>
+      <id>2566</id>
+      <parentid>2565</parentid>
+      <timestamp>2019-04-04T14:34:14Z</timestamp>
+      <contributor>
+        <username>Manav2107</username>
+        <id>3151</id>
+      </contributor>
+      <minor/>
+      <comment>/* Are there any prerequisites for the course? */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="4018">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a well defined set of instructions used to make computer to do an expected task and give desired output,written in any computer programming language like c,c++,java, python etc.It act as an interface between the user's ideas and the system.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning. Also, one should have the ability to think logically.
+
+
+Even, a 10th Standard/High school passed student can also finish this course. 
+
+But, one should have a basic knowledge of using a computer and mouse.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+Knowing and trying to implement the Art of Articulation.
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written stepwise in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+[[#Top]]
+
+=Introduction to Scratch =
+
+Scratch is a very easy programming language which can be understood by even an 8-year-old. It is a block-based visual programming language and online community. One of the easiest way to learn control structures, without a bit code written. 
+
+It can be downloaded from https://scratch.mit.edu/download. Scratch works on Windows and Mac Operating Systems. You can also perform task online by going on this link https://scratch.mit.edu/projects/editor/?tutorial=getStarted.
+
+[[#Top]]</text>
+      <sha1>ec6p3w2yezumkud1oufjz8t0hvq9rh9</sha1>
+    </revision>
+    <revision>
+      <id>2849</id>
+      <parentid>2566</parentid>
+      <timestamp>2019-04-15T06:37:51Z</timestamp>
+      <contributor>
+        <username>Saurav</username>
+        <id>3573</id>
+      </contributor>
+      <comment>/* What is a computer program? */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="4028">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a well defined set of instructions that is used to make computer to do an expected task and give a desired output,written in any computer programming language like c,c++,java, python etc.It act as an interface between the user's ideas and the system.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning. Also, one should have the ability to think logically.
+
+
+Even, a 10th Standard/High school passed student can also finish this course. 
+
+But, one should have a basic knowledge of using a computer and mouse.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+Knowing and trying to implement the Art of Articulation.
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written stepwise in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+[[#Top]]
+
+=Introduction to Scratch =
+
+Scratch is a very easy programming language which can be understood by even an 8-year-old. It is a block-based visual programming language and online community. One of the easiest way to learn control structures, without a bit code written. 
+
+It can be downloaded from https://scratch.mit.edu/download. Scratch works on Windows and Mac Operating Systems. You can also perform task online by going on this link https://scratch.mit.edu/projects/editor/?tutorial=getStarted.
+
+[[#Top]]</text>
+      <sha1>e2fqjb0462aglt44quhvuyza51v4ye1</sha1>
+    </revision>
+    <revision>
+      <id>2931</id>
+      <parentid>2849</parentid>
+      <timestamp>2019-04-20T06:43:16Z</timestamp>
+      <contributor>
+        <username>Romishra</username>
+        <id>3555</id>
+      </contributor>
+      <minor/>
+      <comment>/* What is a computer program? */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="4030">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+=What is a computer program?=
+A computer program is a well defined set of instructions that is used to make computer to do an expected task and give a desired output,written in any computer programming language like c,c++, Java, Python etc.It acts as an interface between the user's ideas and the system.
+
+=Why do we need to program ?=
+
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+=Can anybody learn programming?=
+[[#Top]]
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+
+=Are there any prerequisites for the course?=
+[[#Top]]
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning. Also, one should have the ability to think logically.
+
+
+Even, a 10th Standard/High school passed student can also finish this course. 
+
+But, one should have a basic knowledge of using a computer and mouse.
+
+=Where to start?=
+[[#Top]]
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+Knowing and trying to implement the Art of Articulation.
+
+=What is programming? =
+
+[[#Top]]
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+=How to give instructions? =
+
+Instructions are programming language statements written stepwise in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+[[#Top]]
+
+=Introduction to Scratch =
+
+Scratch is a very easy programming language which can be understood by even an 8-year-old. It is a block-based visual programming language and online community. One of the easiest way to learn control structures, without a bit code written. 
+
+It can be downloaded from https://scratch.mit.edu/download. Scratch works on Windows and Mac Operating Systems. You can also perform task online by going on this link https://scratch.mit.edu/projects/editor/?tutorial=getStarted.
+
+[[#Top]]</text>
+      <sha1>7d4qw383h66meuqt9xzp4tbp7is76v2</sha1>
+    </revision>
+    <revision>
+      <id>3013</id>
+      <parentid>2931</parentid>
+      <timestamp>2019-04-26T07:27:14Z</timestamp>
+      <contributor>
+        <username>ANUSHIYA</username>
+        <id>3983</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3985">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+What is a computer program?
+
+A computer program is a well defined set of instructions that is used to make computer to do an expected task and give a desired output,written in any computer programming language like c,c++, Java, Python etc.It acts as an interface between the user's ideas and the system.
+
+Why do we need to program?
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+Can anybody learn programming?
+#Top
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+Are there any prerequisites for the course?
+#Top
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning. Also, one should have the ability to think logically.
+
+Even, a 10th Standard/High school passed student can also finish this course. 
+
+But, one should have a basic knowledge of using a computer and mouse.
+
+Where to start?
+#Top
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+Knowing and trying to implement the Art of Articulation.
+
+What is programming? 
+
+#Top
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+How to give instructions? 
+Instructions are programming language statements written stepwise in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+#Top
+
+Introduction to Scratch 
+
+Scratch is a very easy programming language which can be understood by even an 8-year-old. It is a block-based visual programming language and online community. One of the easiest way to learn control structures, without a bit code written. 
+
+It can be downloaded from https://scratch.mit.edu/download. Scratch works on Windows and Mac Operating Systems. You can also perform task online by going on this link https://scratch.mit.edu/projects/editor/?tutorial=getStarted.
+
+#Top</text>
+      <sha1>t0k6mkfd28tlv4tt24dbw3hfxly4jir</sha1>
+    </revision>
+    <revision>
+      <id>3070</id>
+      <parentid>3013</parentid>
+      <timestamp>2019-06-17T21:15:57Z</timestamp>
+      <contributor>
+        <username>PragatiS</username>
+        <id>3728</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="3991">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about basics of programming where we have tried to answer the following questions :
+
+What is a computer program?
+
+A computer program is a well defined set of instructions that is used to make computer to do an expected task and give a desired output,written in any computer programming language like c,c++, Java, Python etc.It acts as an interface between the user's ideas and the system.
+
+Why do we need to program?
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+Can anybody learn programming?
+#Top
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, its like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+Are there any prerequisites for the course?
+#Top
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning. Also, one should have the ability to think logically.
+
+Even, a 10th Standard/High school passed student can also finish this course. 
+
+But, one should have a basic knowledge of using a computer and mouse.
+
+Where to start?
+#Top
+
+Today there are so many languages. People often get confused about where to start. The important part in programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+Knowing and trying to implement the Art of Articulation.
+
+What is programming? 
+
+#Top
+
+Programming is the process of writing computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+How to give instructions? 
+Instructions are programming language statements written stepwise in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who are being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+#Top
+
+'''Introduction to Scratch''' 
+
+Scratch is a very easy programming language which can be understood by even an 8-year-old. It is a block-based visual programming language and online community. One of the easiest way to learn control structures, without a bit code written. 
+
+It can be downloaded from https://scratch.mit.edu/download. Scratch works on Windows and Mac Operating Systems. You can also perform task online by going on this link https://scratch.mit.edu/projects/editor/?tutorial=getStarted.
+
+#Top</text>
+      <sha1>reg7585ks2z43g75jawodk3xuczz1mm</sha1>
+    </revision>
+    <revision>
+      <id>3071</id>
+      <parentid>3070</parentid>
+      <timestamp>2019-07-03T05:42:59Z</timestamp>
+      <contributor>
+        <username>Simran Sahu</username>
+        <id>4572</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="4007">'''''This article is created by people like you. Click [http://sccilabs.org/jocwiki/index.php?title=Lecture_Notes:Week_1&amp;action=edit here] to edit this article.'''''
+
+
+Week 1 is about the basics of programming where we have tried to answer the following questions :
+
+What is a computer program?
+
+A computer program is a well-defined set of instructions that are used to make computer to do an expected task and give the desired output, written in any computer programming language like C, C++, Java, Python, etc. It acts as an interface between the user's ideas and the system.
+
+Why do we need to program?
+Today in the digital world, most of what you see on your cell phone, computers or be it on the internet, webpage, etc., all of these are some programs written by someone. Someone should have written a piece of code for all these things to work on our fingertips. It makes our life really simple. Programming is about getting things done really fast. So, in order to develop or understand the functioning of this digital world, and make our life little faster and easier, we must learn to program.
+
+
+Can anybody learn to program?
+#Top
+
+Yes, Programming is actually quite commonsensical. But there is one problem that a student faces majorly- a whole lot of discouragement.  So, it's like if you come and tell me you want to learn French and I start off giving you literature in French, then you will be obviously discouraged. The next discouraging factor for someone to learn programming is that they end up feeling extremely discouraged by looking at someone who does really well. First one is a whole lot of details we start with some complicated stage of programming we don’t start from scratch, secondly, people around you sort of discourage you and put you off. 
+A one-word answer to the question is YES, in fact, anyone can program and it's a fairly easy process.
+
+Are there any prerequisites for the course?
+#Top
+
+There are no prerequisites required for the course. We only expect you to know a little bit of computer handling and interest in learning. Also, one should have the ability to think logically.
+
+Even, a 10th Standard/High school passed student can also finish this course. 
+
+But, one should have a basic knowledge of using a computer and mouse.
+
+Where to start?
+#Top
+
+Today there are so many languages. People often get confused about where to start. The important part of programming is understanding the programming logic behind every problem, not the programming language. You should start giving instructions to the machine.
+Knowing and trying to implement the Art of Articulation.
+
+What is programming? 
+
+#Top
+
+Programming is the process of writing a computer program which is a sequence of instructions which when given to computing machine accomplishes the desired task in a specific pattern as instructed.
+It is also the process of representing an item as a program and making suitable rules for its successful execution. 
+
+To enable the computer to undertake any task, our instructions have to be converted (from English) into a language or code, such as C, C++, Java, Python, which can be understood by the computer.
+
+How to give instructions? 
+Instructions are programming language statements written stepwise in a program to do a specific task.
+
+Instructions should be crystal clear. They should be articulated in such a way such that they are understood by each and everyone who is being instructed.
+
+Give instruction --&gt; Follow --&gt; Get the task done
+
+#Top
+
+'''Introduction to Scratch''' 
+
+Scratch is a very easy programming language which can be understood by even an 8-year-old. It is a block-based visual programming language and online community. One of the easiest way to learn control structures, without a bit code written. 
+
+It can be downloaded from https://scratch.mit.edu/download. Scratch works on Windows and Mac Operating Systems. You can also perform task online by going on this link https://scratch.mit.edu/projects/editor/?tutorial=getStarted.
+
+#Top</text>
+      <sha1>h4rtx1i65jkyy9wvig7vwi61kfo5vo0</sha1>
+    </revision>
+  </page>
+</mediawiki>

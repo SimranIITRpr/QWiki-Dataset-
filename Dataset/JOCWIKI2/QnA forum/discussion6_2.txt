@@ -1,0 +1,808 @@
+Assignments : Week 12
+2 comments • 5 months ago
+Sid sb (talkcontribs)
+Note: Hello friends please share your programs too, if you have a better code or different approach than these programs. Everyone, who struggled to finish assignments, please ask you questions here. So that we all can learn and help each-other, and you may no need any help in future to solve similar challenges.
+
+Assignment 1: I tried to do with list approach; hole0=[] hole2=[] hole1=[] count=[] try1=("CEFGHIJKLMNSTUVWXYZ") try2=("ADOPQR") try3=("B") for letter in try1:
+
+   hole0.append(letter)
+print (hole0)
+for letter in try2:
+
+   hole1.append(letter)
+for letter in try3:
+
+   hole2.append(letter)
+def hole_no(word):
+
+   if word in hole0:
+       count.append(0)
+   elif word in hole1:
+       count.append(1)
+   elif word in hole2:
+       count.append(2)
+   else:
+       print("Input Error")
+       
+a=input() for i in a:
+
+   hole_no(i)
+print(sum(count))
+
+Assignment 3: import string
+
+list1=[] list2=[] count1=[] count2=[] for i in range(len(string.ascii_lowercase)):
+
+   list1.append(string.ascii_uppercase[i])
+   list2.append(string.ascii_lowercase[i])    
+def bike_ride(word):
+
+   if word in list1:
+       count1.append(1)
+   elif word in list2:
+       count2.append(1)
+   else:
+       count2.append(0)        
+a=input() for i in a:
+
+   bike_ride(i)
+print(sum(count1),sum(count2),end=(""))
+
+Reply 5 months ago
+Arunkumar (talkcontribs)
+You posted in a wrong week. Week 12 Assignment answers, by students, are posted here.
+
+http://sccilabs.org/jocwiki/index.php/Topic:Uyjcd8vzd27ofd5w
+
+Reply 5 months ago
+
+All Assignments answers week6. Friends share you programs too.
+One comment • 6 months ago
+Arunkumar (talkcontribs)
+Note: Hello friends please share your programs too, if you have a better code or different approach than these programs. Everyone, who struggled to finish assignments, please ask you questions here. So that we all can learn and help each-other, and you may no need any help in future to solve similar challenges.
+
+A1-Computing Paradox - code:
+N=int(input())
+A=list(map(int,input().split()))
+k=int(input())
+song=A[k-1]
+A.sort()
+print(A.index(song)+1, end="")
+A2-Dictionary - code:
+n=int(input())
+d={}
+for i in range(1,n+1):
+  d[i]=i*i
+print(d, end="")
+A3-Functions - code:
+def printDict():
+  n=int(input())
+  d={}
+  for i in range(1,n+1):
+    d[i]=i*i
+  print(d, end="")
+printDict()
+Reply Edited 6 months ago
+
+Programming Assignment-2: Dictionary
+2 comments • 6 months ago
+Srirekha (talkcontribs)
+d=dict() n=int(input()) for x in range(1,n+1):
+
+   d[x]=x**2
+print(d)
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@Srirekha, you have any question or you just wanted to share?
+you forgot def printDict(): in the 1st line.
+and dictionary uses {} brackets. We can simply use d={}
+Change print statement a little like this to avoid presentation error, print(d, end="")
+Reply Edited 6 months ago
+
+Assignment 1, week 6 - other reasons for not passing hidden values?
+5 comments • 6 months ago
+Lwardell (talkcontribs)
+I have gotten my code to pass all the examples in Python. Only 1 is passing when I submit. Any suggestions about other issues, besides the indexing issue, that I may be running into?
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+just use the provided Index number and find the song, then sort the list , and lastly find the new location(index) of the song in the sorted list and print. Thats it.
+
+Reply 6 months ago
+Lwardell (talkcontribs)
+Hi Arunkumar,
+
+I understand what the problem is asking for and my code works in Spyder. My question was about other reasons it may not be passing the hidden examples.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+one more hour and we can share all our programs.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Hi friend @Lwardell, post your code please. Index is the key for this program. Using just indexes I passed all the Hidden cases.
+
+and also, Did you go through this discussion?
+
+http://sccilabs.org/jocwiki/index.php?title=Topic:Uvoaugqnnoykbmuc&topic_showPostId=uvog40k8yhz2kktg#flow-post-uvog40k8yhz2kktg
+
+Reply Edited 6 months ago
+
+Quiz Question 6: What is Cipher
+4 comments • 6 months ago
+Kamalakar (talkcontribs)
+Meaning of Cipher is An Algorithm for performing encryption and decryption.
+
+Kindly type Synonyms for Cipher in Google. It shows Code, Secret Writing , Coded Message. Some of the dictionaries are also showing the same.
+
+it means answers Both A and B are correct.
+
+Reply Edited 6 months ago
+This comment was deleted by Arunkumar (history)
+Kamalakar (talkcontribs)
+You need to create a new thread and post it. Kindly delete it here and create a new thread
+
+Reply 6 months ago
+This comment was deleted by Arunkumar (history)
+
+Assignment 3, Week 6
+5 comments • 6 months ago
+Sayantoni Chaudhuri (talkcontribs)
+Can anyone please explain what basically the question is? I do not seem to get this.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+At the bottom of the Assignment code area, printDict() is already called.
+Our Assignment is to write this function printDict().
+Our function should perform these tasks
+It should take input into variable n.
+then generate a dictionary, which has 1,2,3,...n as keys.
+and as values (1,4,9,16,25,...) they should have square roots of the keys.
+Example:
+
+Input: 5
+Output: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+You just need to write your program in the function printDict()
+
+Reply Edited 6 months ago
+Sayantoni Chaudhuri (talkcontribs)
+okay so here is my code
+
+def printDict():
+
+ n=int(input())
+ d={}
+ key=1
+ value=1
+ for i in range(n):    
+   d[key]=value
+   key+=1
+   value=key*key
+   print(d)
+which generates an error as follows:
+
+Test Case 1
+Wrong Answer Input Expected Output Actual Output
+
+4
+
+
+
+{1: 1, 2: 4, 3: 9, 4: 16}
+
+
+
+{1: 1}\n {1: 1, 2: 4}\n {1: 1, 2: 4, 3: 9}\n {1: 1, 2: 4, 3: 9, 4: 16}\n
+
+what should I do?
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+move print(d, end="") out of for loop.
+
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+Check this answer here... correct it if needed
+
+http://sccilabs.org/jocwiki/index.php/Topic:Uvxcpnwe7rr1omec
+
+Reply 6 months ago
+
+Practice Questions page missing in Main page
+4 comments • 6 months ago
+Kamalakar (talkcontribs)
+In Main Page there are practice questions. Now they are missing.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Practice questions link is on the right pane. Did you check?
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+I could not see it. But there is a search option . When i typed in search bar, it took me to these pages.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+oh! It is fine. :)
+
+Reply 6 months ago
+
+Assignment 1, week 6 doubt
+37 comments • 6 months ago
+Bhavansh (talkcontribs)
+I wrote the following code it passed all after compiling the the test but while submitting it shows 0 out of 100 passed.
+
+
+a=int(input()) arr = [int(x) for x in input().split()] arr1 = sorted(arr) b=int(input()) for i in range (a):
+
+ if arr1[i]==arr[b-1]:
+   c=i
+print(arr1[c],end="")
+
+Can someone explain me the problem clearly and how can we solve it.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@Bhavansh, You got confused with the question. Lets help you understand the question first. In simple words.
+
+
+      k= 2
+         |
+    A= 1 3 4 2
+      '---.---'
+       N= 4
+
+As per the question, there are few songs, say N. Which is 4.
+All those songs are unsorted, and are in a playlist A, [1,3,4,2].
+One of the songs is your favourite ("Computing Paradox"), and its position in a unsorted list is K, which is 2nd, so the song in unsorted list is 3.
+But, if we check the index of 3, it is 1.
+Now our task is...
+To sort the list A.
+Then find the new location, of the song (3), in the list A and print it.
+After sorting, the list A will be [1,2,3,4]
+The new location (index number) of song 3 is... 2.
+I hope, you know how to find the index of a number in the list.
+Now it is up to you, to put all of this in a code.
+
+Reply Edited 6 months ago
+KuntalPaul (talkcontribs)
+a=int(input()) b=[int(i) for i in input().split()] c=int(input()) d=b[c-1] b.sort() x=b.index(d) print(x+1)
+
+try this , it worked fine for mine
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@KuntalPaul, Exactly. This is what we are trying to help other to understand. Above explanation is exactly this. But it is announced to not post the code till Assignment Submission. :)
+
+Reply Edited 6 months ago
+This comment was deleted by Kamalakar (history)
+Kamalakar (talkcontribs)
+When b is given, you have used b-1. Now you are asked to print C value not a[c]
+
+
+
+system uses 0 indexing and we are to report it in 1-indexing so try printing c+1 instead of a[c] and see the result
+
+Reply Edited 6 months ago
+Baijayanta (talkcontribs)
+For this assignment 1, when I compile it shows all are passed but when I submitted it shows 1 out of 3 are passed.In my code I am trying to get the value from k'th position of the unsorted list and after sorting trying to get the index for the value captured in the previous step while taking into consideration 1-indexing. Did anyone get this issue? Also is there any chance of having the list having duplicate values?
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+There are no duplicate values this time. Even if there are any, they are definitely not the number/song, we should be working on. all tests will pass, including hidden.
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Your calculations should be based on the assumption 1- indexing. But computer does with zero indexing only. so when they stated kth position in 1-indexing it means k-1 for computer. when computer reports ,it is nth position ie is zero indexing, get it to 1-indexing by adding one. and see what happens. I am not sure if duplicate values are there in the list.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Very good hint. @Bhavansh, @Baijayanta, think on this too. hint is 1-indexing.
+
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+to understand the assignment better, kindly read Arun's explanation above 2 or 3 times. he is very kind to post a detailed explanation above.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@Kamalakar Thanks a lot friend.
+
+Reply Edited 6 months ago
+Bhavansh (talkcontribs)
+Thanks man
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+You are welcome from both of us. :)
+
+Reply 6 months ago
+Lakshmi (talkcontribs)
+I had passed all 3 test cases but not able to pass private cases by this code.
+
+
+
+l=[]
+
+n=int(input())
+
+l=(input().split())
+
+k=int(input())
+
+print(l[k-1],end=)
+
+Can anyone retify the mistake.
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+You are not asked to print the value at Kth position. you need to take the value at the kth position and find its position in the sorted list. Remember 1-indexing given for input and output in the statement of the problem while computer uses 0 indexing. you got it right in picking the right number by using l[k-1] now find what is the postion of this value in the sorted list and shift from 0-indexing to 1-indexing
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+l=[]
+n=int(input())
+l=list(map(int,input().split()))
+k=int(input())
+print(l[k-1],end="")
+It is better to change input to the list l using list()
+Now the problem: You are in the right direction, but you missed 2 steps. You haven't sorted the list. Please read my explanation above to understand. After sorting, you should print the new position of the song.
+You are printing the song. instead you should print the new location of the song after sorting.
+Reply Edited 6 months ago
+Kapil (talkcontribs)
+-*- coding: utf-8 -*-
+""" Created on Mon Mar 11 19:38:30 2019
+
+@author: Kapil Bansal """ l=[] n=int(input()) l = [int(x) for x in input().split()] k=int(input()) a=l[k-1] l.sort() for i in range(len(l)):
+
+   if(l[i]==a):
+       print(i+1,end="")
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Hi @Kapil, do you have a question too?
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Friend @Kapil, Do you really need a for loop to find that value?
+
+It is so nice of you to post the code. As it is announced to not share code till Assignment Submission day. We are not posting code. Instead we are trying to help others to figure it out, by explaining the process.
+
+Reply 6 months ago
+Lakshmi (talkcontribs)
+I had sorted the list also,but I am able to pass only one public test case.so kindly help me to solve the problem.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@Lakshmi, Please read my explanation above. I am sure, You will understand it. Because, just 2-3 lines are missing in your code, compared to my code. and you need to change the print statement to print the new location of the song.
+
+http://sccilabs.org/jocwiki/index.php?title=Topic:Uvoaugqnnoykbmuc&topic_showPostId=uvog40k8yhz2kktg#flow-post-uvog40k8yhz2kktg
+
+Reply Edited 6 months ago
+Lakshmi (talkcontribs)
+If I change the index in the print statement as k+1 I am getting error as list index out of bound.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Have you read my explanation given to @Bhavansh, above? Post your code after using sort?
+
+Reply 6 months ago
+Lakshmi (talkcontribs)
+I had read the explanation. l=[] n=int(input())
+
+l=list(map(int,input().split())) k=int(input()) l.sort() print(l[k-1],end=)
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+sorry for the delayed reply. I can still see, you are little confused. Let me help you with a different example. as there are numbers involved in the place of songs. you are not getting the logic.
+
+
+              k= 6
+                 |
+    l= 1 3 5 2 4 7
+      '-----.-----'
+         n= 6
+
+Observe this diagram above for you. n is 6 songs.
+Now k=6 means 6th number in the unsorted list l=[1,3,5,2,4,7]
+Using l[k-1] will give me 7.
+But that is not what we want to print. Instead we need to print the location of 7 in the list after sorting.
+What will be the sorted list, this l=[1,2,3,4,5,7]
+Now you need to find the position of 7 in the sorted list is 6
+Now you think and tell me, how to search and get the index number of 7 and make it 6?
+using this l.index()?
+And the "end=" Should also have a double quotes at the end. end=""
+
+Reply Edited 6 months ago
+Lakshmi (talkcontribs)
+Thanks you so much.
+
+Reply 6 months ago
+Manjeetkumar (talkcontribs)
+n=int(input()) l=list(map(int,input().split())) k=int(input()) sorted_list = sorted(l) for i in range (len(sorted_list)):
+
+   #print(i)
+   if (l[k-1]==sorted_list[i-1]):
+       print(sorted_list[i-1],end="")
+thismy code ,after submission it gives 0.0 mark,why?
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+kindly read through the problem statement given and what is asked and what is given. in private problems they have given random numbers where as in public cases they have given only 1 2 3 4 etc in sequence give random numbers and see what is happening
+
+kindly explain the logic of what you are trying to do. Kindly check what is the expected output in the problem statment and what is it you are printing from the code. Kindly go through the entire thread.
+
+Reply 6 months ago
+Parveen (talkcontribs)
+I am still facing issue kinldy help me
+
+l=[]
+
+n=int(input())
+
+l=list(map(int,input().split())) k=int(input()) l.sort() print(l.index(k),end="")
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Praveen kindly explain what is asked in the question. They never asked you to print what is the value at Kth position in the sorted list. Arun explained every thing above in this thread. if you are not getting the answer kindly read the question three or 4 times. you will figure it out.
+
+Reply Edited 6 months ago
+Lakshmi (talkcontribs)
+x=int(input()) lis=[int(i) for i in input().split(" ")] sort=sorted(lis) k=int(input()) pos=lis[k-1] if pos in sort:
+
+ ind=sort.index(pos)+1
+ print(ind,end=)
+
+this code passes hidden test cases also.
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+@Lakshmi, Perfect. This is what I was trying to help you understand. we can simplify your code further. You dont need to copy "lis" into "sort". You could just save the number pos=lis[k-1] in a variable "pos" and then sort "lis". At the end print index(pos)+1 of "lis".
+
+Think about this. :)
+
+Reply Edited 6 months ago
+Lakshmi (talkcontribs)
+I will try it arun.
+
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Kindy avoid posting the code that passed the private cases. Let people think with the hints given in the forum so that they get used to programming.
+
+Reply 6 months ago
+Manjeetkumar (talkcontribs)
+n=int(input())
+
+l=list(map(int,input().split()))
+
+k=int(input())
+
+sl = sorted(l)
+
+for i in range (len(l)):
+
+   if (l[k-1]==sl[i-1]):
+     
+       index=sl.index(sl[i])
+       
+print(index,end=)
+
+after submit is shows 66.6/100, why?
+
+Reply 6 months ago
+Arunkumar (talkcontribs)
+why are you checking with sl[i-1] in if condition?
+
+Try using just sl[i] in if condition.
+Add 1 to the index in if condition or while printing.
+Then let me know.
+
+Reply 6 months ago
+
+For those who pass test cases but not hidden text...
+3 comments • 6 months ago
+Lwardell (talkcontribs)
+I looked at how Bhavansh and KuntaPaul input their list of numbers. I was writing my input statement incorrectly. After I changed it to the same form as theirs, all the hidden cases passed. I now need to figure out the difference in what they did compared to what I had done.
+
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+Good. :) Exploring is the best way to learn. Keep poking those codes and you will learn, other ways. :)
+
+Reply 6 months ago
+Lwardell (talkcontribs)
+Thanks Bhavansh and KuntaPaul!!
+
+Reply 6 months ago
+
+Quiz Question 3 Recursion and Iteration are Similar Programming Techniques
+2 comments • 6 months ago
+Kamalakar (talkcontribs)
+Identical means same in all aspects. Similar means same in some aspects. Two triangles are similar means, their shape is same. Their angles are same But their lengths are not same. The length ratio is same. They need not be identical in all aspects Similarly Recursion and iteration are similar in i) they work in loops . They do a process repeatedly until some base/end condition is satisfied. It means Recursion and Iteration are similar Process. So Answer for Question 3 is True. These issues are coming because English is not our Mother Tongue.
+
+Reply Edited 6 months ago
+Subhamohan (talkcontribs)
+Both recursion and iteration are structured programming techniques. Both involve in giving the code you write structures, these often involve writing code in blocks such as: Sequence - code executed line by line. Selection - branching statements such as if..then..else, or case. Repetition - iterative statements such as for, while, repeat, loop, do, until. Also both recursion and iteration has single entry and exit points. Both are similar in many aspects. Answer for this question must be true. Though execution of a recursive function involves internal stack, where as iteration doesnot. Except this point both have more similarities. So I request the team to please give clarification regarding this
+
+Reply 6 months ago
+
+l = [some data] k = some input() if i use this k-1 what will happen
+4 comments • 6 months ago
+Jaiprince17 (talkcontribs)
+<pre> Please explain this ? l[k-1] what happens in this ? </pre>
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+You are trying to find a element in the list <code>'''l'''</code> at the index <code>k-1</code>.
+Reply Edited 6 months ago
+Jaiprince17 (talkcontribs)
+thank u dude :)
+Reply 6 months ago
+Arunkumar (talkcontribs)
+You are welcome. :)
+Reply 6 months ago
+
+Substitution cipher
+3 comments • 6 months ago
+M.darshil (talkcontribs)
+Hello , i have a doubt on the video of the substitution cipher. I had typed the same program shown in the video in my Spyder. But i am getting error :-" FileNotFoundError: [Errno 2] No such file or directory". I had created a file in notepad with .txt format and saved on desktop. How to remove this error ?
+Reply 6 months ago
+Arunkumar (talkcontribs)
+It is better you copy that .txt file into the folder where you have your .py file. Then in the program/code use the .txt file name without any path. This is how we do in html too. When we are referring a file which is in same directory as .html file, we no need to type the entire path.
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+You can use this code as a reference to understand http://sccilabs.org/jocwiki/index.php/Lecture_Notes:Week_6#Code_with_Explanation
+Reply 6 months ago
+
+Computing Paradox - fails hidden test cases
+3 comments • 6 months ago
+Rishi (talkcontribs)
+My program passed all public test cases but fails in the hidden test cases. What could be the difference in hidden test cases, any idea? below is the code i am using n=int(input()) s=input().split() c=int(input()) songs=sorted(s) num=s[c-1] print (int(songs.index(num))+1,end="")
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+This is already answered in the below link. Please go through the discussion there http://sccilabs.org/jocwiki/index.php?title=Topic:Uvoaugqnnoykbmuc&topic_showPostId=uvog40k8yhz2kktg#flow-post-uvog40k8yhz2kktg
+Reply 6 months ago
+This comment was deleted by Rishi (history)
+
+Creation of Certificates Python Programming
+3 comments • 6 months ago
+Kamalakar (talkcontribs)
+Hi all, I am seeing around 55000 students registered for this course. Even if 5000 students pass the certification exam still that is a big number to create the certificates. Will Python be able to do this. or what programming language do you use in creation of certificates.
+Reply 6 months ago
+Descentis (talkcontribs)
+Certificates are provided by NPTEL. And it's not just 50000 students, there are more than 4 lac for all the courses, even I don't know how they do it.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+it is really interesting to know how they do it for 4 lakhs people.
+Reply 6 months ago
+
+cipher
+4 comments • 6 months ago
+Captain.Prince (talkcontribs)
+i used file.write(data) but it is showing an error CODE import string dict={} data="" file=open("D:\\op.txt","w") for i in range(len(string.ascii_letters)): dict[string.ascii_letters[i]]=[string.ascii_letters[i-1]] print(dict) with open("D:\\ip.txt") as f: while True: c=f.read(1) if not c: print("end") break if c in dict: data=dict[c] else: data=c file.write(data) print(data) file.close() ERROR file.write(data) TypeError: write() argument must be str, not list
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+Please check the code here http://sccilabs.org/jocwiki/index.php/Lecture_Notes:Week_6#Code_with_Explanation
+Reply 6 months ago
+Captain.Prince (talkcontribs)
+will this code differ from mac and windows os and thank you
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Possibly, Only problem would be, "File path" as it is OS specific. To avoid it, you can just put your external files like .txt, .wav or any external file, in the same directory where your .py file is. Unless we use "sys" Module and few other similar modules which depend on OS. As per my understanding, using latest version of python will not cause such problems. Because they(Python team) are trying to become OS independent.
+Reply 6 months ago
+
+To The Professor, TA's and all students. This is just my opinion. Is WhatsApp group really needed?
+6 comments • 6 months ago
+Arunkumar (talkcontribs)
+; Is WhatsApp group really needed? Why don't we use Telegram for group. : '''My reason is:''' The last time i checked, in WhatsApp groups, there is no privacy, because everyone's cell numbers are open for every member in the group. : More over, WhatsApp is too open and has become a very personal thing. Users have their family photos as their profile pics, and their cell number is linked with so many other things these days. : <u>Is it necessary for a student to give-up their personal information, just to ask a doubt? </u> : But in Telegram, cell numbers are not visible. It is up to the user to make it public or not. : This is just my opinion. Telegram will avoid the possibility of, "abusive user getting hold of other group member's cell number". : I don't know if there are any-other problems in the Telegram. '''TA's are welcome to delete this post, if this is inappropriate or unnecessary.'''
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+I am not interested in joining the whatsapp group. if even 5000 students join the group and keep posting, no one to control what they are posting. i will go mad. let them post here. so that i have freedom to read what i want to read and TA's also have control on what each person is posting.
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Exactly. It is not possible to keep track of Questions and doubts, and continuous flood of Notifications. But few students requested for a WhatsApp group. So, it is still serving the purpose for few of the students. That is good.
+Reply 6 months ago
+Sahdevian (talkcontribs)
+The '''Sole Purpose''' of the wiki was to give our course learners a new and engaging way of learning, a dynamic and interactive way of learning, a simple and robust way of learning. This might also turn out as a gold mine for researchers, although that was not the primary purpose. <br/> '''WhatsApp''' is introduced for the very reason of increasing the required social factor which will help our open minded students build connections in real world. The discussions around our research areas, course structure, improvements will have the long term gains which are not limited to JOCWiki alone. Very few individuals do not wish their contacts to be shared and it's quite understood of them not joining the group for their own personal reasons. <br/> And we respect that. <br/> <br/> Why not Telegram : Above app is pretty popular :D
+Reply Edited 6 months ago
+Arunkumar (talkcontribs)
+'''@Sahdevian''', I Agree, but in future, few privacy concerns may arise because of abusive users. Cell numbers are open to all in the WhatsApp, that was my concern. I worked as a trainer in one of the institutes and they tried this for the trainees. But it failed when few students started directly calling females/males, and started harassing using unknown numbers.
+Reply Edited 6 months ago
+Bhavansh (talkcontribs)
+No need ,the web forum is better as those who are serious only those will take the effort to log in every time 😁
+Reply 6 months ago
+
+Is there any other course Like Joy of computing
+One comment • 6 months ago
+Kamalakar (talkcontribs)
+Dear all, This course Joy of computing is focused with lots of applications instead of teaching principles. is there any other computer course in NPTEL or outside NPTEL like this which is more focused on applications rather than teaching the principles. Is there next level of course offered by the professor in Joy of computing next semester.
+Reply 6 months ago
+
+Online examination Reg.
+2 comments • 6 months ago
+Kamalakar (talkcontribs)
+At final examination, at the center, will you provide us Anaconda
+Reply 6 months ago
+Descentis (talkcontribs)
+There won't be any practical programming assignment.
+Reply 6 months ago
+
+tic tac toe (error in code)
+4 comments • 6 months ago
+Abhishek singh rathore (talkcontribs)
+My code is not running and it gives an error beyond my understanding. Kindly help. import numpy board=numpy.array([['-','-','-'],['-','-','-'],['-','-','-']]) p1s='x' p2s='o' def row_check(symbol): for r in range(3): count=0 for c in range(3): if board[r][c]==symbol: count+=1 if count==3: print(symbol,'won') return True return False def column_check(symbol): for c in range(3): count=0 for r in range(3): if board[r][c]==symbol: count+=1 if count==3: print(symbol,'won') return True return False def diagnol_check(symbol): if board[0][2]==board[1][1] and board[1][1]==board[2][0] and board[2][0]==symbol: print(symbol,'won') return True if board[0][0]==board[1][1] and board[1][1]==board[2][2] and board[2][2]==symbol: print(symbol,'won') return True return False def won(symbol): return row_check(symbol) or column_check(symbol) or diagnol_check(symbol) def place(symbol): print(numpy.matrix(symbol)) while(1): row=int(input('enter the row- 1 or 2 or 3')) col=int(input('enter the column- 1 or 2 or 3')) if row>0 and row<4 and col>0 and col<4 and board[row-1][col-1]=='-': break else: print('invalid input! please enter again') board[row-1][col-1]=symbol def play(): for turn in range(9): if turn%2==0: print("x turn") place(p1s) if won(p1s): break else: print("0 turn") place(p2s) if won(p2s): break if not(won(p1s)) and not(won(p2s)): print('draw') play()
+Reply 6 months ago
+Arunkumar (talkcontribs)
+please put your entire code in "pre" tags <pre><pre>Your code </pre></pre>
+Reply Edited 6 months ago
+AI (talkcontribs)
+in def row_check and column_check I think you should include -- else: return False
+Reply 6 months ago
+Kkg (talkcontribs)
+code is correct but indentation should be corrected
+Reply 6 months ago
+
+Doubt in Quiz Assignment of Week 5
+3 comments • 6 months ago
+Tej115 (talkcontribs)
+I know this might be a little late to ask a doubt, but to convert a .wav file to text, we import the library "speech_recognition". But in Week 5 Quiz assignment, when the same question is asked, "SpeechRecognition" is given to be the right choice. Isn't it supposed to be "None of the above"? I know that the only thing missing is an underscore (neglecting the part where 's' in speech and 'r' in recognition must be in lower case), but then the whole syntax will be wrong, right? Well, even importing of library files won't be done correctly.
+Reply 6 months ago
+Sudha Verma (talkcontribs)
+def binary_search(l,x,start,end): if start==end: if l[start]==x: return start else: return -1 else: mid=int((start+end)/2) if l[mid]==x: return mid elif(l[mid]>x): return binary_search(l,x,start,mid-1) else: return binary_search(l,x,mid+1,end) l=[25,45,60,70,90] x=int(input('enter search key:')) index=binary_search(l,x,0,len(l)-1) if index==-1: print(x,'not found') else: print('element found at',index+1) #can someone help me with this code its not working if elment is not there in the list
+Reply 6 months ago
+Arunkumar (talkcontribs)
+Explained here http://sccilabs.org/jocwiki/index.php/Lecture_Notes:Week_6#Binary_Search_Code:_with_small_correction
+Reply Edited 6 months ago
+
+Expectations for the final Exam.
+4 comments • 6 months ago
+Kamalakar (talkcontribs)
+I am seeing big big programs posted in User Notes. Are we supposed to create such big programs in the end exam also. It takes atleast 4 to 5 hours of continuous thinking , coding and debugging and getting the programming to work. I hope we will not see such big programs in the End. Exam
+Reply Edited 7 months ago
+Descentis (talkcontribs)
+Mostly NO
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Thanks a lot.
+Reply 6 months ago
+AI (talkcontribs)
+Can you please give further details regarding the final exam, pattern, marks distribution, previous papers etc. as it would really be helpful in preparation. Thanks.
+Reply 6 months ago
+
+Kindly Add a Line Referencing JOCWIKI in Programming Assignments
+One comment • 6 months ago
+Kamalakar (talkcontribs)
+Dear Team, Great. Appreciations to you all for considering to evaluate Endsort program in week 5. I request you to add a line in every programming assignment description to Kindly go to JOCWIKI to post your doubts or clarifications of the Assignment. May you kindly consider this request.
+Reply Edited 6 months ago
+
+Week 6 Assignment 1. 1-indexing means what
+3 comments • 6 months ago
+Kamalakar (talkcontribs)
+In Assignment 1 , 1-indexing is used. What does this mean.
+Reply 6 months ago
+Chetna (talkcontribs)
+I think it implies that unlike the usual method in which we index arrays from 0, this program requires us to index from 1
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Is this a normal terminology in programming languages.
+Reply 6 months ago
+
+dont understand test case week6 Assignment1: Computing Paradox
+4 comments • 6 months ago
+CKaur (talkcontribs)
+For the program Computing Paradox How come for the test case 1: N=5 A equals to {1 2 3 9 4} K= 5 So after sorting list is {1 2 3 4 9} how come expected output is 4? after sorting list will be{1 2 3 4 9} so we need to look for index 4 which is 9. Isn't?
+Reply Edited 6 months ago
+Kamalakar (talkcontribs)
+in general indexing in array starts at 0. In the problem statement it is stated "1 indexing is used". it means indexing is starting from one instead of zero. Public testing case 1: k means index or position. before sorting when k=5, in position 5 in the given unsorted list, we have value 4. after sorting value 4 is at position 4. and hence 4 is the answer. Public test case 3: k=3. So in the unsorted list with index starting from one, the value at position 3 is 5. after sorting with index starting from one, value 5 will be at 5. find the value at the given position in the unsorted list find the location of the value in the sorted list. that will be the answer.
+Reply Edited 6 months ago
+CKaur (talkcontribs)
+Oh we have to find position in unsorted list? Then what is the purpose of sorting the list?
+Reply 6 months ago
+Kamalakar (talkcontribs)
+making using of the position "k", you need to get the value in that position in the unsorted list. let it be "value" and then from the sorted list and print the position of the "value"
+Reply 6 months ago
+
+Assignment 6
+6 comments • 6 months ago
+Shwethaa (talkcontribs)
+Hi @Descentis, I am unable to view the Assignment 6. Programming Assignments appear perfectly but the Assignment doesn't even appear.
+Reply 7 months ago
+Arunkumar (talkcontribs)
+From Yesterday Assignment Quiz is accessible. Please check again. Make sure you reopen your browser or clear your browser cache, and then try again. There are 9 Questions in week 6.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Quiz Assignment is not appearing for me too.
+Reply 7 months ago
+Kamalakar (talkcontribs)
+Will Quiz assignment will be added again after some time. if so kindly send an email.
+Reply 7 months ago
+Mohit badiyani (talkcontribs)
+Me too ....Unable to see the quiz assignment ....
+Reply 7 months ago
+Kamalakar (talkcontribs)
+They have released Assignment 6. i just saw it. It would be helpful if they could send an email about the same as it was not released on day one
+Reply 6 months ago
+
+Kindly include Variations in test cases in public cases
+3 comments • 6 months ago
+Kamalakar (talkcontribs)
+Dear Descentis, Kindly introduce more public cases and introduce what ever variations you would like to introduce in the public cases. With variation in public cases, would bring more discussion on this forum as expected. Let the private cases be only jumbled versions of the public cases. So that students can think as they know their scope.and come up with their questions. Why dont we try this,
+Reply 6 months ago
+Descentis (talkcontribs)
+Will take care of this in the future. Will try to add some more public test cases.
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Thanks a lot.
+Reply 6 months ago
+
+From performance perspective (Time complexity) which technique is better?
+2 comments • 6 months ago
+Simran (talkcontribs)
+Question asked by nahid.mansuri@gmail.com
+Reply 6 months ago
+Simran (talkcontribs)
+Iteration is a better technique in terms of terms complexity.
+Reply 6 months ago
+
+WEEK 5 : STAR PERFORMER ??
+12 comments • 6 months ago
+Som (talkcontribs)
+@Descentis Sir and @Simran Maam, <br> I have contributed so much to SUPER NOTES WEEK 5, yet I am not the STAR PERFORMER for this week, WHY? <br> I Have uploaded explanations as well as images and also multiple variations for a single problem with output screenshots, yet I receive no appreciation, WHY? <br> Statistically speaking I have uploaded 33,885 bytes of data and multiple images and no else is even close to this number. <br> Even after putting in so much of effort, if you dont receive a little appreciation, then how can you expect me to keep going.<br> @Arunkumar Friend I would like your views regarding the same.<br> Sudarshan Sir, Please let me know where did I go wrong ?<br> Also @Descentis and @Simran, what is the selection criteria I would love to know.<br>
+Reply Edited 7 months ago
+Arunkumar (talkcontribs)
+@Som, Yes you contributed to SuperNotes. May be something went wrong. For sure, I believe, there was some mistake, not intentional. Lets wait till they read this post. :)
+Reply 7 months ago
+Kamalakar (talkcontribs)
+A selfless contributor continues to contribute for not one hour,not one day, not one week, not one month, not one year, but day after day, week after week, month after month, year after year even if no one recognizes. He contributes because it is his nature. Keep Contributing definitely at some point of time you will be rewarded. You are already rewarded.. You now know how to Edit notes in this platform.. We have learned Scratch Program, Speech Recognition Program etc. These are the contributions by the Professor and the team. I wish more such new leanings come to us through this program. An Elite Gold Certificate or Internship down the lane for you is awaiting....
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Friend @Kamalakr, Please don't post like this. these sort of replies will add to the fire. He really did post a lot. He just posted his concern. Lets keep our discussions friendly in a unhurtful way. :)
+Reply 7 months ago
+Kamalakar (talkcontribs)
+Apology if it hurts. Kindly Stay focussed.
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Please you too don't get hurt. keep doing what you are doing. :)
+Reply 7 months ago
+Som (talkcontribs)
+@Kamalakar Thanks for your good words but I am waiting for the seniors to reply. I guess they would come up with a more logical response.
+Reply Edited 7 months ago
+Simran (talkcontribs)
+We had a discussion regarding this. I hope that clarified your doubt
+Reply 6 months ago
+Sanjana mkhrj (talkcontribs)
+@Kamalakar It is easy to speak, why don't you try to 'selflessly contribute' something. <br> @Som I find your content quite useful, it helped me a lot. Thanks a lot for your contribution. <br> I would request @Descentis sir and @Simran maam to kindly take the right decision.
+Reply Edited 7 months ago
+Kamalakar (talkcontribs)
+May be You are all below 25 years. I am at 46 years old. SOM Kindly Continue contributing ...IIT means there will be many opportunities. They will recognize you definitely.
+Reply 7 months ago
+Arunkumar (talkcontribs)
+Friends, Please, everyone cool down. Everything will be resolved soon. Lets stop reacting and replying on this. Happy learning. Lets leave it to TAs.
+Reply 7 months ago
+Kamalakar (talkcontribs)
+Arun, Apart from IIT team there are many people watching these discussions. My intention is if he keeps posting he will be benefited.People on the list will become his friends and he will be benefitted. That is the nature of Forums.
+Reply Edited 7 months ago
+
+How to Create User Pages
+2 comments • 6 months ago
+Kamalakar (talkcontribs)
+Descentis, How to create User Pages.
+Reply Edited 6 months ago
+Simran (talkcontribs)
+Just click on user name, it will take you to your user page.
+Reply 6 months ago
+
+Programming Challenge.-1
+One comment • 6 months ago
+Kamalakar (talkcontribs)
+Hi all, I want to program every week the programs we have done already as assignments so that if atleast couple of them come in end examination, i will not spend much time in writing those programs. I want some one on the list help me to write a python program that exactly does what our programming browser does. Inputs to my program are:- 1. Test cases given each week 2. output of the test cases Output for the Program are:- Passed or failed. Which test case passed or failed Remember No of output test cases vary from program to program. Structure of the program;- Part A. Part B Part C Part A is the program which will vary from program to program Part B and Part C of the Program will take test cases file names and print the output. I dont want to change part b and part c. In Part A I will modify the following 1. I will rewrite my code of each assignment there to practice 2. Name of the input files can some one help me in developing this.
+Reply Edited 6 months ago
+
+Kindly guess the answer for the program below with out running the code
+3 comments • 6 months ago
+Kamalakar (talkcontribs)
+The following program is given in java course of nptel. I have rewritten the code in python. Can any one guess the what the answer is. interesting use of loops x=[1,2,3,4] y=['a','b','c','d'] for i in range(0,len(x),2): for j in range(len(x)-1,0,-1): if((i+j)%2==0) : print(x[i],end="") else: print(y[j],end="")
+Reply Edited 6 months ago
+Madhavi1 (talkcontribs)
+d1bd3b
+Reply 6 months ago
+Kamalakar (talkcontribs)
+Great. Interesting.
+Reply 6 months ago

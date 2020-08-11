@@ -1,0 +1,854 @@
+magic square is not working to me
+13 comments • 2 months ago
+Surapavankumar (talkcontribs)
+Hi guys ....I wrote code for magic square as it is in tutorial ...when I give 3 it is showing right output...but when I give 4 for 4x4 matrix it is showing "index out of range error"...plz check my code and tell what is the mistake in my code. CODE IS HERE: def magic_square(n):
+
+magicSquare = []
+
+for i in range(n): l = [] for j in range(n): l.append(0) magicSquare.append(l)
+
+i = n//2 j = n-1
+
+num = n*n count = 1
+
+while(count <= num): if(i==-1 and j==n): j = n-2 i = 0 else: if(j==n): j = 0 if(i<0): i = n-1 if(magicSquare[i][j] != 0): j = j-2 i = i+1 continue else: magicSquare[i][j] = count count+= 1 i = i-1 j = j+1
+
+for i in range(n): for j in range(n): print(magicSquare[i][j],end=" ") print() x = int(input("enter")) magic_square(x)
+
+Reply 2 months ago
+Simmi (talkcontribs)
+In which line are you getting this error?
+
+Reply 2 months ago
+Surapavankumar (talkcontribs)
+Hi...Bro when I enter 3 as input it is showing 3x3 magic square...but when I enter 4 as input ..the program not executing.The error is "index of out of range". I could not find solutions...just copy my code and run it in your PC you can understand. Thank you..
+
+Reply 2 months ago
+Sachinkr (talkcontribs)
+    magicsquare[i][j] = count
+    I set n = 3 and your "j" is getting value -4. As this is 3*3 matrix so there is no element at j = -4
+    You need to work again on this program and fix issues with it.
+Reply Edited 2 months ago
+Surapavankumar (talkcontribs)
+Hi...Bro when I enter 3 as input it is showing 3x3 magic square...but when I enter 4 as input ..the program not executing.The error is "index of out of range". I could not find solutions...just copy my code and run it in your PC you can understand. Thank you..
+
+Reply 2 months ago
+Sachinkr (talkcontribs)
+The trick you used in code is designed for 3*3 matrix only.
+
+Reply 2 months ago
+Surapavankumar (talkcontribs)
+i wrote the code from our class..not my own...and could you post your 4x4 matrix code..plz
+
+Reply 2 months ago
+Sachinkr (talkcontribs)
+I checked with value of 3. It is going out of index...As i mentioned above. And enclose your code with
+ 
+before posting on forums.
+Reply 2 months ago
+Surapavankumar (talkcontribs)
+hey, I checked it...after that I posted..OK. Can you post your code if you wrote on Magic Square..
+
+Reply 2 months ago
+Bhavesh (talkcontribs)
+Use pre tag for writing code then people will understand it better and mention error name and error line too.
+
+Reply 2 months ago
+Surapavankumar (talkcontribs)
+Hi...Bro when I enter 3 as input it is showing 3x3 magic square...but when I enter 4 as input ..the program not executing.The error is "index of out of range". I could not find solutions...just copy my code and run it in your PC you can understand. Thank you..
+
+Reply 2 months ago
+Sachinkr (talkcontribs)
+Instead of point mistake on mine words or dictate me what to do and how to. You should ans actual question.
+
+Reply 2 months ago
+Bhavesh (talkcontribs)
+It was for the one who asked the question, not you. Everyone here is replying to the one who asked question, not you. If i had to reply you i will mention your good name in it.
+
+Reply 2 months ago
+
+Assignment Submision problem.
+8 comments • 2 months ago
+Mannukr10 (talkcontribs)
+There are 4 "Test Cases" in an assignment. while compiling it shows "4/4 passed", but while submission it shows "4 out of 5 tests passed. You scored 80.0/100"
+
+any body else is facing the same problem, what's the solution or it is some kind of system error.
+
+Reply 2 months ago
+Rmanish (talkcontribs)
+In which assignment
+
+Reply 2 months ago
+Mannukr10 (talkcontribs)
+week-4, Programming Assignment 2
+
+Reply 2 months ago
+Rmanish (talkcontribs)
+rewrite your program in different way may be your problem shoot out
+
+Reply 2 months ago
+Bhavesh (talkcontribs)
+Read faqs regarding hidden cases in wiki sections. Program need to clear all of them for a 100.Focus on logic and don't see the open test cases as they might affect your way of thinking.
+
+Reply 2 months ago
+Mannukr10 (talkcontribs)
+As the submission date is passed. I will take care of your words, (Thanks, Ramnish & Bhavesh)
+
+Reply 2 months ago
+Rmanish (talkcontribs)
+Welcome😊
+
+Reply 2 months ago
+Mannukr10 (talkcontribs)
+It happened again, 4/4 passed in green, but marks 75/100, I rewrote and logic was very simple and clear. "Programming Assignment 2: Robot and the Charger"
+
+Reply 2 months ago
+
+Programming Assignment: Matrix
+8 comments • 2 months ago
+Cskanda (talkcontribs)
+I tried a lot but not getting rid of \n at end of last row and last column. Rest of the code worked well.
+
+Can some one suggest, how to remove newline (i.e. \n) at end ?
+
+Reply 2 months ago
+Cskanda (talkcontribs)
+I got it finally.
+
+Reply 2 months ago
+Shubham714 (talkcontribs)
+how you got this????
+
+Reply 2 months ago
+Amu (talkcontribs)
+how you got it please tell facing same problem
+
+Reply 2 months ago
+Manyam monika (talkcontribs)
+I too didn't get.please help me
+
+Reply 2 months ago
+Preethidhanasekaran (talkcontribs)
+only two testcases passed please help me
+
+Reply 2 months ago
+Bhavesh (talkcontribs)
+Read more about print function, it has a parameter called end. Used to specify the end of line printed or just go through this wiki, many people has asked about it.
+
+Reply 2 months ago
+Amichoksi (talkcontribs)
+print(var, end="")
+
+Reply 2 months ago
+
+What is timetuple().tm_yday?
+3 comments • 2 months ago
+Simmi (talkcontribs)
+Question asked by harshchhabra2008@gmail.com
+
+Reply 2 months ago
+Simmi (talkcontribs)
+This particular function is used to calculate the day of year if we specify the date.
+
+Reply 2 months ago
+Bhavesh (talkcontribs)
+Read about time module, to get better grasp over it.
+
+Reply 2 months ago
+
+' int' object is not subscriptable And it mentioning the line. If(magicSquare[i][j] !=0): Can you please help me to overcome this error?.
+3 comments • 2 months ago
+Simmi (talkcontribs)
+Question asked by r16ucs005@vcw.ac.in
+
+Reply 2 months ago
+Simmi (talkcontribs)
+Initialise magic square as 2d matrix first.
+
+Reply 2 months ago
+Bhavesh (talkcontribs)
+Read threads in this page, many have asked it and most of them were resolved.
+
+Reply 2 months ago
+
+order of randomness problem
+6 comments • 2 months ago
+Sandhya vasdev (talkcontribs)
+AttributeError: 'int' object has no attribute 'sort' why this error come??
+
+Reply 2 months ago
+Simmi (talkcontribs)
+What are you trying to sort here??
+
+Reply 2 months ago
+Sandhya vasdev (talkcontribs)
+Elments which are genrated by randint
+
+Reply 2 months ago
+Sachinkr (talkcontribs)
+Attribute Error occur when you pass invalid attribute reference or attribute assignment failed. Possibility here your sort list is empty. Cant help you in better way until see your code. In such cases, Google is best friend. happy Coding
+
+Reply Edited 2 months ago
+Sandhya vasdev (talkcontribs)
+Ohk i will try it again
+
+Reply 2 months ago
+Bhavesh (talkcontribs)
+Whenever using builtin data types, wait for 2 seconds after pressing . for using methods, all the possible.methods will appear and you could use autocomplete for reducing errors. Works in IDLE, python.
+
+Reply 2 months ago
+
+Assignment 3:Order of randomness problem
+16 comments • 2 months ago
+Ashuditya (talkcontribs)
+Can anyone please explain me, what should I do in the assignment exactly, the question tells something different from what it is told to be done via steps. help really appreciated and thanks in advance.
+
+Reply 2 months ago
+Rmanish (talkcontribs)
+you have to create a list with a range. which should be first input of your programme. than insert the elements in that list which your step by step input to the range. than sort it. than print the elements of that list which is sorted in one line
+
+Reply 2 months ago
+Rmanish (talkcontribs)
+I hope its helpful for you.
+
+Reply 2 months ago
+Ashuditya (talkcontribs)
+I didn't understand the input method....
+
+Reply 2 months ago
+Rmanish (talkcontribs)
+means see in the assignment the first input is range. for example let the first input is a=3 then by using loop create a list which can store only 3 elements. for create a ranged list at first you have to create a empty list than put it into for or while loop which's range should be the first input (a). then next inputs are elements of list.
+
+Reply 2 months ago
+Ashuditya (talkcontribs)
+ok got it... and another doubt was about sorting thing, like, we need to randomly pick two index and swap them, and check wheather it is sorted or not.. right?
+
+Reply 2 months ago
+Sachinkr (talkcontribs)
+yes, randomly select 2 indexes and swap the values at those indexes. Then check whether list is sorted or not. If not, repeat the swap and so on..
+
+Reply 2 months ago
+Indrag79 (talkcontribs)
+Hi All, Just a small concern in regard to this 'Assignment 3 of Week 4'. I have already programmed with the logic as per the requirements provided in the assignment but some strange things are happening while I'm clicking the 'Compile & Run' button on the assignment page. Sometimes Test Cases 1 and 4 are showing as 'Passed' and at the same time Test Cases 2 and 3 are showing as 'Time Limit Exceeded'
+
+Reply 2 months ago
+Indrag79 (talkcontribs)
+Also, even sometimes all the Test Cases 1, 2, 3 and 4 are showing as 'Time Limit Exceeded'. Does anyone have any idea exactly what is happening here? Any sort of help in this regard is highly appreciated. Thank you in advance
+
+Reply 2 months ago
+Indrag79 (talkcontribs)
+Just for your information, the random selection of the indexes has been done via 'random.randint' function after importing the random library. Rest of all said things in the question have been taken into account accordingly.
+
+Reply 2 months ago
+Sachinkr (talkcontribs)
+Little logic behind this program is. While swapping, you have to check which one is greater. do we really need swapping to sort my list?
+
+Reply 2 months ago
+Indrag79 (talkcontribs)
+Thanks Sachin! Actually, that logic has also been checked properly. In fact, after each swap all the elements of the list are checked accordingly in case which one is greater or smaller than the other and then proceed for the ascending order of the elements. Still trying to figure out and get rid of that "Time Limit Exceeded" error by trying to make some alterations in my algorithm.
+
+Reply 2 months ago
+Ashuditya (talkcontribs)
+it's because of one of the loops, if your using while loop check if you have give increment statement or not.
+
+Reply 2 months ago
+Indrag79 (talkcontribs)
+Thanks everyone! I have resolved the issue "Time Limit Exceeded" by making some changes at the code level. Now the program is running fine by taking all the criteria as mentioned in the assignment into consideration.
+
+Reply 2 months ago
+Indrag79 (talkcontribs)
+Despite of the exit condition of while loop (a boolean condition was used in while statement) being taken into account, the program was still showing "Time Limit Exceeded" issue. So after making some changes at the code level, my program is now running fine. The logic behind my earlier program wasn't incorrect as two of the test cases out of four had already passed but still two leftover cases weren't crossing the "Passed" mark until I had to dig inside for some code level changes.
+
+Reply 2 months ago
+Bhavesh (talkcontribs)
+sometimes it is the while loop that start behaving as infinite loop, its not an error as viewed from interpreter but on portal you need to output answer in given time.
+
+Reply 2 months ago
+
+with block
+6 comments • 2 months ago
+Simmi (talkcontribs)
+Question asked by Shivam Arora
+
+Reply 2 months ago
+Simmi (talkcontribs)
+It is used to execute related operations. For example: in file handling if we have to write in the file, we first have to open the file. So in order to execute this pair of instructions, we should use with block.
+
+Reply 2 months ago
+ShivamArora (talkcontribs)
+What do you mean by related operations?
+
+Also, can I use it with other streams like URL connections?
+
+And, what happens if I don't use the with block and try to read the file without with block?
+
+Reply 2 months ago
+Simmi (talkcontribs)
+By related operations, i meant the operations that must be executed in sequence in order to achieve the desired result. For example, writing in a file. For that, you must open the file first.
+
+Reply 2 months ago
+Simmi (talkcontribs)
+You can also read the file without with block. You can use it for URL as well as database connections
+
+Reply 2 months ago
+Bhavesh (talkcontribs)
+with block helps in reducing errors as it automatically completes the mandatory practices like closing a file or commiting changes to DB after exiting it.
+
+Reply 2 months ago
+
+So , the function which is being called has to be defined in advance before its call ?
+4 comments • 2 months ago
+Simmi (talkcontribs)
+Question asked by harshchhabra2008@gmail.com
+
+Reply 2 months ago
+Simmi (talkcontribs)
+Since python compiler executes the program line by line, you need to define the function first and then call the same.
+
+Reply 2 months ago
+Sachinkr (talkcontribs)
+Yes, functions must be defined before calling them or you will get error while executing.
+
+Reply 2 months ago
+Bhavesh (talkcontribs)
+As already told its ,Yes. But you are not bound to do in same file you can define them in different files and then use import statements for just referencing them instead of writing again and again.
+
+Reply 2 months ago
+
+A huge proble plz help me guys...
+11 comments • 2 months ago
+Ashuditya (talkcontribs)
+I just paid for the registration exam, with net banking through sbi, but when I roll back to the page, it's still showing pending, and I received the msg from the bank of successful transaction... What should I do?
+
+Reply 2 months ago
+Rmanish (talkcontribs)
+mail this to the nptel
+
+Reply 2 months ago
+Jkmadathil (talkcontribs)
+Things to do:
+Check if the amount has been reversed into your account
+if (reversal == TRUE):
+
+   Do nothing
+else:
+
+     1. Go to your netbanking interface. Note down the transaction reference number (UTR) for this transaction. Helpful_Link
+
+    2. Contact the  nptel@iitm.ac.in with the UTR explaining the case?
+ 
+        if (your_college == LOCALCHAPTER): 
+
+               keep your SPoC in the loop
+Reply Edited 2 months ago
+Ashuditya (talkcontribs)
+SPoc? yes my college is under local chapter
+
+Reply 2 months ago
+Rmanish (talkcontribs)
+Have you mail to nptel
+
+Reply 2 months ago
+Rmanish (talkcontribs)
+contact your spoc and tell your problem to him may be he/she can help you
+
+Reply 2 months ago
+Sachinkr (talkcontribs)
+Just mail NPTEL with transaction number, date, time. They will revert if amount is transferred or not. If not, amount will revert back to your account after 48hr(general)
+
+Reply 2 months ago
+Seenusrini (talkcontribs)
+can anyone tell me the last date for paying the registration fee?
+
+Reply 2 months ago
+Santhosh (talkcontribs)
+Last date for paying registration fee is September 10th
+
+Reply 2 months ago
+Rmanish (talkcontribs)
+last date for paying registration fee by spoc is 7th September and by online is 10th September
+
+Reply 2 months ago
+Bhavesh (talkcontribs)
+New Update guys, the date has been extended till 17 Sept. 2018 <h3>
+Reply 2 months ago
+
+How to make a matrix
+3 comments • 2 months ago
+Megha Rai (talkcontribs)
+The week 4 lecture used magic square to show how to make a matrix but it completely went over my head. Can someone please explain how to make a matrix in simple language?
+Reply 2 months ago
+Simmi (talkcontribs)
+In magic square video, we are appending a list in the final magicSquare list. List l will act as a row in the magicSquare list. So it will result in a matrix.
+Reply 2 months ago
+Bhavesh (talkcontribs)
+List1[Row1[],Row2[],Row3[]], using rows inside row to make 2d array.
+Reply 2 months ago
+
+Assignment 3: Order in Randomness
+13 comments • 2 months ago
+Rohit09 (talkcontribs)
+how to implement step:2
+Reply 2 months ago
+Rmanish (talkcontribs)
+If can't do it by the given step choose another way to sort the code its doesn't matter which way you are writing the code
+Reply 2 months ago
+Rmanish (talkcontribs)
+If can 't do it choose another way to write the code it's doesn't matter which way you are using only output should be correct
+Reply 2 months ago
+Rohit09 (talkcontribs)
+ok n=int(input()) list_1 = [] for i in range(n): list_1.append(input())
+Reply 2 months ago
+Rmanish (talkcontribs)
+make one thing in your for loop make a variable which take input as int then append that variable to the list.
+Reply 2 months ago
+Rohit09 (talkcontribs)
+ok thanks
+Reply 2 months ago
+Rmanish (talkcontribs)
+welcome
+Reply 2 months ago
+Sakshoaib (talkcontribs)
+I didn't get how to implement give some more hint
+Reply 2 months ago
+Rmanish (talkcontribs)
+in which part you are facing problem?
+Reply 2 months ago
+Mkrishna2111 (talkcontribs)
+i need about order in randomness
+Reply 2 months ago
+Rmanish (talkcontribs)
+can you explain?
+Reply 2 months ago
+Amichoksi (talkcontribs)
+is it?? import random index = random.randint(list1)
+Reply 2 months ago
+Bhavesh (talkcontribs)
+?? explain more please, what exactly is error and where ?
+Reply 2 months ago
+
+List Index Error
+10 comments • 2 months ago
+Uvansankar1999 (talkcontribs)
+if a[i][j]!=0: I get an error like "List index out of range"
+Reply 2 months ago
+Sachinkr (talkcontribs)
+Generally it happens when you assign value more then elements in List.
+Reply Edited 2 months ago
+Uvansankar1999 (talkcontribs)
+Sorry..I don't get u
+Reply 2 months ago
+Bhavesh (talkcontribs)
+check values and ranges of i and j. It is not related to assignment operator.
+Reply 2 months ago
+Bhavesh (talkcontribs)
+Share your complete code. This error occurs when you try to approach an index out of bound the declared size. Like array or list is of size 4, so only valid indices are 0,1,2,3.If you approach beyond that it will show error. Check ranges and limits of index i,j.
+Reply 2 months ago
+Uvansankar1999 (talkcontribs)
+# -*- coding: utf-8 -*- """ Created on Mon Sep 3 17:17:20 2018 @author: uvansankar """ def magic(n): a=[] a=[[0 for i in range(n)]for j in range(n)] i=n//2 j=n-1 num=n*n count=1 while(count<=num): if i==-1 and j==n: j=n-2 i=0 else: if j==n: j=0 if i<0: i=n-1 if a[i][j]!=0: j=j-2 i=i+1 continue else: a[i][j]=count count=count+1 i=i+1 j=j+1 for i in range(n): for j in range(n): print(a[i][j],end=" ") print() print("Sum = "+str(n*(n**2+1)/2)) magic(3)
+Reply 2 months ago
+Bhavesh (talkcontribs)
+write code inside <pre>write here</pre> tags. it will help everyone in understanding better as indentation in python is everything.
+Reply 2 months ago
+Alinahid (talkcontribs)
+def magic_square(n): magicsquare=[] for i in range(n): l=[] for j in range(n): l.append(0) magicsquare.append(l) j=n//2 i=n-2 num = n*n count=1 while(count<=num): if(i==-1 and j==n): j=n-2 i=0 else: if(j==n): j=0 if(i<0): i=n-1 if(magicsquare[i][j]!=0): j=j-2 i=i+1 continue else: magicsquare[i][j] = count count+=1 i=i-1 j=j+1 for i in range(n): for j in range(n): print(magicsquare[i][j], end=" ") print() magic_square(3) showing list error index why??
+Reply 2 months ago
+Bhavesh (talkcontribs)
+problem is at magicsquare.append(l), its indentation is wrong.Delete Tab before it and then check
+Reply 2 months ago
+Sachinkr (talkcontribs)
+magicsquare[i][j] = count I set n = 3 and your "j" is getting value -4. As this is 3*3 matrix so there is no element at j = -4 You need to work again on this program and fix issues with it.
+Reply Edited 2 months ago
+
+Assignment 1 doubt
+11 comments • 2 months ago
+Pranjalis2709 (talkcontribs)
+Why am I unable to pass any tests on the online compiler but getting the answer on spyder for this code? (Please let me know even after the deadline) def matrix(row,col): k=1 for i in range(0,row,1): for j in range(0,col,1): print(k, end= " ") k+=1 print()
+Reply Edited 2 months ago
+Bhavesh (talkcontribs)
+Two clear reasons:<br> 1. not removing space after last element in row.<br> 2. not removing extra newline after last row. <br>Printing on spyder doesn't mean its right, you need to fulfill output requirements asked on portal. In spyder one might not be able to check spaces and newline but they matter in online portals.<br>Still having doubt, then feel.free to ask.
+Reply Edited 2 months ago
+Pranjalis2709 (talkcontribs)
+Thank you Bhavesh. I will take this in account. I actually wrote the same code on Python 3.5 Interpretor and still got the needed results. So I was confused.
+Reply 2 months ago
+Bhavesh (talkcontribs)
+:) Happy learning!
+Reply 2 months ago
+Amichoksi (talkcontribs)
+Pranjalis2709, if your program is running on spyder, it means you're right. Be positive. But NPTEL is having its own syntax and output checking program on its portal, and that way ONLY it gives us error or score. So you need to take care of ONLY the following things as said by Bhaveshbhai too. i.e. 1. remove extra space and new line if there, after last element in row 2. remove extra space and new line if there, after any output line
+Reply 2 months ago
+Pranjalis2709 (talkcontribs)
+Thank you so much Amichoksi
+Reply 2 months ago
+Sachinkr (talkcontribs)
+You have to meet output requirement to pass all test.
+Reply 2 months ago
+Pranjalis2709 (talkcontribs)
+Thank you Sachinkr!
+Reply 2 months ago
+This comment was deleted by Pranjalis2709 (history)
+A saravgi (talkcontribs)
+Please guide us how we can remove new line character and extra space. I tried using strip('\n') , which didn't worked. Thanks Abhishake
+Reply 2 months ago
+Amichoksi (talkcontribs)
+For Example: If the expected output is 20 and the output of your program is 20_ (_ denotes whitespace) then compiler will show presentation error. It can be solved by using print("abcd",end="")
+Reply 2 months ago
+
+verify this code
+5 comments • 2 months ago
+Naveen66 (talkcontribs)
+#please help me with this program ,only two of the four test cases are successful. #please execute and verify this code rr,cc=input().split() r=int(rr) c=int(cc) k=1 i=0 finalmatrix=[] while (i < r): matrix=[] j=0 while (j <c ): matrix.append(k) k=k+1 j=j+1 i=i+1 finalmatrix.append(matrix) for m in range(len(finalmatrix)) : for t in range(len(finalmatrix[m])): print(finalmatrix[m][t],end=" ") print()
+Reply 2 months ago
+Sachinkr (talkcontribs)
+rr,cc=input().split() r=int(rr) c=int(cc) k=1 i=0 finalmatrix=[] while (i < r): matrix=[] j=0 while (j <c ): matrix.append(k) k=k+1 j=j+1 i=i+1 finalmatrix.append(matrix) for m in range(len(finalmatrix)) : for t in range(len(finalmatrix[m])): if t == ((len(finalmatrix[m]))-1): print(finalmatrix[m][t],end="") else: print(finalmatrix[m][t],end=" ") print() Note: I am creating a page with useful tricks in python. Those may help in assignment. : http://sccilabs.org/jocwiki/index.php/Useful_Tips/Tricks_for_Python
+Reply Edited 2 months ago
+Rithika sasitharan (talkcontribs)
+but it is printing nums in the same line i input is 1 9 then output is 1,2,3,4,5,6,7,8,9 whats wrong in the code?
+Reply 2 months ago
+Sachinkr (talkcontribs)
+because you missed the last line of code while coping. Which is print()
+Reply Edited 2 months ago
+Naveen66 (talkcontribs)
+thanks Sachinkr
+Reply 2 months ago
+
+programming assignment 1
+16 comments • 2 months ago
+Prasannap (talkcontribs)
+def mat(a,b): list_1=[] count=1 for i in range(a): l=[] for j in range(b): l.append(count) count+=1 list_1.append(l) for i in range(a): for j in range(b): print(list_1[i][j],end=" ") print() a=int(input()) b=int(input()) mat(a,b) i written this code for this assignment but its giving error " a=float(int(input()))\n ValueError: invalid literal for int() with base 10: '1 2'" this code is running properly in my machine,but online compiler is not accepting my code
+Reply 2 months ago
+Rithika sasitharan (talkcontribs)
+where did type a=int(input()) b=int(input()) t the top or after print()?
+Reply 2 months ago
+Prasannap (talkcontribs)
+look at the indentation that is not the part of function and yes thats after print function
+Reply 2 months ago
+Bhavesh (talkcontribs)
+i think you have to take input in one line only. In your method two lines are required for input. Try taking input in one line as string and then taking out a and b from it. Use google or try harder.
+Reply 2 months ago
+Prasannap (talkcontribs)
+i did it but giving same error
+Reply 2 months ago
+Prasannap (talkcontribs)
+thank you for the response,the way i took the input() was wrong,finally i got the out put.
+Reply 2 months ago
+Bhavesh (talkcontribs)
+good, keep practicing
+Reply 2 months ago
+Sachinkr (talkcontribs)
+You have to take Input in one line only then separate the elements using list(). *But print(for debug purpose) the list before doing further operation. As list will contain " " (space as element). *Here list element will be string. So designed your program accordingly.
+Reply Edited 2 months ago
+Prasannap (talkcontribs)
+thank you for the response,the way i took the input() was wrong,finally i got the out put.
+Reply 2 months ago
+Rithika sasitharan (talkcontribs)
+then how to take input? please help me?
+Reply 2 months ago
+Prasannap (talkcontribs)
+a,b=input().split() a=int(a) b=int(b) 1st line ur taking string as a input with space then you are converting them to integer
+Reply 2 months ago
+Bhavesh (talkcontribs)
+That you need to figure out yourself.Verbally, take input as string and then extract those two numbers from it. Convert then to integer and code further.
+Reply 2 months ago
+Mannukr10 (talkcontribs)
+try this <code>inp=list(map(int,input().split()))</code>
+Reply 2 months ago
+Rithika sasitharan (talkcontribs)
+inp means?
+Reply 2 months ago
+Sachinkr (talkcontribs)
+inp is variable. Probably he used short form of input.
+Reply 2 months ago
+Mannukr10 (talkcontribs)
+yes, Sachin is Right.
+Reply 2 months ago
+
+PA 1
+One comment • 2 months ago
+This comment was deleted by Sabzzz (history)
+
+Error in Birthday Paradox code
+3 comments • 2 months ago
+Megha Rai (talkcontribs)
+I'm getting this error whenever I write the code for Birthday PARADOX 4. AttributeError: 'datetime.date' object has no attribute 'timetupple' What am I doing wrong?
+Reply 2 months ago
+Sachinkr (talkcontribs)
+Error must specify the line number where you are getting the Error. Share code of that line..
+Reply 2 months ago
+Bhavesh (talkcontribs)
+its timetuple, i think its typo in your code thats why error is coming.
+Reply 2 months ago
+
+memory used in python
+3 comments • 2 months ago
+Rohit09 (talkcontribs)
+please tell me the best way such that my code take less space or memory of machine.
+Reply 2 months ago
+Sachinkr (talkcontribs)
+Iteration free codes takes less memory while execution.
+Reply 2 months ago
+Bhavesh (talkcontribs)
+Use "DRY" practices, while writing code. Think twice, code once. Always use pen and paper to figure out what are you asked to do and then how are you going to do it. Never just jump and start coding.<br>And if you are still thinking whats "DRY" meant? <b>D</b>on't <b>R</b>eapeat <b>Y</b>ourself.
+Reply 2 months ago
+
+Copy of ascii_letters
+4 comments • 2 months ago
+Krishna Mahadevaiah (talkcontribs)
+Hi Simran, I have some confusion regarding spot the similarity program. When I copy the ascii_letters to a variable symbols=string.ascii_letters and then I call x=random.choice(symbols) , I am able to get a random selection in x. Next I try to remove the selection from the variable symbols.remove(x), I get a error saying ‘'str' object has no attribute 'remove'’. So I figured it out that to remove a selection, it is only possible to remove it from the list. So I changed my initial copy of ascii_letters to a list symbols=list(string.ascii_letters), now I am able to call and remove the random selection. My question is how is the random.choice works in the first case where I have copied the ascii_letters to variable x. Initial Case where random selection works, but remove function fails import string, random symbols=string.ascii_letters x=random.choice(symbols) print(x) #here I am getting the random selection. How is this working? This is my question? symbols.remove(x) #i get the error as ‘'str' object has no attribute 'remove'’ print(symbols) Second Case where the random selection and remove function works import string, random symbols=list(string.ascii_letters) x=random.choice(symbols) print(x) symbols.remove(x) print(symbols) Could you please help me on this?
+Reply 2 months ago
+Bhavesh (talkcontribs)
+Hi Krishna,<br> Short Answer:<br> Strings are non-mutable data type while List is a mutable data type.<br> Long Answer:<br> See first of all string class does not have any remove() method so its obvious to show error. The reason why it doesn't have such a method is the point i think you are asking about. If it had such method the string will change and it will not remain non-mutable.<br>While lists are mutable, they posses such function and change themselves by removing the element. <h6>Now coming to random selection part.</h6> <pre>Random.choice(sequence)</pre> Return a random element from the non-empty sequence. If sequence is empty, raises IndexError. And both list and string are sequence so it works with that.But one is mutable so has remove function and other is not so it doesn't.<br> Try this:<br> Try passing an integer value instead of sequence in random.choice and see the error message. <br><br> I hope this will clear your doubt and if not ask again, we are all here to help you.
+Reply 2 months ago
+Simmi (talkcontribs)
+Thanks Bhavesh :)
+Reply 2 months ago
+Krishna Mahadevaiah (talkcontribs)
+Hi Bhavesh Yes it is clear now. Thank you so much for the explanation! :)
+Reply 2 months ago
+
+new line \n in matrix
+9 comments • 2 months ago
+Suryaece (talkcontribs)
+how to remove newline \n in last row of matix 2) is there any function to remove from matrix row..
+Reply 2 months ago
+Rmanish (talkcontribs)
+put if condition for last line print in that print("your last element",end="")
+Reply 2 months ago
+Bhavesh (talkcontribs)
+depends on the way you are printing the matrix, whether element by element or concatinating them.<b>But</b> there is no such predefined method. You have to make stuff work.
+Reply 2 months ago
+Rmanish (talkcontribs)
+I mean to say make if condition for printing the element in that loop print your all elements and when you reach at the last element put print(your last element,end="")
+Reply 2 months ago
+Sachinkr (talkcontribs)
+Default value of end= is \n in print command. Just replace it with end=""
+Reply 2 months ago
+Kgopal (talkcontribs)
+There is no newline character in last row but still it is coming as wrong answer,Only difference I see that Expected output as no space like"1\n" but computed output is "1 \n".I tried using sep="" but still it doesn't help.Please suggest as what else should be looked into. Test Case 3 Wrong Answer Input	Expected Output	Actual Output 3 1 1\n 1 \n 2\n 2 \n 3 3
+Reply 2 months ago
+Sachinkr (talkcontribs)
+You must be using nested loops. In 2nd loop, create conditional statement. like as follow: if last element print(matrix, end="") else print(matrix) or print(matrix, end= " ")
+Reply Edited 2 months ago
+Seenusrini (talkcontribs)
+last element means?
+Reply 2 months ago
+Sachinkr (talkcontribs)
+like for i in range(a) for j in range(b) if j = (b-1) print(something, end="") else print(something, end= " ") BTW, This was the only thing in this assignment which u need to figure out yourself.
+Reply Edited 2 months ago
+
+order of randomness program
+3 comments • 2 months ago
+Seenusrini (talkcontribs)
+Do we have to follow the same steps given in the question? Can I just input the elements in the list and sort it using sort function?
+Reply 2 months ago
+Bhavesh (talkcontribs)
+You can use any method. Read this thread [Discussion over similar qurstion](http://sccilabs.org/jocwiki/index.php/Topic:Ujk5bnt12d18urtw)
+Reply 2 months ago
+Sachinkr (talkcontribs)
+The input and output sequence must be same. They dont bother about middle part. Means >> You write a 10line or 1000line program they will not bother, just output should be as they required.
+Reply 2 months ago
+
+Output Of Assignment 1 OF week 4 (Matrix)
+15 comments • 2 months ago
+Anu (talkcontribs)
+Hi all, I have attempted the assignment 1 of week 4 (Matrix). On successful compilation, the message is shown as wrong output, inspite of running the same code on spyder and getting the desired output there. Please suggest if I should ignore such a message. Here is my code: def Square(r,c): count=1 for i in range(r): for j in range(c): print(count,end=" ") count=count+1 print(" ") Thanks in advance !
+Reply 2 months ago
+Bhavesh (talkcontribs)
+Wrong output means you will get 0. and please don't share code here or anywhere until the submission date has passed.
+Reply 2 months ago
+Suji (talkcontribs)
+must be due to this: NOTE: There should not be any extra space after the elements of the last column and no extra newline after the last row of the matrix.
+Reply 2 months ago
+Vaibhav sachdeva` (talkcontribs)
+I wrote a different code & I'm getting a new line after every row , but we don't want a newline after the last row , How can we solve this ?
+Reply 2 months ago
+Bhavesh (talkcontribs)
+Vaibhav, <pre> if i==no_of_rows - 1: break </pre> use this before printing new line
+Reply 2 months ago
+Shubhamgupta477 (talkcontribs)
+I am having the same problem in the assignment3 of week 4. The code which I have written is running fine on the Spyder but is showing wrong output here in the online Assessment compiler. Please suggest that what should be done in this case?
+Reply 2 months ago
+Bhavesh (talkcontribs)
+can't say its right, if it runs only on your machine. Wrong Output means check the whether sample cases are passing,Even passing sample ones doesn't mean its correct. Give more details about logic and code without typing actual code here.
+Reply 2 months ago
+Rmanish (talkcontribs)
+i have solve the prloblem of extra \n but i can not solve the problem of extra space
+Reply 2 months ago
+Bhavesh (talkcontribs)
+use same method, like <pre> if(i!=no_of_col -1): print(" ",end="") </pre>
+Reply 2 months ago
+Bhavesh (talkcontribs)
+<h1>For every one finding it difficult for Assignment 1 week 4</h1> In python the print function has a parameter called 'end'. Use it for better and ease of code. like print(stringtobeprinted,end=""), will not add new line automatically, or end=" " will give extra space after end in same line.
+Reply 2 months ago
+Shashi (talkcontribs)
+It is not working. can you explain with another example instead of assignment-1(matrix) #(In python the print function has a parameter called 'end'. Use it for better and ease of code. like print(stringtobeprinted,end=""), will not add new line automatically, or end=" " will give extra space after end in same line.)
+Reply 2 months ago
+Bhavesh (talkcontribs)
+Be more clear, like what exactly is not working? paste code that's not working only and explain yourself properly. From the official documentation:<pre> print(object(s),separator=separator, end=end, file=file,flush=flush) </pre><br> object(s)=Any object, and as many as you like. Will be converted to string before printed<br><br> sep='separator'	Optional. Specify how to separate the objects, if there is more than one. Default is ''<br><br> end='end' Optional. Specify what to print at the end. Default is '\n' (line feed)<br><br> file Optional. An object with a write method. Default is sys.stdout<br><br> flush Optional. A Boolean, specifying if the output is flushed (True) or buffered (False). Default is False.
+Reply 2 months ago
+PriyankaD (talkcontribs)
+Here is my second half of the code, do suggest modification to generate print command as per requirement: for i in range(r): for j in range(c): print(a[i][j],end="") if(i!=c-1): print(" ",end="") if(i==r-1): #does not print a newline after the last row is printed break print()
+Reply 2 months ago
+Rmanish (talkcontribs)
+remove your break and print statement and put print(end="")
+Reply 2 months ago
+Rmanish (talkcontribs)
+at last line
+Reply 2 months ago
+
+Is import supposed to be the topmost statement in the program ?.
+7 comments • 2 months ago
+Simmi (talkcontribs)
+Question asked by harshchhabra2008@gmail.com
+Reply 2 months ago
+Simmi (talkcontribs)
+No, but you must write import statement before using the library functions.
+Reply 2 months ago
+Bhavesh (talkcontribs)
+from stackoverflow: Module importing is quite fast, but not instant. This means that: Putting the imports at the top of the module is fine, because it's a trivial cost that's only paid once. Putting the imports within a function will cause calls to that function to take longer. So if you care about efficiency, put the imports at the top.
+Reply 2 months ago
+Jkmadathil (talkcontribs)
+Bhavesh: Can you post the link to the post in Stackoverflow? <br> Stackoverflow discussions are very useful to gain depth on the content as those involved will detail out reasons for each of the answers. It was here that I found that the len(str()) would take a lot of computational time compared to other methods available.
+Reply Edited 2 months ago
+Bhavesh (talkcontribs)
+https://stackoverflow.com/questions/128478/should-import-statements-always-be-at-the-top-of-a-module
+Reply 2 months ago
+Jkmadathil (talkcontribs)
+Thank You.
+Reply 2 months ago
+Sachinkr (talkcontribs)
+If you are calling any function which is defined in library that is not available generally. Then that function must be followed by the Import
+Reply 2 months ago
+
+assignment 1 in week4
+4 comments • 2 months ago
+Sandhya vasdev (talkcontribs)
+r,c = map(int, input().split()) count=1 for i in range(r): for j in range(c): print(count,end=" ") count=count+1 if i==r - 1: break print(" ") this code is running in IDLE but it was show error portal python???
+Reply 2 months ago
+Bhavesh (talkcontribs)
+yes, its wrong and not according to what needs to be correct output. it will not even changing line after printing one row as end=" ". you need to print new line after each row except last one.
+Reply 2 months ago
+Sachinkr (talkcontribs)
+This program is printing every thing in a single line Ex: if input are 2 3 your output is : 123456 your program is good but just alignment missing. Just think little bit more and your will get it right. Cant share proper code as it is ongoing assignment. Will share code after deadline over if required.
+Reply 2 months ago
+Sandhya vasdev (talkcontribs)
+ohk
+Reply 2 months ago
+
+regarding prog.assignment 3 in week4
+4 comments • 2 months ago
+Sailaja.ece (talkcontribs)
+is it necessary to follow the same steps in question and compulsory to use random library?,or else can we do with list and sort options..,i have completed and passed all sample cases,without random library
+Reply 2 months ago
+Simmi (talkcontribs)
+No its not necessary to follow the same steps. Its upto you
+Reply 2 months ago
+Sachinkr (talkcontribs)
+No, its not necessary
+Reply 2 months ago
+Sailaja.ece (talkcontribs)
+thank you
+Reply 2 months ago
+
+Why %B for getting the month?
+2 comments • 2 months ago
+Simmi (talkcontribs)
+Question asked by harshchhabra2008@gmail.com
+Reply 2 months ago
+Simmi (talkcontribs)
+%a	Locale’s abbreviated weekday name.	%A	Locale’s full weekday name.	%b	Locale’s abbreviated month name.	%B	Locale’s full month name.	%c	Locale’s appropriate date and time representation.	%d	Day of the month as a decimal number [01,31].	%H	Hour (24-hour clock) as a decimal number [00,23].	%I	Hour (12-hour clock) as a decimal number [01,12].	%j	Day of the year as a decimal number [001,366].	%m	Month as a decimal number [01,12].	%M	Minute as a decimal number [00,59].	%p	Locale’s equivalent of either AM or PM.	(1) %S	Second as a decimal number [00,61].	(2) %U	Week number of the year (Sunday as the first day of the week) as a decimal number [00,53]. All days in a new year preceding the first Sunday are considered to be in week 0.	(3) %w Weekday as a decimal number [0(Sunday),6].	%W	Week number of the year (Monday as the first day of the week) as a decimal number [00,53]. All days in a new year preceding the first Monday are considered to be in week 0.	(3) %x	Locale’s appropriate date representation.	%X	Locale’s appropriate time representation.	%y	Year without century as a decimal number [00,99].	%Y	Year with century as a decimal number.	%z	Time zone offset indicating a positive or negative time difference from UTC/GMT of the form +HHMM or -HHMM, where H represents decimal hour digits and M represents decimal minute digits [-23:59, +23:59].	%Z	Time zone name (no characters if no time zone exists).	%%	A literal '%' character.
+Reply 2 months ago
+
+Magic Square Code and Explanation
+5 comments • 2 months ago
+Summary by Bhavesh
+added python code for Magic square. Has explanation and Tested inputs for same code too. First i directly edited the main page but i think mentors should verify it and then add it by themselves.
+Bhavesh (talkcontribs)
+<pre> def magicsquareit(n): box=[] for i in range(0,n): res=[] for j in range(0,n): res.append(0) box.append(res) row=n//2 col=n-1 maxdigit= (n**2)+1 for i in range(1,maxdigit): box[row][col] = i if(i==maxdigit-1): break row,col=findposition(n,row,col,box) finalmagicstring="" for i in box: stringrow="" for j in i: stringrow=stringrow+str(j)+" " stringrow.strip() stringrow=stringrow+"\n" finalmagicstring=finalmagicstring+stringrow return(finalmagicstring) def findposition(n,row,col,box): row=row-1 col=col+1 flagtochecckifempty=0 while(flagtochecckifempty==0): if(row==-1 and col==n): row=0 col=n-2 elif(row==-1): row=n-1 elif(col==n): col=0 if(box[row][col]==0): flagtochecckifempty = 1 else: row = row + 1 col = col - 2 return (row,col) n=int(input()) if(n>0): if(n%2==0): print("Magic Square is not possible for even number.") else: sum=(n*((n**2)+1))//2 print(magicsquareit(n)) print("Sum is ",sum) else: print("Enter positive numbers only") </pre> Explanation: Here input is taken as an int.Then input is checked for being only positive odd integer. It is then passed to function magicsquareit().Inside this function, a 2-d array or say nested list with all elements equal to zero is initialised. Then a for loop is being used to find position of numbers from 1 to n^2(ex: 9 for n=3). The function findposition returns the valid position of number and sets that position equal to it. The findposition function works according to the algorithm stated above. After this, an empty string is initialised to return the result in proper format. Tested Inputs <pre> Input: 1 Output: 1 Sum is 1 Input: 2 Output: Magic Square is not possible for even number. Input: 3 Output: 2 7 6 9 5 1 4 3 8 Sum is 15 Input: -1 Output: Enter positive numbers only Input: 9 Output: 35 25 15 5 76 66 56 46 45 24 14 4 75 65 55 54 44 34 13 3 74 64 63 53 43 33 23 2 73 72 62 52 42 32 22 12 81 71 61 51 41 31 21 11 1 70 60 50 40 30 20 10 9 80 59 49 39 29 19 18 8 79 69 48 38 28 27 17 7 78 68 58 37 36 26 16 6 77 67 57 47 Sum is 369 </pre>
+Reply 2 months ago
+Ashish juneja (talkcontribs)
+Hi, I tried implementing it without watching the solution and instead of using 'continue' logic explained, I ended up using break statement (and some other changes too). One motive of this is to share the different way to implement this and other is to ask for some comments from the performance perspective so that going onward we will keep those things in mind while writing code. Thanks. def magicsquare(): n=input('Enter the value of n(odd number) for n*n magic square: ') n=int(n) #create an empty list ms = [[0 for x in range(n)] for y in range(n)] p=int(n/2) #rule1 q=n-1 #rule1 #define 1 ms[p][q] = 1 for i in range(2,n*n+1): p=p-1 q=q+1 if(p!=-1 and q!=n and ms[p][q]==0): ms[p][q] = i else: while(1): if(p==-1 and q==n): p,q = 0,n-2 #rule 5: if row=-1 and col = n, make it (0,n-2) if(p!=-1 and q!=n and ms[p][q]==0): break if(p==-1): p = n-1 #rule 3: if the position becomes -1, make it n-1 if(p!=-1 and q!=n and ms[p][q]==0): break if(q==n): q=0 #rule 2: if the position becomes n, make it 0 if(p!=-1 and q!=n and ms[p][q]==0): break if(ms[p][q] != 0): p,q = p+1,q-2 if(p!=-1 and q!=n and ms[p][q]==0): break ms[p][q] = i print(ms)
+Reply 2 months ago
+Bhavesh (talkcontribs)
+Very good, that you have written this on your own.<br> Two points i want to raise for your solution for better performance. <ul> <li>Replace the 5th line with "p=n//2" as in python division has to done with care. '/' means float division and '//' means integer division.</li> <li>In the for loop you are taking upper value as n*n +1, replace it with a variable that already had the computed value, like store N=n*n +1 before that for loop and then use N in loop.<br>This will reduce the calculation every time loop runs because now in each iteration loop checks the upper limit and for that it has to calculate n*n +1, everytime. By doing this, the program will only need to calculate it once.</li> </ul> <br>Rest is already good. Keep it up.
+Reply Edited 2 months ago
+Shubhamgupta477 (talkcontribs)
+Can anybody please explain me the assignment 1 of week 4. I am finding it a bit difficult.
+Reply 2 months ago
+Bhavesh (talkcontribs)
+Shubhamgupta477, you need to print the 2d list in answer. inputs are row and columns, make a 2d list with that much number of rows and columns. and fill each element of row with numbers starting from 1.<br> Ex: <br> <pre> Input: 3 4 Output: 1 2 3 4 5 6 7 8 9 10 11 12 </pre>
+Reply Edited 2 months ago
+
+Doblble Game
+3 comments • 2 months ago
+Feroz Ahamed (talkcontribs)
+Let's Program and Play by Feroz Ahamed "Programming isn't about what you know, it's about what you can figure out" - Chris Pine Mario , Angry Birds , Candy Crush are some of the most played games we know about . Let's see if we can build games by using Python . So let's create a game ! Dobble Game - Spot the similarity 01 by Feroz Ahamed Dobble is a simple pattern recognition game in which players try to find an image shown on two cards. Each card in Dobble features eight different symbols, with the symbols varying in size from one card to the next. Any two cards have exactly one symbol in common. For the basic Spot it! game, reveal one card, then another. Whoever spots the symbol in common on both cards claims the first card, then another card is revealed for players to search, and so on. Whoever has collected the most cards when the 55-card deck runs out wins! Dobble Game - Spot the similarity 02 by Feroz Ahamed The rules of the game were already discussed in the previous section.To recall what the game is all about - In this game , there are around 50 cards from which one person flashes two cards, the other person should spot the common symbol or object present in both the cards just as shown in the image below . Dobble Game - Spot the similarity 03 by Feroz Ahamed Though this game appears to be simple , it is actually not ! Let's see if we can implement this game in Python . We shall use Alphabets instead of objects in the python version of the game for the time being and the basic rules must be followed even while making the python version of the game .Those are - all the cards should have definite number of symbols and only one symbol/Alphabet should be common for any pair of cards. For example : If we assume two cards having symbols/Alphabets as shown: "ABGTFC" --- "TJYPOL" In this pair of cards we clearly see that both the cards have definite number of symbols (Here, in this case - 6 in both the cards) and there is only one alphabet common in both the cards and that is - "T". Dobble Game - Spot the similarity 04 by Feroz Ahamed As this game involves only Alphabets and symbols , we shall use the string module by first importing it ,also we shall be using the random module in this program as shown: import string import random print(string.ascii_letters) If we compile and run the above program we get something as shown : abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ i.e we get a to z lower case letters followed by upper case letters. We shall now make a list of symbols as shown below: symbols = [] symbols = list(string.ascii_letters) Then make two cards - card1 and card2: card1 = [] card2 = [] And let the number of symbols or alphabets in any card is restricted to 5 . To do that we shall code it as : card1 = [0]*5 card2 = [0]*5 Then we have to find the position of the same symbol in card1 as well as card2 : pos1 = random.randint(0,4) pos2 = random.randint(0,4) Here pos1 and pos2 are the same symbol positions in card 1 and card 2 respectively . Now that we are done with the positions , we shall have a character named samesymbol and it should be randomly choosed from the "symbols" list . The code is to be completed as shown below: samesymbol=random.choice(symbols) symbols.remove(samesymbol) if(pos1==pos2): card1[pos1] = samesymbol card2[pos2] = samesymbol else: card1[pos1] = samesymbol card2[pos2] = samesymbol card1[pos2] = random.choice(symbols) symbols.remove(card1[pos2]) card2[pos1] = random.choice(symbols) symbols.remove(card2[pos1]) i=0 while(i<5): if(i!=pos1 and i!=pos2): alphabet1=random.choice(symbols) symbols.remove(alphabet1) alphabet2=random.choice(symbols) symbols.remove(alphabet2) card1[i]=alphabet1 card2[i]=alphabet2 i=i+1 print(card1) print(card2) ch = input("Ask the user to spot the similar symbol - ") if (ch==samesymbol): print("Right") else: print("Wrong") Dobble Game - Complete Code by Feroz Ahamed import string import random i = 0 symbols = [] symbols = list(string.ascii_letters) card1 = [0]*5 card2 = [0]*5 pos1 = random.randint(0,4) pos2 = random.randint(0,4) samesymbol=random.choice(symbols) symbols.remove(samesymbol) if(pos1==pos2): card1[pos1] = samesymbol card2[pos2] = samesymbol else: card1[pos1] = samesymbol card2[pos2] = samesymbol card1[pos2] = random.choice(symbols) symbols.remove(card1[pos2]) card2[pos1] = random.choice(symbols) symbols.remove(card2[pos1]) while(i<5): if(i!=pos1 and i!=pos2): alphabet1=random.choice(symbols) symbols.remove(alphabet1) alphabet2=random.choice(symbols) symbols.remove(alphabet2) card1[i]=alphabet1 card2[i]=alphabet2 i=i+1 print(card1) print(card2) ch = input("Ask the user to spot the similar symbol-") if (ch==samesymbol): print("Right") else: print("Wrong") Output : ['s', 'W', 'g', 'f', 'M'] ['k', 'M', 'E', 'X', 'u'] Ask the user to spot the similar symbol-M Right ['Y', 'w', 'e', 'C', 'z'] ['Z', 'C', 'P', 's', 'k'] Ask the user to spot the similar symbol-Z Wrong
+Reply 2 months ago
+Ashish juneja (talkcontribs)
+Hi, just a add on to the above mentioned code. In the symbol list, we have all the alphabets in upper and lower case. So in the card1 or card2 or both, you might get something like 'a' and 'A'. To avoid this, define symbol as : symbol = list(set(string.ascii_letters.lower())) or symbol = list(string.ascii_letters) symbol = symbol[0:len(symbol)//2]
+Reply 2 months ago
+Sam (talkcontribs)
+Whoever has placed the image, can you put a smaller size image
+Reply 2 months ago
+
+Don't Put You Name and write summary
+2 comments • 2 months ago
+Bhavesh (talkcontribs)
+Guys please, don't put your name in every edit you are making. Like "BY ABC" or "Notes BY ABC". The platform and software is capable enough to recognize and credit who wrote the edit.<br>Remember you are making notes for yourself and for the coming batches, so no need to glorify yourself. The history section says it all who edited and who does what.<br><br> Also make it a habit and a rule to put edit summary if you are editing some prewritten notes, I know everyone is free to edit and delete content but atleast tell in the summary that WHY your edit was needed and HOW it is better than previously written notes.<br><br> Take this as a suggestion only because its all on us to maintain the platform and if everyone just keep on editing without any summary then it will lead the users to encouraged towards editing the notes unnecessarily rather than creating new ideas for same question and writing from scratch.<br> Ps: No hard feelings, take it as a suggestion and request only.<br> Happy Learning !
+Reply 2 months ago
+Simmi (talkcontribs)
+Bhavesh, i completely agree with you. Please remove your names.
+Reply 2 months ago
+
+What's your favourite movie ? Week 4 Lecture Notes
+One comment • 2 months ago
+Summary by Bhavesh
+Wrote the complete code and explanation of What's your fav. movie Week 4.
+Bhavesh (talkcontribs)
+== '''What's your favorite movie?''' == We have all played games based on guessing or Hit and trials, in our childhood.This game is also similar to them.In this the player has to guess the correct movie name. In start there will same number of blanks as the number of letters in movie name, '#' represents the space in movie name if present.<br><br> <strong>Rules of the game</strong><br> <ul> <li>Player can guess only one letter at a time</li> <li>Player only need to guess letters in movie name, spaces and numbers are already shown.(spaces with '#')</li> <li>Player has to guess all the letters in atmost 10 moves</li> <li>No moves will be deducted if correctly guessed, but will lose 1 move for every wrong guess.</li> </ul> So come, Let's Play!<br> Note: Copy and Paste the below code into your IDE and save it as .py file, then run the file by double-clicking on it.<br><br> <strong>Code for the game</strong><br> <pre> import random import os def create_ques_string(movie): a=movie.split() qstring="" for i in a: b="" for j in i: if(j=='*'): b=b+'_' else: b=b+" "+j+" " qstring=qstring+b.strip()+" " return qstring.strip() movielist=["Avengers Infinity War","Dhadak","Inception","Kai Po Che","Jungle Book","Thor Ragnarok","Iron Man","Civil War","Deadpool","Notebook","Dr Strange","Life of Pi"] movie=random.choice(movielist) movie=movie.replace(" ","#") queslist=list(movie) queslistset=set(queslist) solve=1 queslistcustom=[] for i in range(0,len(queslist)): if(queslist[i]=='#'): queslistcustom.append(queslist[i]) else: queslistcustom.append(' * ') stringtobeprinted="".join(queslistcustom) moves=10 while(1): try: queslistset.remove('#') except(KeyError): break while(solve==1 and moves>0): os.system('cls') print(create_ques_string(stringtobeprinted)) x=input("\nMoves Left: "+str(moves)+"\nGUESS THE NEXT LETTER : ") found=1 if(x.lower() in queslistset or x.upper() in queslistset ): for i in range(0,len(queslist)): if(queslist[i]==x.lower() or queslist[i]==x.upper() ): queslistcustom[i]=queslist[i] queslistset.discard(queslist[i]) found=0 stringtobeprinted="".join(queslistcustom) print(create_ques_string(stringtobeprinted)) if(len(queslistset)==0): solve=0 else: print("\nWrong Guess!! or Already guessed! ",end="") moves=moves-1 if(solve==0): print("\n\nSolved!!! in",10-moves,"moves") else: print("\nNo moves left\nYou Lose!\n") input() </pre> <br> <strong>Explanation of code</strong><br>(Don't edit the variable names, by mistaking them as typing error)<br> A list of sample movies is created in, as movielist.Then we choose a random moviename by the use of Random module and store that moviename into movie variable. Then as per game requireement we replace all the whitespaces in movie name by '#', using string function replace().<br> Now we create three variables as queslist, this is a list of all letters used in movie name , queslistset, this is a set of all unique letters used in moviename and queslistcustom, this is very important as it is being used to generate new string to be displayed everytime.<br> We then make queslistcustom such that it contains '*' for every letter in movie name and '#' for spaces by using a for loop. Then we convert this queslistcustom to string by join() method and pass it to our create_ques_string function. This function is used to make pretty printing on the screen, so as to make users experience better, it returns a string with dashes('_') and spaces.<br> Now comes the main part, as told above we have queslistset variable, containing all the unique letters present in the movie name. We use the input letter to check whether it is present in the set or not. If it is present we use another for loop to find all its position in the movie name string and at the same time we append that letter into our queslistcustom variable and remove it from the queslistset. <strong>Note that we are using discard() method instead of remove(), because it doesn't throw error if the to be removed element was not present, while the latter does.</strong><br> Then we again pass the edited queslistcustom to be pretty printed for screen with all dashes and spaces at required place. We continue to do so either when solve==0 or moves becomes 0. The input() in the end is used to pause the screen so as player can see his/her result<br> <strong>Two things used here for enhancing game experience :</strong><br> <ul> <li>Using os module, for clearing the screen after every input, os.system('cls') is used for windows. [https://docs.python.org/3/library/os.html Read more here]</li> <li>As iwe know about the error throwing nature of remove function of set, we utilize it. Using try,except block for removing '#'s from the movielistset, so as we can check condition that length of set is 0 or not to break out of loop. [https://docs.python.org/3/tutorial/errors.html Read more here]</li> </ul><br> <i>Feel free to contact if any doubt in code or explanation and please don't edit without permission.</i><br>
+Reply 2 months ago
+
+scripting language
+6 comments • 2 months ago
+SANTHOSH (talkcontribs)
+what is scripting language? is python a scripting language?
+Reply 2 months ago
+Simmi (talkcontribs)
+Scripting languages are those languages which don't require compilation and are only interpreted. Compiler translates the entire program to machine language at once but interpreter does it line by line. Now you figure out and tell me whether Python is a scripting language or not??
+Reply 2 months ago
+SANTHOSH (talkcontribs)
+Python is scripting language. is right?
+Reply 2 months ago
+Simmi (talkcontribs)
+yup it is.
+Reply 2 months ago
+Bhavesh (talkcontribs)
+As simmi told, try writing intentionally an error but before that put some valid correct print() statements. When you will run this, you will observe that those print statements have run successfully and then the console shows error. If it had been with compiled language the program would not have been run from line 1 itself. Try running this: <pre> print("I am line 1") print("I am line 2") print("I am line 3") printtt("I will give error") print("I am OK but i will not run") </pre>
+Reply 2 months ago
+SANTHOSH (talkcontribs)
+yeah it is happen bhavesh. only first three print statement has executed and after some error get displayed.
+Reply 2 months ago
+
+Why only this algorithm works ?
+2 comments • 2 months ago
+Summary by Bhavesh
+Week 4 Magic square
+Bhavesh (talkcontribs)
+Can anyone explain why only this algorithm works in case of Magic Square question. Like why do we need to follow only these steps or from where one could deduce these steps on their own. Like some derivation or some generalisation. <br> I think its good that we know the algorithm but it would be better to know its formulation and approach to reach at this algorithm. <br> Anyone please share your thoughts or ideas regarding this.
+Reply Edited 2 months ago
+Simmi (talkcontribs)
+We really appreciate your effort Bhavesh. :)
+Reply 2 months ago
+
+Birthday Paradox - Find your twin Notes
+One comment • 2 months ago
+Summary by Bhavesh
+First commit, wrote the lecture notes for Week 4, Birthday paradox. About, Explanation and complete code with explanation.
+Bhavesh (talkcontribs)
+<h1>About</h1> <p>This is a paradox about sharing same birth dates among a given group of people. It goes like this "in a room of 23 people, you have 50% chances of sharing birthday with other person, while in a room of 70 people you have 99% chances of sharing birthday with other person!".</p> [[File:bparadox.png|1800px]] <h3>Why is it so ?</h3> Everyone wants to know how is this possible.Going by theoretical approach, it is quite clear that we must need atleast 364/365 people in a room to have common birthdays but....<br>this is why this paradox is so popular.<br>The probability of having same birthday can be seen as:<br><h4><i>P(same)=1-P(not_same)</i></h4>. Now this probability increases <strong><i>exponentially</i></strong> as we increase the number of people. Learn more on wiki: https://en.wikipedia.org/wiki/Birthday_problem <h1>Code:</h1> Note: We will be using random module for generating random integers.Learn more on wiki: https://en.wikipedia.org/wiki/Random_number_generation <pre> import random def check_leap(year): if(year%4==0 and ((year%100==0 and year%400==0) or year%100!=0)): return True return False def birthday_paradox(n): set_container_to_check_if_matched=set() l=len(set_container_to_check_if_matched) for i in range(0,n): random_month=random.randint(1,12) if(random_month==2): random_year=random.randint(1990,2019) if(check_leap(random_year)): random_day=random.randint(1,29) #Leap Year and February else: random_day=random.randint(1,28) #Not Leap and February else: random_year=random.randint(1990,2019) if(random_month%2): if(random_month<7): random_day=random.randint(1,30) #April June else: random_day=random.randint(1,31) # August October December else: if(random_month<=7): random_day=random.randint(1,31) #January March May july else: random_day=random.randint(1,30) #September November random_birthdate=str(random_day)+str(random_month) #add str(random_year here to simulate for exact same birthdates.) set_container_to_check_if_matched.add(random_birthdate) #add the string to set, if already present its length won't change. if(len(set_container_to_check_if_matched)!=l): l=len(set_container_to_check_if_matched) else: print("Found a match after asking ",l," people\nMatched BirthDate is: ",str(random_day)+"/"+str(random_month)) return print("No common birthdates were found, Try increasing the count.") n=int(input("Enter the number of people you want to ask their Birthdays! : ")) birthday_paradox(n) </pre> <h3>Explanation of Code</h3> In this an integer is taken as number of people you want to ask. Then we generate random day,month & year for each iteration as it is the random birth date of person.<br><br> Here to check whether we have a match, one can use "set", an inbuilt data type in python. What set does is, it only contains or allows to add distinct elements in it. So after creating the random birth date, when we add the string to set, if already present its length won't change and we break out of the loop, printing "It's a match" and number of people asked as length of set. If it changes its length that means the string was new and distinct till now, so we just add it and repeat the process till loop ends.<br> If loop ends and still no match was there, we simply print to increase the number of people asked. <pre>Note: Copy and paste above program to run on your machine and check the correctness of paradox.</pre>
+Reply Edited 2 months ago
+
+Magic Square Hit and Trial 1
+One comment • 2 months ago
+Feroz Ahamed (talkcontribs)
+In this section , we shall be dealing with a square divided into smaller squares each containing a number, such that the figures in each vertical, horizontal, and diagonal row add up to the same value . Normally a magic square of 2*2 is not possible which is the only exception , so to start with if we assume a 3x3 square then the sum of the elements must be equal to 15 in any direction - either it be vertical or horizontal or diagonal . Generally for a n*n square , the value to which the sum should be equal to is called Magic Constant and is given by M = n.(n²+1)/2 . Here for n = 3 , M =3.(9+1)/2 which is equal to 15 . Some ways of arranging the elements in a 3*3 square to get a sum of 15 : 816 618 276 357 753 951 492 294 438 ... To solve these squares , there are few facts one must know : 1.In any magic square 1 is located at (n/2,n-1). 2.If position of 1 is now taken as(p,q) then the position of 2 is at (p-1,q+1).And if anytime calculated row position becomes -1 then make it n-1 and if column position becomes 0 then make it n. 3.If the calculated position already contains a number then decrement the column by 2 and increment the row by 1 . 4.If anytime row position becomes-1 and column becomes n switch to (0,n-2). So first lets solve a 3*3 square using the facts mentioned : Assume a 3*3 square as shown : x x x (00) (01) (02) x x x (10) (11) (12) x x x (20) (21) (22) Where "x" be the elements of the square and (ab) represents the element's position. The position of 1 should be at (3/2 = 1.5 -->1 , 3-1) = ( 1 , 2 ) Assume p = 1, q = 2. Position of 2 must be at new (p,q) = old(p-1,q+1) = (1-1,2+1) = (0,0) As 3>2 --> q = 0. Position of 3 must be at new(p,q) = old(p-1,q+1) = (0-1,0+1) = (-1,1) ---> (3-1 , 1 ) --> (2,1) (As p became -1 we have to replace it with n-1 , here in this case p = 3-1). Position of 4 must be at (p-1,q+1) = (1,2) but at (1,2) already 0 exists , so by fact 3 , (p,q) = (2,0). So in this way the whole squares are to be filled . We see that it takes a lot of time to solve it . So we shall see if a piece of code employing the facts can make us solve it faster .
